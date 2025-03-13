@@ -1,0 +1,108 @@
+@charset "utf-8";
+@import "mixin.scss";
+/*------------------------------------------------------------
+	technical
+------------------------------------------------------------*/
+#main {
+	.mainBox {
+		@include pc {
+			margin-bottom: 109px;
+		}
+	}
+	#conts {
+		.titleBox {
+			margin-bottom: 50px;
+		}
+		.comImgBox {
+			@include pc {
+				margin-bottom: 93px;
+			}
+			.textBox {
+				@include pc {
+					padding-right: 120px;
+				}
+			}
+		}
+	}
+	.area {
+		.photoList {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			@include sp {
+				margin: 0 0 40px;
+				display: block;
+			}
+			@include pc {
+				margin-bottom: 53px;
+			}
+			li {
+				width: 100%;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				margin-bottom: 40px;
+			}
+			.photoBox {
+				width: 45%;
+				@include sp {
+					width: 100%;
+				}
+			}
+			.textBox {
+				width: 55%;
+				padding: 0 0 0 35px;
+				@include sp{
+					width: 100%;
+					padding: 0;
+				}
+			}
+		}
+	}
+	.addition {
+		.headLine06 {
+			margin-bottom: 48px;
+		}
+		.photoList {
+			margin: -36px 0 59px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			@include sp {
+				margin: 0 0 40px;
+				display: block;
+			}
+			li {
+				margin-top: 36px;
+				width: 428px;
+				@include sp {
+					margin: 0 0 30px;
+					width: auto;
+					&:last-of-type {
+						margin-bottom: 0;
+					}
+				}
+				.pho {
+					margin-bottom: 17px;
+				}
+				p {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					font-size: 1.6rem;
+					font-weight: 700;
+					line-height: 1.56;
+					letter-spacing: 0.03em;
+					text-align: center;
+					@include sp {
+						font-size: 1.4rem;
+					}
+					@include sp-breakpoint01 {
+						font-size: 1.3rem;
+						letter-spacing: 0;
+					}
+				}
+			}
+		}
+	}
+}

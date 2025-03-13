@@ -1,0 +1,68 @@
+@charset "utf-8";
+@import "mixin.scss";
+/*------------------------------------------------------------
+	business_check
+------------------------------------------------------------*/
+#main {
+	.titleBox {
+		margin-bottom: 42px;
+	}
+	#conts {
+		width: 100%;
+	}
+	.topLinkList {
+		margin: -20px 0 80px;
+		display: flex;
+		flex-wrap: wrap;
+		width: auto;
+		li {
+			margin: 20px 20px 0 0;
+			width: calc((100% - 60px) / 4);
+			&:nth-of-type(4n) {
+				margin-right: 0;
+			}
+		}
+		@include sp {
+			margin: 0 auto 40px;
+			display: block;
+			li {
+				margin: 0 auto 20px;
+				width: auto;
+				max-width: 440px;
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+				&:nth-of-type(4n) {
+					margin-right: auto;
+				}
+				a {
+					padding: 10px 50px 10px 10px;
+				}
+			}
+		}
+	}
+	.comTextDl {
+		dd {
+			@include pc {
+				padding: 24px 20px 50px;
+			}
+		}
+	}
+	.comTextList {
+		li {
+			padding: 10px 0 15px 40px;
+			&::before {
+				top: 12px;
+			}
+		}
+	}
+	.area {
+		margin-bottom: 112px;
+		@include sp {
+			margin-bottom: 60px;
+		}
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+}

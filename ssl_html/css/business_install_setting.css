@@ -1,0 +1,304 @@
+/*------------------------------------------------------------
+	business/install/setting
+------------------------------------------------------------*/
+#main .titleBox {
+  margin-bottom: 52px;
+}
+@media all and (max-width: 896px) {
+  #main .titleBox {
+    margin-bottom: 25px;
+  }
+}
+#main .comImgBox {
+  margin-bottom: 81px;
+}
+@media all and (max-width: 896px) {
+  #main .comImgBox {
+    margin-bottom: 40px;
+  }
+}
+#main .comImgBox .textBox {
+  padding-right: 110px;
+}
+@media all and (max-width: 896px) {
+  #main .comImgBox .textBox {
+    padding-right: 20px;
+  }
+}
+#main .comTransfer {
+  margin-bottom: 38px;
+}
+#main .comTransfer .text {
+  margin-bottom: 35px;
+}
+@media all and (max-width: 896px) {
+  #main .comTransfer .text {
+    margin-bottom: 25px;
+  }
+}
+#main .comTransfer .imgBox {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+#main .comTransfer .imgBox .textBox dl {
+  margin-bottom: 22px;
+}
+#main .comTransfer .imgBox .textBox dl dt {
+  width: 45px;
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  font-size: 0.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  background-color: #1B519F;
+  border-radius: 0;
+  font-family: inherit;
+}
+@media all and (max-width: 896px) {
+  #main .comTransfer .imgBox .textBox dl dt {
+    font-size: 1rem;
+  }
+}
+#main .comTransfer .imgBox .textBox dl dt span {
+  font-size: 2.1rem;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+@media all and (max-width: 896px) {
+  #main .comTransfer .imgBox .textBox dl dt span {
+    font-size: 2rem;
+  }
+}
+#main .comTransfer .imgBox .textBox dl dt:not(:last-of-type), #main .comTransfer .imgBox .textBox dl dd:not(:last-of-type) {
+  margin-bottom: 17px;
+}
+#main .comTransfer .imgBox .textBox dl dd {
+  margin-top: -3px;
+}
+#main .comTransfer .imgBox .textBox p {
+  font-size: 1.6rem;
+  line-height: 1.94;
+}
+@media all and (max-width: 896px) {
+  #main .comTransfer .imgBox .textBox p {
+    font-size: 1.4rem;
+  }
+}
+#main .area {
+  margin-bottom: 110px;
+}
+@media all and (max-width: 896px) {
+  #main .area {
+    margin-bottom: 60px;
+  }
+}
+#main .area .product {
+  margin-bottom: 74px;
+}
+@media all and (max-width: 896px) {
+  #main .area .product {
+    margin-bottom: 40px;
+  }
+}
+#main .area .product h2 {
+  margin-bottom: 38px;
+}
+@media all and (max-width: 896px) {
+  #main .area .product h2 {
+    margin-bottom: 25px;
+  }
+}
+#main .area .product .linkList a {
+  display: block;
+}
+#main .area .product .linkList a:hover {
+  opacity: 0.7;
+}
+#main .area .product .linkList a .imgBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media all and (max-width: 896px) {
+  #main .area .product .linkList a .imgBox {
+    display: block;
+  }
+}
+#main .area .product .linkList a .imgBox .pho {
+  width: 288px;
+  position: relative;
+}
+@media all and (max-width: 896px) {
+  #main .area .product .linkList a .imgBox .pho {
+    margin-bottom: 30px;
+    width: auto;
+  }
+  #main .area .product .linkList a .imgBox .pho img {
+    width: 100%;
+  }
+}
+#main .area .product .linkList a .imgBox .pho span {
+  padding: 3px 14px 2px 10px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 0 0 2px 0;
+  background-color: #1B519F;
+}
+@media all and (max-width: 896px) {
+  #main .area .product .linkList a .imgBox .pho span {
+    padding: 2px 10px;
+    font-size: 1.1rem;
+  }
+}
+#main .area .product .linkList a .imgBox .txtBox {
+  margin-top: -9px;
+  width: 567px;
+}
+@media all and (max-width: 896px) {
+  #main .area .product .linkList a .imgBox .txtBox {
+    margin-top: 0;
+    width: auto;
+  }
+}
+#main .area .product .linkList a .imgBox .txtBox .ttl {
+  margin-bottom: 22px;
+  padding-bottom: 20px;
+  position: relative;
+  font-size: 1.9rem;
+  font-weight: 700;
+  line-height: 1.58;
+  letter-spacing: 0.03em;
+  border-bottom: 1px solid #D8D6E0;
+  background: url(/img/common/icon21.png) no-repeat right 6px top 14px/11px auto;
+}
+#main .area .product .linkList a .imgBox .txtBox .ttl::before {
+  width: 26px;
+  height: 1px;
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  background-color: #1B519F;
+  content: "";
+}
+@media all and (max-width: 896px) {
+  #main .area .product .linkList a .imgBox .txtBox .ttl {
+    font-size: 1.6rem;
+    padding: 0 30px 10px 0;
+  }
+}
+#main .area .product .linkList a .imgBox .txtBox p {
+  font-size: 1.6rem;
+  line-height: 1.94;
+}
+@media all and (max-width: 896px) {
+  #main .area .product .linkList a .imgBox .txtBox p {
+    font-size: 1.4rem;
+  }
+}
+#main .area .trading h2 {
+  margin-bottom: 37px;
+}
+@media all and (max-width: 896px) {
+  #main .area .trading h2 {
+    margin-bottom: 25px;
+  }
+}
+#main .area .trading .photoList {
+  margin-top: -27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#main .area .trading .photoList::after {
+  width: calc((100% - 76px) / 3);
+  content: "";
+}
+@media all and (max-width: 896px) {
+  #main .area .trading .photoList::after {
+    display: none;
+  }
+}
+#main .area .trading .photoList li {
+  margin-top: 27px;
+  width: calc((100% - 76px) / 3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media all and (max-width: 896px) {
+  #main .area .trading .photoList li {
+    width: calc((100% - 15px) / 2);
+  }
+}
+#main .area .trading .photoList li a {
+  width: 100%;
+}
+@media all and (min-width: 897px) {
+  #main .area .trading .photoList li a:hover {
+    opacity: 0.7;
+  }
+}
+#main .area .trading .photoList li .pho {
+  margin-bottom: 8px;
+  border: 1px solid #D8D6E0;
+}
+#main .area .trading .photoList li p {
+  text-align: center;
+}
+@media all and (max-width: 896px) {
+  #main .area .trading .photoList li p {
+    font-size: 1.1rem;
+  }
+}
+#main .area.area01 .trading h2 {
+  margin-bottom: 26px;
+}
+#main .area.area02 {
+  margin-bottom: 0;
+}
+#main .area.area02 .comTransfer {
+  margin-bottom: 74px;
+}
+#main .area.area02 .comTransfer .imgBox .textBox dl dd {
+  margin-top: -1px;
+  font-size: 1.9rem;
+  line-height: 1.32;
+}
+@media all and (max-width: 896px) {
+  #main .area.area02 .comTransfer .imgBox .textBox dl dd {
+    font-size: 1.4rem;
+  }
+}
+#main .area.area02 .trading h2 {
+  margin-bottom: 25px;
+}

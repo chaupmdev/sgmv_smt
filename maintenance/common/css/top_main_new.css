@@ -1,0 +1,314 @@
+@charset "UTF-8";
+/*
+ :タイトル "試作";
+ :一行説明 "中川が作成しました＋橋本も追記しました";
+ :作成日 "2009-12-10";
+ :改訂版 [:版 "1.1.0"; :作成日 "2009-12-17"];
+*/
+
+/* ---------------------------------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: left;
+}
+
+img {
+    border: 0;
+}
+
+table {
+    border-collapse: collapse;
+    line-height: 1.5;
+}
+
+/* ↓小さいタイトルのページ============================== */
+div#mainbox {
+    float: left;
+    width: 880px;
+    margin-left: 10px;
+    padding: 0;
+}
+
+#mainbox table {
+    margin: 0 10px 20px;
+}
+
+table.box_s {
+    width: 620px;
+    margin: 0;
+    padding: 0;
+}
+
+table.box_s tr.sp td,
+td.sp {
+    padding: 10px;
+}
+/* ↑小さいタイトルのページ============================== */
+
+.bg_gray {
+    background: #cccccc;
+}
+
+.bg_red {
+    background: #ffccdd;
+}
+
+.bg_blue {
+    background: #e7f5ff;
+}
+
+.bg_act {
+    background: #def6f7;
+}
+
+.bg_yellow,
+.bdr th.bg_yellow {
+    background: #fffccc;
+}
+
+table.line,
+table.menutbl,
+table.menutbl td {
+    border: 1px solid #cccccc;
+    text-align: left;
+}
+
+table.menutbl {
+    border: 1px solid #cccccc;
+    text-align: left;
+}
+
+col.menu {
+    width: 250px;
+}
+
+div.caption {
+    float: left;
+    display: block;
+    width: 600px;
+    padding: 5px 0;
+    text-align: left;
+    color: #0459b4;
+    font-weight: bold;
+    border-bottom: 3px solid #0459b4;
+}
+
+div.outline {
+    float: left;
+    width: 578px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    text-align: left;
+}
+
+[aria-hidden="true"] {
+    display: none;
+}
+
+.menu,
+table.tabmenu a,
+table.cltbl p {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJBAMAAAASvxsjAAAAHlBMVEXt7vabos5jaZ7s7fbo6fFHVKVqdbZZZa47SZ8XIG8/cqRUAAAANklEQVR4XmMQS0tLE2AoB4IChtAA1tAAho4O444GINls0cAwc6bLzAkMM6d4gkggmMCgCSQVAOjEE9CaUi86AAAAAElFTkSuQmCC");
+    background-repeat: no-repeat;
+}
+
+.menu {
+    background-position: 10px 1em;
+}
+
+[aria-hidden] .menu {
+    background-position: 30px 1em;
+}
+
+.menu a {
+    padding: 0 0 0 15px;
+    line-height: 1.0;
+}
+
+[aria-hidden] .menu a {
+    padding-left: 35px;
+}
+
+.txt_s {
+    font-size: 86%;
+}
+
+.attention {
+    color: #cc0000;
+    font-size: 86%;
+}
+
+td.ttl {
+    padding: 10px 0 10px 10px;
+    background: url(/common/img/ttl_list.png) no-repeat;
+    text-align: left;
+    color: #3b499f;
+    font-weight: bold;
+    line-height: 1.0;
+}
+
+table.inner {
+    text-align: left;
+}
+
+.bdr,
+.bdr td,
+.bdr th,
+.calendar,
+.calendar td,
+.calendar th {
+    padding: 5px;
+    border: 1px solid #cccccc;
+}
+
+.bdr td table,
+.bdr td table td,
+.calendar td table,
+.calendar td table td,
+table.line td table,
+table.line td table td {
+    border: 0px;
+}
+
+.bdr th,
+.bdr_c th {
+    color: #3b499f;
+    font-weight: bold;
+    background: #e7f5ff;
+    text-align: center;
+}
+
+.calendar th {
+    background: #e7f5ff;
+    text-align: center;
+}
+
+.bdr th.lt {
+    text-align: left;
+    vertical-align: top;
+}
+
+.calendar td {
+    text-align: center;
+}
+
+.price {
+    text-align: right;
+}
+
+.price_i {
+    width: 130px;
+    text-align: right;
+}
+
+div.example {
+    float: left;
+    width: 50px;
+    height: 1.25em;
+    border: 1px solid #cccccc;
+    background: #ffccdd;
+}
+
+table.tabmenu {
+    border: 1px solid #cccccc;
+}
+
+table.tabmenu td {
+    padding: 10px;
+    border: 1px solid #cccccc;
+}
+
+table.tabmenu a {
+    margin: 0;
+    padding: 10px 10px 10px 25px;
+    background-position: 10px 0.9em;
+}
+
+.blue {
+    color: #0000ff;
+}
+
+.red {
+    color: #ff0000;
+}
+
+span.red img {
+    margin: 0 5px 0 1em;
+    vertical-align: text-top;
+}
+
+.orange {
+    color: #ffaa00;
+}
+
+.multiselect {
+    width: 250px;
+    text-align: center;
+    border: 1px solid #cccccc;
+}
+
+.multiselect select {
+    width: 250px;
+}
+/* ↓calendar_image.html専用============================== */
+
+table.cltbl,
+table.cltbl td,
+table.cltbl th {
+    padding: 1px;
+    border: 1px solid #cccccc;
+}
+
+table.cltbl th {
+    background: #e7f5ff;
+    text-align: center;
+}
+
+table.cltbl td table,
+table.cltbl td table td {
+    border: 0;
+}
+
+table.cltbl p {
+    padding: 0 0 0 10px;
+    background-position: 0px 0.4em;
+}
+
+table.icnbox {
+    width: 120px;
+}
+
+table.icnbox td {
+    height: 48px;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+img.icn {
+    float: right;
+    margin: 2px 0;
+}
+
+.bg_gray2 {
+    background: #eeeeee;
+}
+
+div.example2 {
+    float: left;
+    width: 63px;
+    height: 1.25em;
+    border: 1px solid #cccccc;
+    background: #fffccc;
+}
+
+table.dash {
+    border: 1px dashed #cccccc;
+    text-align: left;
+}
+/* 「heightLine」はdivの高さを揃えるjsと繋がるもので、このファイル内では特に記述していません */
+/* ↑calendar_image.html専用============================== */

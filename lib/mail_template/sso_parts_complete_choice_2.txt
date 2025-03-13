@@ -1,0 +1,8 @@
+＜搬出＞
+【配達先名】<::type2_name::>
+【カウンターお預かり日】<::type2_collect_date::> 14:00～20:00
+【配達希望日】<::type2_delivery_date::> <::type2_delivery_st_time::><::type2_delivery_ed_time::>
+【便種】<::type2_binshu_name::>
+<::type2_num_area::>【備考】
+<::type2_note::>
+

@@ -1,0 +1,165 @@
+@charset "utf-8";
+@import "mixin.scss";
+/*------------------------------------------------------------
+	delivery/art
+------------------------------------------------------------*/
+#main {
+	.titleBox {
+		margin-bottom: 23px;
+		@include sp {
+			margin-bottom: 25px;
+		}
+	}
+	.comImgBox {
+		margin-bottom: 82px;
+		@include sp {
+			margin-bottom: 40px;
+		}
+		.textBox {
+			padding-right: 110px;
+			@include sp {
+				padding-right: 20px;
+			}
+		}
+	}
+	.comTransfer {
+		margin-bottom: 47px;
+		.text01 {
+			margin: -4px 0 26px;
+			font-size: 1.6rem;
+			line-height: 1.9375;
+			@include sp {
+				font-size: 1.4rem;
+			}
+		}
+	}
+	.trading {		
+		margin-bottom: 56px;
+		.headLine03 {
+			margin-bottom: 37px;
+		}
+		.comImgList {
+			li {
+				width: calc((100% - 74px) / 3);
+				.pho {
+					border-radius: 6px;
+					border: 1px solid #D8D6E0;
+					img {
+						border-radius: 5px;
+					}
+					@include sp {
+						border-radius: 1.3vw;
+						img {
+							border-radius: 1.2vw;
+						}
+					}
+				}
+				span {
+					margin-top: 8px;
+				}
+			}
+		}
+		&.trad01 {
+			margin-bottom: 74px;
+			.headLine03 {
+				margin-bottom: 47px;
+			}
+			.comTextList {
+				li {
+					margin-top: 5px;
+					padding-bottom: 5px;
+					display: flex;
+					border-bottom: 1px solid #DEDDE2;
+					strong {
+						width: 300px;
+					}
+					span {
+						width: calc(100% - 300px);
+					}
+					@include sp {
+						display: block;
+						strong {
+							width: auto;
+						}
+						span {
+							display: block;
+							width: auto;
+						}
+					}
+				}
+			}
+		}
+	}
+	.flow {
+		.h2Ttl01 {
+			margin-bottom: 28px;
+			padding: 8px;
+			color: #fff;
+			font-size: 2.6rem;
+			font-weight: 500;
+			letter-spacing: 0.03em;
+			text-align: center;
+			background: #1B519F;
+			@include sp {
+				margin-bottom: 30px;
+				padding: 5px;
+				font-size: 1.8rem;
+				letter-spacing: 0.01em;
+			}
+		}
+		h3 {
+			margin: 0 0 23px 16px;
+			display: flex;
+				align-items: center;
+			color: #1B519F;
+			font-size: 1.8rem;
+			font-weight: 900;
+				span {
+				margin-right: 16px;
+				padding: 8px 0 4px;
+				font-size: 2.2rem;
+				font-weight: 700;
+				line-height: 1;
+				border-bottom: 2px solid #1B519F;
+					font-family: 'Roboto', sans-serif;
+					}
+					@include sp {
+				font-size: 1.4rem;
+				span {
+					padding-top: 0;
+					font-size: 2rem;
+					}
+				}
+			}
+		ul {
+			margin: 0 0 54px 58px;
+			border-top: 1px solid #DEDDE2;
+			width: 640px;
+			li {
+				padding: 5px 0 3px 32px;
+				font-size: 1.5rem;
+					font-weight: 700;
+				border-bottom: 1px solid #DEDDE2;
+				background: url(/img/delivery/art/icon.png) no-repeat left top 8px / 23px;
+				p {
+					margin: 8px 0 6px;
+					padding: 4px 18px 7px;
+					font-weight: 500;
+					border-radius: 3px;
+					background-color: #F2F3F9;
+					}
+				}
+			.liStyle {
+				border-bottom: none;
+					}
+					@include sp {
+				margin: 0 auto 50px;
+				width: auto;
+					li {
+					font-size: 1.3rem;
+					background-position: left top 4px;
+				}
+			}
+		}
+	}
+}

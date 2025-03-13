@@ -1,0 +1,328 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 2018/07/15, 14:37:40
+    Author     : smt-ct024
+*/
+
+.comiket_block dl {
+    height: 85px;
+}
+
+.w_30Per {
+    width: 30%;
+}
+
+.w_40Per {
+    width: 40%;
+}
+
+.boxWid {
+     width: 10%;
+}
+
+.dispSeigyoPC {
+    display: table-cell;
+}
+
+.dispSeigyoSP {
+    display: none;
+}
+
+@media only screen and (max-width: 980px) {
+    .comiket_block dl {
+        /*height: 115px;*/
+        height: auto;
+    }
+
+    .comiket_box_item_value_input {
+        width: 50% !important;
+    }
+
+    .boxWid {
+        width: 25% !important;
+    }
+
+    .comiket-detail-outbound-collect-date-fr-to,
+    .comiket-detail-outbound-delivery-date-fr-to {
+        padding-top: 0px;
+    }
+
+    .comiket_detail_outbound_collect_date_parts,
+    .comiket_detail_inbound_collect_date_parts,
+    .comiket_detail_outbound_delivery_date_parts,
+    .comiket_detail_inbound_delivery_date_parts {
+        width: 45%;
+    }
+
+    .comiket_detail_outbound_collect_time_sel,
+    .comiket_detail_inbound_delivery_time_sel {
+        display: block;
+        display: ruby;
+    }
+
+    .wb {
+        display: block;
+    }
+
+    .w_40Per {
+        width: 60%;
+    }
+
+    input[name="comiket_cargo_inbound_num_sel"],
+    input[name="comiket_cargo_outbound_num_sel"] {
+        margin-top: 10px;
+    }
+
+    .dispSeigyoPC {
+        display: none;
+    }
+
+    .dispSeigyoSP {
+        display: unset;
+    }
+}
+
+body div dl dd .comiket_event_eventsub_select {
+    white-space: nowrap;
+    float:left;
+    margin-right:20px;
+    /*margin-top:15px;*/
+    vertical-align: middle;
+}
+
+.comiket_diplay_none {
+    display: none;
+}
+
+.comiket_box_item_name,.comiket_charter_item_name {
+    width:10px;
+    white-space: nowrap;
+    padding-top:10px;
+}
+
+.comiket_box_item_value,.comiket_charter_item_value {
+    text-align: left;
+    padding-top:10px;
+}
+
+.eventsub_doc_block {
+    float:left;
+    /*margin-top: -20px;*/
+}
+
+.comiket_box_item_value_input {
+    width:50%;
+}
+
+.input-outbound-title,.input-inbound-title {
+    margin-bottom: 5px;
+    font-size:20px;
+}
+
+h4.table_title {
+    margin-bottom: 5px;
+    font-size:20px;
+}
+
+dl.service-outbound-item dd,dl.service-inbound-item dd {
+    padding-top:0px;
+}
+
+.eventsub_dl_link {
+    /*margin-top:10px;*/
+}
+
+td.event_eventsub_td_name {
+    width:10px;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+td.event_eventsub_td_dl_item {
+    padding-left: 10px;
+    vertical-align: middle;
+}
+
+
+
+.pc_dl_area {
+    display:block;
+}
+
+.sp_dl_area {
+    display:none;
+}
+
+@media only screen and (max-width: 980px) {
+    .pc_dl_area {
+        display:none;
+    }
+
+    .sp_dl_area {
+        margin-top:10px;
+        display:block;
+    }
+}
+
+.eventsub_sel {
+    display:none;
+}
+
+.box_table_td {
+    width:60%;
+}
+
+.attention_customer_cd {
+    /*margin-left: 378px;*/
+    margin-left: 0px;
+}
+
+@media only screen and (max-width: 608px) {
+    .attention_customer_cd {
+        margin-left: 0px;
+    }
+}
+
+.message_flame {
+    padding: 20px 15px;
+    border: solid 3px #0099ff;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+/** �L�����Z����ʂ̐\���ԍ��ꗗ */
+
+/*�e�[�u���S��*/
+.table1{
+    width:70%;
+    text-align:center;
+    font-weight:bold;
+    overflow:auto;
+    /*white-space: nowrap;*/
+    margin: auto;
+} 
+
+@media(max-width:768px) {
+    .table1{
+        width:100%;
+        text-align:center;
+        font-weight:bold;
+        overflow:auto;
+        /*white-space: nowrap;*/
+        margin: auto;
+    } 
+}
+
+/*���X�N���[���o�[�̑���*/
+.table1::-webkit-scrollbar{
+    height:5px;
+}
+/*���X�N���[���o�[�̔w�i�F*/
+.table1::-webkit-scrollbar-track{
+    background:#f1f1f1;
+}
+/*���X�N���[���o�[�̃J���[�Ɗp���ۂ߂�*/
+.table1::-webkit-scrollbar-thumb {
+    background:#8e8e8e;
+    border-radius:4px;
+}
+/*���o���Z���w��*/
+.table1 th{
+    background:#e7e7e7;
+    font-size:17px;
+    border:solid 1px #e8e8e8;
+    padding:10px;
+} 
+/*���o���ȊO�̃Z���w��*/
+.table1 td{
+    padding:10px;
+    border:solid 1px #e8e8e8;
+    font-size:16px;
+    vertical-align: middle;
+}
+/*�s�̘g��*/
+.table1 tr{
+    border:solid 2px #e8e8e8;
+} 
+/*�s�̊�w��*/
+.table1 tr:nth-child(odd){
+    background:#fffeee;
+} 
+/*�s�̋����w��*/
+.table1 tr:nth-child(even){
+    background:#eeffff;
+} 
+/*���o���ȊO�̃Z���Ƀ}�E�X�I�[�o�[���̃J���[�w��*/
+.table1 tr:hover{
+    background:#fff;
+} 
+
+
+.btn_area2 {
+    
+}
+
+.btn_area2 a.blue_btn {
+    color: #fff;
+    display: block;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0px;
+    height: 35px;
+    padding-top: 10px;
+}
+
+.btn_area2 ul li a.blue_btn {
+    background-color: #1774bc;
+    width: 200px;
+    min-width: 0px;
+}
+
+.btn_area2 ul li a.blue_btn:hover {
+    background-color: #5ba5de;
+}
+
+.language {
+    cursor: pointer;
+}
+.language:hover {
+    text-decoration:underline;
+}
+.dl_header {
+    padding: 5px;
+    line-height: 1.5;
+    font-size: 20px;
+    font-weight: bold;
+}
+.delivery_search {
+    margin-top: 10px;
+}
+.with-item-delivery {
+    width: 70%;
+}
+.search-btn {
+    width: 46px;
+    height: 32px;
+}
+.comiket-sei-mei {
+    width: 40%;
+}
+.size-note {
+  margin-bottom: 15px;
+}
+
+table.size-table-note th,.size-table-note td {
+  border: 1px solid #ccc;
+  height: 35px;
+  width: 30%;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 14px;
+}

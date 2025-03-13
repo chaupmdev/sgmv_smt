@@ -1,0 +1,130 @@
+@charset "utf-8";
+@import "mixin.scss";
+/*------------------------------------------------------------
+	business/moving/opening
+------------------------------------------------------------*/
+#main {
+	.titleBox {
+		margin-bottom: 50px;
+	}
+	.comImgBox {
+		@include pc {
+			margin-bottom: 80px;
+		}
+		.textBox {
+			@include pc {
+				padding-right: 110px;
+			}
+		}
+	}
+	.area {
+		.comTransfer {
+			margin-bottom: 80px;
+			@include sp {
+				margin-bottom: 40px;
+			}
+			.text {
+				text-align: left;
+				font-size: 1.6rem;
+				line-height: 1.94;
+				letter-spacing: 0;
+				@include sp {
+					font-size: 1.4rem;
+				}
+			}
+			.imgBox {
+				align-items: flex-start;
+				.textBox {
+					p {
+						margin-bottom: 28px;
+						font-size: 1.9rem;
+						font-weight: 700;
+						letter-spacing: 0.03em;
+						line-height: 1.5;
+					}
+					dl {
+						dt,
+						dd {
+							&:not(:last-of-type) {
+								margin-bottom: 16px;
+							}
+						}
+					}
+				}
+			}
+		}
+		.inner {
+			.borderBox {
+				margin-bottom: 40px;
+				padding-bottom: 30px;
+				border: 1px solid #B7B7C7;
+				h3 {
+					margin-bottom: 24px;
+					padding: 8px 20px;
+					color: #fff;
+					font-size: 2rem;
+					font-weight: 700;
+					line-height: 1.65;
+					letter-spacing: 0.03em;
+					text-align: center;
+					background-color: #767680;
+					@include sp {
+						padding: 8px 10px;
+						font-size: 1.6rem;
+					}
+				}
+				.textImg {
+					margin: 0 28px -77px 25px;
+					@include sp {
+						margin: 0 15px 20px;
+					}
+				}
+				p {
+					margin: 0 25px;
+					max-width: 640px;
+					font-size: 1.6rem;
+					font-weight: 500;
+					line-height: 1.75;
+					@include sp {
+						margin: 0 15px;
+						max-width: inherit;
+						font-size: 1.4rem;
+					}
+				}
+			}
+			&.inner01 {
+				margin-bottom: 81px;
+				@include sp {
+					margin-bottom: 40px;
+				}
+				.borderBox {
+					border-width: 5px;
+					border-color: #1B519F;
+					@include sp {
+						border-width: 3px;
+					}
+					h3 {
+						margin-bottom: 28px;
+						padding: 3px 20px 9px;
+						background-color: #1B519F;
+					}
+					.textImg {
+						margin: 0 21px 20px 22px;
+						@include sp {
+							margin: 0 15px 20px;
+						}
+					}
+					p {
+						margin: 0 21px;
+						max-width: inherit;
+						text-align: center;
+						@include sp {
+							margin: 0 15px;
+							text-align: left;
+						}
+					}
+				}
+			}
+		}
+	}
+}

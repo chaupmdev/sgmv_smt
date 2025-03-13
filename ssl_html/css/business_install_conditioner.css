@@ -1,0 +1,61 @@
+/*------------------------------------------------------------
+	business/install/conditioner
+------------------------------------------------------------*/
+#main .titleBox {
+  margin-bottom: 68px;
+}
+@media all and (max-width: 896px) {
+  #main .titleBox {
+    margin-bottom: 25px;
+  }
+}
+#main .comImgBox {
+  margin-bottom: 65px;
+}
+@media all and (max-width: 896px) {
+  #main .comImgBox {
+    margin-bottom: 40px;
+  }
+}
+#main .comImgBox .textBox {
+  padding-right: 110px;
+}
+@media all and (max-width: 896px) {
+  #main .comImgBox .textBox {
+    padding-right: 20px;
+  }
+}
+#main .comTransfer {
+  margin-bottom: 40px;
+}
+#main .comTransfer .text {
+  margin-bottom: 30px;
+}
+@media all and (max-width: 896px) {
+  #main .comTransfer .text {
+    margin-bottom: 25px;
+  }
+}
+#main .comTransfer .imgBox {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+#main .comTransfer .imgBox .textBox {
+  width: calc(100% - 382px);
+}
+#main .comTransfer .imgBox .textBox p {
+  margin-bottom: 21px;
+  font-size: 1.9rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+}
+#main .trading h2 {
+  margin-bottom: 37px;
+}
+@media all and (max-width: 896px) {
+  #main .trading h2 {
+    margin-bottom: 25px;
+  }
+}

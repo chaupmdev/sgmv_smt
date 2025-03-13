@@ -1,0 +1,263 @@
+@charset "utf-8";
+@import "mixin.scss";
+/*------------------------------------------------------------
+	business/install/setting
+------------------------------------------------------------*/
+#main {
+	.titleBox {
+		margin-bottom: 52px;
+		@include sp {
+			margin-bottom: 25px;
+		}
+	}
+	.comImgBox {
+		margin-bottom: 81px;
+		@include sp {
+			margin-bottom: 40px;
+		}
+		.textBox {
+			padding-right: 110px;
+			@include sp {
+				padding-right: 20px;
+			}
+		}
+	}
+	.comTransfer {
+		margin-bottom: 38px;
+		.text {
+			margin-bottom: 35px;
+			@include sp {
+				margin-bottom: 25px;
+			}
+		}
+		.imgBox {
+			align-items: flex-start;
+			.textBox {
+				dl {
+					margin-bottom: 22px;
+					dt {
+						width: 45px;
+						height: 45px;
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						justify-content: center;
+						color: #fff;
+						font-size: 0.5rem;
+						font-weight: 700;
+						line-height: 1.1;
+						letter-spacing: 0.03em;
+						background-color: #1B519F;
+						border-radius: 0;
+						font-family: inherit;
+						@include sp {
+							font-size: 1rem;
+						}
+						span {
+							font-size: 2.1rem;
+							font-weight: 400;
+							font-family: "Roboto", sans-serif;
+							@include sp {
+								font-size: 2rem;
+							}
+						}
+					}
+					dt, dd {
+						&:not(:last-of-type) {
+							margin-bottom: 17px;
+						}
+					}
+					dd {
+						margin-top: -3px;
+					}
+				}
+				p {
+					font-size: 1.6rem;
+					line-height: 1.94;
+					@include sp {
+						font-size: 1.4rem;
+					}
+				}
+			}
+		}
+	}
+	.area {
+		margin-bottom: 110px;
+		@include sp {
+			margin-bottom: 60px;
+		}
+		.product {
+			margin-bottom: 74px;
+			@include sp {
+				margin-bottom: 40px;
+			}
+			h2 {
+				margin-bottom: 38px;
+				@include sp {
+					margin-bottom: 25px;
+				}
+			}
+			.linkList {
+				a {
+					display: block;
+					&:hover {
+						opacity: 0.7;
+					}
+					.imgBox {
+						display: flex;
+						flex-wrap: wrap;
+						justify-content: space-between;
+						@include sp {
+							display: block;
+						}
+						.pho {
+							width: 288px;
+							position: relative;
+							@include sp {
+								margin-bottom: 30px;
+								width: auto;
+								img {
+									width: 100%;
+								}
+							}
+							span {
+								padding: 3px 14px 2px 10px;
+								display: block;
+								position: absolute;
+								left: 0;
+								top: 0;
+								color: #fff;
+								font-size: 1.2rem;
+								font-weight: 700;
+								border-radius: 0 0 2px 0;
+								background-color: #1B519F;
+								@include sp {
+									padding: 2px 10px;
+									font-size: 1.1rem;
+								}
+							}
+						}
+						.txtBox {
+							margin-top: -9px;
+							width: 567px;
+							@include sp {
+								margin-top: 0;
+								width: auto;
+							}
+							.ttl {
+								margin-bottom: 22px;
+								padding-bottom: 20px;
+								position: relative;
+								font-size: 1.9rem;
+								font-weight: 700;
+								line-height: 1.58;
+								letter-spacing: 0.03em;
+								border-bottom: 1px solid #D8D6E0;
+								background: url(/img/common/icon21.png) no-repeat right 6px top 14px / 11px auto;
+								&::before {
+									width: 26px;
+									height: 1px;
+									position: absolute;
+									right: 0;
+									bottom: -1px;
+									background-color: #1B519F;
+									content: '';
+								}
+								@include sp {
+									font-size: 1.6rem;
+									padding: 0 30px 10px 0;
+								}
+							}
+							p {
+								font-size: 1.6rem;
+								line-height: 1.94;
+								@include sp {
+									font-size: 1.4rem;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.trading {
+			h2 {
+				margin-bottom: 37px;
+				@include sp {
+					margin-bottom: 25px;
+				}
+			}
+			.photoList {
+				margin-top: -27px;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				&::after {
+					width: calc((100% - 76px) / 3);
+					content: '';
+					@include sp {
+						display: none;
+					}
+				}
+				li {
+					margin-top: 27px;
+					width: calc((100% - 76px) / 3);
+					display: flex;
+					@include sp {
+						width: calc((100% - 15px) / 2);
+					}
+					a {
+						width: 100%;
+						@include pc {
+							&:hover {
+								opacity: 0.7;
+							}
+						}
+					}
+					.pho {
+						margin-bottom: 8px;
+						border: 1px solid #D8D6E0;
+					}
+					p {
+						text-align: center;
+						@include sp {
+							font-size: 1.1rem;
+						}
+					}
+				}
+			}
+		}
+		&.area01 {
+			.trading {
+				h2 {
+					margin-bottom: 26px;
+				}
+			}
+		}
+		&.area02 {
+			margin-bottom: 0;
+			.comTransfer {
+				margin-bottom: 74px;
+				.imgBox {
+					.textBox {
+						dl {
+							dd {
+								margin-top: -1px;
+								font-size: 1.9rem;
+								line-height: 1.32;
+								@include sp {
+									font-size: 1.4rem;
+								}
+							}
+						}
+					}
+				}
+			}
+			.trading {
+				h2 {
+					margin-bottom: 25px;
+				}
+			}
+		}
+	}
+}

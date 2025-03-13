@@ -1,0 +1,67 @@
+/*------------------------------------------------------------
+	business_check
+------------------------------------------------------------*/
+#main .titleBox {
+  margin-bottom: 42px;
+}
+#main #conts {
+  width: 100%;
+}
+#main .topLinkList {
+  margin: -20px 0 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: auto;
+}
+#main .topLinkList li {
+  margin: 20px 20px 0 0;
+  width: calc((100% - 60px) / 4);
+}
+#main .topLinkList li:nth-of-type(4n) {
+  margin-right: 0;
+}
+@media all and (max-width: 896px) {
+  #main .topLinkList {
+    margin: 0 auto 40px;
+    display: block;
+  }
+  #main .topLinkList li {
+    margin: 0 auto 20px;
+    width: auto;
+    max-width: 440px;
+  }
+  #main .topLinkList li:last-of-type {
+    margin-bottom: 0;
+  }
+  #main .topLinkList li:nth-of-type(4n) {
+    margin-right: auto;
+  }
+  #main .topLinkList li a {
+    padding: 10px 50px 10px 10px;
+  }
+}
+@media all and (min-width: 897px) {
+  #main .comTextDl dd {
+    padding: 24px 20px 50px;
+  }
+}
+#main .comTextList li {
+  padding: 10px 0 15px 40px;
+}
+#main .comTextList li::before {
+  top: 12px;
+}
+#main .area {
+  margin-bottom: 112px;
+}
+@media all and (max-width: 896px) {
+  #main .area {
+    margin-bottom: 60px;
+  }
+}
+#main .area:last-of-type {
+  margin-bottom: 0;
+}

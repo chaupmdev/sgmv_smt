@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+#pre_form_title_01 .pcH,
+#pve_form_list_01 .pcH {
+    display: none !important;
+}

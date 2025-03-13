@@ -1,0 +1,22 @@
+<::header::>のお申し込み受付のご連絡
+sgmoving_system@sagawa-mov.co.jp
+
+<::surname::> <::forename::>様
+
+このたびはＳＧムービングウェブサイトをご利用いただきまして
+誠にありがとうございます。
+
+「<::header::>のお申し込みフォーム」より送信いただいた
+以下の内容でお申し込みを受付いたしました。
+
+==========================================================
+お申し込み内容
+==========================================================
+【申込み番号】<::comiket_id::>
+【問合せ番号】<::toiawase_no::>
+【出展イベント】<::event_name::>
+【会場名】<::place_name::>
+<::period_name::>
+【お申込者】<::comiket_personal_name_seimei::>
+【メールアドレス】<::comiket_mail::>
+<::collect_date::><::comiket_booth_name::><::comiket_building_name::>

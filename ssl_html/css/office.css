@@ -1,0 +1,507 @@
+/*------------------------------------------------------------
+	office
+------------------------------------------------------------*/
+#conts .titleBox {
+  margin-bottom: 40px;
+}
+#conts .titleBox .headLine02 {
+  margin-bottom: 13px;
+}
+#conts .titleBox p {
+  font-size: 1.6rem;
+}
+#conts .borderBox {
+  margin-bottom: 60px;
+  padding: 23px 20px 25px;
+  position: relative;
+  background-color: #F2F3F9;
+  border: 1px solid #D8D6E0;
+}
+#conts .borderBox:before {
+  position: absolute;
+  left: 103px;
+  top: 26px;
+  bottom: 26px;
+  width: 1px;
+  background-color: #B7B7C7;
+  content: "";
+}
+#conts .borderBox .listBox {
+  padding-left: 110px;
+  position: relative;
+}
+#conts .borderBox .listBox .ttl {
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  margin-top: -12px;
+  font-weight: 700;
+  color: #E8720C;
+  letter-spacing: 0.05em;
+}
+#conts .borderBox .listBox ul {
+  margin: -4px 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+#conts .borderBox .listBox ul li {
+  margin: 4px 43px 0 0;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+#conts .borderBox .listBox ul li a {
+  padding-left: 23px;
+  display: block;
+  background: url(/img/common/icon42.png) no-repeat left top 6px/16px auto;
+}
+@media all and (min-width: 897px) {
+  #conts .borderBox .listBox ul li a:hover {
+    text-decoration: underline;
+    background-image: url(/img/common/icon45.png);
+  }
+}
+#conts .borderBox .listBox.blue .ttl {
+  color: #1B519F;
+}
+@media all and (min-width: 897px) {
+  #conts .borderBox .listBox.blue ul li a:hover {
+    background-image: url(/img/common/icon43.png);
+  }
+}
+#conts .borderBox .listBox.green .ttl {
+  color: #1B9F71;
+}
+#conts .borderBox .listBox.green ul {
+  margin-bottom: 0 !important;
+}
+@media all and (min-width: 897px) {
+  #conts .borderBox .listBox.green ul li a:hover {
+    background-image: url(/img/common/icon44.png);
+  }
+}
+#conts .borderBox .listBox.green:last-child {
+  margin-top: 15px;
+}
+#conts .mapImg {
+  width: 746px;
+  margin: 0 0 102px 97px;
+}
+#conts .photoBox {
+  margin-bottom: 94px;
+}
+#conts .photoBox .pho {
+  margin-bottom: 19px;
+}
+#conts .photoBox .pho img {
+  width: 100%;
+}
+#conts .photoBox .ttl {
+  margin-bottom: -1px;
+  font-weight: 500;
+  font-size: 2.4rem;
+  letter-spacing: 0.03em;
+}
+#conts .photoBox .text {
+  font-size: 1.6rem;
+}
+#conts .photoBox .text span {
+  margin: 0 5px 0 29px;
+  font-weight: 500;
+}
+#conts a.mapLink {
+  margin: -5px 0 0 17px;
+  padding: 0 20px 2px 26px;
+  display: inline-block;
+  color: #1B519F;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: 1px solid #1B519F;
+  border-radius: 15px;
+  vertical-align: middle;
+  background: url(/img/common/icon34.png) no-repeat left 13px center/8px auto, url(/img/common/icon35.png) no-repeat right 9px center/5px auto;
+}
+#conts a.mapLink:hover {
+  opacity: 0.7;
+}
+#conts a.logi {
+  padding: 0 20px 2px 13px;
+  margin-top: -5px;
+  margin-left: 5px;
+  color: #b6367d;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 15px;
+  vertical-align: middle;
+  border: 1px solid #b6367d;
+  background: url(/img/common/icon55.png) no-repeat right 9px center / 5px auto;
+}
+#conts a.logi:hover {
+  opacity: 0.7;
+}
+#conts .photoList {
+  margin: -58px 0 70px;
+  position: relative;
+}
+#conts .photoList:after {
+  width: 270px;
+  content: "";
+}
+#conts .photoList li {
+  width: 270px;
+  margin-top: 58px;
+}
+#conts .photoList li .pho {
+  margin-bottom: 14px;
+}
+#conts .photoList li .pho img {
+  width: 100%;
+}
+#conts .photoList li .ttl {
+  margin-bottom: 14px;
+  font-size: 1.9rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+#conts .photoList li dl {
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+#conts .photoList li dl dt {
+  float: left;
+  font-weight: 500;
+}
+#conts .photoList li dl dd {
+  padding: 0 0 8px 3.3em;
+}
+#conts .textList {
+  margin-top: -30px;
+  position: relative;
+}
+#conts .textList:after {
+  width: 270px;
+  content: "";
+}
+#conts .textList li {
+  width: 33.333333%;
+  margin-top: 30px;
+  padding-left: 24px;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+#conts .textList li:before {
+  position: absolute;
+  left: 0;
+  top: 6px;
+  bottom: 0;
+  width: 3px;
+  background-color: #DEDDE2;
+  content: "";
+}
+#conts .textList li .ttl {
+  margin-bottom: 13px;
+  font-size: 1.9rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+#conts .textList li .ttl .mapLink {
+  margin-left: 10px;
+}
+#conts .textList li .text {
+  width: 100%;
+  margin-right: -20px;
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+#conts .textList li#logistics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#conts .textList li#logistics::before {
+  display: none;
+}
+@media all and (max-width: 896px) {
+  #conts .textList li#logistics .comBtn {
+    width: 68%;
+  }
+}
+#conts .textList li#logistics .comBtn a {
+  font-size: 1.5rem;
+  padding: 10px 10px 10px 25px;
+  text-align: left;
+  background-size: 24px auto;
+}
+#conts .textList li #logistics_modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.65s;
+  transition: 0.65s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  z-index: 10000;
+}
+#conts .textList li #logistics_modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+#conts .textList li #logistics_modal .logistics_modal_bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+#conts .textList li #logistics_modal .btn_close {
+  position: absolute;
+  right: 32px;
+  z-index: 100;
+  width: 20px;
+  height: 20px;
+  top: 32px;
+  cursor: pointer;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+@media all and (max-width: 896px) {
+  #conts .textList li #logistics_modal .btn_close {
+    right: 10px;
+    top: 14px;
+  }
+}
+#conts .textList li #logistics_modal .logistics_modal_contents {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0;
+  background: #fff !important;
+  padding: 25px 30px 40px;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1001;
+}
+@media all and (max-width: 896px) {
+  #conts .textList li #logistics_modal .logistics_modal_contents {
+    width: 90%;
+    margin: 0;
+    padding: 10px;
+  }
+}
+#conts .textList li #logistics_modal .logistics_modal_contents .title {
+  border-bottom: 1px solid #4F79B5;
+  padding-bottom: 5px;
+  margin-bottom: 12px;
+  color: #000;
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+@media all and (max-width: 896px) {
+  #conts .textList li #logistics_modal .logistics_modal_contents .title {
+    font-size: 1.5rem;
+    margin: 0 12px 13px;
+  }
+}
+#conts .textList li #logistics_modal .logistics_modal_contents .links {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 15px;
+}
+@media all and (max-width: 896px) {
+  #conts .textList li #logistics_modal .logistics_modal_contents .links {
+    margin: 0 12px 13px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+#conts .textList li #logistics_modal .logistics_modal_contents .links .link-item {
+  margin: 0;
+  padding-left: 0;
+  width: calc((100% - 15px) / 2);
+  overflow: hidden;
+}
+#conts .textList li #logistics_modal .logistics_modal_contents .links .link-item::before {
+  display: none;
+}
+@media all and (max-width: 896px) {
+  #conts .textList li #logistics_modal .logistics_modal_contents .links .link-item {
+    width: 100%;
+  }
+}
+#conts .textList li #logistics_modal .logistics_modal_contents .links .link-item:nth-of-type(2n) {
+  margin-right: 0;
+}
+#conts .textList li #logistics_modal .logistics_modal_contents .links .link-item a {
+  display: block;
+  padding: 0 10px 0 70px;
+  height: 67px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 700;
+  background: #1b519f url(/img/common/icon47.png) no-repeat left 31px center/16px auto;
+  position: relative;
+}
+@media all and (max-width: 896px) {
+  #conts .textList li #logistics_modal .logistics_modal_contents .links .link-item a {
+    font-size: 1.4rem;
+  }
+}
+#conts .textList li #logistics_modal .logistics_modal_contents .links .link-item a::before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  left: 70px;
+  top: 0;
+  background: #fff;
+  opacity: 0.3;
+}
+#conts .textList li #logistics_modal .logistics_modal_contents .links .link-item a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.3)));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+  -webkit-transform: skewX(-25deg);
+  transform: skewX(-25deg);
+}
+@media all and (min-width: 897px) {
+  #conts .textList li #logistics_modal .logistics_modal_contents .links .link-item a:hover::after {
+    -webkit-animation: shine 0.7s;
+            animation: shine 0.7s;
+  }
+}
+#conts > .textList {
+  margin-bottom: 45px;
+}
+@media all and (max-width: 896px) {
+  #conts .titleBox {
+    margin-bottom: 20px;
+  }
+  #conts .titleBox .headLine02 {
+    margin-bottom: 13px;
+  }
+  #conts .titleBox p {
+    font-size: 1.5rem;
+  }
+  #conts .borderBox {
+    margin-bottom: 30px;
+    padding: 15px;
+  }
+  #conts .borderBox:before {
+    display: none;
+  }
+  #conts .borderBox .listBox {
+    padding-left: 0;
+  }
+  #conts .borderBox .listBox .ttl {
+    position: static;
+    margin-top: 0;
+  }
+  #conts .borderBox .listBox ul li {
+    margin-right: 20px;
+  }
+  #conts .mapImg {
+    width: auto;
+    text-align: center;
+    margin: 0 0 30px;
+  }
+  #conts .photoBox {
+    margin-bottom: 30px;
+  }
+  #conts .photoBox .pho {
+    margin-bottom: 10px;
+  }
+  #conts .photoBox .ttl {
+    font-size: 1.9rem;
+  }
+  #conts .photoBox .text {
+    font-size: 1.5rem;
+  }
+  #conts .photoBox .text span {
+    margin: 0;
+  }
+  #conts a.mapLink {
+    margin: -5px 0 0 5px;
+    padding: 1px 20px 1px 26px;
+  }
+  #conts .photoList {
+    margin: 0 0 30px;
+    display: block;
+  }
+  #conts .photoList li {
+    width: auto;
+    margin: 0 0 20px;
+  }
+  #conts .photoList li:last-child {
+    margin-bottom: 0;
+  }
+  #conts .photoList li .pho {
+    margin-bottom: 5px;
+  }
+  #conts .photoList li .ttl {
+    margin-bottom: 5px;
+    font-size: 1.7rem;
+  }
+  #conts .photoList li dl {
+    font-size: 1.3rem;
+  }
+  #conts .textList {
+    margin: 0;
+    display: block;
+  }
+  #conts .textList li {
+    width: auto;
+    margin: 0 0 20px;
+    padding-left: 10px;
+  }
+  #conts .textList li:before {
+    width: 2px;
+  }
+  #conts .textList li .ttl {
+    margin-bottom: 5px;
+    font-size: 1.7rem;
+  }
+  #conts .textList li .ttl .mapLink {
+    margin-left: 5px;
+  }
+  #conts .textList li .text {
+    margin-right: 0;
+    font-size: 1.3rem;
+  }
+}

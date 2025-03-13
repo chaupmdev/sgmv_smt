@@ -1,0 +1,5 @@
+＜手荷物＞
+【お預かり日】<::type1_collect_date::> <::type1_collect_st_time::><::type1_collect_ed_time::>
+【サービス選択】<::type1_service::>
+<::type1_num_area::>
+

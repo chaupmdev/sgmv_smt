@@ -1,0 +1,476 @@
+@charset "utf-8";
+@import "mixin.scss";
+/*------------------------------------------------------------
+	office
+------------------------------------------------------------*/
+#conts {
+	.titleBox {
+		margin-bottom: 40px;
+		.headLine02 {
+			margin-bottom: 13px;
+		}
+		p {
+			font-size: 1.6rem;
+		}
+	}
+	.borderBox {
+		margin-bottom: 60px;
+		padding: 23px 20px 25px;
+		position: relative;
+		background-color: #F2F3F9;
+		border: 1px solid #D8D6E0;
+		&:before {
+			position: absolute;
+			left: 103px;
+			top: 26px;
+			bottom: 26px;
+			width: 1px;
+			background-color: #B7B7C7;
+			content: "";
+		}
+		.listBox {
+			padding-left: 110px;
+			position: relative;
+			.ttl {
+				position: absolute;
+				left: 6px;
+				top: 50%;
+				margin-top: -12px;
+				font-weight: 700;
+				color: #E8720C;
+				letter-spacing: 0.05em;
+			}
+			ul {
+				margin: -4px 0 15px;
+				display: flex;
+				flex-wrap: wrap;
+				li {
+					margin: 4px 43px 0 0;
+					font-weight: 700;
+					letter-spacing: 0.05em;
+					a {
+						padding-left: 23px;
+						display: block;
+						background: url(/img/common/icon42.png) no-repeat left top 6px / 16px auto;
+						@include pc {
+							&:hover {
+								text-decoration: underline;
+								background-image: url(/img/common/icon45.png);
+							}
+						}
+					}
+				}
+			}
+			&.blue {
+				.ttl {
+					color: #1B519F;
+				}
+				ul {
+					li {
+						a {
+							@include pc {
+								&:hover {
+									background-image: url(/img/common/icon43.png);
+								}
+							}
+						}
+					}
+				}
+			}
+			&.green {
+				.ttl {
+					color: #1B9F71;
+				}
+				ul {
+					margin-bottom: 0 !important;
+					li {
+						a {
+							@include pc {
+								&:hover {
+									background-image: url(/img/common/icon44.png);
+								}
+							}
+						}
+					}
+				}
+				&:last-child{
+					margin-top: 15px;
+				}
+			}
+		}
+	}
+	.mapImg {
+		width: 746px;
+		margin: 0 0 102px 97px;
+	}
+	.photoBox {
+		margin-bottom: 94px;
+		.pho {
+			margin-bottom: 19px;
+			img {
+				width: 100%;
+			}
+		}
+		.ttl {
+			margin-bottom: -1px;
+			font-weight: 500;
+			font-size: 2.4rem;
+			letter-spacing: 0.03em;
+		}
+		.text {
+			font-size: 1.6rem;
+			span {
+				margin: 0 5px 0 29px;
+				font-weight: 500;
+			}
+		}
+	}
+	a.mapLink {
+		margin: -5px 0 0 17px;
+		padding: 0 20px 2px 26px;
+		display: inline-block;
+		color: #1B519F;
+		font-size: 1.2rem;
+		font-weight: 700;
+		border: 1px solid #1B519F;
+		border-radius: 15px;
+		vertical-align: middle;
+		background: url(/img/common/icon34.png) no-repeat left 13px center/8px auto, url(/img/common/icon35.png) no-repeat right 9px center/5px auto;
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+	.photoList {
+		margin: -58px 0 70px;
+		position: relative;
+		&:after {
+			width: 270px;
+			content: "";
+		}
+		li {
+			width: 270px;
+			margin-top: 58px;
+			.pho {
+				margin-bottom: 14px;
+				img {
+					width: 100%;
+				}
+			}
+			.ttl {
+				margin-bottom: 14px;
+				font-size: 1.9rem;
+				font-weight: 500;
+				letter-spacing: 0.03em;
+			}
+			dl {
+				font-size: 1.4rem;
+				line-height: 1.5;
+				dt {
+					float: left;
+					font-weight: 500;
+				}
+				dd {
+					padding: 0 0 8px 3.3em;
+				}
+			}
+		}
+	}
+	.textList {
+		margin-top: -30px;
+		position: relative;
+		&:after {
+			width: 270px;
+			content: "";
+		}
+		li {
+			width: 270px;
+			margin-top: 30px;
+			padding-left: 24px;
+			position: relative;
+			box-sizing: border-box;
+			&:before {
+				position: absolute;
+				left: 0;
+				top: 6px;
+				bottom: 0;
+				width: 3px;
+				background-color: #DEDDE2;
+				content: "";
+			}
+			.ttl {
+				margin-bottom: 13px;
+				font-size: 1.9rem;
+				font-weight: 500;
+				letter-spacing: 0.03em;
+				.mapLink {
+					margin-left: 10px;
+				}
+			}
+			.text {
+				margin-right: -20px;
+				font-size: 1.4rem;
+				line-height: 1.5;
+			}
+			&#logistics {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				&::before {
+					display: none;
+				}
+				.comBtn {
+					@include sp {
+						width: 68%;
+					}
+					a {
+						font-size: 1.5rem;
+						padding: 10px 10px 10px 25px;
+						text-align: left;
+						background-size: 24px auto;
+					}
+				}
+			}
+			#logistics_modal {
+				width: 100%;
+				height: 100%;
+				position: fixed;
+				opacity: 0;
+				visibility: hidden;
+				transition: 0.65s;
+				box-sizing: border-box;
+				z-index: 10000;
+				&.active {
+					opacity: 1;
+					visibility: visible;
+				}
+				.logistics_modal_bg {
+					position: fixed;
+					width: 100%;
+					height: 100%;
+					top: 0;
+					left: 0;
+					background-color: rgba(0, 0, 0, 0.5);
+					z-index: 1000;
+				}
+				.btn_close {
+					position: absolute;
+					right: 32px;
+					z-index: 100;
+					width: 20px;
+					height: 20px;
+					top: 32px;
+					cursor: pointer;
+					filter: invert(100%);
+					@include sp {
+						right: 10px;
+						top: 14px;
+					}
+				}
+				.logistics_modal_contents {
+					width: 100%;
+					max-width: 1024px;
+					margin: 0;
+					background: #fff !important;
+					padding: 25px 30px 40px;
+					overflow: hidden;
+					position: fixed;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%,-50%);
+					z-index: 1001;
+					@include sp {
+						width: 90%;
+						margin: 0;
+						// background: #1B519F !important;
+						padding: 10px;
+					}
+					.title {
+						border-bottom: 1px solid #4F79B5;
+						padding-bottom: 5px;
+						margin-bottom: 12px;
+						color: #000;
+						font-size: 1.7rem;
+						font-weight: 700;
+						letter-spacing: 0.03em;
+						@include sp {
+							font-size: 1.5rem;
+							margin: 0 12px 13px;
+						}
+					}
+					.links {
+						margin: 0;
+						display: flex;
+						flex-wrap: wrap;
+						gap: 15px;
+						@include sp {
+							margin: 0 12px 13px;
+							justify-content: space-between;
+						}
+						.link-item {
+							margin: 0;
+							padding-left: 0;
+							width: calc((100% - 15px) / 2);
+							overflow: hidden;
+							&::before {
+								display: none;
+							}
+							@include sp {
+								width: 100%;
+							}
+							&:nth-of-type(2n) {
+								margin-right: 0;
+							}
+							a {
+								display: block;
+								padding: 0 10px 0 70px;
+								height: 67px;
+								display: flex;
+								justify-content: center;
+								align-items: center;
+								color: #fff;
+								font-size: 1.7rem;
+    							font-weight: 700;
+								background: #1b519f url(/img/common/icon47.png) no-repeat left 31px center / 16px auto;
+								position: relative;
+								@include sp {
+									font-size: 1.4rem;
+								}
+								&::before {
+									content: "";
+									width: 1px;
+									height: 100%;
+									position: absolute;
+									left: 70px;
+									top: 0;
+									background: #fff;
+									opacity: .3;
+								}
+								&::after {
+									content: "";
+									position: absolute;
+									top: 0;
+									left: -75%;
+									width: 50%;
+									height: 100%;
+									background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.3)));
+									background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+									-webkit-transform: skewX(-25deg);
+									transform: skewX(-25deg);
+								}
+								@include pc {
+									&:hover {
+										&::after {
+											animation: shine 0.7s;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+		
+			}
+		}
+	}
+	> .textList {
+		margin-bottom: 45px;
+	}
+	@include sp {
+		.titleBox {
+			margin-bottom: 20px;
+			.headLine02 {
+				margin-bottom: 13px;
+			}
+			p {
+				font-size: 1.5rem;
+			}
+		}
+		.borderBox {
+			margin-bottom: 30px;
+			padding: 15px;
+			&:before {
+				display: none;
+			}
+			.listBox {
+				padding-left: 0;
+				.ttl {
+					position: static;
+					margin-top: 0;
+				}
+				ul {
+					li {
+						margin-right: 20px;
+					}
+				}
+			}
+		}
+		.mapImg {
+			width: auto;
+			text-align: center;
+			margin: 0 0 30px;
+		}
+		.photoBox {
+			margin-bottom: 30px;
+			.pho {
+				margin-bottom: 10px;
+			}
+			.ttl {
+				font-size: 1.9rem;
+			}
+			.text {
+				font-size: 1.5rem;
+				span {
+					margin: 0;
+				}
+			}
+		}
+		a.mapLink {
+			margin: -5px 0 0 5px;
+			padding: 1px 20px 1px 26px;
+		}
+		.photoList {
+			margin: 0 0 30px;
+			display: block;
+			li {
+				width: auto;
+				margin: 0 0 20px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+				.pho {
+					margin-bottom: 5px;
+				}
+				.ttl {
+					margin-bottom: 5px;
+					font-size: 1.7rem;
+				}
+				dl {
+					font-size: 1.3rem;
+				}
+			}
+		}
+		.textList {
+			margin: 0;
+			display: block;
+			li {
+				width: auto;
+				margin: 0 0 20px;
+				padding-left: 10px;
+				&:before {
+					width: 2px;
+				}
+				.ttl {
+					margin-bottom: 5px;
+					font-size: 1.7rem;
+					.mapLink {
+						margin-left: 5px;
+					}
+				}
+				.text {
+					margin-right: 0;
+					font-size: 1.3rem;
+				}
+			}
+		}
+	}
+}

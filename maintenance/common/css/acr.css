@@ -1,0 +1,73 @@
+@charset "utf-8";
+@font-face {
+    font-family: "Yu Gothic";
+    src: local("Yu Gothic Medium");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Yu Gothic";
+    src: local("Yu Gothic Medium");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Yu Gothic";
+    src: local("Yu Gothic Medium");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Yu Gothic";
+    src: local("Yu Gothic Medium");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Yu Gothic";
+    src: local("Yu Gothic Bold");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: local("Helvetica Neue Regular");
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: local("Helvetica Neue Regular");
+    font-weight: 200;
+}
+
+body,
+input,
+button {
+    color: #111;
+    font-family: 'ヒラギノUD明朝 W6', 'ヒラギノUD明朝 W4', 'TBUD明朝 H', 'TBUD明朝 M', -apple-system, BlinkMacSystemFont, 'ヒラギノ明朝 Pr6N', 'Hiragino Mincho Pr6N', 'ヒラギノ明朝 ProN', 'Hiragino Mincho ProN', 'ヒラギノ明朝 StdN', 'Hiragino Mincho StdN', HiraMinProN-W3, 'はんなり明朝', 'さわらび明朝', '游明朝体+36ポかな', 'YuMincho +36p Kana', 'TBUDゴシックH', 'TBUDゴシックE', 'TBUDゴシックB', 'TBUDゴシックR', 'TBUDゴシックSL', 'TBUD丸ゴシックH', 'TBUD丸ゴシックB', 'TBUD丸ゴシックR', 'TBUD丸ゴシックSL', 'ヒラギノ角ゴシック', 'Hiragino Sans', 'ヒラギノ角ゴ Pr6N', 'Hiragino Kaku Gothic Pr6N', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ StdN', 'Hiragino Kaku Gothic StdN', 'Noto Serif', 'Noto Sans Japanese', 'Noto Sans JP', 'Noto Sans CJK JP', Nasu, '源真ゴシック', 'Yu Gothic', 'Segoe UI', 'メイリオ', Meiryo, 'IPAexゴシック', 'IPAゴシック', 'Myrica', 'MyricaM', 'VL Gothic', Ricty, 'Ricty Diminished', 'Migu 1M', 'M+ 1m', 'Source Han Code JP', 'Monaco', 'Consolas', 'Courier New', Courier, monospace !important;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 900;
+}
+
+.fieldset {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+fieldset {
+    border-color: #111;
+}
+
+input {
+    font-size: 2em;
+    ime-mode: disabled;
+    width: 5em;
+}
+
+button {
+    background-color: #eee;
+    border: #ddd solid 4px;
+    cursor: pointer;
+    font-size: 3em;
+}

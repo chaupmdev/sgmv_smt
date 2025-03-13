@@ -1,0 +1,23 @@
+催事・イベント配送受付サービスのキャンセル受付のご連絡[確認用][<::conveni_prepay_status::>]
+sgmoving_system@sagawa-mov.co.jp
+
+[確認用]
+[<::conveni_prepay_status::>]
+
+<::surname::> <::forename::>様
+
+このたびはＳＧムービングウェブサイトをご利用いただきまして
+誠にありがとうございます。
+
+以下の内容のキャンセルを受付いたしました。
+
+==========================================================
+お申し込み内容
+==========================================================
+【申込み番号】<::comiket_id::>
+【出展イベント】<::event_name::>
+【会場名】<::place_name::>
+【期間】<::period_name::>
+【お申込者】<::comiket_personal_name_seimei::>
+【メールアドレス】<::comiket_mail::><::comiket_booth_name::><::comiket_building_name::>
+

@@ -1,0 +1,80 @@
+@charset "utf-8";
+@import "mixin.scss";
+/*------------------------------------------------------------
+	business/case/moving05
+------------------------------------------------------------*/
+#conts.moving05{
+    .txtimgBox{
+        display: flex;
+        margin-top: 50px;
+        @include sp{
+            display: block;
+        }
+    }
+    .titleBox{
+        @include sp{
+            display: block;
+        }
+        .headLine02{
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+    .txtBox{
+        background: #F2F3F9;
+        width: 550px;
+        padding: 55px;
+        @include sp{
+            width: 100%;
+            padding: 20px;
+        }
+        .dec_Text{
+            text-align: center;
+            @include sp{
+                text-align: center;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+        .bgBlue{
+            background: #1B519F;
+            color: #ffffff;
+            padding: 7px 15px;
+            font-size: 35px;
+            margin: 0 3px;
+            @include sp{
+                padding: 0;
+                width: calc((100% - 36px)/6);
+                display: inline-block;
+                margin-bottom: 7px;
+                font-size: 7vw;
+            }
+        }
+        .text{
+            margin: 10px 0 25px;
+            p{
+                font-size: 19px;
+                text-align: center;
+                font-weight: 600;
+                color: #1B519F;
+                letter-spacing: 2px;
+            }
+        }
+        p{
+            width: 420px;
+            margin: 0 auto;
+            letter-spacing: .05em;
+            @include sp{
+                width: 100%;
+            }
+        }
+    }
+    .imgBox{
+        img{
+            @include sp{
+                width: 100%;
+            }
+        }
+    }
+} 

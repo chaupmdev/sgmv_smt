@@ -1,0 +1,7 @@
+＜搬入＞
+【集荷先名】<::type1_name::>
+【お預かり日時】<::type1_collect_date::> <::type1_collect_st_time::><::type1_collect_ed_time::>
+【引渡し日】<::type1_delivery_date::> <::type1_delivery_st_time::><::type1_delivery_ed_time::>
+<::type1_num_area::>【備考】
+<::type1_note::>
+

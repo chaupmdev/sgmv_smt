@@ -1,0 +1,71 @@
+/*------------------------------------------------------------
+	business/install/setting/led
+------------------------------------------------------------*/
+#main .titleBox {
+  margin-bottom: 68px;
+}
+@media all and (max-width: 896px) {
+  #main .titleBox {
+    margin-bottom: 25px;
+  }
+}
+#main .comImgBox {
+  margin-bottom: 64px;
+}
+@media all and (max-width: 896px) {
+  #main .comImgBox {
+    margin-bottom: 40px;
+  }
+}
+#main .comImgBox .textBox {
+  padding: 52px 110px 53px 48px;
+}
+#main .comImgBox .textBox dl dd {
+  line-height: 1.2;
+}
+@media all and (max-width: 896px) {
+  #main .comImgBox .textBox {
+    padding: 20px;
+  }
+}
+#main .comTransfer {
+  margin-bottom: 40px;
+}
+#main .comTransfer .imgBox {
+  margin-bottom: 18px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+#main .comTransfer .imgBox .textBox {
+  width: calc(100% - 382px);
+}
+#main .comTransfer .imgBox .textBox dl dt:not(:last-of-type), #main .comTransfer .imgBox .textBox dl dd:not(:last-of-type) {
+  margin-bottom: 17px;
+}
+#main .comTransfer .imgBox .textBox p {
+  margin-bottom: 28px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+}
+#main .comTransfer .note {
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  line-height: 1.6875;
+}
+@media all and (max-width: 896px) {
+  #main .comTransfer .note {
+    margin-bottom: 25px;
+  }
+}
+#main .trading h2 {
+  margin-bottom: 37px;
+}
+@media all and (max-width: 896px) {
+  #main .trading h2 {
+    margin-bottom: 25px;
+  }
+}

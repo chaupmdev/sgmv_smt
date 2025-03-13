@@ -1,0 +1,271 @@
+dl.plan_column {
+    display: table;
+}
+
+dl.plan_column dt {
+    background-color: #e6e6e2;
+    border: 1px solid #ccc;
+    text-align: center;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 200px;
+    display: table-cell;
+    border-right: 0px solid #ccc;
+}
+
+dl.plan_column dd {
+    border: 1px solid #ccc;
+    display: table-cell;
+    padding: 20px;
+}
+
+dl.plan_column dd img {
+    width: 100%;
+    max-width: 573px;
+}
+
+dl.plan_column dd .text_caution {
+    color: #e7211a;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    dl.plan_column {
+        display: table;
+    }
+    dl.plan_column dd {
+        border: 0px solid #ccc;
+        display: table-cell;
+        padding: 0px;
+        background-color: #fff;
+    }
+    dl.plan_column dd img {
+        width: 100%;
+    }
+    dl.plan_column dd .text_caution {
+        color: #e7211a;
+        margin-top: 10px;
+    }
+    dl.plan_column #course {
+        width: 100%;
+        background-color: #f1f1ee;
+        position: relative;
+    }
+    dl.plan_column #course:after {
+        width: 0;
+        height: 0;
+        content: '';
+        margin-left: -10px;
+        border-top: 15px solid #f1f1ee;
+        border-right: 10px solid transparent;
+        border-bottom: 0 solid transparent;
+        border-left: 10px solid transparent;
+        position: absolute;
+        left: 50%;
+        bottom: -10px;
+    }
+    dl.plan_column #course ul {
+        padding: 20px;
+        margin-bottom: 25px;
+    }
+    dl.plan_column #course ul li {
+        float: left;
+        width: 50%;
+        margin-bottom: 15px;
+    }
+}
+
+.plan_table .select_plan {
+    padding: 15px;
+    background-color: #f1f1ee;
+    margin-top: 10px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.plan_table .select_plan.form_error {
+    background-color: #fdd !important;
+}
+
+.plan_table .select_plan {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.plan_table .select_plan ul.service_icon li {
+    border: 1px solid #16b7c1;
+    font-size: 10px;
+    padding: 5px;
+    float: left;
+    background-color: #fff;
+    min-width: 50px;
+    text-align: center;
+    color: #16b7c1;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.plan_table .select_plan .sentence {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.plan_table .select_plan.form_error:nth-of-type(2n) {
+    background-color: #fdf7e2;
+}
+
+ul.form_radio {
+    font-size: 14px;
+    color: #202020;
+}
+
+ul.form_radio li {
+    float: left;
+    width: 25%;
+    margin-bottom: 25px;
+}
+
+ul.schedule_date li {
+    float: left;
+    margin-right: 10px;
+}
+
+.form_table {
+    font-size: 14px;
+}
+
+.form_table table tr td {
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 768px) {
+    .form_table table tr td {
+        padding: 8px;
+    }
+}
+
+.form_table table tr td.plan_name {
+    font-weight: bold;
+}
+
+.form_table table tr td.plan_text {
+    text-align: left;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 768px) {
+    .form_table table tr th {
+        padding: 8px;
+    }
+}
+
+.form_table {
+    font-size: 14px;
+}
+
+.form_table table tr td {
+    font-weight: normal;
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 768px) {
+    .form_table table tr td {
+        padding: 8px;
+    }
+}
+
+.form_table table tr td.plan_name {
+    font-weight: bold;
+}
+
+.form_table table tr td.plan_text {
+    text-align: left;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 768px) {
+    .form_table table tr th {
+        padding: 8px;
+    }
+}
+
+.other .form_table tr th {
+    text-align: left;
+}
+
+.other .form_table tr td {
+    text-align: left;
+    background-color: #fff;
+}
+
+.other .form_table ul.form_radio li {
+    margin-bottom: 0px;
+    width: 160px;
+}
+
+.other .form_table .sp_table {
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 768px) {
+    .other .form_table .sp_table table tr td {
+        padding: 8px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .other .form_table .sp_table table tr th {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+.other .form_table .sp_table p.sentence {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.other .form_table .sp_table .form_radio li {
+    float: left;
+    width: 50%;
+}
+
+input#submit_button {
+    padding: 15px 0px;
+    font-size: 17px;
+    background-color: #16b7c1;
+    color: #fff;
+    border-style: none;
+    cursor: pointer;
+    text-align: center;
+    background-image: url(/images/common/img_allow_5.png);
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-weight: bold;
+    width: 400px;
+}
+
+input#submit_button:hover {
+    opacity: 0.8;
+}
+
+@media only screen and (max-width: 768px) {
+    input#submit_button {
+        width: 90%;
+    }
+}

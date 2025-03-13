@@ -1,0 +1,7 @@
+＜搬出＞
+【お届け先名】<::type2_name::>
+【お預かり日】<::type2_collect_date::> <::type2_collect_st_time::><::type2_collect_ed_time::>
+【サービス選択】<::type2_service::>
+【お届け指定日時】<::type2_delivery_date::> <::type2_delivery_st_time::><::type2_delivery_ed_time::>
+<::type2_num_area::>
+

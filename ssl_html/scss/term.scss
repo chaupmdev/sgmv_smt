@@ -1,0 +1,80 @@
+@charset "utf-8";
+@import "mixin.scss";
+/*------------------------------------------------------------
+	term
+------------------------------------------------------------*/
+#conts {
+	margin-top: -3px;
+	p {
+		margin-bottom: 31px;
+		font-size: 1.6rem;
+		line-height: 1.94;
+		@include sp {
+			margin-bottom: 20px;
+			font-size: 1.4rem;
+		}
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+		&.text {
+			margin-bottom: 56px;
+			@include sp {
+				margin-bottom: 30px;
+			}
+		}
+		&.btm01 {
+			margin-bottom: 56px;
+			@include sp {
+				margin-bottom: 30px;
+			}
+		}
+		span {
+			&.txt {
+				font-weight: 700;
+				display: inline-block;
+				vertical-align: top;
+			}
+		}
+		&.ttl {
+			margin-bottom: 3px;
+		}
+	}
+	ul {
+		font-size: 1.6rem;
+		line-height: 1.94;
+		@include sp {
+			font-size: 1.4rem;
+		}
+		&.linkList {
+			margin-bottom: 30px;
+			a {
+				padding-left: 25px;
+				display: inline-block;
+				vertical-align: top;
+				text-decoration: underline;
+				background: url(/img/common/icon07.png) no-repeat left center / 17px auto;
+				@include pc {
+					&:hover {
+						text-decoration: none;
+					}
+				}
+				@include sp {
+					background-size: 12px auto;
+				}
+			}
+		}
+		&.textList {
+			margin-bottom: 56px;
+			@include sp {
+				margin-bottom: 30px;
+			}
+			li {
+				padding-left: 1.6em;
+				text-indent: -1.6em;
+				&:not(:last-of-type) {
+					margin-bottom: 8px;
+				}
+			}
+		}
+	}
+}

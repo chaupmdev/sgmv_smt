@@ -1,0 +1,641 @@
+<?php
+/**
+ * イベント輸送サービスの貼付票PDFを出力します。
+ * @package    /lib/view/gmm
+ * @author     Juj-Yamagami(SP)
+ * @copyright  2018 Sp Media-Tec CO,.LTD. All rights reserved.
+ */
+
+/**
+ * #@+
+ * include files
+ */
+require_once dirname ( __FILE__ ) . '/../../Lib.php';
+Sgmov_Lib::useAllComponents ( FALSE );
+
+// 2022-03-25 ToanDD3 implement STM6-84
+Sgmov_Lib::useComponents('Redirect');
+Sgmov_Lib::useView('gmm/Common');
+
+/**
+ * #@-
+ */
+class Sgmov_View_Gmm_PasteTag extends Sgmov_View_Gmm_Common {
+
+	const POS = 1; // POSITIVE
+	const NEG = 2; // NEGATIVE
+
+	const FILL = 1; // FILL
+
+	private $eventsub_id;
+	private $building_name;
+
+	/**
+	 * 処理
+	 */
+	// 2022-03-25 ToanDD3 implement SMT6-84
+	// public function execute() {
+	public function executeInner() {
+
+        $p = filter_input ( INPUT_GET, "param" );
+        Sgmov_Component_Log::debug ( $p );
+		$isSecurity = $this->isSecurityTaio();
+        
+        // 2022-03-25 ToanDD3 implement SMT6-84
+		if ($isSecurity && !isset($_SESSION['GMM_LOGIN']['user_type'])) {
+            if (!isset($_GET['loginRequired']) || $_GET['loginRequired'] != "false") {
+                // Redirect to 404 page if not loged in
+                Sgmov_Component_Redirect::redirectPublicSsl("/404.html");   
+            }
+		}
+
+		if(!$this->check($p)){
+			return;
+		}
+		$comiket_id = intval(substr($p, 0, 10));
+
+		Sgmov_Component_Log::debug ( $comiket_id );
+
+		$comiket = $this->selectComiket ( $comiket_id );
+
+		Sgmov_Component_Log::debug ( $comiket );
+
+		if ($comiket != null) {
+			// 2022-03-30 ToanDD3 implement download file on Mobile
+			// $this->publish ( $comiket );
+			$this->publish ( $comiket, $comiket_id );
+		}
+
+		return;
+	}
+
+	/**
+	 * チェックディジット
+	 * @param string $p
+	 */
+	private function check($p){
+
+		if(strlen($p) != 11){
+			Sgmov_Component_Log::debug ( '11桁ではない' );
+			return false;
+		}
+
+		if(!is_numeric($p)){
+			Sgmov_Component_Log::debug ( '数値ではない' );
+			return false;
+		}
+
+		$id = substr($p, 0, 10);
+		$cd = substr($p, 10, 1);
+
+		Sgmov_Component_Log::debug ( 'id:'.$id );
+		Sgmov_Component_Log::debug ( 'cd:'.$cd );
+
+		$sp = intval($id) % 7;
+
+		Sgmov_Component_Log::debug ( 'sp:'.$sp );
+
+		if($sp !== intval($cd)){
+			Sgmov_Component_Log::debug ( 'CD不一致' );
+			return false;
+		}
+
+		return true;
+	}
+
+	/**
+	 * コミケ申込データを取得
+	 *
+	 * @param int $comiket_id
+	 * @return array
+	 */
+	private function selectComiket($comiket_id) {
+		$db = Sgmov_Component_DB::getAdmin ();
+
+		$sql = "select
+				e.id as id,
+				es.id as sid,
+				(d.delivery_date - es.term_fr + 1) as which_day,
+				e.name as event_name,
+				es.name as eventsub_name,
+				es.building_display as building_display,
+				to_char(d.delivery_date, 'yyyy/mm/dd') as delivery_date,
+				d.service,
+				case d.service when 1 then box.sum_num when 2 then cargo.sum_num when 3 then charter.sum_num else 0 end as sum_num,
+				c.building_name,
+				c.booth_position,
+				c.booth_num,
+				case c.div when 1 then c.personal_name_sei || ' ' || c.personal_name_mei when 2 then c.office_name else '' end as publisher,
+				staff_sei || ' ' || staff_mei as staff_name,
+				personal_name_sei || ' ' || personal_name_mei as personal_name
+				from comiket c
+				inner join comiket_detail d on c.id = d.comiket_id and d.type = 1
+				inner join event e on c.event_id  = e.id
+				inner join eventsub es on c.eventsub_id = es.id
+				left join (select comiket_id, type, sum(num) sum_num from comiket_box group by comiket_id, type ) box on d.comiket_id = box.comiket_id and d.type = box.type
+				left join (select comiket_id, type, sum(num) sum_num from comiket_cargo group by comiket_id, type ) cargo on d.comiket_id = cargo.comiket_id and d.type = cargo.type
+				left join (select comiket_id, type, sum(num) sum_num from comiket_charter group by comiket_id, type ) charter on d.comiket_id = charter.comiket_id and d.type = charter.type
+				where c.id = $1 ";
+
+		$list = $db->executeQuery ( $sql, array (
+				$comiket_id
+		) );
+
+		Sgmov_Component_Log::debug ( 'size='.$list->size () );
+
+		if ($list->size () == 0) {
+			return null;
+		}
+
+		return $list->get ( 0 );
+	}
+
+	/**
+	 * 発行
+	 *
+	 * @param array $comiket
+	 */
+	// private function publish($comiket) {
+	private function publish($comiket, $comiket_id) {
+		Sgmov_Component_Log::debug ( 'publish start' );
+
+		$pdf = new tFPDF ();
+
+		$pdf->AddFont ( 'DejaVu', '', 'ipaexg.ttf', true );
+		$pdf->SetFont ( 'DejaVu', '', 14 );
+		$pdf->Open ();
+
+		if ($comiket ['service'] == 3) {
+			$sum_num = 2; // 貸切の場合は台数に関わらず2枚を出力し、好きなだけ印刷してもらう
+		} else {
+			$sum_num = $comiket ['sum_num'];
+		}
+
+		for($page = 1; $page <= $sum_num; $page ++) {
+			$this->eventsub_id = $comiket ['sid'];
+			$this->building_name = $comiket ['building_name'];
+			$this->addSheet ( $pdf, $comiket, $page );
+		}
+
+		try {
+
+			// 2022-03-30 ToanDD3 implement download file on Mobile
+			// $pdf->Output ( 'event.pdf', 'I' );
+			$detect = new MobileDetect();
+			$isSmartPhone = $detect->isMobile();
+			if ($isSmartPhone) {
+				$pdf->Output ( '貼付票_'.$comiket_id.'.pdf', 'D' );
+			} else {
+				$pdf->Output ( 'event.pdf', 'I' );
+			}
+
+			// $pdf->Output ( mb_convert_encoding ( 'C:\pdf-out\貼付票' . date ( 'YmdHis' ) . '.pdf', 'sjis', 'utf-8' ), 'F' );
+		} catch ( Exception $e ) {
+			Sgmov_Component_Log::debug ( $e->getMessage () );
+		}
+
+		Sgmov_Component_Log::debug ( 'publish end' );
+
+		return;
+	}
+
+	/**
+	 * シートを記述する
+	 *
+	 * @param tFPDF $pdf
+	 * @param array $comiket
+	 * @param int $page
+	 */
+	private function addSheet(&$pdf, &$comiket, $page) {
+		Sgmov_Component_Log::debug ( 'addSheet start' );
+
+		// 始点
+		list ( $x, $y ) = array (
+				0,
+				0
+		);
+
+		if ($page % 2 != 0) {
+			// 奇数
+			$pdf->AddPage (); // ページが奇数の時だけページ追加
+			$x = 18;
+			$base_y = 18;
+		} else {
+			// 偶数
+			$x = 18;
+			$base_y = 144;
+		}
+
+		$y = $base_y;
+
+		$whichDay = $comiket ['which_day'];
+
+		// 色四角
+		$this->setColor ( $pdf, $whichDay, self::NEG );
+		$pdf->Rect ( $x, $y, 171, 125, 'F' );
+
+		// 白四角
+		$pdf->SetFillColor ( 255, 255, 255 );
+		$pdf->Rect ( $x += 4, $y += 4, 171 - 8, 125 - 8, 'F' );
+
+		$this->setColor ( $pdf, $whichDay, self::POS );
+
+		// イベント名
+		$pdf->SetXY ( $x += 4 , $y += 4 );
+		$pdf->SetFont ( 'DejaVu', '', 18 );
+		$pdf->Cell ( 116, 19, $comiket ['event_name'] . $comiket ['eventsub_name'], 0, 0, 'L' );
+
+		// 配送日の書き出し位置へ
+		$pdf->SetXY ( $x = 53, $y = $base_y + 27 );
+
+		// 配送日
+		$pdf->SetFont ( 'DejaVu', '', 14 );
+		$pdf->Cell ( 90, 7, $comiket ['delivery_date'], 0, 0, 'R' );
+
+		// 個口数・タイトル
+		$pdf->SetXY ( $x += 90, $y -= 12 );
+		$pdf->Cell ( 39, 6, '送った御荷物、', 0, 0, 'C' );
+
+		// 個口数・本体
+		$pdf->SetXY ( $x, $y += 6 );
+		if ($comiket ['service'] == 3) {
+			$pdf->Cell ( 39, 7, "　個中の　個", 0, 0, 'C' );
+		} else {
+			$pdf->Cell ( 39, 7, "{$comiket['sum_num']}個中の{$page}個", 0, 0, 'C' );
+		}
+
+		// 配置場所の書き出し位置へ
+		$pdf->SetXY ( $x = 26, $y = $base_y + 38 );
+
+		if( $comiket['building_display'] == '1' ){
+
+			if( $comiket['sid'] == '301' ){
+
+				// 配置場所・タイトル
+				$this->setColor ( $pdf, $whichDay, self::NEG );
+				$pdf->SetFont ( 'DejaVu', '', 14 );
+				$pdf->Cell ( 26, 26, '配置場所', 0, 0, 'C', 1 );
+
+				// 配置場所・パネル
+				$pdf->Rect ( $x += (26 + 1), $y, 128, 26, 'F' );
+
+				$boothPosition = '';//$comiket ['booth_position'];
+	// 			if ($boothPosition === 'その他') {
+	// 				$boothPosition = '';
+	// 			}
+
+				$boothNum = '';//$comiket ['booth_num'];
+	// 			if ($boothNum === '0000') {
+	// 				$boothNum = '';
+	// 			}
+
+				// ブロック
+				$this->setColor ( $pdf, $whichDay, self::POS );
+				$pdf->SetXY ( $x += 4, $y += 4 );
+				$pdf->SetFont ( 'DejaVu', '', 24 );
+				$pdf->Cell ( 25, 18, $boothPosition, 0, 0, 'C', 1 );
+
+				// ブロック・単位
+				$this->setColor ( $pdf, $whichDay, self::NEG );
+				$pdf->SetXY ( $x += 26, $y += 7 );
+				$pdf->SetFont ( 'DejaVu', '', 64 );
+				$pdf->Cell ( 16, 5, '-', 0, 0, 'C', 1 );
+				$pdf->SetXY ( $x, $y += 6 );
+
+				// スペース
+				$this->setColor ( $pdf, $whichDay, self::POS );
+				$pdf->SetXY ( $x += 17, $y -= 13 );
+				$pdf->SetFont ( 'DejaVu', '', 24 );
+				$pdf->Cell ( 33, 18, $boothNum, 0, 0, 'C', 1 );
+
+				// スペース・単位
+				$this->setColor ( $pdf, $whichDay, self::NEG );
+				$pdf->SetXY ( $x += 34, $y += 13 );
+				$pdf->SetFont ( 'DejaVu', '', 10 );
+				//$pdf->Cell ( 15, 5, 'スペース', 0, 0, 'C', 1 );
+			}
+
+			if( $comiket['sid'] == '302' || $comiket['sid'] == '303' ){
+
+				if ($comiket ['building_name'] === 'その他') {
+					$comiket ['building_name'] = '';
+				}
+
+				if ($comiket ['booth_position'] === 'その他') {
+					$comiket ['booth_position'] = '';
+				}
+
+				if ($comiket ['booth_num'] === '00') {
+					$comiket ['booth_num'] = '';
+				}
+
+				// 配置場所・タイトル
+				$this->setColor ( $pdf, $whichDay, self::NEG );
+
+				$pdf->SetFont ( 'DejaVu', '', 14 );
+				$pdf->Cell ( 26, 26, '配置場所', 0, 0, 'C', 1 );
+
+				// 配置場所・パネル
+				$pdf->Rect ( $x += (26 + 1), $y, 128, 26, 'F' );
+
+				// ホール
+				$this->setColor ( $pdf, $whichDay, self::POS );
+				$pdf->SetXY ( $x += 4, $y += 4 );
+				$pdf->SetFont ( 'DejaVu', '', 24 );
+				$pdf->Cell ( 14, 18, $comiket ['building_name'], 0, 0, 'C', 1 );
+
+				// ホール・単位
+				$this->setColor ( $pdf, $whichDay, self::NEG );
+				$pdf->SetXY ( $x += 15, $y += 13 );
+				$pdf->SetFont ( 'DejaVu', '', 10 );
+				$pdf->Cell ( 12, 5, 'ホール', 0, 0, 'C', 1 );
+
+				// ブロック
+				$this->setColor ( $pdf, $whichDay, self::POS );
+				$pdf->SetXY ( $x += 13, $y -= 13 );
+				$pdf->SetFont ( 'DejaVu', '', 24 );
+				$pdf->Cell ( 25, 18, $comiket ['booth_position'], 0, 0, 'C', 1 );
+
+				// ブロック・単位
+				$this->setColor ( $pdf, $whichDay, self::NEG );
+				$pdf->SetXY ( $x += 26, $y += 13 );
+				$pdf->SetFont ( 'DejaVu', '', 10 );
+				$pdf->Cell ( 16, 5, 'ブロック', 0, 0, 'C', 1 );
+
+				// スペース
+				$this->setColor ( $pdf, $whichDay, self::POS );
+				$pdf->SetXY ( $x += 17, $y -= 13 );
+				$pdf->SetFont ( 'DejaVu', '', 24 );
+				$pdf->Cell ( 33, 18, $comiket ['booth_num'], 0, 0, 'C', 1 );
+
+				// スペース・単位
+				$this->setColor ( $pdf, $whichDay, self::NEG );
+				$pdf->SetXY ( $x += 34, $y += 13 );
+				$pdf->SetFont ( 'DejaVu', '', 10 );
+				$pdf->Cell ( 15, 5, 'スペース', 0, 0, 'C', 1 );
+
+			}
+		}
+
+		// 出展者名の書き出し位置へ
+		$pdf->SetXY ( $x = 26, $y = $base_y + 65 );
+
+		// 出展者名・タイトル
+		$this->setColor ( $pdf, $whichDay, self::NEG );
+		$pdf->SetFont ( 'DejaVu', '', 14 );
+		$pdf->Cell ( 26, 26, '出展者名', 0, 0, 'C', 1 );
+
+		// 出展者名・パネル
+		$pdf->Rect ( $x += (26 + 1), $y, 128, 26, 'F' );
+
+		// 出展者名・本体
+		$this->setColor ( $pdf, $whichDay, self::POS );
+		$pdf->SetXY ( $x += 4, $y += 4 );
+		$pdf->SetFont ( 'DejaVu', '', 20 );
+		$pdf->Cell ( 119, 18, $comiket ['publisher'], 0, 0, 'L', 1 );
+
+
+		// 担当者名・タイトルの書き出し位置へ
+		$pdf->SetXY ( $x = 26, $y = $base_y + 92 );
+
+		// 担当者名・タイトル
+		$this->setColor ( $pdf, $whichDay, self::NEG );
+		$pdf->SetFont ( 'DejaVu', '', 14 );
+		$pdf->Cell ( 26, 26, '担当者名', 0, 0, 'C', 1 );
+
+		// 担当者名・パネル
+		$pdf->Rect ( $x += (26 + 1), $y, 128, 26, 'F' );
+
+		// 担当者名・本体
+		$this->setColor ( $pdf, $whichDay, self::POS );
+		$pdf->SetXY ( $x += 4, $y += 4 );
+		$pdf->SetFont ( 'DejaVu', '', 20 );
+		$pdf->Cell ( 119, 18, $comiket ['staff_name'], 0, 0, 'L', 1 );
+
+		Sgmov_Component_Log::debug ( 'addSheet end' );
+
+		return;
+	}
+
+	/**
+	 * N日目で色を変える
+	 *
+	 * @param tFPDF $pdf
+	 * @param int $whichDay
+	 * @param int $pattern
+	 */
+	private function setColor(&$pdf, $whichDay, $pattern) {
+
+		if($this->eventsub_id == 300 || $this->eventsub_id == 302){ // ゲームマーケット
+
+			switch ($this->building_name) {
+				case 'A':
+					switch ($whichDay) {
+						case 1 :
+							if ($pattern == 1) {
+								$pdf->SetFillColor ( 255, 255, 255 );
+								$pdf->SetTextColor ( 0,102,102 );//#006666 rgb(0,102,102)
+							} else if ($pattern == 2) {
+								$pdf->SetFillColor ( 0,102,102 );
+								$pdf->SetTextColor ( 255, 255, 255 );
+							}
+							break;
+						case 2 :
+							if ($pattern == 1) {
+								$pdf->SetFillColor ( 255, 255, 255 );
+								$pdf->SetTextColor ( 0,0,255 ); //#0000FF rgb(0,0,255)
+							} else if ($pattern == 2) {
+								$pdf->SetFillColor ( 0,0,255 );
+								$pdf->SetTextColor ( 255, 255, 255 );
+							}
+							break;
+						default :
+							if ($pattern == 1) {
+								$pdf->SetFillColor ( 255, 255, 255 );
+								$pdf->SetTextColor ( 128, 128, 128 );
+							} else if ($pattern == 2) {
+								$pdf->SetFillColor ( 128, 128, 128 );
+								$pdf->SetTextColor ( 255, 255, 255 );
+							}
+							break;
+					}
+					break;
+				case 'B':
+					switch ($whichDay) {
+						case 1 :
+							if ($pattern == 1) {
+								$pdf->SetFillColor ( 255, 255, 255 );
+								$pdf->SetTextColor ( 204, 0, 153 ); // #CC0099 rgb(204,0,153)
+							} else if ($pattern == 2) {
+								$pdf->SetFillColor ( 204, 0, 153 );
+								$pdf->SetTextColor ( 255, 255, 255 );
+							}
+							break;
+						case 2 :
+							if ($pattern == 1) {
+								$pdf->SetFillColor ( 255, 255, 255 );
+								$pdf->SetTextColor ( 255, 51, 0 ); // #FF3300 rgb(255,51,0)
+							} else if ($pattern == 2) {
+								$pdf->SetFillColor ( 255, 51, 0 );
+								$pdf->SetTextColor ( 255, 255, 255 );
+							}
+							break;
+						default :
+							if ($pattern == 1) {
+								$pdf->SetFillColor ( 255, 255, 255 );
+								$pdf->SetTextColor ( 128, 128, 128 );
+							} else if ($pattern == 2) {
+								$pdf->SetFillColor ( 128, 128, 128 );
+								$pdf->SetTextColor ( 255, 255, 255 );
+							}
+							break;
+					}
+					break;
+				default :
+					if ($pattern == 1) {
+						$pdf->SetFillColor ( 255, 255, 255 );
+						$pdf->SetTextColor ( 128, 128, 128 );
+					} else if ($pattern == 2) {
+						$pdf->SetFillColor ( 128, 128, 128 );
+						$pdf->SetTextColor ( 255, 255, 255 );
+					}
+					break;
+				}
+
+		} else if( $this->eventsub_id == 303 ){ // ゲームマーケット2021春
+
+					switch ($this->building_name) {
+						case '西1':
+							switch ($whichDay) {
+								case 1 :
+									if ($pattern == 1) {
+										$pdf->SetFillColor ( 255, 255, 255 );
+										$pdf->SetTextColor ( 0,102,102 );//#006666 rgb(0,102,102)
+									} else if ($pattern == 2) {
+										$pdf->SetFillColor ( 0,102,102 );
+										$pdf->SetTextColor ( 255, 255, 255 );
+									}
+									break;
+								case 2 :
+									if ($pattern == 1) {
+										$pdf->SetFillColor ( 255, 255, 255 );
+										$pdf->SetTextColor ( 0,0,255 ); //#0000FF rgb(0,0,255)
+									} else if ($pattern == 2) {
+										$pdf->SetFillColor ( 0,0,255 );
+										$pdf->SetTextColor ( 255, 255, 255 );
+									}
+									break;
+								default :
+									if ($pattern == 1) {
+										$pdf->SetFillColor ( 255, 255, 255 );
+										$pdf->SetTextColor ( 128, 128, 128 );
+									} else if ($pattern == 2) {
+										$pdf->SetFillColor ( 128, 128, 128 );
+										$pdf->SetTextColor ( 255, 255, 255 );
+									}
+									break;
+							}
+							break;
+						case '西2':
+							switch ($whichDay) {
+								case 1 :
+									if ($pattern == 1) {
+										$pdf->SetFillColor ( 255, 255, 255 );
+										$pdf->SetTextColor ( 204, 0, 153 ); // #CC0099 rgb(204,0,153)
+									} else if ($pattern == 2) {
+										$pdf->SetFillColor ( 204, 0, 153 );
+										$pdf->SetTextColor ( 255, 255, 255 );
+									}
+									break;
+								case 2 :
+									if ($pattern == 1) {
+										$pdf->SetFillColor ( 255, 255, 255 );
+										$pdf->SetTextColor ( 255, 51, 0 ); // #FF3300 rgb(255,51,0)
+									} else if ($pattern == 2) {
+										$pdf->SetFillColor ( 255, 51, 0 );
+										$pdf->SetTextColor ( 255, 255, 255 );
+									}
+									break;
+								default :
+									if ($pattern == 1) {
+										$pdf->SetFillColor ( 255, 255, 255 );
+										$pdf->SetTextColor ( 128, 128, 128 );
+									} else if ($pattern == 2) {
+										$pdf->SetFillColor ( 128, 128, 128 );
+										$pdf->SetTextColor ( 255, 255, 255 );
+									}
+									break;
+							}
+							break;
+						default :
+							if ($pattern == 1) {
+								$pdf->SetFillColor ( 255, 255, 255 );
+								$pdf->SetTextColor ( 128, 128, 128 );
+							} else if ($pattern == 2) {
+								$pdf->SetFillColor ( 128, 128, 128 );
+								$pdf->SetTextColor ( 255, 255, 255 );
+							}
+							break;
+					}
+
+		} else {
+			switch ($whichDay) {
+				case 1 :
+					if ($pattern == self::POS) {
+						$pdf->SetFillColor ( 255, 255, 255 );
+						$pdf->SetTextColor ( 255, 153, 255 );
+					} else if ($pattern == self::NEG) {
+						$pdf->SetFillColor ( 255, 153, 255 );
+						$pdf->SetTextColor ( 255, 255, 255 );
+					}
+					break;
+				case 2 :
+					if ($pattern == self::POS) {
+						$pdf->SetFillColor ( 255, 255, 255 );
+						$pdf->SetTextColor ( 0, 0, 0 );
+					} else if ($pattern == self::NEG) {
+						$pdf->SetFillColor ( 255, 255, 0 );
+						$pdf->SetTextColor ( 0, 0, 0 );
+					}
+					break;
+				case 3 :
+					if ($pattern == self::POS) {
+						$pdf->SetFillColor ( 255, 255, 255 );
+						$pdf->SetTextColor ( 153, 51, 255 );
+					} else if ($pattern == self::NEG) {
+						$pdf->SetFillColor ( 153, 51, 255 );
+						$pdf->SetTextColor ( 255, 255, 255 );
+					}
+					break;
+				case 4 :
+					if ($pattern == self::POS) {
+						$pdf->SetFillColor ( 255, 255, 255 );
+						$pdf->SetTextColor ( 0, 121, 107 );
+					} else if ($pattern == self::NEG) {
+						$pdf->SetFillColor ( 0, 121, 107 );
+						$pdf->SetTextColor ( 255, 255, 255 );
+					}
+					break;
+				case 5 :
+					if ($pattern == self::POS) {
+						$pdf->SetFillColor ( 255, 255, 255 );
+						$pdf->SetTextColor ( 34, 150, 243 );
+					} else if ($pattern == self::NEG) {
+						$pdf->SetFillColor ( 34, 150, 243 );
+						$pdf->SetTextColor ( 255, 255, 255 );
+					}
+					break;
+				default :
+					if ($pattern == self::POS) {
+						$pdf->SetFillColor ( 255, 255, 255 );
+						$pdf->SetTextColor ( 128, 128, 128 );
+					} else if ($pattern == self::NEG) {
+						$pdf->SetFillColor ( 128, 128, 128 );
+						$pdf->SetTextColor ( 255, 255, 255 );
+					}
+			}
+		}
+
+		return;
+	}
+}

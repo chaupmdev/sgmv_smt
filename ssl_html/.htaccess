@@ -1,0 +1,249 @@
+# エラーページ
+ErrorDocument 400 /error/400.php
+ErrorDocument 401 /error/401.php
+ErrorDocument 403 /error/403.php
+ErrorDocument 404 /error/index.php
+ErrorDocument 408 /error/408.php
+ErrorDocument 500 /error/500.php
+ErrorDocument 502 /error/502.php
+ErrorDocument 503 /error/503.php
+ErrorDocument 504 /error/504.php
+
+#######################################################################################
+# 本番移行が終わったら以下削除
+#######################################################################################
+
+#ErrorDocument 401 /maintenance.php
+#
+##2020.07.22 Sawada
+#AuthUserFile /contents/www.sagawa-mov.co.jp/ssl_html/.htpasswd
+#AuthGroupFile /dev/null
+#AuthName "Please enter your ID and password"
+#AuthType Basic
+#require valid-user
+#order deny,allow
+#<FilesMatch "(maintenance\.php|\.css|\.jpg|\.png|\.gif|\.js)$">
+#Satisfy Any
+#Order allow,deny
+#Allow from all
+#Deny from none
+#</FilesMatch>
+
+#php
+php_value session.gc_maxlifetime 3600
+php_value session.save_path 'C:\xampp\htdocs\sgmv_fpt\tmp'
+
+RewriteEngine on
+
+<FilesMatch "\.html$">
+  #AddType application/x-httpd-php .html
+  Options +Includes
+  AddHandler server-parsed html
+</FilesMatch>
+
+# Get param
+RewriteCond %{REQUEST_FILENAME} -d [OR]
+RewriteCond %{REQUEST_FILENAME} -f
+
+#全てのページ
+RewriteRule ^(.*)$ - [L]
+#RewriteRule ^(.*)\.php$ - [L]
+
+#イベント用
+RewriteRule ^hsk/([0-9]{5})$ /hsk/index.php?param=$1 [L]
+RewriteRule ^([^/]*)/([^/]*)/?$ /$1/$2.php [L]
+
+#物販用
+RewriteRule ^([^/]*)/([^/]*)/(.*)/$ /$1/$2.php?param=$3 [L]
+RewriteRule ^([^/]*)/([^/]*)/(.*)$ /$1/$2.php?param=$3 [L]
+
+#URLの正規化
+
+#SSLなしをSSLあり
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+</IfModule>
+
+#/なしから/あり
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteBase /
+RewriteCond %{REQUEST_URI} !/$
+RewriteCond %{REQUEST_URI} !\.[^/\.]+$
+RewriteRule ^(.*)$ $1/ [R=301,L]
+</IfModule>
+
+#index.phpを/あり
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{THE_REQUEST} ^.*/index.php
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^(.*)index.php$ https://%{HTTP_HOST}/$1 [R=301,L]
+</IfModule>
+
+# /news/配下のみ 他のphpもディレクトリとして表示
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{REQUEST_URI} ^/news/([0-9]{4})/([0-9]{4}.*)/$
+RewriteCond %{DOCUMENT_ROOT}/news/%1/%2\.php -f
+RewriteRule ^(.*)/$ $1.php [L]
+
+RewriteCond %{REQUEST_URI} ^/news/[0-9]{4}/.*
+RewriteCond %{THE_REQUEST} \.(php|html)\ HTTP
+RewriteRule ^(.*)\.(php|html)$ $1 [R=301,L]
+</IfModule>
+
+# /news/配下のみ 他のphpも
+#<IfModule mod_rewrite.c>
+#RewriteEngine on
+#RewriteCond %{REQUEST_URI} ^/news/[0-9]{4}/[0-9]{4}.php$
+#RewriteRule ^(.*)$ $1/ [R=301,L]
+#</IfModule>
+
+# authenticate(Basic)
+#AuthUserFile /var/share/VirtualHost/sagawa-mov-test04.media-tec.jp.vh65-1/ssl_html/.htpasswd
+#AuthGroupFile /dev/null
+#AuthName "Please enter your ID and password"
+#AuthType Basic
+#require valid-user
+
+#20221003 リニューアル
+# エラーページ
+ErrorDocument 400 /error/400.php
+ErrorDocument 401 /error/401.php
+ErrorDocument 403 /error/403.php
+ErrorDocument 404 /error/index.php
+ErrorDocument 408 /error/408.php
+ErrorDocument 500 /error/500.php
+ErrorDocument 502 /error/502.php
+ErrorDocument 503 /error/503.php
+ErrorDocument 504 /error/504.php
+
+#URLの正規化
+
+#SSLなしをSSLあり
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+</IfModule>
+
+#/なしから/あり
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteBase /
+RewriteCond %{REQUEST_URI} !/$
+RewriteCond %{REQUEST_URI} !\.[^/\.]+$
+RewriteRule ^(.*)$ $1/ [R=301,L]
+</IfModule>
+
+#index.phpを/あり
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{THE_REQUEST} ^.*/index.php
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^(.*)index.php$ https://%{HTTP_HOST}/$1 [R=301,L]
+</IfModule>
+
+# /news/配下のみ 他のphpもディレクトリとして表示
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{REQUEST_URI} ^/news/([0-9]{4})/([0-9]{4}.*)/$
+RewriteCond %{DOCUMENT_ROOT}/news/%1/%2\.php -f
+RewriteRule ^(.*)/$ $1.php [L]
+
+RewriteCond %{REQUEST_URI} ^/news/[0-9]{4}/.*
+RewriteCond %{THE_REQUEST} \.(php|html)\ HTTP
+RewriteRule ^(.*)\.(php|html)$ $1 [R=301,L]
+</IfModule>
+
+# /news/配下のみ 他のphpも
+#<IfModule mod_rewrite.c>
+#RewriteEngine on
+#RewriteCond %{REQUEST_URI} ^/news/[0-9]{4}/[0-9]{4}.php$
+#RewriteRule ^(.*)$ $1/ [R=301,L]
+#</IfModule>
+
+# authenticate(Basic)
+#AuthUserFile /var/www/vhosts/sv02.stest.work/prj-sgmv.sv02.stest.work/.htpasswd
+#AuthGroupFile /dev/null
+#AuthName "Please enter your ID and password"
+#AuthType Basic
+#require valid-user
+
+#20221003 リニューアル
+redirect 301 /under-files/pdf/SG-ARK.pdf /service/pdf/SG-ARK.pdf
+redirect 301 /topics/pdf/topic56.pdf /news/news-release/pdf/topic56.pdf
+redirect 301 /topics/pdf/topic50.pdf /news/news-release/pdf/topic50.pdf
+redirect 301 /topics/pdf/topic51.pdf /news/news-release/pdf/topic51.pdf
+redirect 301 /topics/pdf/topic52.pdf /news/news-release/pdf/topic52.pdf
+redirect 301 /topics/pdf/topic55.pdf /news/news-release/pdf/topic55.pdf
+redirect 301 /topics/pdf/topic60.pdf /news/news-release/pdf/topic60.pdf
+redirect 301 /topics/pdf/topic61.pdf /news/news-release/pdf/topic61.pdf
+redirect 301 /topics/pdf/topic62.pdf /news/news-release/pdf/topic62.pdf
+redirect 301 /topics/pdf/topic63.pdf /news/news-release/pdf/topic63.pdf
+redirect 301 /topics/pdf/topic20220401.pdf /news/news-release/pdf/topic20220401.pdf
+redirect 301 /corporate/pdf/sgmoving_naibutosei_kihon.pdf /corporate/pdf/Basic-Internal-Control-Policy.pdf
+redirect 301 /business/construction/pdf/warranty_maker.pdf /service/pdf/warranty_maker.pdf
+redirect 301 /business/construction/pdf/warranty_kitei_basic.pdf /service/pdf/warranty_kitei_basic.pdf
+redirect 301 /business/construction/pdf/warranty_kitei_value.pdf /service/pdf/warranty_kitei_value.pdf
+redirect 301 /pdf/stipulation_takuhai.pdf /agreement/pdf/stipulation_takuhai.pdf
+redirect 301 /pdf/stipulation_souko.pdf /agreement/pdf/stipulation_souko.pdf
+redirect 301 /pdf/stipulation_trunk.pdf /agreement/pdf/stipulation_trunk.pdf
+redirect 301 /pdf/stipulation_hikkoshi.pdf /agreement/pdf/stipulation_hikkoshi.pdf
+redirect 301 /pdf/stipulation_kamotsu_riyou_hikkoshi.pdf /agreement/pdf/stipulation_kamotsu_riyou_hikkoshi.pdf
+redirect 301 /pdf/stipulation_kamotsu.pdf /agreement/pdf/stipulation_kamotsu.pdf
+redirect 301 /pdf/stipulation_kamotsu_riyou.pdf /agreement/pdf/stipulation_kamotsu_riyou.pdf
+redirect 301 /pdf/stipulation_tetsudou.pdf /agreement/pdf/stipulation_tetsudou.pdf
+redirect 301 /pdf/stipulation_naikou.pdf /agreement/pdf/stipulation_naikou.pdf
+redirect 301 /pdf/stipulation_gaikou.pdf /agreement/pdf/stipulation_gaikou.pdf
+redirect 301 /pdf/stipulation_koukuu.pdf /agreement/pdf/stipulation_koukuu.pdf
+redirect 301 /agreement.html /agreement/
+redirect 301 /policy.html /term/
+redirect 301 /privacypolicy.html /privacy-policy/
+redirect 301 /privacy.html /privacy-policy/
+redirect 301 /404.html /error/
+redirect 301 /corporate/message.html /corporate/message/
+redirect 301 /corporate/profile.html /corporate/profile/
+redirect 301 /corporate/office.html /corporate/office/
+redirect 301 /corporate/vision.html /corporate/vision/
+redirect 301 /corporate/education.html /corporate/quality/
+redirect 301 /corporate/environment.html /corporate/quality/
+redirect 301 /corporate/management.html /corporate/quality/
+redirect 301 /corporate/contents.html /service/
+redirect 301 /business/search/ /service/
+redirect 301 /business/moving/office.html /service/moving/transfer/
+redirect 301 /business/moving/transfer.html /service/moving/relocate/
+redirect 301 /business/moving/opening.html /service/moving/opening/
+redirect 301 /business/moving/mansion.html /service/moving/mansion/
+redirect 301 /business/moving/individual.html /service/moving/individual/
+redirect 301 /business/check.html /service/check/
+redirect 301 /business/construction/interior.html /service/moving/furniture/
+redirect 301 /business/furniture/ /service/moving/furniture/
+redirect 301 /business/support/ /service/moving/support/
+redirect 301 /business/construction/setting.html /service/install/setting/
+redirect 301 /business/construction/air-conditioner.html /service/install/conditioner/
+redirect 301 /business/construction/electricity.html /service/install/led-light/
+redirect 301 /business/construction/warranty.html /service/install/warranty/
+redirect 301 /business/delivery/recycling.html /service/reverse-logistics/sg-ark/
+redirect 301 /business/delivery/document.html /service/reverse-logistics/document/
+redirect 301 /business/delivery/technical.html /service/delivery/technical/
+redirect 301 /business/delivery/charter.html /service/delivery/charter/
+redirect 301 /business/delivery/art.html /service/delivery/art/
+redirect 301 /business/delivery/event.html /service/delivery/event/
+redirect 301 /business/delivery/travel.html /service/delivery/travel/
+redirect 301 /business/ /service/
+redirect 301 /case/case006.html /case/ex006/
+redirect 301 /case/case004.html /case/ex004/
+redirect 301 /case/case005.html /case/ex005/
+redirect 301 /case/case002.html /case/ex002/
+redirect 301 /case/case003.html /case/ex003/
+redirect 301 /case/case001.html /case/ex007/
+redirect 301 /contact/qa.html /contact/faq/
+redirect 301 /recruit/interview/ /careers/interview/
+redirect 301 /recruit/guideline.html /careers/about/
+redirect 301 /recruit/ /careers/
+redirect 301 /topics/ /news/
+redirect 301 /pre/ /pin/

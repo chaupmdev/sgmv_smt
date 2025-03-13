@@ -1,0 +1,13 @@
+AddDefaultCharset Shift_JIS
+# php.ini のdefault_charset にて、"utf-8" が設定されているため、本.htaccess ファイルにてdefault_charsetを設定
+# 併せてdefault_charset以外の設定で文字コード系の設定も念のため shift-jis で設定しておく
+# また、AddType についても念のため設定する
+AddType "text/html; charset=Shift_JIS" .html .php
+
+php_value default_charset               Shift_JIS
+php_value mbstring.language             Japanese
+php_value mbstring.http_input           auto
+php_value mbstring.http_output          SJIS
+php_value mbstring.internal_encoding    Shift_JIS
+
+#RewriteEngine on

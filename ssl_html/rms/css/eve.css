@@ -1,0 +1,247 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 2018/07/15, 14:37:40
+    Author     : smt-ct024
+*/
+
+.comiket_block dl {
+    height: 85px;
+}
+
+.w_30Per {
+    width: 30%;
+}
+
+.w_40Per {
+    width: 40%;
+}
+
+.boxWid {
+     width: 10%;
+}
+
+.dispSeigyoPC {
+    display: table-cell;
+}
+
+.dispSeigyoSP {
+    display: none;
+}
+
+@media only screen and (max-width: 980px) {
+    .comiket_block dl {
+        /*height: 115px;*/
+        height: auto;
+    }
+
+    .comiket_box_item_value_input {
+        width: 20% !important;
+    }
+
+    .boxWid {
+        width: 25% !important;
+    }
+
+    .comiket-detail-outbound-collect-date-fr-to,
+    .comiket-detail-outbound-delivery-date-fr-to {
+        padding-top: 0px;
+    }
+
+    .comiket_detail_outbound_collect_date_parts,
+    .comiket_detail_inbound_collect_date_parts,
+    .comiket_detail_outbound_delivery_date_parts,
+    .comiket_detail_inbound_delivery_date_parts {
+        width: 45%;
+    }
+
+    .comiket_detail_outbound_collect_time_sel,
+    .comiket_detail_inbound_delivery_time_sel {
+        display: block;
+        display: ruby;
+    }
+
+    .wb {
+        display: block;
+    }
+
+    .w_40Per {
+        width: 60%;
+    }
+
+    input[name="comiket_cargo_inbound_num_sel"],
+    input[name="comiket_cargo_outbound_num_sel"] {
+        margin-top: 10px;
+    }
+
+    .dispSeigyoPC {
+        display: none;
+    }
+
+    .dispSeigyoSP {
+        display: unset;
+    }
+}
+
+body div dl dd .comiket_event_eventsub_select {
+    white-space: nowrap;
+    float:left;
+    margin-right:20px;
+    /*margin-top:15px;*/
+    vertical-align: middle;
+}
+
+.comiket_diplay_none {
+    display: none;
+}
+
+.comiket_box_item_name,.comiket_charter_item_name {
+    width:10px;
+    white-space: nowrap;
+    padding-top:10px;
+}
+
+.comiket_box_item_value,.comiket_charter_item_value {
+    text-align: left;
+    padding-top:10px;
+}
+
+.eventsub_doc_block {
+    float:left;
+    /*margin-top: -20px;*/
+}
+
+.comiket_box_item_value_input {
+    width:50%;
+}
+
+.input-outbound-title,.input-inbound-title {
+    margin-bottom: 5px;
+    font-size:20px;
+}
+
+h4.table_title {
+    margin-bottom: 5px;
+    font-size:20px;
+}
+
+dl.service-outbound-item dd,dl.service-inbound-item dd {
+    padding-top:0px;
+}
+
+.eventsub_dl_link {
+    /*margin-top:10px;*/
+}
+
+td.event_eventsub_td_name {
+    width:10px;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+td.event_eventsub_td_dl_item {
+    padding-left: 10px;
+    vertical-align: middle;
+}
+
+
+
+.pc_dl_area {
+    display:block;
+}
+
+.sp_dl_area {
+    display:none;
+}
+
+@media only screen and (max-width: 980px) {
+    .pc_dl_area {
+        display:none;
+    }
+
+    .sp_dl_area {
+        margin-top:10px;
+        display:block;
+    }
+}
+
+.eventsub_sel {
+    display:none;
+}
+
+.box_table_td {
+    width:60%;
+}
+
+.attention_customer_cd {
+    /*margin-left: 378px;*/
+    margin-left: 0px;
+}
+
+@media only screen and (max-width: 608px) {
+    .attention_customer_cd {
+        margin-left: 0px;
+    }
+}
+
+.message_flame {
+    padding: 20px 15px;
+    border: solid 3px #0099ff;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+.arrow-img{height: 8px !important;float: right;margin-top: 5px;}
+
+.dl_block_conf1{
+    box-sizing: border-box;
+    width: 100%;
+    border: solid 1px #ccc;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.conf_regis_move_panel1{
+    padding: 13px;
+    border: 1px solid #dedbd3;
+    background-color: #e6e6e2;
+}
+
+
+/* GiapLN add 2022/04/07 */
+.btnBackEvent { 
+    padding: 15px 0px;
+    font-size: 17px;
+    background-color: #fc826a;
+    color: #fff;
+    border-style: none;
+    cursor: pointer;
+    text-align: center;
+    background-image: url(/../images/common/img_allow_10.png);
+    background-repeat: no-repeat;
+    background-position: 7% center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-weight: bold;
+    width: 400px;
+    outline: none;
+}
+
+.btnBackEvent:hover { 
+    opacity: 0.8;
+}
+
+@media only screen and (max-width: 768px) { 
+    .btnBackEvent { 
+        width: 100%;
+        font-size: 14px;
+    }
+
+}

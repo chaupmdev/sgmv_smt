@@ -1,0 +1,7 @@
+【配達先名】<::type2_name::>
+【便種】<::type2_binshu_name::>
+【カウンターお預かり日】<::type2_collect_date::> <::type2_collect_st_time::><::type2_collect_ed_time::>
+【配達希望日】<::type2_delivery_date::> <::type2_delivery_st_time::><::type2_delivery_ed_time::>
+<::type2_num_area::>【備考】
+<::type2_note::>
+

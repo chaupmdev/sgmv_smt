@@ -1,0 +1,50 @@
+お引越しお申し込み受付のご連絡
+sgmoving_system@sagawa-mov.co.jp
+
+以下の内容でホームページより申し込みがありました。
+担当者は対応を開始してください。
+
+お申し込み内容
+==========================================================
+【概算見積もり内容】
+　お引越しコース：<::cources_name::>
+　お引越しプラン：<::plans_name::>
+　エアコンの取り付けまたは取り外し：<::pre_aircon_exist::>
+　現在お住まいの地域：<::from_area_name::>
+　お引越し先の地域：<::to_area_name::>
+　お引越し予定日：<::move_date::>
+　概算金額：<::pre_estimate_price::>円
+　適用キャンペーン：<::campaign::><::oc_campaign_name::>
+
+【 訪問見積もり希望日 】
+　第一希望日：<::visit_date1::>
+　第二希望日：<::visit_date2::>
+【 現住所 】
+　〒<::cur_zip::>
+　<::cur_pref_name::> <::cur_address::>
+　エレベーター：<::cur_elevator::>
+　階数：<::cur_floor::>
+　住居前道幅：<::cur_road::>
+【 新住所 】
+　〒<::new_zip::>
+　<::new_pref_name::> <::new_address::>
+　エレベーター：<::new_elevator::>
+　階数：<::new_floor::>階
+　住居前道幅：<::new_road::>
+
+【 お名前 】<::name::>
+【 フリガナ 】<::furigana::>
+【 電話番号 】<::tel::> <::tel_type::> <::tel_other::>
+【 電話連絡可能時間 】<::contact_available::> <::contact_start::> ～ <::contact_end::>
+【 メールアドレス 】<::mail::>
+【 備考 】
+<::note::>
+
+
+==========================================================
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ＳＧムービング株式会社
+URL：http://www.sagawa-mov.co.jp/
+

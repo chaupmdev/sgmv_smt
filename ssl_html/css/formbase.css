@@ -1,0 +1,289 @@
+@charset "UTF-8";
+
+.relative {
+    position: relative;
+    width: 900px;
+    height: 586px;
+}
+div#list_target{
+/*
+    top: 5px;
+    left:230px;
+    width:  700px;
+    height: 30px;
+    position:absolute;
+	z-index:2000;
+*/
+	top: 31px;
+	left:232px;
+	width: 600px;
+	height: 30px;
+	position:absolute;
+	z-index:2000;
+	font-size:14px;	
+}
+div#list_target #news{
+	position:absolute;
+	z-index:2001;
+	top:0;
+	right:30px;
+	font-size:12px;	
+}
+div#list_target a{
+	color: #394695;
+}
+div#list_target a:hover{
+	text-decoration:underline;
+}
+div#balloon_box{
+    top: 0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+}
+div#animation_target1{
+    top: 0px;
+    left:0px;
+    background: url(../images/index/staffA.png);
+    width:  900px;
+    height: 587px;
+    position:absolute;
+}
+div#animation_target2{
+    top: 0px;
+    left:0px;
+    background: url(../images/index/staffB.png);
+    width:  900px;
+    height: 587px;
+    position:absolute;
+}
+div#animation_target3{
+    top: 0px;
+    left:0px;
+    background: url(../images/index/staffC.png);
+    width:  900px;
+    height: 587px;
+    position:absolute;
+}
+div#animation_target4{
+    top: 442px;
+    left:0px;
+    background: url(../images/index/eco.png);
+    width:  900px;
+    height: 85px;
+    position:absolute;
+}
+div#animation_target5{
+    top: 522px;
+    left:0px;
+    background: url(../images/index/children.png);
+    width:  900px;
+    height: 85px;
+    position:absolute;
+}
+div#animation_train{
+    top: 0px;
+    left:0px;
+    background: url(../images/index/train.png);
+    width:  900px;
+    height: 587px;
+    position:absolute;
+}
+div#animation_ship{
+    top: 0px;
+    left:0px;
+    background: url(../images/index/ship.png);
+    width:  900px;
+    height: 587px;
+    position:absolute;
+	z-index:100;
+}
+div#animation_airplane{
+    top: 0px;
+    left:0px;
+    background: url(../images/index/airplane02.png);
+    width:  900px;
+    height: 85px;
+    position:absolute;
+}
+div#main_image1{
+    top: 0px;
+    left:0px;
+    background: url(../images/index/bg_back.png);
+    width:  900px;
+    height: 587px;
+    position:absolute;
+}
+div#main_image2{
+    top: 0px;
+    left:0px;
+    background: url(../images/index/bg_front.png);
+    width:  900px;
+    height: 587px;
+    position:absolute;
+}
+div#main_image3{
+    top: 0px;
+    left:0px;
+    background: url(../images/index/park.png);
+    width:  900px;
+    height: 587px;
+    position:absolute;
+}
+
+/*�o�[����*/
+#balloon_box a{
+	position: absolute;
+	z-index: 1111;
+}
+#balloon_box a:hover{
+	opacity:0.9;
+}
+/*balloon_box個人引越*/
+#balloon_box a.option{
+	left: 235px;
+	top: 84px
+}
+#balloon_box a.tanpin{
+	left: 324px;
+	top: 122px
+}
+#balloon_box a.ladys{
+	left: 451px;
+	top: 137px
+}
+#balloon_box a.seikatu{
+	left: 528px;
+	top: 88px
+}
+#balloon_box a.kojin{
+	left: 651px;
+	top: 70px
+}
+
+/*balloon_box法人引越*/
+#balloon_box a.tenkin{
+	left: 61px;
+	top: 69px
+}
+#balloon_box a.gakkou{
+	left: 29px;
+	top: 262px
+}
+#balloon_box a.byouin{
+	left: 428px;
+	top: 186px
+}
+#balloon_box a.office{
+	left: 594px;
+	top: 158px;
+}
+#balloon_box a.carbon{
+	left: 50px;
+	top: 455px
+}
+#balloon_box a.charter{
+	left: 260px;
+	top:370px;
+}
+#balloon_box a.charteryuso{
+	left: 269px;
+	top: 395px
+}
+#balloon_box a.mansion{
+	left: 706px;
+	top: 383px
+}
+
+/*balloon_boxソリューション*/
+#balloon_box a.kimitsu{
+	left: 242px;
+	top: 178px
+}
+#balloon_box a.technical{
+	left: 448px;
+	top: 295px
+}
+#balloon_box a.event{
+	left: 668px;
+	top: 272px
+}
+#balloon_box a.art{
+	left: 519px;
+	top: 357px
+}
+
+/*balloon_box設置*/
+#balloon_box a.encho{
+	left:70px;
+	top:140px
+}
+#balloon_box a.company{
+	left:130px;
+	top:355px
+}
+#balloon_box a.hinshitsu{
+	left:330px;
+	top:370px
+}
+#balloon_box a.saiyo{
+	left:160px;
+	top:390px
+}
+#balloon_box a.kagukaden{
+	left:700px;
+	top: 200px
+}
+#balloon_box a.ryokyaku{
+	left: 610px;
+	top: 438px
+}
+#balloon_box span.comment{
+	font-size:12px;
+	position:absolute;
+	bottom:10px;
+	right:10px;
+}
+
+
+/*#balloon_box1 #balloon1 a.cargo{
+	left: 278px;
+	top:66px
+}
+#balloon_box1 #balloon1 a.omakase{
+	left:700px;
+	top:67px
+}
+#balloon_box1 #balloon1 a.standard{
+	left: 728px;
+	top:126px
+}*/
+
+
+
+#balloon_box3 #balloon3 a.sonota{
+	left:140px;
+	top:-40px
+}
+
+
+/* クリッカブルマップ検証用　20160314永野*/
+.layer{
+	z-index:1000;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.layer area{
+	border: medium none !important;
+    outline: medium none !important;
+}
+.fukidasi{
+	display:none;
+	position:absolute;
+	top:300px;
+	left:300px;
+	background-color:#fff;
+	padding:20px;
+}

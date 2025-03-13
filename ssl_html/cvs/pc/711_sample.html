@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ja-jp" xml:lang="ja-jp">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <title>払込票</title>
+    <style>
+        .H1 {
+            FONT-SIZE: 20pt;
+            FONT-WEIGHT: bold;
+        }
+        
+        .H2 {
+            FONT-SIZE: 14pt;
+            FONT-WEIGHT: bold;
+        }
+        
+        BODY {
+            FONT-SIZE: 12pt;
+            FONT-WEIGHT: normal;
+        }
+        
+        BR {
+            FONT-SIZE: 4pt;
+            FONT-WEIGHT: normal;
+        }
+        
+        .tbl_l {
+            FONT-SIZE: 18pt;
+            FONT-WEIGHT: bold;
+        }
+        
+        .tbl_m {
+            FONT-SIZE: 14pt;
+            FONT-WEIGHT: bold;
+        }
+        
+        .tbl_s {
+            FONT-SIZE: 12pt;
+            FONT-WEIGHT: normal;
+        }
+        
+        .nagare_l {
+            FONT-SIZE: 14pt;
+            FONT-WEIGHT: bold;
+        }
+        
+        .nagare_m {
+            FONT-SIZE: 11pt;
+            FONT-WEIGHT: normal;
+        }
+        
+        .chui_l {
+            FONT-SIZE: 12pt;
+            FONT-WEIGHT: normal;
+        }
+        
+        .chui_m {
+            FONT-SIZE: 9pt;
+            FONT-WEIGHT: normal;
+        }
+        
+        .chui_s {
+            FONT-SIZE: 8pt;
+            FONT-WEIGHT: normal;
+        }
+        
+        .setsumei {
+            FONT-SIZE: 8pt;
+            FONT-WEIGHT: normal;
+        }
+    </style>
+</head>
+
+<body bgcolor="#ffffff" class="body">
+    <div id="hi_div_001">
+        <center>
+            <table cellpadding="0" CELLSPACING="0">
+
+                <tr>
+                    <td width="631" colspan="3" align="left">
+                        <img src="img/hikae.png">
+                    </td>
+                </tr>
+                <tr>
+                    <td height="10" width="631" colspan="3">
+                    </td>
+                </tr>
+                <tr>
+                    <td width="20">
+                        <img src="img/711_bkstripe.png" width="20" height="35"> </td>
+                    <td width="26" rowspan="2">
+                        <center><img src="img/711_bklogo.png" width="112" height="112">
+                        </center>
+                    </td>
+                    <td width="585">
+                        <img src="img/711_bkstripe.png" width="20" height="35"> </td>
+                </tr>
+                <tr>
+                    <td width="20">
+                        <h1>　</h1>
+                    </td>
+                    <td width="585">
+                        <div class="H1">　　　インターネットショッピング払込票</div>
+                        <div class=h2>　　　　　（セブン-イレブン代金収納サービス払込票）</div>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <center>
+            <table cellspacing="6" width="100%">
+                <tr>
+                    <td align="right" valign="top" width="10%">
+                        <img src="img/711_bkmarktop.png" width="169" height="145"> </td>
+                    <td rowspan="2" valign="top">
+                        <table border="1" bordercolor="black" cellspacing="1" cellPadding="1" width="100%">
+                            <tr>
+                                <td class="tbl_m" nowrap>受付方法</td>
+                                <td class="tbl_l">
+                                    前払い（現金支払い）</td>
+                            </tr>
+                            <tr>
+                                <td class="tbl_m" nowrap>お客様名</td>
+                                <td class="tbl_m">山田　太郎　様</td>
+                            </tr>
+                            <tr>
+                                <td class="tbl_s" nowrap>払込先名</td>
+                                <td class="tbl_m">ＳＧムービング</td>
+                            </tr>
+                            <tr>
+                                <td class="tbl_m" nowrap rowspan="2">払込票番号</td>
+                                <td class="tbl_m">７１２３－４５６７－８９０１２</td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/711_bkcode.png" width="213" height="50" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbl_s" nowrap>払込金額</td>
+                                <td class="tbl_s">５,１５０円
+                                    <br /><span class="setsumei"> </span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="tbl_s" nowrap>払込期限</td>
+                                <td class="tbl_s">２０１５年７月４日（土）</td>
+                            </tr>
+                            <tr>
+                                <td class="tbl_s" nowrap>お渡し方法</td>
+                                <td class="tbl_s">払込先の指定する方法にて提供</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right" VALIGN="top" width="10%">
+                        <img src="img/711_bkmarkbot.png" width="169" height="145"> </td>
+                </tr>
+            </table>
+        </center>
+
+        <hr>
+
+        <table width="100%">
+            <tr>
+                <td width="10%"></td>
+                <td class="nagare_m">
+                    <DIV class="nagare_l">★お支払いと商品お受取りの流れ</DIV>
+                    （１）最寄りのセブン-イレブンでこの払込票を提示してください。
+                    <br />　（２）払込金額をお支払いください。払込票は領収書と共にお持ち帰りください。
+                    <br />　（３）お支払い頂いた情報が払込先に通知されます。
+                    <br />　（４）商品・サービス等の提供方法は払込先より案内されております。
+                    <br />　　　　（セブン-イレブン店舗での商品のお渡しはありません！）
+                    <br />
+                </td>
+            </tr>
+        </table>
+
+        <br />
+
+        <table border="1" bordercolor="black" width="100%" cellspacing="0" cellpadding="2">
+            <tr>
+                <td class="chui_m"><strong class="chui_l">ご注意！</strong>(必ずお読みください)
+                    <P>
+                        <UL CLASS="chui_m">
+                            <LI>お支払いは上記払込期限日までに現金、ｎａｎａｃｏにてお願い致します。
+                                <br />（右記の支払方法はご利用できません。「ｎａｎａｃｏ以外の電子マネー」、「クレジットカード」、「クオカード」。）
+                                <br />領収書は大切に保管してください。店舗において再発行は致しません。
+                                <br />払込期限を過ぎてレジでのお取扱いが不可能になった場合、セブン-イレブン店舗ではお金をお受けすることはできません。
+                                <br />払込期限を過ぎた場合にはお取引についての責任を負うことができません。
+                                <br />
+                            </LI>
+                            <br />
+                            <LI>ご注文内容についてのお問合せや変更・取消・返品・返金等は、セブン-イレブン店舗ではお受けできません。</LI>
+                            <LI>ご不明な点がございましたら、下記連絡先にお問合せください。</LI>
+                        </UL>
+                    </P>
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td class="tbl_s">お客様用 連絡先　03-1111-1111,abcdefgh@xxxxxxxxxxx.co.jp</td>
+            </tr>
+        </table>
+
+        <br class="cr1">
+
+    </div>
+</body>
+
+</html>

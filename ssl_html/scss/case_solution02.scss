@@ -1,0 +1,66 @@
+@charset "utf-8";
+@import "mixin.scss";
+/*------------------------------------------------------------
+	business/case/solution02
+------------------------------------------------------------*/
+#conts.solution02{
+    .imgList.towCollumn{
+        li{
+            width: calc((100% - 35px)/2);
+        }
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        border: 1px solid #b7b7c7;
+        th{
+            border: 1px solid #b7b7c7;
+            text-align: center;
+            background: #f2f3f9;
+            padding: 20px;
+            @include sp{
+                width: 100px;
+            }
+        }
+        td{
+            border: 1px solid #b7b7c7;
+            padding: 20px;
+            ul{
+                li{
+                    margin-bottom: 15px;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                    .b_txt{
+                        font-weight: bold;
+                    }
+                    .flx_box{
+                        display: flex;
+                        justify-content: left;
+                        margin-top: 10px;
+                        li{
+                            margin: 0 10px;
+                            img{
+                                height: 50px;
+                            }
+                            @include sp{
+                                margin: 5px 5px;
+                                width: auto;
+                                &:last-child {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                        @include sp{
+                            flex-wrap: wrap;
+                        }
+                    }
+                }
+                .col_circle{
+                    color: #1b519f;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}

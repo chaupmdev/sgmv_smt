@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+.illust {
+    width: 100%;
+    height: auto;
+    /*border: 1px solid #1774bc;*/
+    /*text-align: center;*/
+    /*vertical-align: middle;*/
+}
+
+.illust02 {
+    width: 100%;
+}
+
+.waku_item {
+    width: 45%;
+    height: 470px;
+    float: left;
+    display: block;
+    border: 1px solid #1774bc;
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #FFFFFF;
+}
+
+.waku_item h3 {
+    padding-top: 5px;
+}
+.waku_item h6 {
+    padding-top: 15px;
+}
+
+.waku_item p {
+    font-size: 90% !important;
+}
+
+.waku_item button {
+    text-decoration: underline;
+}
+
+.waku_item_title {
+    font-size: 140%;
+    font-weight: bold;
+    padding-right: 20px;
+    color: #1774bc;
+    display: block;
+}
+
+.waku_image {
+    width: 75%;
+    height: auto;
+    float: right;
+}
+
+.mb0 {
+    margin-bottom: 0px !important;
+}
+
+p.undertitle {
+    word-break: keep-all;
+    margin-top: 0.5em;
+}
+
+.w20per {
+    width: 20%;
+}
+
+.w40per {
+    width: 40%;
+}
+
+.w50per {
+    width: 50%;
+}
+
+.w45per {
+    width: 45%;
+}
+
+/*div #travel_img01 {
+    width: 100%;
+    height: 128px;
+    background: url(../images/business/travel/travel_img02_pc.png) no-repeat right center;
+    background-size: cover;
+}
+
+div #travel_img02 {
+    margin-top: 1em;
+    width: 100%;
+    height: 125px;
+    background: url(../images/business/travel/travel_img03_pc.png) no-repeat left center;
+    background-size: cover;
+}*/
+
+@media only screen and (max-width: 980px) {
+    .w40per {
+        width: 100%;
+    }
+    
+    .w45per {
+        width: 55px !important;
+    }
+
+    .waku_image {
+        width: 70px;
+        height: auto;
+        float: right;
+    }
+    
+    .waku_item {
+        width: calc(100% - 20px);
+        width: 98%\9;
+        height: auto;
+    }
+    
+    .waku_item p {
+        font-size: 100% !important;
+    }
+    
+    .illust02 {
+        width: 100%;
+    }
+    /*div #travel_img01 {
+        width: 300px;
+        height: 128px;
+        background: url(../images/business/travel/travel_img02_pc.png) no-repeat right center;
+        background-size: cover;
+    }
+
+    div #travel_img02 {
+        margin-top: 1em;
+        width: 300px;
+        height: 125px;
+        background: url(../images/business/travel/travel_img03_pc.png) no-repeat left center;
+        background-size: cover;
+    }
+    */
+}
+

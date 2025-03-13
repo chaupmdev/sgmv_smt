@@ -1,0 +1,263 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style>
+    .sprite-symbol-usage {display: none;}
+    .sprite-symbol-usage:target {display: inline;}
+  </style><symbol viewBox="0 0 64 64.1" id="arrow">
+<style type="text/css">
+	#arrow .st0{fill:#999999;}
+</style>
+<polygon class="st0" points="30.4,0 27.4,3 55.6,29.9 0,29.9 0,34.1 55.6,34.1 27.4,61 30.4,64 64,32 " />
+</symbol><symbol viewBox="0 0 64 45.9" id="arrow-v2">
+<style type="text/css">
+	#arrow-v2 .st0{fill-rule:evenodd;clip-rule:evenodd;fill:#B7B7B7;}
+	#arrow-v2 .st1{fill-rule:evenodd;clip-rule:evenodd;fill:#757FBC;}
+</style>
+<path class="st0" d="M27.9,0H41l23,23H50.9L27.9,0z" />
+<path class="st0" d="M64,23H50.9l-23,23H41L64,23z" />
+<g>
+	<g>
+		<polygon class="st1" points="13.1,0 0,0 23,23 0,45.9 13.1,45.9 36.1,23 		" />
+	</g>
+</g>
+</symbol><symbol viewBox="0 0 64 64.1" id="arrow2">
+<style type="text/css">
+	#arrow2 .st0{fill:#ffffff;}
+</style>
+<polygon class="st0" points="30.4,0 27.4,3 55.6,29.9 0,29.9 0,34.1 55.6,34.1 27.4,61 30.4,64 64,32 " />
+</symbol><symbol viewBox="0 0 64 64.1" id="arrow3">
+<style type="text/css">
+	#arrow3 .st0{fill:#3b499f;}
+</style>
+<polygon class="st0" points="30.4,0 27.4,3 55.6,29.9 0,29.9 0,34.1 55.6,34.1 27.4,61 30.4,64 64,32 " />
+</symbol><symbol viewBox="0 0 64 64.1" id="arrow4">
+<style type="text/css">
+	#arrow4 .st0{fill:#F26C00;}
+</style>
+<polygon class="st0" points="30.4,0 27.4,3 55.6,29.9 0,29.9 0,34.1 55.6,34.1 27.4,61 30.4,64 64,32 " />
+</symbol><symbol viewBox="0 0 64 64" id="arrow5"><defs><style>#arrow5 .cls-1{fill:#007130;}</style></defs><g id="arrow5_レイヤー_2" data-name="レイヤー 2"><g id="arrow5_レイヤー_1-2" data-name="レイヤー 1"><polygon class="cls-1" points="30.4 0 27.4 3 55.6 29.9 0 29.9 0 34.1 55.6 34.1 27.4 61 30.4 64 64 32 30.4 0" /></g></g></symbol><symbol viewBox="0 0 64 64.1" id="blank">
+<style type="text/css">
+	#blank .st0{fill:none;}
+	#blank .st1{fill:#999999;}
+</style>
+<g id="blank_レイヤー_1">
+</g>
+<g id="blank_レイヤー_2">
+	<g>
+		<g id="blank_blank_shape_2_">
+			<rect x="0" y="2.2" class="st0" width="63.9" height="59.6" />
+		</g>
+		<g id="blank_blank_shape_1_">
+			<path class="st1" d="M59.7,19.3H12.9v25.5h46.9v-4.1V19.3z M64,49.1H8.6V6.5H64V49.1z" />
+		</g>
+		<rect y="23.5" class="st1" width="4.3" height="34.1" />
+		<rect y="53.4" class="st1" width="55.4" height="4.3" />
+	</g>
+</g>
+</symbol><symbol viewBox="0 0 64 64.1" id="blank2">
+<style type="text/css">
+	#blank2 .st0{display:none;}
+	#blank2 .st1{display:inline;}
+	#blank2 .st2{fill:#BBBBBB;}
+	#blank2 .st3{fill:none;}
+	#blank2 .st4{fill:#FFFFFF;}
+</style>
+<g id="blank2_レイヤー_1_1_" class="st0">
+	<g id="blank2_レイヤー_2_1_" class="st1">
+		<g id="blank2_shape">
+			<path class="st2" d="M60,4v43.9H16.1V4H60 M64,0H12.1v51.9H64V0z" />
+			<polygon class="st2" points="0,64.1 0,12 4,12 4,60 52,60 52,64 			" />
+			<rect class="st3" width="64" height="64" />
+		</g>
+	</g>
+</g>
+<g id="blank2_レイヤー_2_2_">
+	<g>
+		<g id="blank2_blank_shape_1_">
+			<path class="st4" d="M59.7,19.3H12.9v25.5h46.9v-4.1V19.3H59.7z M64,49.1H8.6V6.5H64V49.1z" />
+		</g>
+		<rect y="23.5" class="st4" width="4.3" height="34.1" />
+		<rect y="53.4" class="st4" width="55.4" height="4.3" />
+	</g>
+</g>
+</symbol><symbol viewBox="0 0 64 64.1" id="excel">
+<style type="text/css">
+	#excel .st0{display:none;}
+	#excel .st1{display:inline;}
+	#excel .st2{fill:#BBBBBB;}
+	#excel .st3{fill:none;}
+	#excel .st4{fill:#999999;}
+	#excel .st5{fill:#FFFFFF;}
+	#excel .st6{fill:#0D9946;}
+</style>
+<g id="excel_レイヤー_1" class="st0">
+	<g id="excel_レイヤー_1_1_">
+		<g id="excel_レイヤー_2_1_" class="st1">
+			<g id="excel_shape">
+				<path class="st2" d="M60,4v43.9H16.1V4H60 M64,0H12.1v51.9H64V0z" />
+				<polygon class="st2" points="0,64.1 0,12 4,12 4,60 52,60 52,64 				" />
+				<rect class="st3" width="64" height="64" />
+			</g>
+		</g>
+	</g>
+	<g id="excel_レイヤー_2_2_" class="st1">
+		<g>
+			<g id="excel_blank_shape_2_">
+				<rect y="2.2" class="st3" width="63.9" height="59.6" />
+			</g>
+			<g id="excel_blank_shape_1_">
+				<path class="st4" d="M59.7,19.3H12.9v25.5h46.9v-4.1V19.3H59.7z M64,49.1H8.6V6.5H64V49.1z" />
+			</g>
+			<rect y="23.5" class="st4" width="4.3" height="34.1" />
+			<rect y="53.4" class="st4" width="55.4" height="4.3" />
+		</g>
+	</g>
+</g>
+<g id="excel_レイヤー_2">
+	<rect class="st5" width="63.6" height="64" />
+	<path class="st6" d="M64,64.4H0V0h64V64.4z" />
+	<g>
+		<path class="st5" d="M13.7,53.6l14.8-22.2l-14-21.1h7.2l10.3,16l10.4-16h6.8l-14,21l14.8,22.3h-7.2L31.6,36.1L20.8,53.6H13.7z" />
+	</g>
+</g>
+</symbol><symbol viewBox="0 0 31 23.8" id="hdr-mail">
+<style type="text/css">
+	#hdr-mail .st0{fill:none;stroke:#3B499F;stroke-width:2;stroke-miterlimit:10;}
+	#hdr-mail .st1{fill-rule:evenodd;clip-rule:evenodd;fill:none;stroke:#3B499F;stroke-width:2;stroke-miterlimit:10;}
+</style>
+<g>
+	<g>
+		<path class="st0" d="M27.1,1H3.9C2.3,1,1,2.3,1,3.9v16c0,1.6,1.3,2.9,2.9,2.9h23.2c1.6,0,2.9-1.3,2.9-2.9v-16
+			C30,2.3,28.7,1,27.1,1z" />
+	</g>
+</g>
+<path class="st1" d="M22.8,7.2l-7.3,6.3L8.3,7.2" />
+</symbol><symbol viewBox="0 0 31 23.8" id="hdr-mail2">
+<style type="text/css">
+	#hdr-mail2 .st0{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+</style>
+<g>
+	<g>
+		<path class="st0" d="M27.1,1H3.9C2.3,1,1,2.3,1,3.9v16c0,1.6,1.3,2.9,2.9,2.9h23.2c1.6,0,2.9-1.3,2.9-2.9v-16
+			C30,2.3,28.7,1,27.1,1z" />
+	</g>
+</g>
+<path class="st0" d="M22.8,7.2l-7.3,6.3L8.3,7.2" />
+</symbol><symbol viewBox="0 0 67 49.8" id="mail">
+<style type="text/css">
+	#mail .st0{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;}
+</style>
+<g>
+	<path class="st0" d="M63.5,2.5c0.6,0,1,0.4,1,1v42.8c0,0.6-0.4,1-1,1h-60c-0.6,0-1-0.4-1-1V3.5c0-0.6,0.4-1,1-1H63.5 M63.5,1.5h-60
+		c-1.1,0-2,0.9-2,2v42.8c0,1.1,0.9,2,2,2h60c1.1,0,2-0.9,2-2V3.5C65.5,2.4,64.6,1.5,63.5,1.5L63.5,1.5z" />
+</g>
+<polyline class="st0" points="58.1,13.8 33.5,28.6 8.9,13.8 " />
+</symbol><symbol viewBox="0 0 64 64.1" id="modal">
+<style type="text/css">
+	#modal .st0{fill:#999999;}
+</style>
+<path class="st0" d="M25.8,0C11.6,0,0,11.6,0,25.8s11.6,25.8,25.8,25.8s25.8-11.6,25.8-25.8S40.1,0,25.8,0z M25.8,47
+	C14.2,47,4.7,37.5,4.7,25.8c0-11.7,9.5-21.1,21.1-21.1S47,14.2,47,25.8C47,37.5,37.5,47,25.8,47z" />
+<rect x="14.1" y="23.5" class="st0" width="23.5" height="4.7" />
+<rect x="14.1" y="23.5" transform="matrix(4.514084e-11 -1 1 4.514084e-11 -1.165386e-09 51.6837)" class="st0" width="23.5" height="4.7" />
+<rect x="49.3" y="36.6" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -21.4081 51.6837)" class="st0" width="4.7" height="30.1" />
+</symbol><symbol viewBox="0 0 64 64.1" id="modal2">
+<style type="text/css">
+	#modal2 .st0{fill:#ffffff;}
+</style>
+<path class="st0" d="M25.8,0C11.6,0,0,11.6,0,25.8s11.6,25.8,25.8,25.8s25.8-11.6,25.8-25.8S40.1,0,25.8,0z M25.8,47
+	C14.2,47,4.7,37.5,4.7,25.8c0-11.7,9.5-21.1,21.1-21.1S47,14.2,47,25.8C47,37.5,37.5,47,25.8,47z" />
+<rect x="14.1" y="23.5" class="st0" width="23.5" height="4.7" />
+<rect x="14.1" y="23.5" transform="matrix(4.514084e-11 -1 1 4.514084e-11 -1.165386e-09 51.6837)" class="st0" width="23.5" height="4.7" />
+<rect x="49.3" y="36.6" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -21.4081 51.6837)" class="st0" width="4.7" height="30.1" />
+</symbol><symbol viewBox="0 0 64 64.1" id="pdf">
+<style type="text/css">
+	#pdf .st0{fill:#FFFFFF;}
+	#pdf .st1{fill:#E60012;}
+</style>
+<rect class="st0" width="64" height="64" />
+<path class="st1" d="M64,64H0V0h64V64z" />
+<path class="st0" d="M54.9,40.2c0.2,2.1-2.5,5.5-7.1,4.8c-3.2-0.4-7.1-3.8-10.4-6.7c-0.1,0-0.2,0-0.3,0c-0.5,0-6.4,1.7-11.1,2.9
+	C19.5,53.1,12.9,56.5,9.8,52.6c-1.6-2.1-1-6.9,6.8-10.6c2-0.9,4.1-1.7,6.3-2.4c2.1-4.1,4-8.3,5.6-12.7c-2-3.8-3.6-7.9-3.8-9.8
+	c-0.4-3.8,1.3-7.3,4.6-7.3c4.2,0,7.3,4,2.4,18.1c1.7,2.9,3.7,5.5,6,8c3.3-0.6,6.6-1,9.9-0.9C53.5,35.3,54.7,38.1,54.9,40.2z
+	 M21.5,42.9c0-0.4-0.2-0.6-0.9-0.4c-2.6,0.8-5.1,2.1-7.2,3.8c-2.4,2.4-2.2,4.5-1.2,5.2s4.2-1.5,6.1-3.8
+	C19.6,46.3,20.7,44.7,21.5,42.9z M28.8,23.4c0,0,0.4,0.9,0.7,0.6s0.7-2.7,1.5-6.2c0.7-3.5-0.2-5.7-2.1-5.5c-1.9,0.3-2.4,2.5-2.2,4.7
+	C27,19.3,27.7,21.5,28.8,23.4z M27.4,38.5c1.8-0.7,8.4-2.2,8.4-2.2s-4.3-5.1-4.8-6.1C31,30.3,28.4,36.9,27.4,38.5L27.4,38.5z
+	 M47.3,41.4c2.7,0.4,3.7-0.9,3.7-2s-1-2.3-3.8-2.5c-2.2-0.1-7.9,0.6-7.3,0.9C39.9,37.8,44.5,41.1,47.3,41.4L47.3,41.4z" />
+</symbol><symbol viewBox="0 0 64 64.1" id="powerpoint">
+<style type="text/css">
+	#powerpoint .st0{fill:#E56700;}
+	#powerpoint .st1{fill:#FFFFFF;}
+</style>
+<path class="st0" d="M64,64H0V0h64V64z" />
+<g>
+	<path class="st1" d="M18.2,53.7V10.3h15.9c2.6,0,4.6,0.1,5.9,0.4c1.3,0.3,2.6,0.7,3.6,1.3c1.8,1,3.1,2.4,4.1,4.3
+		c0.9,1.9,1.4,4.1,1.4,6.6c0,2.4-0.5,4.5-1.4,6.4c-0.9,1.8-2.3,3.3-4.1,4.4c-1,0.6-2.3,1.1-3.7,1.3c-1.4,0.3-3.7,0.4-6.9,0.4h-8.9
+		v18.3H18.2z M24.1,30.2h9.9c3.4,0,5.8-0.5,7.2-1.6c1.4-1.1,2-3,2-5.6c0-2.6-0.7-4.4-2-5.5c-1.3-1.1-3.6-1.7-6.8-1.7H24.1V30.2z" />
+</g>
+</symbol><symbol viewBox="0 0 64 64.1" id="rss">
+<style type="text/css">
+	#rss .st0{fill:#E37B02;}
+</style>
+<path class="st0" d="M0.1,12.2c0-4.1,0-8.1,0-12.2C2,0.1,3.9,0.2,5.8,0.3C11.7,0.9,17.5,2.1,23,4.5c17.9,7.6,30,20.7,36.4,39.1
+	c2.2,6.3,3.2,12.8,3.2,19.5c0,0.7-0.2,0.9-0.9,0.9c-3.3,0-6.6,0-9.9,0c-0.8,0-1.1-0.3-1.2-1.1c-0.2-4.8-0.8-9.5-2.2-14
+	c-2.4-8.3-6.8-15.4-12.8-21.6c-4.2-4.3-9-7.8-14.5-10.3c-4.6-2.1-9.5-3.5-14.6-4.1C4.4,12.6,2.3,12.4,0.1,12.2z" />
+<path class="st0" d="M0.1,21.7c2.7,0,5.4,0.3,8,0.9c8.5,1.7,15.7,5.6,21.6,12c6.4,7,10.5,15.1,11.4,24.7c0.1,1.2,0.2,2.4,0.3,3.5
+	c0.1,0.7-0.2,1.1-1,1.1c-3.4,0-6.7,0-10.1,0c-1,0-1-0.6-1.1-1.3c-0.1-2.6-0.6-5.2-1.3-7.8c-1.9-6.5-5.8-11.6-11.2-15.5
+	C12,35.9,6.7,34.2,0.8,34c-0.2,0-0.4,0-0.7-0.1C0.1,29.9,0.1,25.9,0.1,21.7z" />
+<path class="st0" d="M16.7,55.4c0,4.7-3.7,8.4-8.3,8.5C3.8,63.9,0,60,0,55.4c0-4.6,3.9-8.4,8.4-8.4C13,46.9,16.7,50.8,16.7,55.4z" />
+</symbol><symbol viewBox="0 0 66 72.6" id="tel">
+<style type="text/css">
+	#tel .st0{fill:#FF8D00;stroke:#FF8D00;stroke-width:2;stroke-miterlimit:10;}
+</style>
+<g>
+	<path class="st0" d="M14.5,2.2c1.6,0,2.7,0.5,3.4,1.5c2,3,5.5,12.1,5.8,14.1c0.2,1.6-1.6,3.5-3.8,3.9c-3.7,0.7-3.6,3.1-3.5,3.2V25
+		v0.1c0.1,0.2,1.7,5.8,10.6,16.4c8.9,10.7,14.2,13.2,14.4,13.3h0.1h0.1c0.1,0,0.3,0.1,0.5,0.1c0.6,0,2.2-0.3,3.3-3
+		c0.6-1.7,2.4-3.1,3.9-3.1c0.2,0,0.4,0,0.6,0.1c2,0.6,10.4,5.7,12.9,8.2c2.1,2,0.4,5.6-0.1,6.1l-0.1,0.2c-3.7,4.5-8.5,7-13.3,7
+		c-1.7,0-3.5-0.3-5.3-0.9c-10.4-3.6-19.5-10.1-27.2-19.3C9.1,41.1,4.2,31,2.4,20.2c-1.6-9.6,5-15,9.1-17.3l0.2-0.1
+		C12,2.6,13.1,2.2,14.5,2.2 M14.5,1c-1.5,0-2.8,0.4-3.3,0.7c-1,0.6-12,6.3-9.9,18.7S9.2,43,15.9,51s15.8,15.5,27.7,19.6
+		c2,0.7,4,1,5.7,1c8.5,0,13.7-6.8,14.4-7.6c0.8-0.9,2.6-5.3,0-7.8c-2.7-2.5-11.2-7.7-13.4-8.4c-0.3-0.1-0.6-0.1-1-0.1
+		c-2,0-4.2,1.7-5,3.9c-0.8,2-1.7,2.2-2.1,2.2c-0.1,0-0.2,0-0.2,0s-5.1-2.4-14-12.9s-10.4-16-10.4-16s-0.2-1.5,2.5-2s5.1-3,4.7-5.2
+		c-0.3-2.2-4-11.6-6-14.6C17.8,1.5,16,1,14.5,1L14.5,1z" />
+</g>
+</symbol><symbol viewBox="0 0 66 72.6" id="tel2">
+<style type="text/css">
+	#tel2 .st0{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+</style>
+<g>
+	<path class="st0" d="M14.5,2.2c1.6,0,2.7,0.5,3.4,1.5c2,3,5.5,12.1,5.8,14.1c0.2,1.6-1.6,3.5-3.8,3.9c-3.7,0.7-3.6,3.1-3.5,3.2V25
+		v0.1c0.1,0.2,1.7,5.8,10.6,16.4c8.9,10.7,14.2,13.2,14.4,13.3h0.1h0.1c0.1,0,0.3,0.1,0.5,0.1c0.6,0,2.2-0.3,3.3-3
+		c0.6-1.7,2.4-3.1,3.9-3.1c0.2,0,0.4,0,0.6,0.1c2,0.6,10.4,5.7,12.9,8.2c2.1,2,0.4,5.6-0.1,6.1l-0.1,0.2c-3.7,4.5-8.5,7-13.3,7
+		c-1.7,0-3.5-0.3-5.3-0.9c-10.4-3.6-19.5-10.1-27.2-19.3C9.1,41.1,4.2,31,2.4,20.2c-1.6-9.6,5-15,9.1-17.3l0.2-0.1
+		C12,2.6,13.1,2.2,14.5,2.2 M14.5,1c-1.5,0-2.8,0.4-3.3,0.7c-1,0.6-12,6.3-9.9,18.7S9.2,43,15.9,51s15.8,15.5,27.7,19.6
+		c2,0.7,4,1,5.7,1c8.5,0,13.7-6.8,14.4-7.6c0.8-0.9,2.6-5.3,0-7.8c-2.7-2.5-11.2-7.7-13.4-8.4c-0.3-0.1-0.6-0.1-1-0.1
+		c-2,0-4.2,1.7-5,3.9c-0.8,2-1.7,2.2-2.1,2.2c-0.1,0-0.2,0-0.2,0s-5.1-2.4-14-12.9s-10.4-16-10.4-16s-0.2-1.5,2.5-2s5.1-3,4.7-5.2
+		c-0.3-2.2-4-11.6-6-14.6C17.8,1.5,16,1,14.5,1L14.5,1z" />
+</g>
+</symbol><symbol viewBox="0 0 16 16" id="video"><defs><style>#video .a{fill:#fff;}#video .b{fill:#d11019;}</style></defs><title>アートボード 1</title><rect class="a" width="16" height="16" /><path class="b" d="M15,1H1V15H15V1m1,15H0V0H16Z" /><polygon class="b" points="10.803 7.658 5.852 11.014 5.852 4.301 10.803 7.658" /></symbol><symbol viewBox="0 0 64 64.1" id="word">
+<style type="text/css">
+	#word .st0{fill:#FFFFFF;}
+	#word .st1{fill:#2C89CA;}
+</style>
+<rect class="st0" width="64" height="64" />
+<path class="st1" d="M64,64H0V0h64V64z" />
+<g>
+	<path class="st0" d="M17.2,53.4L6.6,12.6H12l8.3,32.6L29,12.6h5.8L43.7,45l8.4-32.4h5.3L46.5,53.4h-5.5l-9.3-33.6l-8.9,33.6H17.2z" />
+</g>
+</symbol><symbol viewBox="0 0 64 64.1" id="zip">
+<style type="text/css">
+	#zip .st0{fill:#999999;}
+</style>
+<g>
+	<polygon class="st0" points="32,49.8 35.2,46.5 46.5,35.2 43.3,32 34.3,41 34.3,6.9 29.7,6.9 29.7,41 20.7,32 17.5,35.2 28.8,46.5 
+			" />
+	<polygon class="st0" points="59.4,34.3 59.4,59.4 4.6,59.4 4.6,34.3 0,34.3 0,59.4 0,64 4.6,64 59.4,64 64,64 64,59.4 64,34.3 	" />
+</g>
+</symbol><symbol viewBox="0 0 64 64.1" id="zip2">
+<style type="text/css">
+	#zip2 .st0{fill:#ffffff;}
+</style>
+<g>
+	<polygon class="st0" points="32,49.8 35.2,46.5 46.5,35.2 43.3,32 34.3,41 34.3,6.9 29.7,6.9 29.7,41 20.7,32 17.5,35.2 28.8,46.5 
+			" />
+	<polygon class="st0" points="59.4,34.3 59.4,59.4 4.6,59.4 4.6,34.3 0,34.3 0,59.4 0,64 4.6,64 59.4,64 64,64 64,59.4 64,34.3 	" />
+</g>
+</symbol></defs><use id="arrow-usage" xlink:href="#arrow" class="sprite-symbol-usage" /><use id="arrow-v2-usage" xlink:href="#arrow-v2" class="sprite-symbol-usage" /><use id="arrow2-usage" xlink:href="#arrow2" class="sprite-symbol-usage" /><use id="arrow3-usage" xlink:href="#arrow3" class="sprite-symbol-usage" /><use id="arrow4-usage" xlink:href="#arrow4" class="sprite-symbol-usage" /><use id="arrow5-usage" xlink:href="#arrow5" class="sprite-symbol-usage" /><use id="blank-usage" xlink:href="#blank" class="sprite-symbol-usage" /><use id="blank2-usage" xlink:href="#blank2" class="sprite-symbol-usage" /><use id="excel-usage" xlink:href="#excel" class="sprite-symbol-usage" /><use id="hdr-mail-usage" xlink:href="#hdr-mail" class="sprite-symbol-usage" /><use id="hdr-mail2-usage" xlink:href="#hdr-mail2" class="sprite-symbol-usage" /><use id="mail-usage" xlink:href="#mail" class="sprite-symbol-usage" /><use id="modal-usage" xlink:href="#modal" class="sprite-symbol-usage" /><use id="modal2-usage" xlink:href="#modal2" class="sprite-symbol-usage" /><use id="pdf-usage" xlink:href="#pdf" class="sprite-symbol-usage" /><use id="powerpoint-usage" xlink:href="#powerpoint" class="sprite-symbol-usage" /><use id="rss-usage" xlink:href="#rss" class="sprite-symbol-usage" /><use id="tel-usage" xlink:href="#tel" class="sprite-symbol-usage" /><use id="tel2-usage" xlink:href="#tel2" class="sprite-symbol-usage" /><use id="video-usage" xlink:href="#video" class="sprite-symbol-usage" /><use id="word-usage" xlink:href="#word" class="sprite-symbol-usage" /><use id="zip-usage" xlink:href="#zip" class="sprite-symbol-usage" /><use id="zip2-usage" xlink:href="#zip2" class="sprite-symbol-usage" /></svg>

@@ -1,0 +1,9 @@
+a[data-stt-changelang] {
+    margin-top: 5px;
+    float: right;
+}
+
+a[data-stt-active] {
+    text-decoration:none;
+    font-weight:bold;
+}

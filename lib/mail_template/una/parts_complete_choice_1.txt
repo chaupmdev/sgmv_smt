@@ -1,0 +1,5 @@
+【宅配数量】
+　<::num_area::>
+【宿泊先】<::comiket_building_name::>
+【宿泊日（引き渡し希望日）】<::type1_delivery_date::> <::type1_delivery_st_time::><::type1_delivery_ed_time::>
+【お預かり希望日時】<::type1_collect_date::> <::type1_collect_st_time::><::type1_collect_ed_time::>

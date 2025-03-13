@@ -1,0 +1,27 @@
+/*.transactions-mobile {
+    display: none !important;
+}*/
+
+@media only screen and (min-width: 608px) {
+  .transactions-pc {
+    /* display: block; */
+  }
+  .transactions-mobile {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 608px) {
+    .transactions-pc {
+        display: none !important;
+    }
+    .transactions-mobile {
+       /* display: block; */
+    }
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}

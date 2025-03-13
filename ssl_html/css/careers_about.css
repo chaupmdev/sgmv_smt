@@ -1,0 +1,132 @@
+/*------------------------------------------------------------
+	partner job
+------------------------------------------------------------*/
+#main .area {
+  margin-bottom: 85px;
+}
+#main .area .textBox {
+  padding: 26px 30px;
+  background-color: #F2F3F9;
+  margin-bottom: 25px;
+}
+#main .area .textBox .headLine02 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+#main .area .textBox p {
+  font-size: 1.6rem;
+  line-height: 1.93;
+}
+#main .textList {
+  margin-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px;
+}
+#main .textList li {
+  width: 50%;
+}
+#main .textList li:nth-child(3n) {
+  margin-right: 0;
+}
+#main .textList li .ttl {
+  margin-bottom: 17px;
+  padding-bottom: 9px;
+  font-size: 1.9rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  border-bottom: 1px solid #D8D6E0;
+}
+#main .textList li p {
+  margin: 0 8px;
+  line-height: 1.73;
+}
+#main .dl_block {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 30px;
+}
+#main .dl_block dl {
+  width: 100%;
+  border: 1px solid #ccc;
+  display: table;
+  table-layout: fixed;
+}
+#main .dl_block dl dt {
+  width: 25%;
+  line-height: 1.4;
+  background-color: rgb(59, 74, 159);
+  color: rgb(255, 255, 255);
+  display: table-cell;
+  vertical-align: middle;
+  padding: 10px;
+}
+#main .dl_block dl dd {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 10px;
+}
+#main .t-center {
+  text-align: center;
+}
+#main .text-rows {
+  line-height: 1.7;
+  padding: 20px;
+}
+#main .p-th2 {
+  line-height: 1.4;
+  padding-top: 10px;
+}
+#main .text-rows ul {
+  list-style: inside;
+}
+#main #carrers-05 .title, #main #mid-01 .title, #main #graduate-01 .title {
+  text-align: center;
+  display: block;
+  color: #fff;
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+  background-color: rgb(68, 114, 196);
+  width: 200px;
+  border-radius: 10px;
+  height: 50px;
+  padding-top: 5px;
+}
+#main #carrers-05 .hBtn, #main #mid-01 .hBtn, #main #graduate-01 .hBtn {
+  width: 250px;
+  position: relative;
+  z-index: 10;
+  margin: 0 auto;
+}
+#main #carrers-05 .hBtn a, #main #mid-01 .hBtn a, #main #graduate-01 .hBtn a {
+  padding: 17px 10px;
+  display: block;
+  position: relative;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-align: center;
+  border-radius: 50px;
+  background-color: #1b519f;
+  outline: none;
+  overflow: hidden;
+}
+#main #carrers-05 .hBtn a:before, #main #mid-01 .hBtn a:before, #main #graduate-01 .hBtn a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.3)));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+  -webkit-transform: skewX(-25deg);
+  transform: skewX(-25deg);
+}
+#main #carrers-05 .hBtn a:hover:before, #main #mid-01 .hBtn a:hover:before, #main #graduate-01 .hBtn a:hover:before {
+  -webkit-animation: shine 0.7s;
+  animation: shine 0.7s;
+}

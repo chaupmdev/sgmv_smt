@@ -1,0 +1,55 @@
+@charset "utf-8";
+@import "mixin.scss";
+/*------------------------------------------------------------
+	delivery/charter
+------------------------------------------------------------*/
+#main {
+	.titleBox {
+		margin-bottom: 68px;
+		@include sp {
+			margin-bottom: 25px;
+		}
+	}
+	.comImgBox {
+		margin-bottom: 65px;
+		@include sp {
+			margin-bottom: 40px;
+		}
+		.textBox {
+			padding-right: 110px;
+			@include sp {
+				padding-right: 20px;
+			}
+		}
+	}
+	.comTransfer {
+		margin-bottom: 0;
+		.imgBox {
+			align-items: flex-start;
+			.photoBox {
+				margin-top: 44px;
+				width: 379px;
+			}
+			.textBox {
+				width: calc(100% - 400px);
+				p {
+					&:not(:last-child) {
+						margin-bottom: 10px;
+					}
+					font-size: 1.6rem;
+					line-height: 1.9375;
+					&.title {
+						margin-bottom: 20px;
+						font-size: 1.8rem;
+						font-weight: bold;
+						line-height: 1.556;
+					}
+				}
+				sup,
+				.smallText {
+					font-size: 0.75em;
+				}
+			}
+		}
+	}	
+}

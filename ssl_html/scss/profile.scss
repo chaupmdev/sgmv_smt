@@ -1,0 +1,341 @@
+@charset "utf-8";
+@import "mixin.scss";
+/*------------------------------------------------------------
+	profile
+------------------------------------------------------------*/
+#main {
+	.titleBox {
+		margin-bottom: 77px;
+		@include sp {
+			margin-bottom: 40px;
+		}
+		.headLine02 {
+			margin-bottom: 33px;
+		}
+		p {
+			font-size: 1.6rem;
+			line-height: 1.94;
+			@include sp {
+				font-size: 1.4rem;
+			}
+		}
+	}
+	.company {
+		margin-bottom: 121px;
+		@include sp {
+			margin-bottom: 60px;
+		}
+		h2 {
+			margin-bottom: 43px;
+			@include sp {
+				margin-bottom: 30px;
+			}
+		}
+		.photo {
+			margin-bottom: 39px;
+		}
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			th,
+			td {
+				padding: 18px 10px 17px;
+				font-size: 1.6rem;
+				line-height: 1.94;
+				border-bottom: 1px solid #D8D6E0;
+				vertical-align: top;
+				box-sizing: border-box;
+				@include sp {
+					padding: 10px 0;
+					display: block;
+					font-size: 1.4rem;
+				}
+			}
+			th {
+				width: 24%;
+				color: #1B519F;
+				font-weight: 700;
+				border-color: #1B519F;
+				@include sp {
+					width: 100%;
+				}
+			}
+			tr {
+				&:last-of-type {
+					th,
+					td {
+						border-bottom: none;
+					}
+					@include sp {
+						th {
+							border-bottom: 1px solid #1B519F;
+						}
+					}
+				}
+			}
+			td {
+				width: 76%;
+				@include sp {
+					width: 100%;
+				}
+				a {
+					margin-left: 13px;
+					padding: 0 20px 2px 26px;
+					display: inline-block;
+					color: #1B519F;
+					font-size: 1.2rem;
+					font-weight: 700;
+					border: 1px solid #1B519F;
+					border-radius: 15px;
+					vertical-align: middle;
+					background: url(/img/common/icon34.png) no-repeat left 13px center / 8px auto,url(/img/common/icon35.png) no-repeat right 9px center / 5px auto;
+					&:hover {
+						opacity: 0.7;
+					}
+				}
+				.textList {
+					margin: 3px 0 7px;
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: space-between;
+					@include sp {
+						display: block;
+					}
+					li {
+						padding-left: 15px;
+						width: 48%;
+						line-height: 2.06;
+						box-sizing: border-box;
+						position: relative;
+						@include sp {
+							width: auto;
+						}
+						&.txt01 {
+							margin: 6px 0;
+							line-height: 1.56;
+							&::before {
+								top: 11px;
+							}
+						}
+						&::before {
+							width: 7px;
+							height: 7px;
+							position: absolute;
+							left: 0;
+							top: 13px;
+							border-radius: 50%;
+							background-color: #B7B7C7;
+							content: '';
+							@include sp {
+								top: 11px;
+							}
+						}
+					}
+					&.list01 {
+						display: block;
+						li {
+							margin-bottom: 3px;
+							width: auto;
+							&.txt01 {
+								margin-bottom: 6px;
+							}
+							&:last-of-type {
+								margin-bottom: 0;
+							}
+						}
+					}
+				}
+				dl {
+					dt {
+						width: 150px;
+						float: left;
+						font-weight: 700;
+						@include sp {
+							width: 110px;
+						}
+					}
+					dd {
+						padding-left: 10.2em;
+						@include sp {
+							padding-left: 10em;
+						}
+					}
+				}
+				.borderBox {
+					margin: 11px 0 21px 20px;
+					padding: 10px 18px 11px;
+					width: 416px;
+					box-sizing: border-box;
+					border: 1px solid #B7B7C7;
+					@include sp {
+						padding: 10px 15px;
+						margin-left: 15px;
+						width: auto;
+					}
+					.txtList {
+						display: flex;
+						flex-wrap: wrap;
+						justify-content: space-between;
+						font-size: 1.4rem;
+						line-height: 1.86;
+						@include sp {
+							display: block;
+							font-size: 1.3rem;
+						}
+						li {
+							width: 35%;
+							&:nth-of-type(2n) {
+								width: 62%;
+								@include sp {
+									width: auto;
+								}
+							}
+							@include sp {
+								width: auto;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.product {
+		h2 {
+			margin-bottom: 30px;
+		}
+		.linkBox {
+			margin-bottom: 41px;
+			padding: 20px 29px;
+			border: 1px solid #D8D6E0;
+			background-color: #F2F3F9;
+			@include sp {
+				padding: 15px;
+			}
+			.linkList {
+				margin-top: -10px;
+				display: flex;
+				flex-wrap: wrap;
+				@include sp {
+					display: block;
+				}
+				li {
+					margin-top: 10px;
+					width: 20%;
+					@include sp {
+						width: auto;
+					}
+					a {
+						padding-left: 23px;
+						display: block;
+						font-weight: 700;
+						letter-spacing: 0.05em;
+						background: url(/img/corporate/profile/bg01.png) no-repeat left top 6px / 16px auto;
+						@include pc {
+							&:hover {
+								text-decoration: underline;
+								background-image: url(/img/corporate/profile/bg02.png);
+							}
+						}
+						@include sp {
+							background-size: 12px auto;
+							background-position: left top 8px;
+						}
+					}
+				}
+			}
+		}
+		.area {
+			margin-bottom: 59px;
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+			&.area01 {
+				margin-bottom: 52px;
+			}
+			&.area02 {
+				margin-bottom: 45px;
+			}
+			&.area03 {
+				margin-bottom: 55px;
+			}
+			h3 {
+				margin-bottom: 24px;
+			}
+			.textList {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				@include sp {
+					display: block;
+				}
+				li {
+					width: 46.7%;
+					@include sp {
+						width: auto;
+					}
+					ul {
+						li {
+							margin-bottom: 11px;
+							padding-left: 16px;
+							width: auto;
+							position: relative;
+							line-height: 1.67;
+							&::before {
+								width: 7px;
+								height: 7px;
+								position: absolute;
+								left: 0;
+								top: 10px;
+								border-radius: 50%;
+								background-color: #B7B7C7;
+								content: '';
+								@include sp {
+									top: 8px;
+								}
+							}
+							&:last-of-type {
+								margin-bottom: 0;
+							}
+						}
+					}
+				}
+			}
+			&.area04 {
+				.textList {
+					li {
+						ul {
+							li {
+								margin-bottom: 25px;
+								&:last-of-type {
+									margin-bottom: 0;
+								}
+							}
+						}
+					}
+				}
+			}
+			&.area05 {
+				.textList {
+					li {
+						&:nth-of-type(2n - 1) {
+							width: 49%;
+							@include sp {
+								width: auto;
+							}
+						}
+						ul {
+							li {
+								margin-bottom: 24px;
+								width: auto !important;
+								line-height: 1.6;
+								&:last-of-type {
+									margin-bottom: 0;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

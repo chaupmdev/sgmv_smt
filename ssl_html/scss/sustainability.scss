@@ -1,0 +1,654 @@
+@charset "utf-8";
+@import "mixin.scss";
+/*------------------------------------------------------------
+	business
+------------------------------------------------------------*/
+#main {
+	.pageTitle {
+		margin-bottom: 1px;
+		border-bottom: none;
+		// .topLead {
+		// 	em {
+		// 		margin: -3px 0 0 28px;
+		// 		display: inline-block;
+		// 	}
+		// }
+	}
+	.mv {
+		margin-bottom: 123px;
+		position: relative;
+		@include pc {
+			min-height: 500px;
+		}
+		p {
+			padding: 69px 0 82px;
+			width: 100%;
+			max-width: 1234px;
+			position: absolute;
+			left: 50%;
+			bottom: 0;
+			font-size: 3.1rem;
+			font-weight: 600;
+			letter-spacing: 0.05em;
+			line-height: 1.645;
+			transform: translateX(-50%);
+			font-family: 'Noto Serif JP', serif;
+			z-index: 1;
+			&::before {
+				margin-right: 24px;
+				width: 9999px;
+				height: calc(100% - 1px);
+				position: absolute;
+				right: 50%;
+				bottom: 0;
+				background: #fff;
+				content: "";
+				z-index: -1;
+			}
+		}
+		@include sp {
+			margin-bottom: 50px;
+			p {
+				margin-left: 0;
+				padding: 15px 15px 0;
+				width: auto;
+				max-width: inherit;
+				position: static;
+				left: auto;
+				bottom: auto;
+				font-size: 2rem;
+				transform: none;
+				&::before {
+					display: none;
+				}
+			}
+		}
+	}
+	.imgArea {
+		margin-bottom: 101px;
+		display: flex;
+		align-items: flex-end;
+		.textBox {
+			padding: 88px 149px 143px;
+			width: 1050px;
+			box-sizing: border-box;
+			background-color: #1B519F;
+
+			p {
+				margin-bottom: 41px;
+				color: #fff;
+				font-size: 1.7rem;
+				font-weight: 700;
+				line-height: 2.35;
+				span {
+					padding: 0 4px;
+					color: #1B519F;
+					line-height: 1;
+					background-color: #FFD801;
+				}
+				
+			}
+			.text {
+				margin-bottom: 57px;
+			}
+			.title {
+				margin: 0 0 27px 1px;
+				width: 610px;
+			}
+			.comBtn02 {
+				width: 403px;
+				a {
+					background-color: #fff;
+				}
+			}
+		}
+		.photoBox {
+			margin: 0 0 -18px -301px;
+			width: 594px;
+		}
+		@include sp { 
+			display: block;
+			.textBox {
+				margin-bottom: 30px;
+				padding: 40px 20px;
+				width: auto;
+				.title {
+					margin: 0 auto 20px;
+					width: 90%;
+				}
+				.comBtn02 {
+					max-width: 300px;
+					width: 100%;
+					a {
+						padding-right: 58px;
+						font-size: 1.3rem;
+					}
+				}
+			}
+			.photoBox {
+				margin: 0 20px;
+				width: auto;
+			}
+		}
+	}
+	
+		.mv01 {
+			margin-bottom: 78px;
+			p {
+				margin-left: 16px;
+				padding: 54px 0 57px;
+				font-size: 1.5rem;
+				font-weight: 400;
+				line-height: 2.5;
+				font-family: "Noto Sans JP", sans-serif;
+				span {
+					margin-bottom: 10px;
+					display: block;
+					font-size: 2.4rem;
+					font-weight: 700;
+					line-height: 1.65;
+				
+				}
+				&::before {
+					margin-right: -44px;
+				}
+				span.comBtn02 {
+					width: 500px;
+					margin-top: 12px;
+					@include sp {
+						width: 100%;
+						a {
+							background: none;
+						}
+					}
+				}
+			}
+			@include sp {
+				p {
+					margin-left: 0;
+					padding: 31px 14px 7px;
+					font-size: 1.4rem;
+					span {
+						font-size: 1.8rem;
+					}
+				}
+			}
+		}
+		.decarBox {
+			margin-bottom: 101px;
+			.textList {
+				margin-bottom: 59px;
+				display: flex;
+				gap: 50px;
+				li {
+					width: 50%;
+					&:nth-child(3n) {
+						margin-right: 0;
+					}
+				.pho {
+					margin-bottom: 30px;
+				}
+				.ttl {
+					margin-bottom: 17px;
+					padding-bottom: 9px;
+					font-size: 1.9rem;
+					font-weight: 700;
+					letter-spacing: 0.03em;
+					border-bottom: 1px solid #D8D6E0;
+				}
+				p {
+					margin: 0 8px;
+					line-height: 1.73;
+				}
+				.note {
+					margin-top: 2px;
+					padding-left: 1em;
+					text-indent: -1em;
+					font-size: 1.3rem;
+					line-height: 1.53;
+				}
+			}
+			
+		}
+		.enviBox {
+			margin-bottom: 178px;
+			.titleBox {
+				margin-bottom: 50px;
+			}
+			.headLine04 {
+				margin-bottom: 21px;
+			}
+			.text01 {
+				margin-bottom: 67px;
+				font-size: 1.6rem;
+				line-height: 1.93;
+			}
+			.policyBox {
+				margin-bottom: 77px;
+				padding: 15px 63px 45px 64px;
+				border: 1px solid #B7B7C7;
+				h3 {
+					margin: 0 -63px 45px -64px;
+					padding-bottom: 19px;
+					font-size: 2.6rem;
+					text-align: center;
+					letter-spacing: 0.03em;
+					border-bottom: 1px solid #B7B7C7;
+					span {
+						padding-bottom: 25px;
+						border-bottom: 2px solid #1B519F;
+					}
+				}
+				p {
+					font-size: 1.6rem;
+				}
+				.text02 {
+					margin-bottom: 18px;
+				}
+				.text03 {
+					margin-bottom: 11px;
+					font-weight: 700;
+					line-height: 2.06;
+					span {
+						margin-right: 3px;
+						color: #1B519F;
+					}
+				}
+				.text04 {
+					margin: 0 0 28px 11px;
+					font-size: 1.4rem;
+					line-height: 2;
+				}
+				.text03.mt {
+					margin-bottom: 34px;
+				}
+				.taRight {
+					font-size: 1.5rem;
+					line-height: 1.67;
+					text-align: right;
+				}
+			}
+			.imgBox {
+				display: flex;
+				justify-content: space-between;
+				.photoBox {
+					width: 33.3%;
+					img {
+						border: 1px solid #B7B7C7;
+					}
+				}
+				.textBox {
+					margin-top: -7px;
+					width: 59.2%;
+					.title {
+						margin-bottom: 35px;
+						font-size: 2.7rem;
+						font-weight: 500;
+						line-height: 1.59;
+						letter-spacing: 0.05em;
+						font-family: 'Noto Serif JP', serif;
+					}
+					.headLine03 {
+						margin-bottom: 18px;
+					}
+					p {
+						margin-bottom: 23px;
+						font-size: 1.6rem;
+						line-height: 1.94;
+					}
+					.btn {
+						width: 363px;
+						a {
+							padding: 0 10px 0 70px;
+							height: 67px;
+							position: relative;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							color: #fff;
+							font-size: 1.7rem;
+							font-weight: 700;
+							letter-spacing: 0.05em;
+							border-radius: 2px;
+							background: #1B519F url(/img/common/icon47.png) no-repeat left 31px center/16px auto;
+							overflow: hidden;
+							&::before {
+								width: 1px;
+								   height: 100%;
+								position: absolute;
+								   left: 70px;
+								   top: 0;
+								background: #fff;
+								opacity: 0.3;
+								content: "";
+							}
+							&::after {
+								content: "";
+								position: absolute;
+								top: 0;
+								left: -75%;
+								width: 50%;
+								height: 100%;
+								background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+								transform: skewX(-25deg);
+							}
+							@include pc {
+								&:hover {
+									&::after {
+										animation: shine 0.7s;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+				@include sp {
+					.policyBox {
+						padding: 15px 25px;
+						h3 {
+							margin: 0 -25px 30px;
+							padding-bottom: 15px;
+							font-size: 2rem;
+							span{
+								padding-bottom: 19px;
+							}
+						}
+						p {
+							font-size: 1.4rem;
+						}
+						.text04 {
+							font-size: 1.2rem;
+						}
+						.taRight {
+							font-size: 1.4rem;
+						}
+					}
+					.imgBox {
+						display: block;
+						.photoBox,.textBox {
+							margin-bottom: 30px;
+							width: 100%;
+							img {
+								width: 100%;
+							}
+						}
+						.textBox {
+							margin-bottom: 0;
+							.title {
+								font-size: 2.1rem;
+							}
+							.btn {
+								margin: 0 auto;
+								width: auto;
+								max-width: 300px;
+								a {
+									padding: 0 0 0 25px;
+									height: 60px;
+									position: relative;
+									font-size: 1.3rem;
+									letter-spacing: 0;
+									background-position: left 7px center;
+									background-size: 10px auto;
+									&::before {
+										left: 23px;
+									}
+								}
+							}
+						}
+					}
+				}
+		}
+		.activBox {
+			padding: 44px 55px 53px;
+			background-color: #F5F5F8;
+			h2 {
+				margin-bottom: 9px;
+				font-size: 2.4rem;
+				letter-spacing: 0.03em;
+			}
+			p {
+				margin-bottom: 37px;
+				line-height: 2.5;
+			}
+			.comLinkList {
+				margin-bottom: 21px;
+				li {
+					width: 332px;
+					a  {
+						.pho {
+							margin-bottom: 5px;
+						}
+						.txtBox {
+							margin: 0;
+							.ttl {
+								padding-left: 8px;
+								background-position: right 4px top calc(50% + 4px);
+							}
+						}
+					}
+					
+				}
+			}
+			
+		}
+		.comBtn02 {
+			margin: 0 auto;
+			width: 403px;
+			a {
+				background-color: #fff;
+			}
+		}
+		@include sp {
+			margin-bottom: 80px;
+			.textList {
+				margin-bottom: 50px;
+				display: block;
+				li {
+					margin: 0 auto 25px;
+					width: auto;
+					&:last-child {
+						margin-bottom: 0;
+					}
+					.pho {
+						img {
+							width: 100%;
+						}
+					}
+				}
+			}
+			.activBox {
+				padding: 20px;
+			}
+			.comBtn02 {
+				margin: 0 auto;
+				max-width: 222px;
+				width: 100%;
+				a {
+					padding-right: 40px;
+    				font-size: 1rem;
+					background-position: right 10px center;
+				}
+			}
+		}
+	}
+	.sghBox {
+		margin-bottom: 100px;
+		.mv01 {
+			margin-bottom: 91px;
+			p {
+				padding-bottom: 13px;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				-webkit-transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+				max-width: none;
+    			width: auto;
+				padding: 45px;
+				&:before{
+					top: 0;
+					left: 0;
+					width: 600px;
+					height: 100vh;
+    				max-height: 400px;
+				}
+			}
+		}
+		.comBox {
+			ul {
+				margin: -20px 0 60px;
+				display: flex;
+				li {
+					margin: 20px 11px 0 0;
+					width: 140px;
+					&:last-child {
+						margin-right: 0;
+					}
+				}
+			}
+			.imgBox {
+				margin: 0 auto;
+				padding: 47px 55px 66px;
+				box-sizing: border-box;
+				display: flex;
+				justify-content: space-between;
+				background-color: #F5F5F8;
+				.textBox {
+					width: 624px;
+					p {
+						margin-bottom: 8px;
+						font-size: 1.5rem;
+						line-height: 2;
+					}
+					.title {
+						margin-bottom: 54px;
+						font-size: 2.4rem;
+						font-weight: 700;
+						line-height: 1.62;
+						letter-spacing: 0.03em;
+					}
+					.txt {
+						margin-bottom: 77px;
+					}
+					.btn {
+						width: 420px;
+						a {
+							padding: 0 10px 0 70px;
+							height: 67px;
+							position: relative;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							color: #fff;
+							font-size: 1.7rem;
+							font-weight: 700;
+							letter-spacing: 0.05em;
+							border-radius: 2px;
+							background: #1B519F url(/img/common/icon47.png) no-repeat left 31px center/16px auto;
+							overflow: hidden;
+							&::before {
+								width: 1px;
+    							height: 100%;
+    							position: absolute;
+    							left: 70px;
+    							top: 0;
+    							background: #fff;
+    							opacity: 0.3;
+    							content: "";
+							}
+							&::after {
+								content: "";
+    							position: absolute;
+    							top: 0;
+    							left: -75%;
+    							width: 50%;
+    							height: 100%;
+    							background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    							transform: skewX(-25deg);
+							}
+							@include pc {
+								&:hover::after {
+									animation: shine 0.7s;
+								}
+							}
+						}
+					}
+				}
+				.photoBox {
+					margin: 17px 20px 0 0;
+					width: 338px;
+				}
+			}
+		}
+		@include sp {
+			padding: 0 20px;
+			width: auto;
+			display: block;
+			.mv01 {
+				p {
+					padding-bottom: 0;
+				}
+			}
+			.comBox {
+				margin: 0 auto;
+				ul {
+					flex-wrap: wrap;
+					justify-content: space-between;
+					li {
+						margin: 0 auto 25px;
+						width: calc((100% - 20px) /2);
+						img {
+							width: 100%;
+						}
+					}
+				}
+				.imgBox {
+					padding: 20px;
+					display: block;
+					.textBox {
+						margin-bottom: 30px;
+						width: auto;
+						.title {
+							margin: 0 auto 25px;
+							font-size: 2rem;
+						}
+						p {
+							font-size: 1.5rem;
+						}
+						.txt {
+							margin-bottom: 45px;
+						}
+						.btn {
+							margin: 0 auto;
+    						width: auto;
+    						max-width: 300px;
+							a {
+								padding: 0 0 0 25px;
+								height: 60px;
+								position: relative;
+								font-size: 1.3rem;
+								letter-spacing: 0;
+								background-position: left 7px center;
+								background-size: 10px auto;
+								&::before {
+									left: 23px;
+								}
+							}
+						}
+					}
+					.photoBox {
+						margin: 0 auto;
+						width: auto;
+						img {
+							width: 100%;
+						}
+					}
+				}
+			}
+			
+			
+		}
+		
+	}
+}

@@ -1,0 +1,420 @@
+/*--------------------------------------------------------------------------*
+ *  
+ *  キャンペーン設定・管理画面のコース・発着エリア設定のチェックボックス
+ *  の活性・非活性を操作します。
+ *  
+ *  H.Tsuji
+ *  
+ *  2010 H.Tsuji
+ *  
+ *--------------------------------------------------------------------------*/
+
+/***************************************************************************
+ * オンロード時
+ *
+ ***************************************************************************/
+function inputOnload(courceplan) {
+
+	if (courceplan == "1") {
+		// 単身カーゴが含まれる場合
+		clickTanshinCargoPlan("1_1");
+	} else if (courceplan == "2") {
+		// 単身エアカーゴのみ
+		clickTanshinCargoPlan("1_2");
+	} else {
+		clickTanshinCargoPlan("")
+	}
+
+	// 地域コード選択状態の非活性処理
+	clickArea("");
+
+}
+
+/***************************************************************************
+ * 全コース選択ボタンがクリックされた場合
+ *
+ ***************************************************************************/
+function allCourcePlanBtn(methodFlg, beforeCheck1_1, beforeCheck1_2) {
+	if (methodFlg) {
+		// 全選択
+		if (beforeCheck1_1) {
+			document.getElementById("1_1").checked = true;
+		} else {
+			document.getElementById("1_1").checked = false;
+		}
+		if (beforeCheck1_2) {
+			document.getElementById("1_2").checked = true;
+		} else {
+			document.getElementById("1_2").checked = false;
+		}
+	} else {
+		// 全選択解除
+		document.getElementById("1_1").checked = beforeCheck1_1;
+		document.getElementById("1_2").checked = beforeCheck1_2;
+	}
+}
+
+/***************************************************************************
+ * カーゴコースがクリックされた場合
+ *
+ ***************************************************************************/
+function clickTanshinCargoPlan(clickId) {
+
+	if (clickId == "1_1") {
+		// 単身カーゴプラン
+		if (document.getElementById("1_1").checked) {
+			// 出発エリアの沖縄を非活性、チェックを外す
+			document.getElementById("from_center_12").disabled = true;
+			document.getElementById("from_center_12").checked = false;
+			document.getElementById("area_from_center_12_0").disabled = true;
+			document.getElementById("area_from_center_12_0").checked = false;
+			// 到着エリアの沖縄を非活性、チェックを外す
+			document.getElementById("to_center_12").disabled = true;
+			document.getElementById("to_center_12").checked = false;
+			document.getElementById("area_to_center_12_0").disabled = true;
+			document.getElementById("area_to_center_12_0").checked = false;
+		} else {
+			// 出発エリアの沖縄を活性
+			document.getElementById("from_center_12").disabled = false;
+			document.getElementById("area_from_center_12_0").disabled = false;
+			// 到着エリアの沖縄を活性
+			document.getElementById("to_center_12").disabled = false;
+			document.getElementById("area_to_center_12_0").disabled = false;
+		}
+		
+		// 地域コード選択状態の非活性処理
+		clickArea("");
+
+	} else if (clickId == "1_2") {
+		// 単身エアカーゴプラン
+
+		// コース全要素ID取得
+		allCource = document.forms[0].cource_ids.value;
+		allCources = allCource.split(":");
+
+		// 出発地域全要素ID取得
+		allFromArea = document.forms[0].fromarea_ids.value;
+		allFromAreas = allFromArea.split(":");
+
+		// 到着地域全要素ID取得
+		allToArea = document.forms[0].toarea_ids.value;
+		allToAreas = allToArea.split(":");
+		
+		if (document.getElementById("1_2").checked) {
+			// コース非活性化処理
+			for (i = 0; i < (allCources.length - 1); i++) {
+				if (allCources[i] != "1_2") {
+					document.getElementById(allCources[i]).disabled = true;
+					document.getElementById(allCources[i]).checked = false;
+				}
+			}
+			//北海道（札幌）/東京23区/福岡県以外の出発エリア・到着エリア非活性化処理
+			for (i = 0; i < (allFromAreas.length - 1); i++) {
+				if (allFromAreas[i] != "area_from_center_0_0" && allFromAreas[i] != "area_from_center_2_0" &&
+						allFromAreas[i] != "area_from_center_11_3") {	
+					document.getElementById(allFromAreas[i]).disabled = true;
+					document.getElementById(allFromAreas[i]).checked = false;
+				}
+			}
+			for (i = 0; i < (allToAreas.length - 1); i++) {
+				if (allToAreas[i] != "area_to_center_0_0" && allToAreas[i] != "area_to_center_2_0" &&
+						allToAreas[i] != "area_to_center_9_0" && allToAreas[i] != "area_to_center_11_3") {
+					document.getElementById(allToAreas[i]).disabled = true;
+					document.getElementById(allToAreas[i]).checked = false;
+				}else{
+						document.getElementById(allToAreas[i]).disabled = false;
+					}
+			}
+		} else {
+			// 他の全コース/プランを活性
+			// コース非活性化処理
+			for (i = 0; i < (allCources.length - 1); i++) {
+				document.getElementById(allCources[i]).disabled = false;
+			}
+			// 出発エリア・到着エリア非活性化処理
+			for (i = 0; i < (allFromAreas.length - 1); i++) {
+				document.getElementById(allFromAreas[i]).disabled = false;
+			}
+			for (i = 0; i < (allToAreas.length - 1); i++) {
+				document.getElementById(allToAreas[i]).disabled = false;
+			}
+		}
+
+		// 地域コード選択状態の非活性処理
+		clickArea("");
+
+	} else {
+
+		// 単身カーゴプランのチェック有無
+		cargo = document.getElementById("1_1").checked;
+		// 単身エアカーゴプランのチェック有無
+		aircargo = document.getElementById("1_2").checked;
+
+		if (aircargo) {
+			clickTanshinCargoPlan("1_2");
+		} else if (cargo) {
+			clickTanshinCargoPlan("1_1");
+		}
+		
+	}
+
+}
+
+
+/***************************************************************************
+ * （※onAreaClickedの中の処理の１つとして実行されます）
+ * 単身エアカーゴがonで、かつ、
+ * centerId（1:北海道（札幌）、2:東京23区、3:福岡）がクリックされた場合
+ *
+ ***************************************************************************/
+function clickArea(centerId) {
+
+	// 福岡県のチェック有無
+	fukuoka = document.getElementById("area_from_center_11_3").checked;
+	// 東京23区のチェック有無
+	tokyo = document.getElementById("area_from_center_2_0").checked;
+	// 北海道（札幌市）のチェック有無
+	sapporo = document.getElementById("area_from_center_0_0").checked;
+	// 単身カーゴプランのチェック有無
+	cargo = document.getElementById("1_1").checked;
+	// 単身エアカーゴのチェック有無
+	aircargo = document.getElementById("1_2").checked;
+
+	// 到着地域全要素ID取得
+	allToArea = document.forms[0].toarea_ids.value;
+	allToAreas = allToArea.split(":");
+
+	if (aircargo) {
+		// 単身エアカーゴにチェックが入っている場合
+		if (centerId == "area_from_center_11_3") {
+			if (document.getElementById("area_from_center_11_3").checked) {
+				// 福岡県にチェックを入れた場合
+				if (tokyo && sapporo) {
+					// 福岡県のほかに、東京23区・北海道（札幌市）にもチェックが入っている
+					// 全て非活性、チェックを外す
+					for (i = 0; i < (allToAreas.length - 1); i++) {
+						document.getElementById(allToAreas[i]).disabled = true;
+						document.getElementById(allToAreas[i]).checked = false;
+					}
+				} else if (tokyo && !sapporo) {
+					// 福岡県のほかに、東京23区にもチェックが入っている
+					// 北海道（札幌市）以外を非活性、チェックを外す
+					for (i = 0; i < (allToAreas.length - 1); i++) {
+						if (allToAreas[i] != "area_to_center_0_0") {
+							document.getElementById(allToAreas[i]).disabled = true;
+							document.getElementById(allToAreas[i]).checked = false;
+						}
+					}
+					// 北海道（札幌）、東京23区、福岡県を活性化
+					document.getElementById("area_to_center_0_0").disabled = false;
+				} else if (!tokyo && sapporo) {
+					// 福岡のほかに、札幌にもチェックが入っている
+					// 東京23区以外を非活性、チェックを外す
+					for (i = 0; i < (allToAreas.length - 1); i++) {
+						if (allToAreas[i] != "area_to_center_2_0") {
+							document.getElementById(allToAreas[i]).disabled = true;
+							document.getElementById(allToAreas[i]).checked = false;
+						}
+					}
+					// 北海道（札幌）、東京23区、大阪府、福岡県を活性化
+					document.getElementById("area_to_center_2_0").disabled = false;
+				} else {
+					for (i = 0; i < (allToAreas.length - 1); i++) {
+						if (allToAreas[i] != "area_to_center_0_0" && allToAreas[i] != "area_to_center_2_0") {
+							document.getElementById(allToAreas[i]).disabled = true;
+							document.getElementById(allToAreas[i]).checked = false;
+						}
+					}
+					// 北海道（札幌）、東京23区を活性化
+					document.getElementById("area_to_center_0_0").disabled = false;
+					document.getElementById("area_to_center_2_0").disabled = false;
+				}
+			} else {
+				// 福岡県のチェックを外した場合
+				if (tokyo && sapporo) {
+					// 東京23区、北海道（札幌市）にチェックが入っている場合、福岡県のみ活性化
+					document.getElementById("area_to_center_11_3").disabled = false;
+				} else if (tokyo && !sapporo) {
+					// 東京23区のみチェックが入っている場合、福岡県を活性化
+					document.getElementById("area_to_center_11_3").disabled = false;
+					//document.getElementById("area_to_center_2_0").checked = false;
+				} else if (!tokyo && sapporo) {
+					// 北海道（札幌市）のみチェックが入っている場合、大阪府、福岡県を活性化
+					//document.getElementById("area_to_center_0_0").disabled = false;
+					document.getElementById("area_to_center_9_0").disabled = false;
+					document.getElementById("area_to_center_11_3").disabled = false;
+				} else {
+					// 北海道（札幌市）・東京23区・大阪府・福岡県を活性化
+					document.getElementById("area_to_center_0_0").disabled = false;
+					document.getElementById("area_to_center_2_0").disabled = false;
+					document.getElementById("area_to_center_9_0").disabled = false;
+					document.getElementById("area_to_center_11_3").disabled = false;
+				}
+			}
+		} else if (centerId == "area_from_center_2_0") {
+			if (document.getElementById("area_from_center_2_0").checked) {
+				// 東京23区にチェックを入れた場合
+				if (fukuoka && sapporo) {
+					// 東京23区のほかに、福岡県・北海道（札幌市）にもチェックが入っている
+					// 全て非活性、チェックを外す
+					for (i = 0; i < (allToAreas.length - 1); i++) {
+						document.getElementById(allToAreas[i]).disabled = true;
+						document.getElementById(allToAreas[i]).checked = false;
+					}
+				} else if (!fukuoka && sapporo) {
+					// 東京23区のほかに、札幌にもチェックが入っている
+					// 福岡県以外を非活性、チェックを外す
+					for (i = 0; i < (allToAreas.length - 1); i++) {
+						if (allToAreas[i] != "area_to_center_11_3") {
+							document.getElementById(allToAreas[i]).disabled = true;
+							document.getElementById(allToAreas[i]).checked = false;
+						}
+					}
+					// 福岡県を活性化
+					document.getElementById("area_to_center_11_3").disabled = false;
+				} else if (fukuoka && !sapporo) {
+					// 東京23区のほかに、福岡県にもチェックが入っている
+					// 北海道（札幌市）以外を非活性、チェックを外す
+					for (i = 0; i < (allToAreas.length - 1); i++) {
+						if (allToAreas[i] != "area_to_center_0_0") {
+							document.getElementById(allToAreas[i]).disabled = true;
+							document.getElementById(allToAreas[i]).checked = false;
+						}
+					}
+					// 北海道（札幌）、東京23区、福岡県を活性化
+					document.getElementById("area_to_center_0_0").disabled = false;
+				} else {
+					// 北海道（札幌）、福岡県を非活性、チェックを外す
+					for (i = 0; i < (allToAreas.length - 1); i++) {
+						if (allToAreas[i] != "area_to_center_0_0" && allToAreas[i] != "area_to_center_11_3") {
+							document.getElementById(allToAreas[i]).disabled = true;
+							document.getElementById(allToAreas[i]).checked = false;
+						}
+					}
+					// 北海道（札幌）、東京23区、福岡県を活性化
+					document.getElementById("area_to_center_0_0").disabled = false;
+					document.getElementById("area_to_center_11_3").disabled = false;
+				}
+			} else {
+				// 東京23区のチェックを外した場合
+				if (fukuoka && sapporo) {
+					// 福岡県、北海道（札幌市）にチェックが入っている場合、東京23区のみ活性化
+					document.getElementById("area_to_center_2_0").disabled = false;
+				} else if (fukuoka && !sapporo) {
+					// 福岡県のみチェックが入っている場合、東京23区を活性化
+					document.getElementById("area_to_center_2_0").disabled = false;
+				} else if (!fukuoka && sapporo) {
+					// 北海道（札幌市）にチェックが入っている場合、東京23区、大阪府を活性化
+					document.getElementById("area_to_center_2_0").disabled = false;
+					document.getElementById("area_to_center_9_0").disabled = false;
+				} else {
+					// 北海道（札幌市）・東京23区・大阪府・福岡県を活性化
+					document.getElementById("area_to_center_0_0").disabled = false;
+					document.getElementById("area_to_center_2_0").disabled = false;
+					document.getElementById("area_to_center_9_0").disabled = false;
+					document.getElementById("area_to_center_11_3").disabled = false;
+				}
+			}
+		} else if (centerId == "area_from_center_0_0") {
+			if (document.getElementById("area_from_center_0_0").checked) {
+				// 北海道（札幌）にチェックを入れた場合
+				if (fukuoka && tokyo) {
+					// 北海道（札幌市）のほかに、東京23区・福岡にもチェックが入っている
+					// 全て非活性、チェックを外す
+					for (i = 0; i < (allToAreas.length - 1); i++) {
+						document.getElementById(allToAreas[i]).disabled = true;
+						document.getElementById(allToAreas[i]).checked = false;
+					}
+				} else if (fukuoka && !tokyo) {
+					// 北海道（札幌市）のほかに、福岡にもチェックが入っている
+					// 北海道（札幌）、東京23区、大阪府、福岡県以外を非活性、チェックを外す
+					for (i = 0; i < (allToAreas.length - 1); i++) {
+						if (allToAreas[i] != "area_to_center_2_0") {
+							document.getElementById(allToAreas[i]).disabled = true;
+							document.getElementById(allToAreas[i]).checked = false;
+						}
+					}
+					// 北海道（札幌）、東京23区、大阪府、福岡県を活性化
+					document.getElementById("area_to_center_2_0").disabled = false;
+				} else if (!fukuoka && tokyo) {
+					// 北海道（札幌市）のほかに、東京23区にもチェックが入っている
+					// 福岡県以外を非活性、チェックを外す
+					for (i = 0; i < (allToAreas.length - 1); i++) {
+						if (allToAreas[i] != "area_to_center_11_3") {
+							document.getElementById(allToAreas[i]).disabled = true;
+							document.getElementById(allToAreas[i]).checked = false;
+						}
+					}
+					// 北海道（札幌）、東京23区、大阪府、福岡県を活性化
+					document.getElementById("area_to_center_11_3").disabled = false;
+				} else {
+					// 東京23区、大阪府、福岡県を非活性、チェックを外す
+					for (i = 0; i < (allToAreas.length - 1); i++) {
+						if (allToAreas[i] != "area_to_center_2_0" && allToAreas[i] != "area_to_center_9_0" && allToAreas[i] != "area_to_center_11_3") {
+							document.getElementById(allToAreas[i]).disabled = true;
+							document.getElementById(allToAreas[i]).checked = false;
+						}
+					}
+					// 東京23区、大阪府、福岡県を活性化
+					document.getElementById("area_to_center_2_0").disabled = false;
+					document.getElementById("area_to_center_9_0").disabled = false;
+					document.getElementById("area_to_center_11_3").disabled = false;
+				}
+			} else {
+				// 北海道（札幌）のチェックを外した場合
+				if (fukuoka && tokyo) {
+					// 大阪府・福岡県非活性化
+					document.getElementById("area_to_center_0_0").disabled = false;
+				} else if (fukuoka && !tokyo) {
+					// 福岡県のみにチェックが入っている場合、大阪府・福岡県非活性化
+					document.getElementById("area_to_center_0_0").disabled = false;
+				} else if (!fukuoka && tokyo) {
+					// 東京23区のみにチェックが入っている場合、北海道を活性化
+					document.getElementById("area_to_center_0_0").disabled = false;
+				} else {
+					// 北海道（札幌市）・東京23区・大阪府・福岡県を活性化
+					document.getElementById("area_to_center_0_0").disabled = false;
+					document.getElementById("area_to_center_2_0").disabled = false;
+					document.getElementById("area_to_center_9_0").disabled = false;
+					document.getElementById("area_to_center_11_3").disabled = false;
+				}
+			}
+		} else {
+			// 直接クリック以外の呼び出し
+			if (fukuoka && tokyo && sapporo) {
+				// 福岡・東京・札幌
+				clickArea("area_from_center_11_3");
+			} else if (fukuoka && tokyo && !sapporo) {
+				// 福岡・東京
+				clickArea("area_from_center_11_3");
+			} else if (fukuoka && !tokyo && sapporo) {
+				// 福岡・札幌
+				clickArea("area_from_center_11_3");
+			} else if (fukuoka && !tokyo && !sapporo) {
+				// 福岡
+				clickArea("area_from_center_11_3");
+			} else if (!fukuoka && tokyo && !sapporo) {
+				// 東京
+				clickArea("area_from_center_2_0");
+			} else if (!fukuoka && !tokyo && sapporo) {
+				// 札幌
+				clickArea("area_from_center_0_0");
+			} else if (!fukuoka && tokyo && sapporo) {
+				// 東京・札幌
+				clickArea("area_from_center_2_0");
+			}
+		}
+	} else {
+		// 単身エアカーゴにチェックが入っていない場合、到着エリアは沖縄を除いて全活性化
+		for (i = 0; i < (allToAreas.length - 1); i++) {
+			document.getElementById(allToAreas[i]).disabled = false;
+		}
+		if (cargo) {
+			document.getElementById("to_center_12").disabled = true;
+			document.getElementById("to_center_12").checked = false;
+			document.getElementById("area_to_center_12_0").disabled = true;
+			document.getElementById("area_to_center_12_0").checked = false;
+		}
+	}
+
+}

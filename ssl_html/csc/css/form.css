@@ -1,0 +1,68 @@
+.comiket_block dl {
+    height: 50px;
+}
+.dl_block dl dd {
+    padding: 10px 10px;
+}
+.dl_block dl dd select {
+    width: 30%;
+    padding: 5px 25px 5px 5px;
+}
+.td-date {
+    padding: 7px 5px;
+    border: 1px solid #a9a9a9;
+    border-radius: 3px;
+}
+.back_button {
+    padding: 15px 0px !important;
+    width: 200px;
+    font-size: 17px;
+    background-color: #fc826a;
+    background-image: url(/../images/common/img_allow_10.png);
+    color: #fff !important;
+    border-style: none;
+    cursor: pointer;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: 10% center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-weight: bold;
+    outline: none;
+}
+.reload_button {
+    padding: 15px 0px !important;
+    width: 200px;
+    font-size: 17px;
+    background-color: #fc826a;
+    color: #fff !important;
+    border-style: none;
+    cursor: pointer;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: 10% center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-weight: bold;
+    outline: none;
+}
+.err_input {
+    background-color: #fdd;
+}
+.btnBackEvent:hover { 
+    opacity: 0.8;
+}
+@media only screen and (max-width: 768px) { 
+    .btnBackEvent { 
+        width: 100%;
+        font-size: 14px;
+    }
+}

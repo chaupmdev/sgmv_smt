@@ -1,0 +1,13 @@
+＜集荷先情報＞
+【集荷時お立合い者】<::type1_name::>
+【郵便番号】<::type1_zip::>
+【都道府県】<::type1_pref::>
+【市町村区】<::type1_address::>
+【建物番地名】<::type1_building::>
+【電話番号】<::type1_tel::>
+<::comiket_booth_name::><::comiket_building_name::>
+【集荷日時】<::type1_collect_date::>
+【到着日】<::type1_delivery_date::>
+【備考】
+<::type1_note::>
+

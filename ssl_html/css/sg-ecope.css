@@ -1,0 +1,1394 @@
+@charset "UTF-8";
+/*------------------------------------------------------------
+	/reverse-logistics/sg-ecope/
+------------------------------------------------------------*/
+#main {
+  overflow: hidden;
+}
+#main .mainVisual {
+  padding: 78px 0 69px;
+  position: relative;
+  text-align: center;
+}
+#main .mainVisual .img02 {
+  margin: -71px 0 0;
+  position: relative;
+}
+#main .mainVisual .img02 img {
+  width: 100%;
+}
+#main .mainVisual .img02 .link {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+#main .mainVisual #pagePath {
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 18px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 42px;
+}
+#main .mainVisual #pagePath li {
+  color: #fff;
+  letter-spacing: 0.1em;
+}
+#main .mainVisual #pagePath a {
+  color: #fff;
+}
+#main .mainVisual .link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 332px;
+  height: 75px;
+  font-weight: bold;
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  color: #146420;
+  background: #fff;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 1px 8px rgba(17, 31, 59, 0.2);
+          box-shadow: 0px 1px 8px rgba(17, 31, 59, 0.2);
+}
+#main .mainVisual .link .in {
+  padding: 0 70px 0 70px;
+  background: url(/img/common/icon_pdf01.png) no-repeat left 30px center, url(/img/common/icon51.png) no-repeat right center;
+  background-size: 19px, 35px;
+}
+@media all and (min-width: 897px) {
+  #main .mainVisual .link:hover {
+    opacity: 0.7;
+  }
+}
+#main .mainVisual .contact {
+  margin: 37px auto 63px;
+  padding: 92px 100px 79px 70px;
+  border-radius: 10px;
+  background: #fff;
+  position: relative;
+}
+#main .mainVisual .contact::after {
+  width: 146px;
+  height: 184px;
+  position: absolute;
+  right: 65px;
+  bottom: 13px;
+  content: "";
+  background: url(/img/reverse-logistics/sg-ecope/contact_img.png) no-repeat center bottom/100%;
+}
+@media all and (max-width: 896px) {
+  #main .mainVisual .contact {
+    margin: 10px 15px 63px;
+    padding: 60px 20px;
+  }
+  #main .mainVisual .contact::after {
+    width: 100px;
+    right: 0;
+    bottom: -12px;
+  }
+}
+@media all and (max-width: 896px) {
+  #main .mainVisual .contact .lBox {
+    margin-bottom: 50px;
+  }
+}
+#main .mainVisual .contact .lBox .heading {
+  margin: -5px 0 30px -5px;
+  font-size: 2.8rem;
+  text-align: left;
+  line-height: 1.64;
+}
+#main .mainVisual .contact .lBox .heading .en {
+  margin-bottom: 24px;
+  display: block;
+  font-family: Mukta;
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 1;
+  color: #302F31;
+}
+#main .mainVisual .contact .lBox .heading .en::after {
+  margin: 22px 0 0 5px;
+  display: block;
+  content: "";
+  width: 29px;
+  height: 5px;
+  background: #00A888;
+}
+@media all and (max-width: 896px) {
+  #main .mainVisual .contact .lBox .heading {
+    font-size: 2.2rem;
+  }
+  #main .mainVisual .contact .lBox .heading .en {
+    margin-bottom: 15px;
+  }
+  #main .mainVisual .contact .lBox .heading .en::after {
+    margin: 15px 0 0 5px;
+  }
+}
+@media all and (max-width: 374px) {
+  #main .mainVisual .contact .lBox .heading {
+    font-size: 1.8rem;
+  }
+}
+#main .mainVisual .contact .lBox p {
+  text-align: left;
+  font-size: 1.5rem;
+  line-height: 1.93;
+  letter-spacing: 0.05em;
+}
+#main .mainVisual .contact .lBox p a {
+  color: #1171E0;
+  text-decoration: underline;
+}
+@media all and (min-width: 897px) {
+  #main .mainVisual .contact .lBox p a:hover {
+    text-decoration: none;
+  }
+}
+#main .mainVisual .contact .rBox {
+  padding: 60px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  background: #f2f3f9;
+}
+#main .mainVisual .contact .rBox .tel {
+  margin-bottom: 30px;
+}
+#main .mainVisual .contact .rBox .tel a {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 3.8rem;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  color: #302f31;
+  text-align: center;
+  background: url(/img/common/icon31.png) no-repeat left center/41px auto;
+  padding-left: 50px;
+}
+#main .mainVisual .contact .rBox .tel a span {
+  padding-left: 45px;
+  display: inline-block;
+  vertical-align: top;
+  background: url(/img/reverse-logistics/sg-ecope/btm_bg01.png) no-repeat left top 6px/39px auto;
+}
+@media all and (max-width: 374px) {
+  #main .mainVisual .contact .rBox .tel a span {
+    padding-left: 30px;
+    background-size: 26px auto;
+  }
+}
+#main .mainVisual .contact .rBox .tel a small {
+  margin-top: 7px;
+  display: block;
+  font-weight: 600;
+  font-size: 1.6rem;
+  letter-spacing: 0.04em;
+}
+@media all and (max-width: 896px) {
+  #main .mainVisual .contact .rBox .tel a {
+    font-size: 3rem;
+  }
+  #main .mainVisual .contact .rBox .tel a small {
+    font-size: 1.4rem;
+    letter-spacing: 0;
+  }
+}
+@media all and (max-width: 374px) {
+  #main .mainVisual .contact .rBox .tel a {
+    font-size: 2.7rem;
+  }
+  #main .mainVisual .contact .rBox .tel a small {
+    font-size: 1.3rem;
+  }
+}
+#main .mainVisual .contact .rBox .linkList .download {
+  margin-bottom: 20px;
+}
+#main .mainVisual .contact .rBox .linkList .download .link {
+  background-color: #54A827;
+}
+#main .mainVisual .contact .rBox .linkList .download .link .in {
+  background: url(/img/common/icon_pdf02.png) no-repeat left 5px center, url(/img/common/icon06.png) no-repeat right center;
+  background-size: 19px, 35px;
+}
+#main .mainVisual .contact .rBox .linkList .link {
+  padding: 0 35px;
+  color: #FFF;
+  background: #E8730C;
+}
+#main .mainVisual .contact .rBox .linkList .link .in {
+  padding: 0 40px;
+  width: 100%;
+  text-align: center;
+  background: url(/img/common/icon01.png) no-repeat left center, url(/img/common/icon06.png) no-repeat right center;
+  background-size: 22px, 35px;
+}
+@media all and (max-width: 896px) {
+  #main .mainVisual .contact .rBox .linkList .link {
+    padding: 0 10px;
+  }
+  #main .mainVisual .contact .rBox .linkList .link .in {
+    padding: 0 40px;
+  }
+}
+@media all and (min-width: 897px) {
+  #main .mainVisual .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #main .mainVisual .contact .lBox {
+    width: 510px;
+  }
+  #main .mainVisual .contact .rBox {
+    padding: 100px 0;
+    width: 465px;
+  }
+}
+@media all and (max-width: 896px) {
+  #main .mainVisual {
+    padding: 45px 0 0;
+    overflow: hidden;
+  }
+  #main .mainVisual .img01 img {
+    width: 300px;
+  }
+  #main .mainVisual .img02 {
+    margin: -20px -30% 0;
+  }
+  #main .mainVisual .img02 .link {
+    bottom: -20px;
+    letter-spacing: 0;
+  }
+  #main .mainVisual .link {
+    width: 250px;
+    height: 50px;
+    font-size: 1.3rem;
+  }
+  #main .mainVisual .link .in {
+    padding: 0 50px;
+    background-position: left center, right center;
+  }
+}
+@media all and (max-width: 374px) {
+  #main .mainVisual .link {
+    padding: 0 10px !important;
+    width: 210px;
+  }
+  #main .mainVisual .link .in {
+    padding: 0 39px !important;
+  }
+}
+#main .content {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+#main .heading {
+  margin-bottom: 83px;
+  font-weight: 900;
+  font-size: 3.1rem;
+  letter-spacing: 0.05em;
+  line-height: 1.48;
+  text-align: center;
+}
+@media all and (max-width: 896px) {
+  #main .heading {
+    margin-bottom: 60px;
+    font-size: 2.2rem;
+    letter-spacing: 0;
+  }
+}
+@media all and (max-width: 374px) {
+  #main .heading {
+    font-size: 1.9rem;
+  }
+}
+#main .topBox {
+  padding: 120px 20px 112px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+@media all and (min-width: 897px) {
+  #main .topBox .imgBox {
+    margin: 0 -6px 120px 47px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #main .topBox .imgBox .photoBox {
+    margin-top: -37px;
+    width: 527px;
+    text-align: center;
+  }
+  #main .topBox .imgBox .photoBox img {
+    width: 100%;
+  }
+  #main .topBox .imgBox .textBox {
+    width: 610px;
+  }
+}
+#main .topBox .imgBox h2 {
+  margin-bottom: 38px;
+}
+#main .topBox .imgBox h2 span {
+  margin-top: 33px;
+  display: block;
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  line-height: 1.64;
+}
+#main .topBox .imgBox p {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.0625;
+  letter-spacing: 0.05em;
+}
+@media all and (max-width: 374px) {
+  #main .topBox .imgBox p {
+    font-size: 1.4rem;
+  }
+}
+#main .topBox .heading {
+  margin-bottom: 5px;
+}
+#main .topBox .image {
+  text-align: center;
+  margin: -5px 0 0 68px;
+}
+#main .topBox .image img {
+  width: 100%;
+}
+@media all and (max-width: 896px) {
+  #main .topBox {
+    padding: 0 15px 60px;
+  }
+  #main .topBox .imgBox {
+    margin-bottom: 50px;
+  }
+  #main .topBox .imgBox h2 span {
+    margin: 20px -15px 0 0;
+    font-size: 2rem;
+    letter-spacing: 0;
+  }
+}
+@media all and (max-width: 896px) and (max-width: 374px) {
+  #main .topBox .imgBox h2 span {
+    font-size: 1.7rem;
+  }
+}
+@media all and (max-width: 896px) {
+  #main .topBox .imgBox h2 img {
+    width: 280px;
+  }
+  #main .topBox .imgBox p {
+    line-height: 1.8;
+  }
+  #main .topBox .imgBox .textBox {
+    margin-bottom: 10px;
+  }
+  #main .topBox .heading {
+    margin-bottom: 20px;
+  }
+  #main .topBox .image {
+    margin: -5px 0 0;
+  }
+}
+#main .gapBox {
+  padding: 62px 15px 0;
+  background: url(/img/reverse-logistics/sg-ecope/gap_bg01.png) no-repeat left bottom, url(/img/reverse-logistics/sg-ecope/gap_bg02.png) no-repeat right bottom;
+  background-size: 432px, 565px;
+  background-color: #6872AD;
+}
+#main .gapBox .content {
+  padding-bottom: 39px;
+  position: relative;
+}
+#main .gapBox .content .posImg {
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+}
+#main .gapBox .content .posImg img {
+  height: 423px;
+}
+@media all and (max-width: 896px) {
+  #main .gapBox .content .posImg {
+    display: none;
+  }
+}
+#main .gapBox .content .posImg01 {
+  left: 0;
+}
+#main .gapBox .content .posImg02 {
+  right: 10px;
+}
+#main .gapBox .heading {
+  color: #FFF;
+}
+#main .gapBox .heading span {
+  color: #fff501;
+  font-size: 2.5rem;
+  display: inline-block;
+  vertical-align: top;
+}
+@media all and (max-width: 896px) {
+  #main .gapBox .heading span {
+    font-size: 1.5rem;
+  }
+}
+#main .gapBox .list {
+  margin-bottom: 20px;
+}
+@media all and (min-width: 897px) {
+  #main .gapBox .list {
+    margin: 0 0 71px 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #main .gapBox .list li {
+    min-width: 360px;
+  }
+  #main .gapBox .list li.item {
+    width: 437px;
+  }
+}
+#main .gapBox .list li {
+  margin: 0 15px;
+  padding: 1px 30px 30px;
+  position: relative;
+  text-align: center;
+  border-radius: 20px;
+  background: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+#main .gapBox .list li::after {
+  width: 76px;
+  height: 29px;
+  position: absolute;
+  left: 47px;
+  bottom: -25px;
+  content: "";
+  background: url(/img/reverse-logistics/sg-ecope/gap_bg03.png) no-repeat left bottom/100%;
+}
+#main .gapBox .list li .title {
+  margin-bottom: -14px;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+#main .gapBox .list li .title span {
+  padding: 12px 35px;
+  display: inline-block;
+  width: 208px;
+  height: 70px;
+  color: #FFF;
+  font-size: 2.2rem;
+  font-weight: 700;
+  border-radius: 70px;
+  background: #1B519F;
+}
+#main .gapBox .list li .title span img {
+  margin-right: 20px;
+  height: 37px;
+  vertical-align: -2px;
+}
+#main .gapBox .list li p {
+  color: #03337b;
+  font-weight: 900;
+  font-size: 2.5rem;
+  letter-spacing: 0.05em;
+  line-height: 1.48;
+}
+#main .gapBox .list li p .line {
+  background: url(/img/reverse-logistics/sg-ecope/line.png) repeat-x left bottom;
+}
+#main .gapBox .list li p small {
+  margin-top: 8px;
+  display: block;
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+#main .gapBox .list li.item .title span {
+  background-color: #E8720C;
+}
+#main .gapBox .list li.item::after {
+  background-image: url(/img/reverse-logistics/sg-ecope/gap_bg04.png);
+  left: auto;
+  right: 95px;
+}
+@media all and (max-width: 896px) {
+  #main .gapBox .list li {
+    margin: 0 0 50px;
+    padding: 1px 15px 30px;
+  }
+  #main .gapBox .list li::after {
+    width: 50px;
+    bottom: -15px;
+  }
+  #main .gapBox .list li .title {
+    margin-bottom: -14px;
+  }
+  #main .gapBox .list li .title span {
+    padding: 8px 35px 10px;
+    height: 50px;
+    font-size: 2rem;
+  }
+  #main .gapBox .list li .title span img {
+    margin-right: 10px;
+    height: 30px;
+    vertical-align: -5px;
+  }
+  #main .gapBox .list li p {
+    font-size: 2rem;
+  }
+}
+@media all and (max-width: 896px) and (max-width: 374px) {
+  #main .gapBox .list li p {
+    font-size: 1.7rem;
+  }
+}
+#main .gapBox .midTxt {
+  color: #FFF;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  line-height: 1.8;
+  text-align: center;
+}
+#main .gapBox .midTxt .bgTxt {
+  padding: 0 5px;
+  background-color: #1559DE;
+}
+@media all and (max-width: 896px) {
+  #main .gapBox .midTxt {
+    letter-spacing: 0;
+  }
+}
+@media all and (max-width: 374px) {
+  #main .gapBox .midTxt {
+    font-size: 1.7rem;
+  }
+}
+#main .manage {
+  padding: 75px 0 113px;
+}
+#main .manage .heading {
+  margin-bottom: 70px;
+}
+#main .manage .textBox {
+  margin: 0 auto;
+  padding: 72px 85px 55px;
+  position: relative;
+  max-width: 900px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #F8F8F8 url(/img/reverse-logistics/sg-ecope/manage_bg.png) repeat center top/67px;
+  border: 10px solid #2A811C;
+  border-radius: 20px;
+}
+#main .manage .textBox::before {
+  width: 152px;
+  height: 76px;
+  position: absolute;
+  left: 50%;
+  top: -55px;
+  content: "";
+  background: url(/img/reverse-logistics/sg-ecope/manage_top_bg.png) no-repeat center top/100%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+#main .manage .textBox::after {
+  width: 159px;
+  height: 239px;
+  position: absolute;
+  left: -95px;
+  bottom: -11px;
+  content: "";
+  background: url(/img/reverse-logistics/sg-ecope/img05.png) no-repeat center bottom/100%;
+}
+#main .manage .textBox .posImg {
+  position: absolute;
+}
+#main .manage .textBox .posImg01 {
+  right: 32px;
+  top: 35px;
+}
+#main .manage .textBox .posImg02 {
+  right: -81px;
+  bottom: -23px;
+}
+#main .manage .textBox .list li {
+  padding: 0 0 5px 40px;
+  font-size: 1.9rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  background: url(/img/reverse-logistics/sg-ecope/icon03.png) no-repeat left 5px/26px;
+}
+@media all and (max-width: 896px) {
+  #main .manage {
+    padding: 50px 15px 60px;
+  }
+  #main .manage .textBox {
+    padding: 40px 15px 55px;
+  }
+  #main .manage .textBox::after {
+    width: 55px;
+    left: -23px;
+    height: 84px;
+  }
+  #main .manage .textBox .posImg01 {
+    width: 54px;
+    right: 3px;
+    top: 4px;
+  }
+  #main .manage .textBox .posImg02 {
+    width: 100px;
+    right: -11px;
+  }
+}
+@media all and (max-width: 896px) and (max-width: 374px) {
+  #main .manage .textBox .posImg02 {
+    width: 77px;
+  }
+}
+@media all and (max-width: 896px) {
+  #main .manage .textBox .list li {
+    padding: 0 0 5px 30px;
+    font-size: 1.5rem;
+    letter-spacing: 0;
+    background-size: 20px;
+  }
+}
+#main .comList {
+  counter-reset: num;
+}
+@media all and (min-width: 897px) {
+  #main .comList {
+    margin-top: -54px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #main .comList > li {
+    margin-top: 54px;
+    padding: 60px 55px 40px;
+    width: calc(50% - 28px);
+    min-height: 232px;
+  }
+}
+#main .comList > li {
+  position: relative;
+  border-radius: 10px;
+  background: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  counter-increment: num;
+}
+#main .comList > li::before {
+  left: 50%;
+  top: 0;
+  color: #d0d0d0;
+  font-size: 7rem;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  position: absolute;
+  font-family: Roboto;
+  font-weight: 500;
+  content: counter(num, decimal-leading-zero);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+#main .comList > li h4 {
+  margin-bottom: 30px;
+  color: #302F31;
+  font-weight: 900;
+  font-size: 2.6rem;
+  letter-spacing: 0.05em;
+  line-height: 1.46;
+  text-align: center;
+}
+@media all and (max-width: 896px) {
+  #main .comList > li {
+    margin-bottom: 40px;
+    padding: 60px 15px 40px;
+  }
+  #main .comList > li h4 {
+    font-size: 2rem;
+  }
+}
+#main .comTxtList > li {
+  padding: 0 0 8px 15px;
+  position: relative;
+  letter-spacing: 0.05em;
+  line-height: 1.46;
+  font-weight: 500;
+  text-align: left;
+}
+#main .comTxtList > li::before {
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  left: 0;
+  top: 8px;
+  content: "";
+  background: #b7b7c7;
+  border-radius: 7px;
+}
+#main .comTxtList > li:last-child {
+  padding-bottom: 0;
+}
+#main .problems {
+  padding: 68px 0 78px;
+  background: #f7f7fb url(/img/reverse-logistics/sg-ecope/problems_bg.png) no-repeat center top -9px/100%;
+}
+#main .problems .heading {
+  margin-bottom: 99px;
+  color: #FFF;
+}
+#main .problems .comList {
+  position: relative;
+}
+#main .problems .comList::before {
+  width: 180px;
+  height: 104px;
+  position: absolute;
+  left: 33px;
+  top: -19px;
+  content: "";
+  background: url(/img/reverse-logistics/sg-ecope/problems_img.png) no-repeat center top/100%;
+  z-index: 10;
+}
+#main .problems .comList .comTxtList {
+  display: inline-block;
+}
+@media all and (max-width: 896px) {
+  #main .problems {
+    padding: 68px 15px 30px;
+  }
+  #main .problems .comList::before {
+    width: 100px;
+    left: -10px;
+    top: -29px;
+  }
+}
+#main .solution {
+  padding: 1px 0 90px;
+  background: #ECF8EC url(/img/reverse-logistics/sg-ecope/solution_bg.png) no-repeat center top/1334px;
+}
+#main .solution h3 {
+  margin: -21px 0 142px;
+  text-align: center;
+}
+#main .solution .comList {
+  position: relative;
+}
+#main .solution .comList::before {
+  width: 158px;
+  height: 207px;
+  position: absolute;
+  right: -28px;
+  top: -87px;
+  content: "";
+  background: url(/img/reverse-logistics/sg-ecope/solution_img.png) no-repeat center top/100%;
+  z-index: 10;
+}
+#main .solution .comList > li {
+  padding: 47px 0 40px;
+  -webkit-box-shadow: 0px 2px 10px rgba(159, 126, 73, 0.16);
+          box-shadow: 0px 2px 10px rgba(159, 126, 73, 0.16);
+}
+#main .solution .comList > li::before {
+  color: #e8720c;
+}
+#main .solution .comList > li h4 {
+  margin: 0 10px 25px;
+  font-size: 2rem;
+  position: relative;
+}
+#main .solution .comList > li h4::after {
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  left: 0;
+  bottom: -37px;
+  content: "";
+  background: url(/img/reverse-logistics/sg-ecope/solution_arrow.png) no-repeat center top/35px;
+  z-index: 10;
+}
+@media all and (max-width: 896px) {
+  #main .solution .comList > li h4 {
+    font-size: 1.8rem;
+  }
+}
+@media all and (max-width: 896px) {
+  #main .solution .comList > li h4 {
+    font-size: 1.7rem;
+  }
+}
+#main .solution .comList > li h5 {
+  margin-bottom: 25px;
+  padding: 20px 10px 22px 40px;
+  position: relative;
+  color: #FFF;
+  font-size: 2.4rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  line-height: 1.42;
+  background: #e8720c;
+}
+#main .solution .comList > li h5::before {
+  width: 78px;
+  height: 78px;
+  position: absolute;
+  left: -14px;
+  top: -17px;
+  content: "";
+  background: #00A888 url(/img/reverse-logistics/sg-ecope/solution_text.png) no-repeat center center/53px;
+  border-radius: 100%;
+  z-index: 10;
+}
+#main .solution .comList > li h5 .bgTxt {
+  padding: 0 5px;
+  color: #e8720c;
+  background-color: #F5FF00;
+}
+@media all and (max-width: 896px) {
+  #main .solution .comList > li h5 {
+    padding: 20px 10px 22px;
+    font-size: 2rem;
+    letter-spacing: 0;
+  }
+  #main .solution .comList > li h5::before {
+    width: 50px;
+    height: 50px;
+    top: -24px;
+    background-size: 35px;
+  }
+}
+@media all and (max-width: 374px) {
+  #main .solution .comList > li h5 {
+    font-size: 1.6rem;
+  }
+}
+#main .solution .comList > li .comTxtList {
+  margin: 0 50px;
+}
+@media all and (max-width: 896px) {
+  #main .solution .comList > li .comTxtList {
+    margin: 0 20px;
+  }
+}
+@media all and (max-width: 896px) {
+  #main .solution {
+    padding: 1px 15px 90px;
+    background-size: 1000px 110px;
+  }
+  #main .solution h3 {
+    margin: 10px 0 80px;
+  }
+  #main .solution h3 img {
+    width: 350px;
+  }
+  #main .solution .comList::before {
+    width: 84px;
+    right: -13px;
+    top: -87px;
+    height: 112px;
+  }
+}
+#main .method {
+  padding: 50px 15px 50px;
+}
+@media all and (min-width: 897px) {
+  #main .method {
+    padding: 90px 0 67px;
+  }
+  #main .method .inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #main .method .inner .ttlBox {
+    width: 430px;
+  }
+  #main .method .inner .rBox {
+    width: 730px;
+  }
+  #main .method .inner .rBox .list {
+    margin-top: 9px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #main .method .inner .rBox .list > li {
+    width: 386px;
+    margin-top: 9px;
+  }
+  #main .method .inner .rBox .list > li:nth-child(2n) {
+    width: 333px;
+  }
+}
+#main .method .inner {
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 10;
+}
+#main .method .inner::after {
+  width: 100%;
+  height: 59px;
+  position: absolute;
+  left: 0;
+  bottom: -68px;
+  content: "";
+  background: url(/img/reverse-logistics/sg-ecope/method_arrow.png) no-repeat center top/106px;
+}
+#main .method .inner .ttlBox .img {
+  margin: -5px 0 26px;
+}
+@media all and (max-width: 896px) {
+  #main .method .inner .ttlBox .img img {
+    width: 100%;
+  }
+}
+#main .method .inner .ttlBox .heading {
+  margin-bottom: 17px;
+  font-size: 2.8rem;
+  text-align: left;
+  line-height: 1.65;
+}
+#main .method .inner .ttlBox p {
+  font-weight: 500;
+  font-size: 1.6rem;
+  letter-spacing: 0.05em;
+  line-height: 33px;
+}
+#main .method .inner .rBox .list > li {
+  padding-bottom: 20px;
+  border-radius: 10px;
+  background: #faf2e8;
+}
+#main .method .inner .rBox .list > li h4 {
+  margin-bottom: 17px;
+  padding: 5px 5px 6px;
+  display: inline-block;
+  min-width: 130px;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+  text-align: center;
+  border-radius: 10px 0px;
+  background: #e8720c;
+}
+#main .method .inner .rBox .list .comTxtList {
+  margin: 0 10px 0 28px;
+}
+#main .method .inner .rBox .list .comTxtList > li {
+  padding-bottom: 9px;
+  letter-spacing: 0.02em;
+}
+#main .method .inner .rBox .list .comTxtList .subTxt {
+  margin: 8px 0 0 10px;
+  counter-reset: num01;
+}
+#main .method .inner .rBox .list .comTxtList .subTxt li {
+  position: relative;
+  padding: 0 0 8px 25px;
+  counter-increment: num01;
+  letter-spacing: 0.02em;
+}
+#main .method .inner .rBox .list .comTxtList .subTxt li:last-child {
+  padding-bottom: 0;
+}
+#main .method .inner .rBox .list .comTxtList .subTxt li::before {
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 17px;
+  height: 17px;
+  color: #d0d0d0;
+  font-size: 1.3rem;
+  letter-spacing: -0.02em;
+  line-height: 17px;
+  font-family: Roboto;
+  font-weight: 500;
+  content: counter(num01);
+  background: #302f31;
+  text-align: center;
+  border-radius: 17px;
+}
+@media all and (max-width: 896px) {
+  #main .method .inner .ttlBox {
+    margin-bottom: 30px;
+  }
+  #main .method .inner .ttlBox .heading {
+    font-size: 2.2rem;
+  }
+  #main .method .inner .ttlBox p {
+    letter-spacing: 0;
+  }
+  #main .method .inner .rBox .list .comTxtList {
+    margin: 0 10px;
+  }
+}
+@media all and (max-width: 374px) {
+  #main .method .inner .ttlBox .heading {
+    font-size: 2rem;
+  }
+}
+#main .method .dlTxt {
+  margin-bottom: 20px;
+}
+#main .method .dlTxt dt {
+  color: #FFF;
+  font-weight: bold;
+  font-size: 1.6rem;
+  letter-spacing: 0.05em;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 10px;
+  background: #e8720c;
+}
+#main .method .dlTxt dd .comTxtList {
+  margin: -3px 0;
+}
+#main .method .dlTxt dd .comTxtList > li {
+  padding: 0 0 3px 20px;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+#main .method .dlTxt dd .comTxtList > li::before {
+  top: 13px;
+}
+#main .method .dlTxt.dlTxt01 {
+  padding: 45px 45px 40px;
+  border-radius: 10px;
+  background: #00A888;
+}
+#main .method .dlTxt.dlTxt01 dt {
+  color: #00A888;
+  background-color: #fff;
+}
+#main .method .dlTxt.dlTxt01 .comTxtList > li {
+  color: #fff;
+}
+#main .method .dlTxt.dlTxt01 .comTxtList > li::before {
+  background: #00A888;
+}
+@media all and (max-width: 896px) {
+  #main .method .dlTxt.dlTxt01 {
+    padding: 25px 20px;
+  }
+}
+@media all and (min-width: 897px) {
+  #main .method .dlTxt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #main .method .dlTxt dt {
+    margin-right: 20px;
+    width: 124px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #main .method .dlTxt dd {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+@media all and (max-width: 896px) {
+  #main .method .dlTxt dt {
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    display: inline-block;
+  }
+  #main .method .dlTxt dd .comTxtList > li {
+    padding: 0 0 3px 15px;
+    font-size: 1.6rem;
+  }
+  #main .method .dlTxt dd .comTxtList > li::before {
+    top: 8px;
+  }
+}
+#main .method .comTxtList > li::before {
+  background: #e8720c;
+}
+#main .management {
+  padding: 114px 0;
+  background-color: #ECF8EC;
+}
+#main .management .topComtent {
+  margin-bottom: 83px;
+  padding: 80px 65px;
+  position: relative;
+  background-color: #FFF;
+  border-radius: 10px;
+}
+#main .management .topComtent::before {
+  width: 152px;
+  height: 76px;
+  position: absolute;
+  left: 50%;
+  top: -47px;
+  content: "";
+  background: url(/img/reverse-logistics/sg-ecope/manage_top_bg.png) repeat center top/100%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+#main .management .topComtent .posImg {
+  position: absolute;
+  z-index: 10;
+}
+#main .management .topComtent .posImg01 {
+  right: -34px;
+  top: -25px;
+}
+#main .management .topComtent .posImg02 {
+  left: 20px;
+  bottom: -20px;
+}
+#main .management .topComtent .heading {
+  margin-bottom: 25px;
+  color: #302F31;
+}
+#main .management .topComtent .heading img {
+  margin: 0 5px;
+  vertical-align: -3px;
+}
+@media all and (max-width: 896px) {
+  #main .management .topComtent .heading img {
+    width: 160px;
+  }
+}
+#main .management .topComtent .midTxt {
+  margin-bottom: 49px;
+  font-weight: 500;
+  font-size: 1.6rem;
+  letter-spacing: 0.05em;
+  line-height: 26px;
+  text-align: center;
+}
+#main .management .topComtent .list {
+  margin-top: -45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+#main .management .topComtent .list li {
+  margin: 45px 50px 0 0;
+  width: 230px;
+}
+#main .management .topComtent .list li:nth-child(4n) {
+  margin-right: 0;
+}
+#main .management .topComtent .list li.develop {
+  position: relative;
+}
+#main .management .topComtent .list li.develop::after {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  right: -14px;
+  top: -17px;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  line-height: 29px;
+  text-align: center;
+  color: #fff;
+  content: "開発中";
+  background: #E8720C;
+  border-radius: 100%;
+  z-index: 10;
+}
+@media all and (max-width: 896px) {
+  #main .management .topComtent .list li.develop::after {
+    width: 50px;
+    height: 50px;
+    font-size: 1.4rem;
+  }
+}
+#main .management .topComtent .list li .img {
+  margin-bottom: 15px;
+  display: block;
+  border-radius: 5px;
+  border: 1px solid #b7b7c7;
+  overflow: hidden;
+}
+#main .management .topComtent .list li .img img {
+  width: 100%;
+}
+#main .management .topComtent .list li .txt {
+  min-height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bold;
+  font-size: 1.6rem;
+  letter-spacing: 0.05em;
+  line-height: 23px;
+  text-align: center;
+  color: #302f31;
+}
+#main .management .support .heading {
+  margin-bottom: 65px;
+  color: #302F31;
+}
+#main .management .support .list {
+  margin: -42px -21px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#main .management .support .list li {
+  margin: 42px 21px 0;
+  width: 164px;
+}
+#main .management .support .list li .img {
+  margin-bottom: 28px;
+  display: block;
+}
+#main .management .support .list li .txt {
+  display: block;
+  min-height: 50px;
+  font-weight: bold;
+  font-size: 1.6rem;
+  letter-spacing: 0.05em;
+  line-height: 23px;
+  text-align: center;
+  color: #302F31;
+}
+@media all and (max-width: 896px) {
+  #main .management .support .heading {
+    margin-bottom: 40px;
+  }
+  #main .management .support .list {
+    margin: -20px -15px 0;
+  }
+  #main .management .support .list li {
+    margin: 20px 5px 0;
+    width: 110px;
+  }
+  #main .management .support .list li .img {
+    margin-bottom: 20px;
+  }
+  #main .management .support .list li .txt {
+    font-size: 1.2rem;
+    letter-spacing: 0;
+  }
+}
+@media all and (max-width: 896px) {
+  #main .management {
+    padding: 60px 15px;
+  }
+  #main .management .topComtent {
+    padding: 80px 10px;
+  }
+  #main .management .topComtent .posImg01 {
+    right: -14px;
+    top: -39px;
+    width: 80px;
+  }
+  #main .management .topComtent .posImg02 {
+    width: 42px;
+    left: -10px;
+  }
+  #main .management .topComtent .list {
+    margin: -20px 0 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #main .management .topComtent .list li {
+    margin: 20px 0 0;
+    width: calc(50% - 5px);
+  }
+  #main .management .topComtent .list li .txt {
+    font-size: 1.3rem;
+    letter-spacing: 0;
+  }
+}
+@media all and (max-width: 896px) and (max-width: 374px) {
+  #main .management .topComtent .list li {
+    margin: 20px 0 0;
+    width: calc(50% - 3px);
+  }
+  #main .management .topComtent .list li .txt {
+    font-size: 1.1rem;
+  }
+}

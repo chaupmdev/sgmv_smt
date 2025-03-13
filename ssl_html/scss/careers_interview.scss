@@ -1,0 +1,488 @@
+@charset "utf-8";
+@import "mixin.scss";
+/*------------------------------------------------------------
+	careers_interview
+------------------------------------------------------------*/
+#main {
+	.pageTitle {
+		margin-bottom: 85px;
+	}
+	.titleBox {
+		margin-bottom: 564px;
+		display: flex;
+		justify-content: space-between;
+		.textBox {
+			width: 560px;
+			.title {
+				margin-bottom: 30px;
+				font-size: 3.1rem;
+				font-weight: 500;
+				letter-spacing: 0.05em;
+				line-height: 1.64;
+				font-family: 'Noto Serif JP', serif;
+			}
+			p {
+				line-height: 2;
+			}
+		}
+		ul {
+			margin: 2px -25px 0 0;
+			width: 592px;
+			display: flex;
+			li {
+				margin-right: 25px;
+				width: 179px;
+				a {
+					display: block;
+					transition: 0.3s;
+					.pho {
+						margin-bottom: 12px;
+					}
+					p {
+						position: relative;
+						font-weight: 500;
+						text-align: center;
+						line-height: 1;
+						.name {
+							margin-top: 8px;
+							display: block;
+							font-size: 1.9rem;
+							span {
+								border-bottom: 1px solid #302F31;
+							}	
+						}
+						&::before {
+							width: 10px;
+							height: 9px;
+							position: absolute;
+							bottom: -29px;
+							left: 50%;
+							transform: translateX(-50%);
+							background: url(/img/common/icon50.png) no-repeat bottom center / 10px;
+							content: "";
+						}
+					}
+					&:hover {
+						opacity: 0.7;
+					}
+				}
+				&:nth-child(3n) {
+					margin-right: 0;
+				}
+			}
+		}
+		@include sp {
+			margin-bottom: 75px;
+			display: block;
+			.textBox {
+				margin-bottom: 35px;
+				width: auto;
+				.title {
+					font-size: 2.5rem;
+				}
+			}
+			ul {
+				margin: auto;
+				width: auto;
+				display: block;
+				li {
+					margin: 0 auto 60px;
+					width: auto;
+					.pho {
+						img {
+							width: 100%;
+						}
+					}
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+	.bgBox {
+		padding: 1px 0 128px;
+		background-color: #F2F3F9;
+		@include sp {
+			padding-bottom: 80px;
+		}
+	
+	.sec01,
+	.sec02,
+	.sec03  {
+		margin: -407px 0 203px;
+		.titleArea {
+			margin-bottom: 152px;
+			align-items: flex-end;
+			display: flex;
+			.photoBox {
+				width: calc(50% + 58px);
+			}
+			.textBox {
+				margin: 0 0 -46px -231px;
+				padding: 72px 50px 66px 76px;
+				width: 678px;
+				box-sizing: border-box;
+				background: url(/img/careers/interview/bg_img.jpg) no-repeat top left / cover;
+				z-index: 100;
+				p {
+					margin-bottom: 43px;
+					color: #fff;
+					font-size: 2.3rem;
+					font-weight: 700;
+					line-height: 1.82;
+					letter-spacing: 0.03em;
+				}
+				.name {
+					margin-bottom: 0 ;
+					font-size: 2.2rem;
+					font-weight: 500;
+					line-height: 1;
+					small {
+						margin-bottom: 12px;
+						display: block;
+						font-size: 1.5rem;
+					}
+				}
+			}
+		}
+		.textArea {
+			width: 1250px;
+			display: flex;
+			justify-content: space-between;
+			.textBox {
+				padding: 60px 60px 55px;
+				width: 719px;
+				box-sizing: border-box;
+				border-radius: 5px;
+				background-color: #fff;
+				ul {
+					li {
+						margin-bottom: 49px;
+						.ttlBox {
+							margin-bottom: 17px;
+							display: flex;
+							align-items: center;
+							.ttl {
+								margin: 9px 23px 0 0;
+								padding: 13px 10px 10px;
+								min-width: 130px;
+								color: #fff;
+								font-size: 1.6rem;
+								text-align: center;
+								letter-spacing: 0.1em;
+								box-sizing: border-box;
+								border-radius: 25px;
+								background-color: #1B519F;
+							}
+							p {
+								font-size: 2.2rem;
+								font-weight: 700;
+								line-height: 1.545;
+								letter-spacing: 0.03em;
+							}
+						}
+						p {
+							line-height: 1.93;
+						}
+						&:last-child {
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+			.timeBox {
+				width: 500px;
+				border-radius: 5px;
+				background-color: #fff;
+				.titleBox01 {
+					display: flex;
+					align-items: center;
+					.markBox {
+						padding: 36px 24px 35px 35px;
+						width: 109px;
+						text-align: center;
+						box-sizing: border-box;
+						border-top-left-radius: 5px;
+						background-color: #1B519F;
+						img {
+							width: 48px;
+						}
+					}
+					p {
+						padding: 25px 47px 26px;
+						width: calc(100% - 109px);
+						box-sizing: border-box;
+						font-size: 2.2rem;
+						font-weight: 700;
+						line-height: 1.545;
+						letter-spacing: 0.03em;
+						border-top-right-radius: 5px;
+						background-color: #E4E6F2;
+					}
+				}
+				.dlBox {
+					margin: 52px 10px 35px 67px;
+					position: relative;
+					dl {
+						margin-bottom: 22px;
+						padding-bottom: 2px;
+						display: flex;
+						align-items: center;
+						
+						dt {
+							position: relative;
+							margin-right: 57px;
+							width: 55px;
+							color: #1B519F;
+							font-size: 2.2rem;
+							font-weight: 600;
+							line-height: 1;
+							letter-spacing: 0.03em;
+							font-family: "Mukta", sans-serif;
+							&::before {
+								width: 9px;
+								height: 9px;
+								position: absolute;
+								right: -36px;
+								top: 3px;
+								background: url(/img/careers/interview/icon01.png) no-repeat right center / 9px;
+								content: "";
+							}
+						}
+						dd {
+							margin-top: -5px;
+							flex: 1;
+							font-size: 1.7rem;
+							font-weight: 500;
+							line-height: 1.52;
+						}
+						&:last-child {
+							margin-bottom: 0;
+						}
+						
+					}
+					&::before {
+						position: absolute;
+						top: 8px;
+						left: 86px;
+						width: 1px;
+						height: calc(100% - 27px);
+						background-color: #1B519F;
+						content: "";
+					}
+				}
+			}
+		}
+		@include sp {
+			margin: 0 auto 70px;
+			.titleArea {
+				margin-bottom: 50px;
+				display: block;
+				.photoBox {
+					width: auto;
+				}
+				.textBox {
+					margin: 0 auto;
+					padding: 20px 25px;
+					width: auto;
+					p {
+						font-size: 1.7rem;
+					}
+					.name {
+						font-size: 1.9rem;
+					}
+				}
+			}
+			.textArea {
+				width: auto;
+				display: block;
+				.textBox {
+					margin-bottom: 50px;
+					padding: 20px;
+					width: auto;
+					ul {
+						li {
+							.ttlBox {
+								display: block;
+								.ttl {
+									margin: 0 0 25px;
+									font-size: 1.5rem;
+								}
+								p {
+									font-size: 1.8rem;
+								}
+							}
+						}
+					}
+				}
+				.timeBox {
+					width: auto;
+					.titleBox01 {
+						.markBox {
+							padding: 25px;
+							width: 80px;
+						}
+						p {
+							padding: 6px 20px 6px ;
+							width: calc(100% - 80px);
+							min-height: 80.2px;
+							font-size: 1.5rem;
+							display: flex;
+							align-items: center;
+						}
+					}
+					.dlBox {
+						margin: 20px;
+						dl {
+							dd {
+								margin-top: 0;
+								font-size: 1.4rem;
+							}
+							dt {
+								margin-right: 25px;
+								width: 50px;
+								font-size: 1.5rem;
+								&::before {
+									right: -12px;
+									top: 9px;
+								}
+							}
+						
+						}
+						&::before {
+							left: 57px;	
+						}
+					}
+				}
+			}
+		
+		}
+	}
+	.sec02 {
+		margin: 0 0 209px;
+		.titleArea {
+			flex-direction: row-reverse;
+			.textBox {
+				margin: 0 -228px -46px 0;
+			}
+		}
+		@include sp {
+			margin-bottom: 70px;
+			.titleArea {
+				.textBox {
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+	.sec03 {
+		margin: 0;
+		.comBox {
+			padding: 180px 147px 49px;
+			width: 1105px;
+			margin-top: -200px;
+			border-radius: 5px;
+			box-sizing: border-box;
+			background-color: #fff;
+			ul {
+				li {
+					margin-bottom: 81px;
+					h2 {
+						margin: 0 auto 24px;
+						color: #fff;
+						font-size: 1.6rem;
+						font-weight: 700;
+						text-align: center;
+						letter-spacing: 0.1em;
+						span {
+							padding: 11px 64px 7px;
+							position: relative;
+							display: inline-block;
+							border-radius: 25px;
+							background-color: #1B519F;
+						&::before {
+							width: 18px;
+							height: 12px;
+							position: absolute;
+							bottom: -12px;
+							left: 50%;
+							transform: translateX(-50%);
+							background: url(/img/careers/interview/icon02.png) no-repeat bottom center / 18px;
+							content: "";
+						}
+						}
+					}
+					.title {
+						margin-bottom: 30px;
+						font-size: 2.2rem;
+						font-weight: 700;
+						text-align: center;
+						line-height: 1.545;
+						letter-spacing: 0.03em;
+					}
+					p {
+						line-height: 1.93;
+					}
+					.textBox {
+						margin: 36px -45px 0;
+						padding: 24px 44px 43px;
+						border: 1px solid #B7B7C7;
+						.ttl {
+							margin: 0 0 9px 3px;
+							font-size: 1.8rem;
+							font-weight: 700;
+						}
+						p {
+							margin-bottom: 20px;
+							&:last-child {
+								margin-bottom: 0;
+							}
+						}
+					}
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+
+				.liStyle {
+					p {
+						text-align: center;
+					}
+				}
+			}
+			
+		}
+		@include sp {
+			.comBox {
+				margin: 0 auto;
+				padding: 20px;
+				width: auto;
+				ul {
+					li {
+						h2 {
+							span {
+								padding: 11px 30px 7px;
+							}
+						}
+						.title {
+							font-size: 1.8rem;
+						}
+						.textBox {
+							margin: 0 20px;
+							padding: 20px;
+							.ttl {
+								margin: 0 auto 10px;
+								font-size: 1.4rem;
+							}
+						}
+						p {
+							font-size: 1.3rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+}

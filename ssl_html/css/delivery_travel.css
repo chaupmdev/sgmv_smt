@@ -1,0 +1,277 @@
+/*------------------------------------------------------------
+	delivery/travel
+------------------------------------------------------------*/
+#main .titleBox {
+  margin-bottom: 23px;
+}
+@media all and (max-width: 896px) {
+  #main .titleBox {
+    margin-bottom: 25px;
+  }
+}
+#main .comImgBox {
+  margin-bottom: 82px;
+}
+@media all and (max-width: 896px) {
+  #main .comImgBox {
+    margin-bottom: 40px;
+  }
+}
+#main .comImgBox .textBox {
+  padding-right: 110px;
+}
+@media all and (max-width: 896px) {
+  #main .comImgBox .textBox {
+    padding-right: 20px;
+  }
+}
+#main .comTransfer {
+  margin-bottom: 47px;
+}
+#main .comTransfer dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+#main .comTransfer dl dt {
+  padding: 25px 5px 20px;
+  width: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  position: relative;
+  color: #fff;
+  font-size: 1.7rem;
+  line-height: 1.529;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Mukta", sans-serif;
+  background-color: #5A92E3;
+}
+#main .comTransfer dl dt small {
+  font-size: 1.3rem;
+}
+@media all and (max-width: 896px) {
+  #main .comTransfer dl dt {
+    padding: 25px 0 20px;
+    width: 90px;
+    font-size: 1.4rem;
+  }
+  #main .comTransfer dl dt small {
+    font-size: 1rem;
+  }
+}
+#main .comTransfer dl dt.dtStyle01 {
+  padding-bottom: 55px;
+  background-color: #2065C9;
+}
+#main .comTransfer dl dt.dtStyle02 {
+  background-color: #1B519F;
+}
+#main .comTransfer dl dt.dtStyle03 {
+  background-color: #083679;
+}
+#main .comTransfer dl dt .bg01 {
+  width: 100%;
+  height: 16px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: calc(100% - 9px);
+  z-index: 3;
+}
+@media all and (max-width: 896px) {
+  #main .comTransfer dl dt .bg01 {
+    top: calc(100% - 8px);
+  }
+}
+#main .comTransfer dl dd {
+  padding: 14px 0 15px 25px;
+  width: calc(100% - 130px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-top: 2px solid #D8D6E0;
+}
+@media all and (max-width: 896px) {
+  #main .comTransfer dl dd {
+    padding: 5px 0 5px 15px;
+    width: calc(100% - 90px);
+  }
+}
+#main .comTransfer dl dd:last-of-type {
+  border-bottom: 2px solid #D8D6E0;
+}
+#main .comTransfer dl dd p {
+  margin-bottom: 40px;
+  font-size: 1.6rem;
+  line-height: 1.9375;
+}
+#main .comTransfer dl dd p:last-child {
+  margin-bottom: 0;
+}
+@media all and (max-width: 896px) {
+  #main .comTransfer dl dd p {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+  }
+  #main .comTransfer dl dd p:last-child {
+    margin-bottom: 0;
+  }
+}
+#main .comTransfer dl dd .ttl {
+  margin-bottom: 15px;
+  font-size: 1.9rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.7368;
+}
+@media all and (max-width: 896px) {
+  #main .comTransfer dl dd .ttl {
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+  }
+}
+#main .comTransfer dl dd .noteList li {
+  padding-left: 1em;
+  font-size: 1.3rem;
+  line-height: 1.692;
+  text-indent: -1em;
+}
+@media all and (max-width: 896px) {
+  #main .comTransfer dl dd .noteList li {
+    font-size: 1.1rem;
+  }
+}
+#main .comTransfer dl dd .imgBox {
+  margin: 5px 0 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+#main .comTransfer dl dd .imgBox.imgBox01 {
+  margin-bottom: 6px;
+}
+#main .comTransfer dl dd .imgBox .phoBox {
+  width: 346px;
+}
+#main .comTransfer dl dd .imgBox .txtBox {
+  margin-top: 8px;
+  width: 306px;
+}
+#main .comTransfer dl dd .imgBox .txtBox p {
+  margin-bottom: 18px;
+}
+@media all and (max-width: 896px) {
+  #main .comTransfer dl dd .imgBox {
+    margin: 0;
+    display: block;
+  }
+  #main .comTransfer dl dd .imgBox .phoBox {
+    width: auto;
+  }
+  #main .comTransfer dl dd .imgBox .txtBox {
+    width: auto;
+  }
+  #main .comTransfer dl dd .imgBox .txtBox p {
+    margin-bottom: 10px;
+  }
+}
+#main .trading .headLine03 {
+  margin-bottom: 28px;
+}
+#main .trading .listBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#main .trading .listBox .box {
+  width: calc((100% - 70px) / 3);
+}
+#main .trading .listBox .box .ttl {
+  margin-bottom: 12px;
+  font-size: 1.9rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.7368;
+}
+#main .trading .listBox .box .ttl small {
+  font-size: 1.3rem;
+  letter-spacing: 0.03em;
+}
+#main .trading .listBox .box .comTextList {
+  margin-top: 0;
+}
+#main .trading .listBox .box .comTextList li {
+  margin-top: 0;
+  padding-left: 16px;
+  line-height: 2.4;
+}
+#main .trading .listBox .box .comTextList li::before {
+  top: 15px;
+}
+@media all and (max-width: 896px) {
+  #main .trading .listBox {
+    display: block;
+  }
+  #main .trading .listBox .box {
+    width: auto;
+  }
+  #main .trading .listBox .box:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  #main .trading .listBox .box .ttl {
+    margin-bottom: 12px;
+    font-size: 1.7rem;
+  }
+  #main .trading .listBox .box .ttl small {
+    font-size: 1.1rem;
+    letter-spacing: 0.03em;
+  }
+  #main .trading .listBox .box .comTextList {
+    margin-top: 0;
+  }
+  #main .trading .listBox .box .comTextList li {
+    margin-top: 0;
+    padding-left: 16px;
+    line-height: 1.67;
+  }
+  #main .trading .listBox .box .comTextList li::before {
+    top: 8px;
+  }
+}

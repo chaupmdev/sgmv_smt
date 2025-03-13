@@ -1,0 +1,59 @@
+/*------------------------------------------------------------
+	delivery/charter
+------------------------------------------------------------*/
+#main .titleBox {
+  margin-bottom: 68px;
+}
+@media all and (max-width: 896px) {
+  #main .titleBox {
+    margin-bottom: 25px;
+  }
+}
+#main .comImgBox {
+  margin-bottom: 65px;
+}
+@media all and (max-width: 896px) {
+  #main .comImgBox {
+    margin-bottom: 40px;
+  }
+}
+#main .comImgBox .textBox {
+  padding-right: 110px;
+}
+@media all and (max-width: 896px) {
+  #main .comImgBox .textBox {
+    padding-right: 20px;
+  }
+}
+#main .comTransfer {
+  margin-bottom: 0;
+}
+#main .comTransfer .imgBox {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+#main .comTransfer .imgBox .photoBox {
+  margin-top: 44px;
+  width: 379px;
+}
+#main .comTransfer .imgBox .textBox {
+  width: calc(100% - 400px);
+}
+#main .comTransfer .imgBox .textBox p {
+  font-size: 1.6rem;
+  line-height: 1.9375;
+}
+#main .comTransfer .imgBox .textBox p:not(:last-child) {
+  margin-bottom: 10px;
+}
+#main .comTransfer .imgBox .textBox p.title {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.556;
+}
+#main .comTransfer .imgBox .textBox sup,
+#main .comTransfer .imgBox .textBox .smallText {
+  font-size: 0.75em;
+}

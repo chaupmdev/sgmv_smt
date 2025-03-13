@@ -1,0 +1,331 @@
+.main_visual {
+  margin-bottom: 30px;
+}
+.main_visual img {
+  width: 100%;
+}
+
+.thum_column .thumnail {
+  width: 212px;
+}
+@media only screen and (max-width: 768px) {
+  .thum_column .thumnail {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+.thum_column .thumnail.left {
+  float: left;
+}
+@media only screen and (max-width: 768px) {
+  .thum_column .thumnail.left {
+    float: none;
+  }
+}
+.thum_column .thumnail.right {
+  float: right;
+}
+@media only screen and (max-width: 768px) {
+  .thum_column .thumnail.right {
+    float: none;
+  }
+}
+.thum_column .thumnail img {
+  width: 100%;
+}
+.thum_column p {
+  width: 425px;
+}
+@media only screen and (max-width: 768px) {
+  .thum_column p {
+    width: 100%;
+  }
+}
+.thum_column p.left {
+  float: left;
+}
+@media only screen and (max-width: 768px) {
+  .thum_column p.left {
+    float: none;
+  }
+}
+.thum_column p.right {
+  float: right;
+}
+@media only screen and (max-width: 768px) {
+  .thum_column p.right {
+    float: none;
+  }
+}
+
+.schedule_column dl {
+  display: table;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.schedule_column dl.last {
+  border-bottom: 1px solid #ccc;
+}
+.schedule_column dl.pickup dt {
+  background-color: #d7e6e5;
+}
+.schedule_column dl.pickup dd {
+  background-color: #f6fefd;
+}
+.schedule_column dl dt {
+  border-right: 1px solid #cccccc;
+  border-top: 1px solid #cccccc;
+  border-left: 1px solid #cccccc;
+  text-align: center;
+  padding: 17px;
+  display: table-cell;
+  box-sizing: border-box;
+  width: 110px;
+  background-color: #e7e7e7;
+  vertical-align: middle;
+}
+@media only screen and (max-width: 768px) {
+  .schedule_column dl dt {
+    text-align: left;
+    display: block;
+    width: auto;
+  }
+}
+.schedule_column dl dd {
+  border-right: 1px solid #cccccc;
+  border-top: 1px solid #cccccc;
+  padding: 17px;
+  display: table-cell;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 768px) {
+  .schedule_column dl dd {
+    display: block;
+    border-right: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+  }
+}
+.schedule_column dl dd span {
+  color: #1774bc;
+  font-weight: bold;
+}
+.schedule_column dl:last-of-type {
+  border-bottom: 1px solid #cccccc;
+}
+
+.interview_buttn {
+  text-align: center;
+  margin-top: 20px;
+}
+.interview_buttn img {
+  max-width: 260px;
+}
+
+@media screen and (max-width: 768px) {
+  .interview_buttn a {
+    height: 75px;
+    background: #16B7C1;
+    border-radius: 3px;
+    display: block;
+  }
+}
+
+#interview_list .column_item {
+  border: 1px solid #1774bc;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  /*padding: 20px;*/
+  background-image: url("../images/common/img_allow_6.png");
+  background-position: 98% center;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+  display: block;
+}
+#interview_list .column_item a {
+  padding: 20px;
+  display: inline-block;
+}
+#interview_list .column_item .column_item_title {
+  color: #000;
+}
+@media only screen and (max-width: 980px) {
+  #interview_list .column_item {
+    padding: 10px;
+    background-size: 10px;
+  }
+}
+#interview_list .column_item:hover {
+  /*border: solid 1px #ccc;*/
+  background-color: #f6fefd;
+}
+#interview_list .column_item .column_item_image {
+  float: left;
+  width: 210px;
+}
+#interview_list .column_item .column_item_image img {
+  max-width: 100%;
+}
+@media only screen and (max-width: 980px) {
+  #interview_list .column_item .column_item_image {
+    width: 29%;
+    margin-right: 10px;
+  }
+}
+#interview_list .column_item .column_item_text {
+  float: left;
+  width: 380px;
+}
+@media only screen and (max-width: 980px) {
+  #interview_list .column_item .column_item_text {
+    float: none;
+    width: 100%;
+  }
+}
+#interview_list .column_item .column_item_text .column_item_title {
+  margin-bottom: 15px;
+  /*color: #377376 !important;*/
+  font-weight: bold;
+  font-size: 20px;
+  display: block;
+}
+#interview_list .column_item .column_item_text .column_item_title span {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: top;
+  background-color: #fefa92;
+  font-size: 12px;
+  padding: 5px;
+  color: #202020;
+  margin-bottom: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+@media only screen and (max-width: 980px) {
+  #interview_list .column_item .column_item_text .column_item_title {
+    font-size: 18px;
+  }
+  #interview_list .column_item .column_item_text .column_item_title span {
+    font-size: 9px;
+  }
+}
+@media only screen and (max-width: 980px) {
+  #interview_list .column_item .column_item_text .column_item_title {
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 140%;
+  }
+}
+#interview_list .column_item .column_item_text .column_item_description {
+  font-size: 12px;
+  line-height: 150%;
+}
+#interview_list .column_item .column_item_text .column_item_description a {
+  display: block;
+}
+#interview_list .column_item .column_item_text .column_item_description span {
+  font-weight: bold;
+  display: block;
+  padding-bottom: 10px;
+}
+
+@media screen and (min-width: 413px) {
+  .sp_hidden {
+    display: initial;
+  }
+  .sp_visible {
+    display: none;
+  }
+}
+@media screen and (max-width: 412px) {
+  .sp_hidden {
+    display: none;
+  }
+  .sp_visible {
+    display: initial;
+  }
+  .figure img {
+    float: left;
+    width: 100px;
+  }
+  .figure .figcaption {
+    margin-left: 5px;
+    float: right;
+    display: inline-block;
+  }
+  .job_label {
+    width: 100px;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #fefa92;
+    font-size: 12px;
+    padding: 15px 5px;
+    color: #202020;
+    margin-bottom: 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+  }
+  #interview_list .column_item .column_item_text .column_item_title {
+    font-size: 1rem;
+    line-height: 0.8;
+    color: #000 !important;
+  }
+  #interview_list .column_item .column_item_text .column_item_title small {
+    font-size: 0.5rem;
+    padding-bottom: 5px;
+    display: inline-block;
+  }
+  #interview_list .column_item .column_item_text .column_item_description {
+    margin-top: 10px;
+  }
+}
+
+.bnr_column_2_interview {
+    width: 100%;
+}
+
+.bnr_column_2_interview .column_item {
+    /*width: 390px;*/
+    width: 100%;
+    display: block;
+    margin: 10px auto;
+}
+
+.bnr_column_2_interview .column_item a {
+    font-size: 18px;
+    padding: 20px 33px 10px 145px;
+    color: #fff;
+    display: block;
+    border-radius: 5px;
+    background-color: #1774bc;
+    background-position: 60px center;
+    background-repeat: no-repeat;
+    -webkit-background-size: 40px;
+    background-size: 40px;
+    width: 210px;
+    margin: 10px auto;
+}
+.bnr_column_2_interview .column_item.interview_image a {
+    background-image: url("/images/corporate/recruit/interview/icon_01.png");
+}
+
+.bnr_column_2_interview .column_item .column_item_title {
+    display: block;
+    line-height: 1.3;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-image: url("/images/common/img_allow_1.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+}

@@ -1,0 +1,131 @@
+@charset "utf-8";
+@import "mixin.scss";
+/*------------------------------------------------------------
+	business/moving/furniture
+------------------------------------------------------------*/
+#main {
+	.titleBox {
+		margin-bottom: 50px;
+	}
+	.comImgBox {
+		@include pc {
+			margin-bottom: 78px;
+		}
+		.textBox {
+			@include pc {
+				padding-right: 110px;
+			}
+		}
+	}
+	.h3Ttl {
+		margin-bottom: 34px;
+		font-size: 2.4rem;
+		letter-spacing: 0.03em;
+		line-height: 1.625;
+		text-align: center;
+		@include sp {
+			font-size: 1.6rem;
+		}
+	}
+	.troubleList {
+		margin-bottom: 83px;
+		li {
+			&:not(:last-child) {
+				margin-bottom: 23px;
+			}
+			dl {
+				display: flex;
+				justify-content: space-between;
+				dt {
+					padding: 5px 5px 5px 18px;
+					width: 370px;
+					height: 98px;
+					position: relative;
+					display: flex;
+					align-items: center;
+					color: #fff;
+					font-size: 1.7rem;
+					line-height: 1.529;
+					background: #1B519F;
+					box-sizing: border-box;
+					&::before {
+						width: 0;
+						height: 0;
+						position: absolute;
+						right: -23px;
+						top: 50%;
+						transform: translateY(-50%) rotate(-90deg);
+						border-width: 20px 18px 0;
+						border-style: solid;
+						border-color:#1B519F transparent transparent;
+						content: '';
+					}
+					span {
+						margin-right: 14px;
+						width: 59px;
+						flex: none;
+						color: #1B519F;
+						font-size: 1.3rem;
+						font-weight: 700;
+						line-height: 25px;
+						text-align: center;
+						border-radius: 20px;
+						background: #fff;
+					}
+				}
+				dd {
+					padding: 5px 5px 5px 34px;
+					width: calc(100% - 370px);
+					display: flex;
+					align-items: center;
+					font-size: 2rem;
+					font-weight: 700;
+					line-height: 1.3;
+					border: 1px solid #1B519F;
+					box-sizing: border-box;
+				}
+			}
+		}
+		@include sp {
+			margin-bottom: 50px;
+			li {
+				&:not(:last-child) {
+					margin-bottom: 15px;
+				}
+				dl {
+					display: block;
+					dt {
+						padding: 5px;
+						width: auto;
+						height: auto;
+						font-size: 1.4rem;
+						&::before {
+							right: auto;
+							left: 50%;
+							top: auto;
+							bottom: -10px;
+							transform: translateX(-50%);
+							border-width: 18px 12px 0;
+						}
+						span {
+							margin-right: 10px;
+							width: 50px;
+							font-size: 1.1rem;
+						}
+					}
+					dd {
+						padding: 15px 10px 10px;
+						width: auto;
+						font-size: 1.6rem;
+					}
+				}
+			}
+		}
+	}
+	.headLine03 {
+		margin-bottom: 35px;
+		@include sp {
+			margin-bottom: 25px;
+		}
+	}
+}

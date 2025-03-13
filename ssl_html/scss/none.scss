@@ -1,0 +1,100 @@
+@charset "utf-8";
+@import "mixin.scss";
+/*------------------------------------------------------------
+	404
+------------------------------------------------------------*/
+#main {
+	.pageTitle {
+		margin-bottom: 147px;
+		@include sp {
+			margin-bottom: 30px;
+		}
+	}
+	.topBox {
+		margin-bottom: 200px;
+		@include sp {
+			margin-bottom: 80px;
+		}
+		.text {
+			margin-bottom: 46px;
+			font-size: 1.6rem;
+			line-height: 1.94;
+			text-align: center;
+			@include sp {
+				margin-bottom: 30px;
+				font-size: 1.4rem;
+			}
+		}
+		.comBtn02 {
+			margin-bottom: 165px;
+			@include sp {
+				margin-bottom: 60px;
+			}
+		}
+		.linkList {
+			margin-top: -80px;
+			display: flex;
+			flex-wrap: wrap;
+			@include sp {
+				margin-top: 0;
+				display: block;
+			}
+			li{
+				margin: 80px 40px 0 0;
+				width: 270px;
+				display: flex;
+				@include sp {
+					margin: 0 0 40px;
+					width: auto;
+					&:last-of-type {
+						margin-bottom: 0;
+					}
+				}
+				&:nth-of-type(4n) {
+					margin-right: 0;
+				}
+				a {
+					padding: 23px 40px 24px 32px;
+					width: 100%;
+					font-size: 1.9rem;
+					position: relative;
+					font-weight: 700;
+					letter-spacing: 0.03em;
+					border-radius: 3px;
+					border: 1px solid #DEDDE2;
+					box-sizing: border-box;
+					@include pc {
+						&:hover {
+							opacity: 0.7;
+						}
+					}
+					@include sp {
+						padding: 18px 40px 18px 30px;
+						font-size: 1.5rem;
+					}
+					&::after {
+						width: 36px;
+						height: 100%;
+						position: absolute;
+						right: 0;
+						top: 0;
+						border-radius: 0 3px 3px 0;
+						background: url(/img/common/icon21.png) no-repeat right 12px center / 10px auto;
+						background-color: #F2F3F9;
+						content: '';
+						z-index: -1;
+					}
+					&::before {
+						width: 36px;
+						height: 1px;
+						position: absolute;
+						right: 0;
+						bottom: -1px;
+						background-color: #1B519F;
+						content: '';
+					}
+				}
+			}
+		}
+	}
+}

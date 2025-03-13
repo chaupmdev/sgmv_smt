@@ -1,0 +1,305 @@
+
+.table_page{
+    border: 0px none;
+    line-height: 2.5;
+    width:1024px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.table_list{
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    line-height: 1.5;
+    width:1280px;
+    margin: auto;
+    margin-top: 7px;
+        
+}
+
+.table_list th {
+    padding: 5px;
+    font-weight: bold;
+    vertical-align: top;
+    background: #1774BC;
+    color: #ffffff;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.table_list td {
+    padding: 5px;
+    vertical-align: top;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.table_list th td {
+    border-style: solid dotted;/* 線種 */
+    border-width: 1px; /* 線の太さ */
+    border-color: rgb(1, 15, 145); /* 線色 */
+}
+.table_list tr:nth-child(even) {
+    background: #cee7ff;
+}
+.btn--blue,
+a.btn--blue {
+    color: #fff;
+    background-color: #2296F3;
+    width:100%;
+    height:100%;
+    border: none;
+}
+.btn--blue:hover,
+a.btn--blue:hover {
+    color: #fff;
+    background: #41acfd;
+}
+.btn--orange,
+a.btn--orange {
+  color: #fff;
+  background-color: #eb6100;
+}
+.btn--orange:hover,
+a.btn--orange:hover {
+  color: #fff;
+  background: #f56500;
+}
+
+a.btn--radius {
+   border-radius: 100vh;
+}
+/**ダイアログ**/
+.dialog {
+    overflow: hidden;
+    position: absolute;
+    top: 30%;
+    height: auto;
+    width: 1280px;
+    display: none;
+    border:1px solid #aaa;
+    z-index:1000;
+ }
+ .dialog-header {
+    border: 1px solid #aaa;
+    background: #cccccc;
+    color: #222222;
+    font-weight: bold;
+    overflow: hidden;
+    padding:5px;
+  }
+.dialog-title {
+  float: left;
+}
+.dialog-close {
+  float: right;
+  border: 1px solid #d3d3d3;
+  background: #e6e6e6;
+  font-weight: normal;
+  color: #555555;
+}
+.dialog-content {
+  position: relative;
+  border: 0;
+  padding: .5em 1em;
+  background: #fff;
+  overflow: auto;
+  width: auto;
+  height: auto;
+}
+.txt-center {
+    text-align: center;
+}
+.txt-right {
+    text-align: right;
+}
+.txt-left {
+    text-align: left;
+}
+.td-search {
+  text-align: right;
+  padding-right: 10px;
+}
+.td-select, .td-date{
+  padding: 7px 5px;
+  border: 1px solid #a9a9a9;
+  border-radius: 3px;
+}
+
+ .td-txt-small {
+     width: 50px;
+}
+ .td-txt-large {
+     width: 456px;
+}
+
+.btn-search {
+    font-size: 110%;
+    font-weight: bold;
+    height: 30px;
+}
+.btn-clear {
+    margin-right: 10px;
+}
+
+/*ID*/
+.table_list tr td:nth-child(1) {
+    width:5%;
+}
+
+/*商品コード*/
+.table_list tr td:nth-child(2) {
+    width:13%;
+}
+/*商品名*/
+.table_list tr td:nth-child(3) {
+    width:40%;
+}
+/*サイズ*/
+.table_list tr td:nth-child(4) {
+    width:5%;
+}
+/*オプションid*/
+.table_list tr td:nth-child(5) {
+    width:12%;
+}
+/*データ種別*/
+.table_list tr td:nth-child(6) {
+    width:12%;
+}
+/*重量*/
+.table_list tr td:nth-child(7) {
+    width:5%;
+    text-align: right;
+}
+/*適用開始日*/
+/* .table_list tr td:nth-child(8) {
+    width:8%;
+}*/
+/*適用終了日*/
+/* .table_list tr td:nth-child(9) {
+    width:8%;
+} */
+.table_list tr td:nth-child(8) {
+    width:5%;
+}
+.table_list tr td:nth-child(9) {
+    width:5%;
+}
+/*
+.table_list tr td:nth-child(12) {
+    width:3%;
+}
+*/
+.require {
+    color: #fff;
+    font-size: 10px;
+    background-color: #c00;
+    border-radius: 3px;
+    padding: 0 5px;
+    margin-left: 5px;
+    line-height: 16px;
+    display: inline-block;
+}
+
+.modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+    width: 600px;
+    margin: 0 auto;
+}
+.modal-dialog {
+    width: 600px;
+    margin: 30px auto;
+    position: relative;
+    width: auto;
+    margin-top: 100px;
+}
+
+.fade {
+    opacity: 0;
+    -webkit-transition: opacity .15s linear;
+    -o-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+}
+.fade.in {
+    opacity: 1;
+}
+.modal.in .modal-dialog {
+    -webkit-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    -o-transform: translate(0,0);
+    transform: translate(0,0);
+}
+.modal.fade .modal-dialog {
+    -webkit-transition: -webkit-transform .3s ease-out;
+    -o-transition: -o-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    -webkit-transform: translate(0,-25%);
+    -ms-transform: translate(0,-25%);
+    -o-transform: translate(0,-25%);
+    transform: translate(0,-25%);
+}
+.modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    position: relative;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 6px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+    box-shadow: 0 3px 9px rgba(0,0,0,.5);
+}
+
+.modal-header {
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.modal-header .close {
+    margin-top: -2px;
+}
+button.close {
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+}
+.close {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+}
+
+.modal-title {
+    margin: 0;
+    line-height: 1.42857143;
+}
+.modal-body {
+    position: relative;
+    padding: 15px;
+}
+
+.modal-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+}
+

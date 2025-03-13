@@ -1,0 +1,43 @@
+旅客手荷物受付サービスのお申し込み受付のご連絡
+sgmoving_system@sagawa-mov.co.jp
+
+以下の内容でホームページより申し込みがありました。
+担当者は対応を開始してください。
+
+お申し込み内容
+==========================================================
+【 お名前 】<::surname::> <::forename::>
+【 フリガナ 】<::surname_furigana::> <::forename_furigana::>
+【 同行のご家族人数 】<::number_persons::>
+【 電話番号 】<::tel::>
+【 メールアドレス 】<::mail::>
+【 郵便番号 】<::zip::>
+【 都道府県 】<::pref_name::>
+【 市区町村 】<::address::>
+【 番地・建物名 】<::building::>
+【 乗船日 】<::travel_name::>
+【 部屋番号 】<::room_number::>
+【 集荷の往復 】<::terminal::>
+【 個数 】
+　往路：<::departure_quantity::>個
+　復路：<::arrival_quantity::>個
+【 出発地 】<::departure_name::>
+【 集荷希望日時 】
+　日付：<::mail_cargo_collection_date::>
+　開始時刻：<::cargo_collection_st_time::>
+　終了時刻：<::cargo_collection_ed_time::>
+【 到着地 】<::arrival_name::>
+【 お支払方法 】<::payment_method::>
+【 コンビニ決済お支払店舗 】
+　<::convenience_store::>
+【 クレジットカード決済時の承認番号 】<::authorization_cd::>
+【 コンビニ決済時の受付番号 】<::receipt_cd::>
+
+
+==========================================================
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ＳＧムービング株式会社
+URL：http://www.sagawa-mov.co.jp/
+

@@ -1,0 +1,148 @@
+@charset "utf-8";
+@import "mixin.scss";
+/*------------------------------------------------------------
+	privacy
+------------------------------------------------------------*/
+#main {
+	#conts {
+		margin-top: -3px;
+		p {
+			margin-bottom: 56px;
+			font-size: 1.6rem;
+			line-height: 1.94;
+			@include sp {
+				font-size: 1.4rem;
+			}
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+			&.topText {
+				margin-bottom: 56px;
+			}
+			&.text {
+				margin-bottom: 23px;
+			}
+			&.text01 {
+				margin-bottom: 53px;
+			}
+			&.text02 {
+				text-align: right;
+			}
+		}
+		.textList {
+			margin-bottom: 56px;
+			&.btm01 {
+				margin-bottom: 23px;
+			}
+			&.btm02 {
+				margin-bottom: 53px;
+			}
+			li {
+				margin-bottom: 23px;
+				padding-left: 12px;
+				font-size: 1.6rem;
+				line-height: 1.94;
+				position: relative;
+				@include sp {
+					font-size: 1.4rem;
+				}
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+				&::before {
+					width: 4px;
+					height: 4px;
+					position: absolute;
+					left: 0;
+					top: 12px;
+					border-radius: 50%;
+					background-color: #302F31;
+					content: '';
+				}
+				ul {
+					margin: 23px 0 0 6px;
+					li {
+						&:not(:last-of-type) {
+							margin-bottom: 13px;
+						}
+					}
+				}
+			}
+		}
+		.textUl {
+			margin-bottom: 56px;
+			&.btm01 {
+				margin-bottom: 13px;
+			}
+			&.list01 {
+				margin-bottom: 23px;
+				> li {
+					padding-left: 1.6em;
+					text-indent: -1.6em;
+				}
+			}
+			> li {
+				margin-bottom: 22px;
+				padding-left: 2.5em;
+				font-size: 1.6rem;
+				line-height: 1.94;
+				text-indent: -2.5em;
+				@include sp {
+					font-size: 1.4rem;
+				}
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+				li,
+				p {
+					text-indent: 0;
+				}
+				p {
+					&.link {
+						margin: 13px 0 13px;
+						a {
+							display: inline-block;
+							vertical-align: top;
+							text-decoration: underline;
+							@include pc {
+								&:hover {
+									text-decoration: none;
+								}
+							}
+						}
+					}
+				}
+				.textList {
+					margin-bottom: 0;
+					margin-left: 6px;
+					&.list01 {
+						margin: 13px 0 0 -0.6em;
+					}
+					li {
+						margin-bottom: 13px;
+						&:last-of-type {
+							margin-bottom: 0;
+						}
+					}
+					span {
+						margin-bottom: 3px;
+						display: inline-block;
+						vertical-align: top;
+					}
+				}
+			}
+		}
+		.txtList {
+			margin-bottom: 56px;
+			li {
+				padding-left: 1em;
+				font-size: 1.3rem;
+				line-height: 1.69;
+				text-indent: -1em;
+				@include sp {
+					font-size: 1.2rem;
+				}
+			}
+		}
+	}
+}

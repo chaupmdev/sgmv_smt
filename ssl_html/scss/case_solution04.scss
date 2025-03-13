@@ -1,0 +1,86 @@
+@charset "utf-8";
+@import "mixin.scss";
+/*------------------------------------------------------------
+	business/case/solution04
+------------------------------------------------------------*/
+#conts.solution04{
+    .textBox01{
+        border: 1px solid #B7B7C7;
+        display: flex;
+        align-items: center;
+        margin: 30px 0 50px;
+        @include sp{
+            display: block;
+        }
+        .title{
+            width: 200px;
+            text-align: center;
+            background: #F2F3F9;
+            padding: 10px 0;
+            font-weight: 600;
+            @include sp{
+                width: 100%;
+            }
+        }
+        .text02{
+            padding: 0 30px;
+            @include sp{
+                padding: 10px 30px;
+                text-align: center;
+            }
+        }
+    }
+    .imgList.twoCollumn{
+        @include sp{
+            display: block;
+            margin-top: 0 !important;
+        }
+        li{
+            width: calc((100% - 80px)/2);
+            @include sp{
+                width: 100% !important;
+                margin-bottom: 50px;
+            }
+            &:first-child{
+                .caption{
+                    display: flex;
+                    justify-content: space-between;
+                    @include sp{
+                        display: block;
+                    }
+                }
+            }
+            .caption{
+                border-left: 4px solid #1B519F;
+                margin-top: 25px;
+                padding: 5px 10px;
+                font-size: 16px;
+                font-weight: 600;
+                a{
+                    font-size: 14px;
+                    font-weight: normal;
+                    color: #1B519F;
+                    text-decoration: underline;
+                    text-underline-offset: 5px;
+                    position: relative;
+                    @include sp{
+                        margin-left: 27px;
+                        display: block;
+                    }
+                    &:before{
+                        content: "";
+                        display: inline-block;
+                        background: url(/img/common/icon08.png) no-repeat left center/17px auto;
+                        position: absolute;
+                        width: 33px;
+                        height: 33px;
+                        left: -25px;
+                    }
+                    &:hover{
+                        opacity: .7;
+                    }
+                }
+            }
+        }
+    }
+}

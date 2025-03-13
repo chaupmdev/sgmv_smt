@@ -1,0 +1,148 @@
+/*------------------------------------------------------------
+	privacy
+------------------------------------------------------------*/
+#main #conts {
+  margin-top: -3px;
+}
+#main #conts p {
+  margin-bottom: 56px;
+  font-size: 1.6rem;
+  line-height: 1.94;
+}
+@media all and (max-width: 896px) {
+  #main #conts p {
+    font-size: 1.4rem;
+  }
+}
+#main #conts p:last-of-type {
+  margin-bottom: 0;
+}
+#main #conts p.topText {
+  margin-bottom: 56px;
+}
+#main #conts p.text {
+  margin-bottom: 23px;
+}
+#main #conts p.text01 {
+  margin-bottom: 53px;
+}
+#main #conts p.text02 {
+  text-align: right;
+}
+#main #conts .textList {
+  margin-bottom: 56px;
+}
+#main #conts .textList.btm01 {
+  margin-bottom: 23px;
+}
+#main #conts .textList.btm02 {
+  margin-bottom: 53px;
+}
+#main #conts .textList li {
+  margin-bottom: 23px;
+  padding-left: 12px;
+  font-size: 1.6rem;
+  line-height: 1.94;
+  position: relative;
+}
+@media all and (max-width: 896px) {
+  #main #conts .textList li {
+    font-size: 1.4rem;
+  }
+}
+#main #conts .textList li:last-of-type {
+  margin-bottom: 0;
+}
+#main #conts .textList li::before {
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  top: 12px;
+  border-radius: 50%;
+  background-color: #302F31;
+  content: "";
+}
+#main #conts .textList li ul {
+  margin: 23px 0 0 6px;
+}
+#main #conts .textList li ul li:not(:last-of-type) {
+  margin-bottom: 13px;
+}
+#main #conts .textUl {
+  margin-bottom: 56px;
+}
+#main #conts .textUl.btm01 {
+  margin-bottom: 13px;
+}
+#main #conts .textUl.list01 {
+  margin-bottom: 23px;
+}
+#main #conts .textUl.list01 > li {
+  padding-left: 1.6em;
+  text-indent: -1.6em;
+}
+#main #conts .textUl > li {
+  margin-bottom: 22px;
+  padding-left: 2.5em;
+  font-size: 1.6rem;
+  line-height: 1.94;
+  text-indent: -2.5em;
+}
+@media all and (max-width: 896px) {
+  #main #conts .textUl > li {
+    font-size: 1.4rem;
+  }
+}
+#main #conts .textUl > li:last-of-type {
+  margin-bottom: 0;
+}
+#main #conts .textUl > li li,
+#main #conts .textUl > li p {
+  text-indent: 0;
+}
+#main #conts .textUl > li p.link {
+  margin: 13px 0 13px;
+}
+#main #conts .textUl > li p.link a {
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: underline;
+}
+@media all and (min-width: 897px) {
+  #main #conts .textUl > li p.link a:hover {
+    text-decoration: none;
+  }
+}
+#main #conts .textUl > li .textList {
+  margin-bottom: 0;
+  margin-left: 6px;
+}
+#main #conts .textUl > li .textList.list01 {
+  margin: 13px 0 0 -0.6em;
+}
+#main #conts .textUl > li .textList li {
+  margin-bottom: 13px;
+}
+#main #conts .textUl > li .textList li:last-of-type {
+  margin-bottom: 0;
+}
+#main #conts .textUl > li .textList span {
+  margin-bottom: 3px;
+  display: inline-block;
+  vertical-align: top;
+}
+#main #conts .txtList {
+  margin-bottom: 56px;
+}
+#main #conts .txtList li {
+  padding-left: 1em;
+  font-size: 1.3rem;
+  line-height: 1.69;
+  text-indent: -1em;
+}
+@media all and (max-width: 896px) {
+  #main #conts .txtList li {
+    font-size: 1.2rem;
+  }
+}

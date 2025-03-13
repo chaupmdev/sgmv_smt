@@ -1,0 +1,524 @@
+@charset "utf-8";
+/* クルーズマスタメンテナンス */
+
+/*--------------------------------------*/
+/*共通*/
+/*--------------------------------------*/
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+ul,
+ul li {
+    list-style: none;
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+/*ページタイトル*/
+h2.page_ttl {
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+h3.register_ttl {
+    color: #0459b4;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    text-align: left;
+}
+
+/*一覧*/
+h3.list_ttl {
+    background: url(/common/img/ttl_list.png) no-repeat;
+    color: #3b499f;
+    height: 32px;
+    line-height: 32px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    text-align: left;
+    text-indent: 1em;
+    width: 880px;
+}
+
+table.list_table {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    width: 860px;
+}
+
+table.list_table tr th,
+table.list_table tr td {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+table.list_table tr td {
+    text-align: left;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+table.list_table tr th,
+table.list_table tr td.date,
+table.list_table tr td.number {
+    white-space: nowrap;
+    word-break: keep-all;
+    word-wrap: normal;
+}
+
+table.list_table tr td.date {
+    text-align: center;
+}
+
+table.list_table tr td.number {
+    text-align: right;
+}
+
+table.list_table tr th {
+    background-color: #e7f5ff;
+    color: #3b499f;
+    font-weight: bold;
+    text-align: center;
+}
+
+p.add_btn {
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+/*登録*/
+div.register_area {
+    border: 1px solid #ccc;
+    border-top: 3px solid #0459b4;
+    margin: 0px 10px 20px 20px;
+    padding: 10px;
+    text-align: left;
+    width: 860px;
+}
+
+div.register_area p.red {
+    line-height: 2em;
+}
+
+div.register_area ul.register_item {
+}
+
+div.register_area ul.register_item > li {
+    margin-bottom: 10px;
+}
+
+div.register_area ul.register_item li legend {
+    font-weight: bold;
+}
+
+legend.item_name {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+div.register_area ul.register_item input[type="text"] {
+    width: 300px;
+}
+
+div.register_area ul.register_item input.datepicker {
+    width: 90px;
+}
+
+div.register_area ul.register_item input.timepicker {
+    width: 60px;
+}
+
+input.datepicker,
+input.timepicker,
+input[inputmode="numeric"],
+input[inputmode="tel"] {
+    ime-mode: disabled;
+}
+
+img#back_list,
+img#back_default,
+img#register,
+img#delete {
+    cursor: pointer;
+}
+
+/*--------------------------------------*/
+/*マンションマスタ登録*/
+/*--------------------------------------*/
+/*マンション一覧*/
+#apartment_table {
+    margin-bottom: 0px;
+    margin-left: 0px;
+    width: 100%;
+}
+
+#apartment_table tr th,
+#apartment_table tr td {
+    white-space: nowrap;
+}
+
+/*マンション登録*/
+#apartment_item li legend,
+#apartment_item li input {
+    float: left;
+}
+
+#apartment_item li legend {
+    width: 11em;
+}
+
+div.register_area ul li#apartment_item_03 input[type="text"] {
+    width: 50px;
+}
+
+div.register_area ul li#apartment_item_03 input {
+    float: none;
+}
+
+/*--------------------------------------*/
+/*ツアー会社マスタ登録*/
+/*--------------------------------------*/
+/*ツアー会社一覧*/
+#travel_agency_table {
+}
+
+#travel_agency_table #code {
+    width: 150px;
+}
+
+#travel_agency_table #name {
+}
+
+#travel_agency_table #repeater_discount {
+    width: 120px;
+}
+
+#travel_agency_table #edit {
+    width: 90px;
+}
+
+#travel_agency_table #delete {
+    width: 60px;
+}
+
+/*ツアー会社登録*/
+#travel_agency_item li legend,
+#travel_agency_item li input {
+    float: left;
+}
+
+#travel_agency_item li legend {
+    width: 16em;
+}
+
+
+/*--------------------------------------*/
+/*ツアーマスタ登録*/
+/*--------------------------------------*/
+/*ツアー一覧*/
+#travel_table {
+}
+
+#travel_table #code {
+    width: 100px;
+}
+
+#travel_table #name {
+}
+
+#travel_table #edit {
+    width: 90px;
+}
+
+#travel_table #delete {
+    width: 60px;
+}
+
+/*ツアー登録*/
+#travel_item li legend,
+#travel_item li input {
+    float: left;
+}
+
+#travel_item li legend {
+    width: 8em;
+}
+
+/*--------------------------------------*/
+/*ツアー発着地マスタ登録*/
+/*--------------------------------------*/
+/*ツアー発着地一覧*/
+div.long_table {
+    margin-bottom: 10px;
+    margin-left: 30px;
+    overflow-x: scroll;
+    width: 860px;
+}
+
+#travel_terminal_table {
+    margin-bottom: 0px;
+    margin-left: 0px;
+    width: 100%;
+}
+
+#travel_terminal_table tr th,
+#travel_terminal_table tr td {
+    white-space: nowrap;
+}
+
+/*ツアー発着地登録*/
+#travel_terminal_item li legend,
+#travel_terminal_item li input {
+    float: left;
+}
+
+#travel_terminal_item li legend {
+    width: 11em;
+}
+
+div.register_area ul li#travel_terminal_item_05 input[type="text"] {
+    width: 50px;
+}
+
+div.register_area ul li#travel_terminal_item_05 input,
+div.register_area ul li#travel_terminal_item_11 input {
+    float: none;
+}
+
+div.register_area ul li#travel_terminal_item_11 label {
+    margin-right: 10px;
+}
+
+/*--------------------------------------*/
+/*ツアーエリアマスタ登録*/
+/*--------------------------------------*/
+/*ツアーエリア一覧*/
+#travel_province_table {
+}
+
+#travel_province_table #code,
+#travel_province_table #name,
+#travel_province_table #edit {
+    width: 90px;
+}
+
+#travel_province_table #delete {
+    width: 60px;
+}
+
+/*ツアーエリア登録*/
+#travel_province_item_01 legend,
+#travel_province_item_01 input,
+#travel_province_item_02 legend,
+#travel_province_item_02 input {
+    float: left;
+}
+
+#travel_province_item_01 legend,
+#travel_province_item_02 legend {
+    width: 11em;
+}
+
+legend#pref_name {
+    width: 100%;
+    line-height: 30px;
+    border-bottom: 1px dotted #ccc;
+}
+
+/*都道府県*/
+#travel_province_item_03 {
+}
+
+#travel_province_item_03 fieldset.travel_province_list {
+    border: 1px solid #ccc;
+    float: left;
+    min-height: 200px;
+    padding: 10px;
+    width: 200px;
+}
+
+#travel_province_item_03 div#control_btn {
+    float: left;
+    margin: 0px 15px;
+    text-align: center;
+    width: 200px;
+}
+
+#travel_province_item_03 div#control_btn div {
+    margin-bottom: 20px;
+}
+
+#travel_province_item_03 div#control_btn div p {
+    margin-bottom: 5px;
+}
+
+#travel_province_item_03 ul {
+}
+
+#travel_province_item_03 ul li {
+    background-color: #efefef;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+#travel_province_item_03 ul li.selected {
+    color: #fff;
+    background-color: #fc0;
+    border-color: #f90;
+}
+
+#travel_province_item_03 fieldset.hide,
+#travel_province_item_03 div.hide {
+    visibility: hidden;
+}
+
+#travel_province_item_03 ul li.hide {
+    display: none;
+}
+
+/*--------------------------------------*/
+/*ツアー配送料金マスタ登録*/
+/*--------------------------------------*/
+/*ツアー一覧*/
+#travel_delivery_charge_table {
+}
+
+#travel_delivery_charge_table #code {
+    width: 100px;
+}
+
+#travel_delivery_charge_table #departure_date,
+#travel_delivery_charge_table #arrival_date {
+    width: 120px;
+}
+
+#travel_delivery_charge_table #copy,
+#travel_delivery_charge_table #edit {
+    width: 90px;
+}
+
+#travel_delivery_charge_table #delete {
+    width: 60px;
+}
+
+/*ツアー配送料金登録*/
+#travel_delivery_charge_item legend,
+#travel_delivery_charge_item input {
+    float: left;
+}
+
+#travel_delivery_charge_item legend {
+    width: 8em;
+}
+
+.copy #travel_delivery_charge_item li .hide {
+    display: none;
+}
+
+.copy #travel_delivery_charge_item li#travel_delivery_charge_item_04 legend,
+.copy #travel_delivery_charge_item li#travel_delivery_charge_item_05 legend {
+    width: 11em;
+}
+
+#travel_delivery_charge_item select.hidden {
+    visibility: hidden;
+}
+
+.copy #travel_delivery_charge_item li#travel_delivery_charge_item_04,
+.copy #travel_delivery_charge_item li#travel_delivery_charge_item_05 {
+    float: left;
+    margin-right: 1em;
+}
+
+.copy #travel_delivery_charge_item li#travel_delivery_charge_item_06,
+.clear {
+    clear: both;
+}
+
+#travel_delivery_charge_item li#travel_delivery_charge_item_04 legend,
+#travel_delivery_charge_item li#travel_delivery_charge_item_05 legend {
+    float: none;
+}
+
+#travel_delivery_charge_item li#travel_delivery_charge_item_04 input,
+#travel_delivery_charge_item li#travel_delivery_charge_item_05 input {
+    float: none;
+    text-align: right;
+    width: 70px;
+}
+
+#travel_delivery_charge_resist_table,
+#travel_delivery_charge_from_resist_table,
+#travel_delivery_charge_to_resist_table {
+    margin-left: 0px;
+    width: auto;
+}
+
+/*--------------------------------------*/
+/*コメントマスタ登録*/
+/*--------------------------------------*/
+/*コメント一覧*/
+#comment_table {
+}
+
+#comment_table #post_start_date,
+#comment_table #post_end_date {
+    width: 120px;
+}
+
+#comment_table #edit {
+    width: 90px;
+}
+
+#comment_table #delete {
+    width: 60px;
+}
+
+/*コメント登録*/
+#comment_data_item li legend,
+#comment_data_item li input,
+#comment_data_item div.img_input,
+#comment_data_item img.img_view {
+    float: left;
+}
+
+#comment_data_item_08 input {
+    float: none;
+}
+
+#comment_data_item li legend {
+    width: 8em;
+}
+
+#comment_data_item li textarea {
+    width: 700px;
+    height: 200px;
+}
+
+#comment_data_item_05 div.comment,
+#comment_data_item_06 div,
+#comment_data_item_07 div {
+    margin-left: 8em;
+}
+#comment_data_item_06 div.img_input,
+#comment_data_item_07 div.img_input {
+    margin-left: auto;
+}
+
+#comment_data_item img.img_view {
+    float: left;
+    max-height: 250px;
+    max-width: 300px;
+}

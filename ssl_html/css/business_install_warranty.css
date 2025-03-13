@@ -1,0 +1,419 @@
+/*------------------------------------------------------------
+	business/install/warranty
+------------------------------------------------------------*/
+#main .achorBox {
+  margin: 10px 0 41px;
+}
+#main .achorBox ul {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#main .achorBox ul li {
+  width: 440px;
+}
+#main .achorBox .comBtn04 a {
+  font-size: 1.6rem;
+}
+@media all and (max-width: 896px) {
+  #main .achorBox {
+    margin: 0 0 37px;
+  }
+  #main .achorBox ul {
+    display: block;
+  }
+  #main .achorBox ul li {
+    margin-bottom: 20px;
+    width: auto;
+    max-width: 440px;
+  }
+  #main .achorBox ul li:last-of-type {
+    margin-bottom: 0;
+  }
+  #main .achorBox ul li a {
+    letter-spacing: 0;
+  }
+}
+#main .titleBox {
+  margin-bottom: 72px;
+}
+@media all and (max-width: 896px) {
+  #main .titleBox {
+    margin-bottom: 25px;
+  }
+}
+#main .comImgBox {
+  margin-bottom: 81px;
+}
+@media all and (max-width: 896px) {
+  #main .comImgBox {
+    margin-bottom: 40px;
+  }
+}
+#main .comImgBox .textBox {
+  padding: 49px 110px 60px 48px;
+}
+#main .comImgBox .textBox dl {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#main .comImgBox .textBox dl dt:not(:last-of-type), #main .comImgBox .textBox dl dd:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+#main .comImgBox .textBox dl dd {
+  line-height: 1.25;
+}
+#main .comImgBox .textBox dl dd small {
+  margin-top: 10px;
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.692;
+}
+@media all and (max-width: 896px) {
+  #main .comImgBox .textBox {
+    padding: 20px;
+  }
+  #main .comImgBox .textBox dl {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  #main .comImgBox .textBox dl dt:not(:last-of-type), #main .comImgBox .textBox dl dd:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+  #main .comImgBox .textBox dl dd small {
+    margin-top: 5px;
+    font-size: 1rem;
+  }
+}
+#main .comTransfer {
+  margin-bottom: 25px;
+}
+#main .comTransfer:last-child {
+  margin-bottom: 0;
+}
+#main .comTransfer .headLine05 {
+  margin-bottom: 27px;
+}
+#main .comTransfer .headLine06 {
+  margin-bottom: 42px;
+}
+#main .comTransfer p {
+  margin-bottom: 50px;
+  font-size: 1.6rem;
+  line-height: 1.9375;
+}
+#main .comTransfer p.text01 {
+  margin-bottom: 26px;
+}
+#main .comTransfer p.text02 {
+  margin-bottom: 8px;
+}
+#main .comTransfer p.emText {
+  margin: -21px 0 43px;
+}
+@media all and (max-width: 896px) {
+  #main .comTransfer p {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    line-height: 1.87;
+  }
+  #main .comTransfer p.text01 {
+    margin-bottom: 20px;
+  }
+  #main .comTransfer p.text02 {
+    margin-bottom: 5px;
+  }
+  #main .comTransfer p.emText {
+    margin: -21px 0 20px;
+  }
+}
+#main .comTransfer table {
+  margin-bottom: 34px;
+  width: 100%;
+  border-collapse: collapse;
+}
+#main .comTransfer table.tableStyle01 {
+  margin-bottom: 50px;
+}
+#main .comTransfer table th, #main .comTransfer table td {
+  padding: 13px 18px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.9375;
+  word-break: break-all;
+  text-align: left;
+  vertical-align: middle;
+  border: 1px solid #B7B7C7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+#main .comTransfer table th {
+  width: 16.5%;
+  font-weight: 500;
+  text-align: center;
+  background: #F2F3F9;
+}
+#main .comTransfer table td .noteList {
+  margin: 5px 0 0;
+}
+@media all and (max-width: 896px) {
+  #main .comTransfer table {
+    margin-bottom: 30px;
+  }
+  #main .comTransfer table.tableStyle01 {
+    margin-bottom: 40px;
+  }
+  #main .comTransfer table th, #main .comTransfer table td {
+    padding: 10px;
+    font-size: 1.4rem;
+    line-height: 1.87;
+  }
+  #main .comTransfer table th {
+    width: 30%;
+  }
+  #main .comTransfer table td .noteList {
+    margin: 5px 0 0;
+  }
+}
+#main .comTransfer .chartList {
+  margin-bottom: 40px;
+}
+#main .comTransfer .chartList.chartList01 {
+  margin-bottom: 45px;
+}
+#main .comTransfer .chartList li {
+  margin-bottom: -1px;
+  padding: 16px 20px 29px;
+  border: 1px solid #B7B7C7;
+}
+#main .comTransfer .chartList li .ttl {
+  margin-bottom: 33px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+#main .comTransfer .chartList li .chart {
+  margin: 0 auto;
+  width: 690px;
+}
+@media all and (max-width: 896px) {
+  #main .comTransfer .chartList {
+    margin-bottom: 30px;
+  }
+  #main .comTransfer .chartList.chartList01 {
+    margin-bottom: 35px;
+  }
+  #main .comTransfer .chartList li {
+    padding: 15px;
+  }
+  #main .comTransfer .chartList li .ttl {
+    margin-bottom: 15px;
+    letter-spacing: 0;
+    line-height: 1.3;
+  }
+  #main .comTransfer .chartList li .chart {
+    margin: 0 auto;
+    width: auto;
+  }
+}
+#main .comTransfer .pdfLink {
+  padding-left: 25px;
+  display: inline-block;
+  text-decoration: underline;
+  background: url(/img/common/icon07.png) no-repeat left center;
+  background-size: 17px auto;
+}
+@media all and (min-width: 897px) {
+  #main .comTransfer .pdfLink:hover {
+    text-decoration: none;
+  }
+}
+@media all and (max-width: 896px) {
+  #main .comTransfer .pdfLink {
+    background-position: left top 7px;
+  }
+}
+#main .comTransfer .noteList {
+  margin-bottom: 36px;
+}
+#main .comTransfer .noteList li {
+  font-size: 1.3rem;
+  line-height: 1.692;
+}
+@media all and (max-width: 896px) {
+  #main .comTransfer .noteList {
+    margin-bottom: 25px;
+  }
+  #main .comTransfer .noteList li {
+    font-size: 1.1rem;
+  }
+}
+#main .comTransfer .comTextList {
+  margin: -8px 0 40px;
+}
+#main .comTransfer .comTextList li {
+  margin-top: 0;
+  padding-left: 16px;
+  line-height: 2.4;
+}
+#main .comTransfer .comTextList li::before {
+  top: 15px;
+}
+#main .comTransfer .comTextList li .linkList li {
+  padding: 0;
+}
+#main .comTransfer .comTextList li .linkList li::before {
+  display: none;
+}
+#main .comTransfer .comTextList li .linkList li .pdfLink {
+  padding: 0 50px 0 25px;
+  font-size: 1.6rem;
+  line-height: 1.9375;
+  background: url(/img/common/icon07.png) no-repeat left top 7px/17px auto, url(/img/common/icon_pdf.png) no-repeat right center/15px auto;
+}
+@media all and (max-width: 896px) {
+  #main .comTransfer .comTextList {
+    margin: 0 0 40px;
+  }
+  #main .comTransfer .comTextList li {
+    margin-top: 0;
+    line-height: 1.87;
+  }
+  #main .comTransfer .comTextList li::before {
+    top: 10px;
+  }
+  #main .comTransfer .comTextList li .linkList li {
+    padding: 0;
+  }
+  #main .comTransfer .comTextList li .linkList li::before {
+    display: none;
+  }
+  #main .comTransfer .comTextList li .linkList li .pdfLink {
+    padding: 0 25px;
+    font-size: 1.4rem;
+    line-height: 1.87;
+  }
+}
+#main .comTransfer .flexB .comTextList {
+  margin-bottom: 27px;
+  width: 50%;
+}
+@media all and (max-width: 896px) {
+  #main .comTransfer .flexB {
+    display: block;
+  }
+  #main .comTransfer .flexB .comTextList {
+    margin-bottom: 11px;
+    width: auto;
+  }
+}
+#main .comTransfer .textInner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#main .comTransfer .textInner .box {
+  width: 440px;
+}
+#main .comTransfer .textInner .box .headLine08 {
+  margin-bottom: 27px;
+}
+#main .comTransfer .textInner .box .subBox {
+  margin-bottom: 29px;
+}
+#main .comTransfer .textInner .box p {
+  margin-bottom: 18px;
+}
+#main .comTransfer .textInner .box .noteList {
+  margin-bottom: 0;
+}
+#main .comTransfer .textInner .box .chartList li {
+  padding-bottom: 22px;
+}
+#main .comTransfer .textInner .box .chartList li .ttl {
+  margin-bottom: 16px;
+}
+#main .comTransfer .textInner .box .chartList li .chart {
+  width: auto;
+}
+#main .comTransfer .textInner .box .chartList li .chart:not(:last-child) {
+  margin-bottom: 15px;
+}
+@media all and (max-width: 896px) {
+  #main .comTransfer .textInner {
+    display: block;
+  }
+  #main .comTransfer .textInner .box {
+    width: auto;
+  }
+  #main .comTransfer .textInner .box p {
+    margin-bottom: 15px;
+  }
+}
+#main .comTransfer .textArea {
+  margin-bottom: 49px;
+  padding-bottom: 18px;
+  border-radius: 3px;
+  border: 1px solid #B7B7C7;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+#main .comTransfer .textArea p {
+  margin: 0 20px;
+  font-size: 1.5rem;
+  line-height: 1.667;
+}
+#main .comTransfer .textArea p a {
+  text-decoration: underline;
+}
+@media all and (min-width: 897px) {
+  #main .comTransfer .textArea p a:hover {
+    text-decoration: none;
+  }
+}
+#main .comTransfer .textArea .ttl {
+  margin: 0 0 15px;
+  padding: 10px;
+  position: relative;
+  color: #1B519F;
+  font-size: 1.6rem;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+  text-align: center;
+  border-bottom: 1px solid #B7B7C7;
+}
+#main .comTransfer .textArea .ttl::before {
+  width: 60px;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  bottom: -1px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: #1B519F;
+  content: "";
+}
+@media all and (max-width: 896px) {
+  #main .comTransfer .textArea {
+    margin-bottom: 35px;
+    padding-bottom: 10px;
+  }
+  #main .comTransfer .textArea p {
+    margin: 0 20px;
+    font-size: 1.4rem;
+  }
+  #main .comTransfer .textArea .ttl {
+    margin: 0 0 15px;
+    padding: 5px;
+    font-size: 1.4rem;
+  }
+}

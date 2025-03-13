@@ -1,0 +1,593 @@
+#main .pageTitle {
+  margin-bottom: 85px;
+}
+#main .titleBox {
+  margin-bottom: 564px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+#main .titleBox .textBox {
+  width: 560px;
+}
+#main .titleBox .textBox .title {
+  margin-bottom: 30px;
+  font-size: 3.1rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  line-height: 1.64;
+  font-family: "Noto Serif JP", serif;
+}
+#main .titleBox .textBox p {
+  line-height: 2;
+}
+#main .titleBox ul {
+  margin: 2px -25px 0 0;
+  width: 592px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#main .titleBox ul li {
+  margin-right: 25px;
+  width: 179px;
+}
+#main .titleBox ul li a {
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+#main .titleBox ul li a .pho {
+  margin-bottom: 12px;
+}
+#main .titleBox ul li a p {
+  position: relative;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.7;
+}
+#main .titleBox ul li a p .name {
+/*  margin-top: 8px;*/
+  display: block;
+/*  font-size: 1.9rem;*/
+}
+#main .titleBox ul li a p .name span {
+  border-bottom: 1px solid #302f31;
+}
+#main .titleBox ul li a p::before {
+  width: 10px;
+  height: 9px;
+  position: absolute;
+  bottom: -29px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background: url(/img/common/icon50.png) no-repeat bottom center/10px;
+  content: "";
+}
+#main .titleBox ul li a:hover {
+  opacity: 0.7;
+}
+#main .titleBox ul li:nth-child(3n) {
+  margin-right: 0;
+}
+@media all and (max-width: 896px) {
+  #main .titleBox {
+    margin-bottom: 75px;
+    display: block;
+  }
+  #main .titleBox .textBox {
+    margin-bottom: 35px;
+    width: auto;
+  }
+  #main .titleBox .textBox .title {
+    font-size: 2.5rem;
+  }
+  #main .titleBox ul {
+    margin: auto;
+    width: auto;
+    display: block;
+  }
+  #main .titleBox ul li {
+    margin: 0 auto 60px;
+    width: auto;
+  }
+  #main .titleBox ul li .pho img {
+    width: 100%;
+  }
+  #main .titleBox ul li:last-child {
+    margin-bottom: 0;
+  }
+}
+#main .bgBox {
+  padding: 1px 0 128px;
+  background-color: #f2f3f9;
+}
+@media all and (max-width: 896px) {
+  #main .bgBox {
+    padding-bottom: 80px;
+  }
+}
+#main .bgBox .sec01,
+#main .bgBox .sec02,
+#main .bgBox .sec03 {
+  margin: -407px 0 203px;
+}
+#main .bgBox .sec01 .titleArea,
+#main .bgBox .sec02 .titleArea,
+#main .bgBox .sec03 .titleArea {
+  margin-bottom: 152px;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#main .bgBox .sec01 .titleArea .photoBox,
+#main .bgBox .sec02 .titleArea .photoBox,
+#main .bgBox .sec03 .titleArea .photoBox {
+  width: calc(50% + 58px);
+}
+#main .bgBox .sec01 .titleArea .textBox,
+#main .bgBox .sec02 .titleArea .textBox,
+#main .bgBox .sec03 .titleArea .textBox {
+  margin: 0 0 -46px -231px;
+  padding: 72px 50px 66px 76px;
+  width: 678px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url(/img/careers/interview/bg_img.jpg) no-repeat top left/cover;
+  z-index: 100;
+}
+#main .bgBox .sec01 .titleArea .textBox p,
+#main .bgBox .sec02 .titleArea .textBox p,
+#main .bgBox .sec03 .titleArea .textBox p {
+  margin-bottom: 43px;
+  color: #fff;
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 1.82;
+  letter-spacing: 0.03em;
+}
+#main .bgBox .sec01 .titleArea .textBox .name,
+#main .bgBox .sec02 .titleArea .textBox .name,
+#main .bgBox .sec03 .titleArea .textBox .name {
+  margin-bottom: 0;
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 1;
+}
+#main .bgBox .sec01 .titleArea .textBox .name small,
+#main .bgBox .sec02 .titleArea .textBox .name small,
+#main .bgBox .sec03 .titleArea .textBox .name small {
+  margin-bottom: 12px;
+  display: block;
+  font-size: 1.5rem;
+}
+#main .bgBox .sec01 .textArea,
+#main .bgBox .sec02 .textArea,
+#main .bgBox .sec03 .textArea {
+  width: 1250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+#main .bgBox .sec01 .textArea .textBox,
+#main .bgBox .sec02 .textArea .textBox,
+#main .bgBox .sec03 .textArea .textBox {
+  padding: 60px 60px 55px;
+  width: 719px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #fff;
+}
+#main .bgBox .sec01 .textArea .textBox ul li,
+#main .bgBox .sec02 .textArea .textBox ul li,
+#main .bgBox .sec03 .textArea .textBox ul li {
+  margin-bottom: 49px;
+}
+#main .bgBox .sec01 .textArea .textBox ul li .ttlBox,
+#main .bgBox .sec02 .textArea .textBox ul li .ttlBox,
+#main .bgBox .sec03 .textArea .textBox ul li .ttlBox {
+  margin-bottom: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+#main .bgBox .sec01 .textArea .textBox ul li .ttlBox .ttl,
+#main .bgBox .sec02 .textArea .textBox ul li .ttlBox .ttl,
+#main .bgBox .sec03 .textArea .textBox ul li .ttlBox .ttl {
+  margin: 9px 23px 0 0;
+  padding: 13px 10px 10px;
+  min-width: 130px;
+  color: #fff;
+  font-size: 1.6rem;
+  text-align: center;
+  letter-spacing: 0.1em;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 25px;
+  background-color: #1b519f;
+}
+#main .bgBox .sec01 .textArea .textBox ul li .ttlBox p,
+#main .bgBox .sec02 .textArea .textBox ul li .ttlBox p,
+#main .bgBox .sec03 .textArea .textBox ul li .ttlBox p {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.545;
+  letter-spacing: 0.03em;
+}
+#main .bgBox .sec01 .textArea .textBox ul li p,
+#main .bgBox .sec02 .textArea .textBox ul li p,
+#main .bgBox .sec03 .textArea .textBox ul li p {
+  line-height: 1.93;
+}
+#main .bgBox .sec01 .textArea .textBox ul li:last-child,
+#main .bgBox .sec02 .textArea .textBox ul li:last-child,
+#main .bgBox .sec03 .textArea .textBox ul li:last-child {
+  margin-bottom: 0;
+}
+#main .bgBox .sec01 .textArea .timeBox,
+#main .bgBox .sec02 .textArea .timeBox,
+#main .bgBox .sec03 .textArea .timeBox {
+  width: 500px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+#main .bgBox .sec01 .textArea .timeBox .titleBox01,
+#main .bgBox .sec02 .textArea .timeBox .titleBox01,
+#main .bgBox .sec03 .textArea .timeBox .titleBox01 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+#main .bgBox .sec01 .textArea .timeBox .titleBox01 .markBox,
+#main .bgBox .sec02 .textArea .timeBox .titleBox01 .markBox,
+#main .bgBox .sec03 .textArea .timeBox .titleBox01 .markBox {
+  padding: 36px 24px 35px 35px;
+  width: 109px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-top-left-radius: 5px;
+  background-color: #1b519f;
+}
+#main .bgBox .sec01 .textArea .timeBox .titleBox01 .markBox img,
+#main .bgBox .sec02 .textArea .timeBox .titleBox01 .markBox img,
+#main .bgBox .sec03 .textArea .timeBox .titleBox01 .markBox img {
+  width: 48px;
+}
+#main .bgBox .sec01 .textArea .timeBox .titleBox01 p,
+#main .bgBox .sec02 .textArea .timeBox .titleBox01 p,
+#main .bgBox .sec03 .textArea .timeBox .titleBox01 p {
+  padding: 25px 47px 26px;
+  width: calc(100% - 109px);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.545;
+  letter-spacing: 0.03em;
+  border-top-right-radius: 5px;
+  background-color: #e4e6f2;
+}
+#main .bgBox .sec01 .textArea .timeBox .dlBox,
+#main .bgBox .sec02 .textArea .timeBox .dlBox,
+#main .bgBox .sec03 .textArea .timeBox .dlBox {
+  margin: 52px 10px 35px 67px;
+  position: relative;
+}
+#main .bgBox .sec01 .textArea .timeBox .dlBox dl,
+#main .bgBox .sec02 .textArea .timeBox .dlBox dl,
+#main .bgBox .sec03 .textArea .timeBox .dlBox dl {
+  margin-bottom: 22px;
+  padding-bottom: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+#main .bgBox .sec01 .textArea .timeBox .dlBox dl dt,
+#main .bgBox .sec02 .textArea .timeBox .dlBox dl dt,
+#main .bgBox .sec03 .textArea .timeBox .dlBox dl dt {
+  position: relative;
+  margin-right: 57px;
+  width: 55px;
+  color: #1b519f;
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  font-family: "Mukta", sans-serif;
+}
+#main .bgBox .sec01 .textArea .timeBox .dlBox dl dt::before,
+#main .bgBox .sec02 .textArea .timeBox .dlBox dl dt::before,
+#main .bgBox .sec03 .textArea .timeBox .dlBox dl dt::before {
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  right: -36px;
+  top: 3px;
+  background: url(/img/careers/interview/icon01.png) no-repeat right center/9px;
+  content: "";
+}
+#main .bgBox .sec01 .textArea .timeBox .dlBox dl dd,
+#main .bgBox .sec02 .textArea .timeBox .dlBox dl dd,
+#main .bgBox .sec03 .textArea .timeBox .dlBox dl dd {
+  margin-top: -5px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 1.52;
+}
+#main .bgBox .sec01 .textArea .timeBox .dlBox dl:last-child,
+#main .bgBox .sec02 .textArea .timeBox .dlBox dl:last-child,
+#main .bgBox .sec03 .textArea .timeBox .dlBox dl:last-child {
+  margin-bottom: 0;
+}
+#main .bgBox .sec01 .textArea .timeBox .dlBox::before,
+#main .bgBox .sec02 .textArea .timeBox .dlBox::before,
+#main .bgBox .sec03 .textArea .timeBox .dlBox::before {
+  position: absolute;
+  top: 8px;
+  left: 86px;
+  width: 1px;
+  height: calc(100% - 27px);
+  background-color: #1b519f;
+  content: "";
+}
+@media all and (max-width: 896px) {
+  #main .bgBox .sec01,
+  #main .bgBox .sec02,
+  #main .bgBox .sec03 {
+    margin: 0 auto 70px;
+  }
+  #main .bgBox .sec01 .titleArea,
+  #main .bgBox .sec02 .titleArea,
+  #main .bgBox .sec03 .titleArea {
+    margin-bottom: 50px;
+    display: block;
+  }
+  #main .bgBox .sec01 .titleArea .photoBox,
+  #main .bgBox .sec02 .titleArea .photoBox,
+  #main .bgBox .sec03 .titleArea .photoBox {
+    width: auto;
+  }
+  #main .bgBox .sec01 .titleArea .textBox,
+  #main .bgBox .sec02 .titleArea .textBox,
+  #main .bgBox .sec03 .titleArea .textBox {
+    margin: 0 auto;
+    padding: 20px 25px;
+    width: auto;
+  }
+  #main .bgBox .sec01 .titleArea .textBox p,
+  #main .bgBox .sec02 .titleArea .textBox p,
+  #main .bgBox .sec03 .titleArea .textBox p {
+    font-size: 1.7rem;
+  }
+  #main .bgBox .sec01 .titleArea .textBox .name,
+  #main .bgBox .sec02 .titleArea .textBox .name,
+  #main .bgBox .sec03 .titleArea .textBox .name {
+    font-size: 1.9rem;
+  }
+  #main .bgBox .sec01 .textArea,
+  #main .bgBox .sec02 .textArea,
+  #main .bgBox .sec03 .textArea {
+    width: auto;
+    display: block;
+  }
+  #main .bgBox .sec01 .textArea .textBox,
+  #main .bgBox .sec02 .textArea .textBox,
+  #main .bgBox .sec03 .textArea .textBox {
+    margin-bottom: 50px;
+    padding: 20px;
+    width: auto;
+  }
+  #main .bgBox .sec01 .textArea .textBox ul li .ttlBox,
+  #main .bgBox .sec02 .textArea .textBox ul li .ttlBox,
+  #main .bgBox .sec03 .textArea .textBox ul li .ttlBox {
+    display: block;
+  }
+  #main .bgBox .sec01 .textArea .textBox ul li .ttlBox .ttl,
+  #main .bgBox .sec02 .textArea .textBox ul li .ttlBox .ttl,
+  #main .bgBox .sec03 .textArea .textBox ul li .ttlBox .ttl {
+    margin: 0 0 25px;
+    font-size: 1.5rem;
+  }
+  #main .bgBox .sec01 .textArea .textBox ul li .ttlBox p,
+  #main .bgBox .sec02 .textArea .textBox ul li .ttlBox p,
+  #main .bgBox .sec03 .textArea .textBox ul li .ttlBox p {
+    font-size: 1.8rem;
+  }
+  #main .bgBox .sec01 .textArea .timeBox,
+  #main .bgBox .sec02 .textArea .timeBox,
+  #main .bgBox .sec03 .textArea .timeBox {
+    width: auto;
+  }
+  #main .bgBox .sec01 .textArea .timeBox .titleBox01 .markBox,
+  #main .bgBox .sec02 .textArea .timeBox .titleBox01 .markBox,
+  #main .bgBox .sec03 .textArea .timeBox .titleBox01 .markBox {
+    padding: 25px;
+    width: 80px;
+  }
+  #main .bgBox .sec01 .textArea .timeBox .titleBox01 p,
+  #main .bgBox .sec02 .textArea .timeBox .titleBox01 p,
+  #main .bgBox .sec03 .textArea .timeBox .titleBox01 p {
+    padding: 6px 20px 6px;
+    width: calc(100% - 80px);
+    min-height: 80.2px;
+    font-size: 1.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  #main .bgBox .sec01 .textArea .timeBox .dlBox,
+  #main .bgBox .sec02 .textArea .timeBox .dlBox,
+  #main .bgBox .sec03 .textArea .timeBox .dlBox {
+    margin: 20px;
+  }
+  #main .bgBox .sec01 .textArea .timeBox .dlBox dl dd,
+  #main .bgBox .sec02 .textArea .timeBox .dlBox dl dd,
+  #main .bgBox .sec03 .textArea .timeBox .dlBox dl dd {
+    margin-top: 0;
+    font-size: 1.4rem;
+  }
+  #main .bgBox .sec01 .textArea .timeBox .dlBox dl dt,
+  #main .bgBox .sec02 .textArea .timeBox .dlBox dl dt,
+  #main .bgBox .sec03 .textArea .timeBox .dlBox dl dt {
+    margin-right: 25px;
+    width: 50px;
+    font-size: 1.5rem;
+  }
+  #main .bgBox .sec01 .textArea .timeBox .dlBox dl dt::before,
+  #main .bgBox .sec02 .textArea .timeBox .dlBox dl dt::before,
+  #main .bgBox .sec03 .textArea .timeBox .dlBox dl dt::before {
+    right: -12px;
+    top: 9px;
+  }
+  #main .bgBox .sec01 .textArea .timeBox .dlBox::before,
+  #main .bgBox .sec02 .textArea .timeBox .dlBox::before,
+  #main .bgBox .sec03 .textArea .timeBox .dlBox::before {
+    left: 57px;
+  }
+}
+#main .bgBox .sec02 {
+  margin: 0 0 209px;
+}
+#main .bgBox .sec02 .titleArea {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+#main .bgBox .sec02 .titleArea .textBox {
+  margin: 0 -228px -46px 0;
+}
+@media all and (max-width: 896px) {
+  #main .bgBox .sec02 {
+    margin-bottom: 70px;
+  }
+  #main .bgBox .sec02 .titleArea .textBox {
+    margin: 0 auto;
+  }
+}
+#main .bgBox .sec03 {
+  margin: 0;
+}
+#main .bgBox .sec03 .comBox {
+  padding: 180px 147px 49px;
+  width: 1105px;
+  margin-top: -200px;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+#main .bgBox .sec03 .comBox ul li {
+  margin-bottom: 81px;
+}
+#main .bgBox .sec03 .comBox ul li h2 {
+  margin: 0 auto 24px;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+#main .bgBox .sec03 .comBox ul li h2 span {
+  padding: 11px 64px 7px;
+  position: relative;
+  display: inline-block;
+  border-radius: 25px;
+  background-color: #1b519f;
+}
+#main .bgBox .sec03 .comBox ul li h2 span::before {
+  width: 18px;
+  height: 12px;
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background: url(/img/careers/interview/icon02.png) no-repeat bottom
+    center/18px;
+  content: "";
+}
+#main .bgBox .sec03 .comBox ul li .title {
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.545;
+  letter-spacing: 0.03em;
+}
+#main .bgBox .sec03 .comBox ul li p {
+  line-height: 1.93;
+}
+#main .bgBox .sec03 .comBox ul li .textBox {
+  margin: 36px -45px 0;
+  padding: 24px 44px 43px;
+  border: 1px solid #b7b7c7;
+}
+#main .bgBox .sec03 .comBox ul li .textBox .ttl {
+  margin: 0 0 9px 3px;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+#main .bgBox .sec03 .comBox ul li .textBox p {
+  margin-bottom: 20px;
+}
+#main .bgBox .sec03 .comBox ul li .textBox p:last-child {
+  margin-bottom: 0;
+}
+#main .bgBox .sec03 .comBox ul li:last-child {
+  margin-bottom: 0;
+}
+#main .bgBox .sec03 .comBox ul .liStyle p {
+  text-align: center;
+}
+@media all and (max-width: 896px) {
+  #main .bgBox .sec03 .comBox {
+    margin: 0 auto;
+    padding: 20px;
+    width: auto;
+  }
+  #main .bgBox .sec03 .comBox ul li h2 span {
+    padding: 11px 30px 7px;
+  }
+  #main .bgBox .sec03 .comBox ul li .title {
+    font-size: 1.8rem;
+  }
+  #main .bgBox .sec03 .comBox ul li .textBox {
+    margin: 0 20px;
+    padding: 20px;
+  }
+  #main .bgBox .sec03 .comBox ul li .textBox .ttl {
+    margin: 0 auto 10px;
+    font-size: 1.4rem;
+  }
+  #main .bgBox .sec03 .comBox ul li p {
+    font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,36 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+
+table.mv-saiyo {
+  border-collapse: collapse;
+  margin: 0 auto;
+  padding: 0;
+  width:100%;
+  table-layout: fixed;
+}
+
+table.mv-saiyo td.title {
+    vertical-align: middle;
+    background-color: #eef4fc;
+    font-weight: bolder;
+}
+
+table.mv-saiyo tr {
+  background-color: #fff;
+  border: 1px solid #bbb;
+  padding: .35em;
+}
+table.mv-saiyo th,
+table.mv-saiyo td {
+  padding: 1em 10px 1em 1em;
+  border-right: 1px solid #bbb;
+}
+table.mv-saiyo th {
+  font-size: .85em;
+}
+table.mv-saiyo thead tr{
+  background-color: #eee;
+}

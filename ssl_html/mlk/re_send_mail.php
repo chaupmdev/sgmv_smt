@@ -1,0 +1,64 @@
+<?php
+// イベント識別子(URLのpath)はマジックナンバーで記述せずこの変数で記述してください
+require_once dirname(__FILE__) . '/../../lib/Lib.php';
+?>
+
+<!DOCTYPE html>
+<html dir="ltr" lang="ja-jp" xml:lang="ja-jp">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+    <meta http-equiv="content-style-type" content="text/css" />
+    <meta http-equiv="content-script-type" content="text/javascript" />
+    <meta name="Keywords" content="" />
+    <meta name="Description" content="手荷物当日配送サービスのお申込みのご案内です。" />
+    <meta name="author" content="SG MOVING Co.,Ltd" />
+    <meta name="copyright" content="SG MOVING Co.,Ltd All rights reserved." />
+    <title>手荷物当日配送サービスのメール再送信</title>
+<?php
+    // キャッシュ対策
+    $sysdate = new DateTime();
+    $strSysdate = $sysdate->format('YmdHi');
+?>
+    <link href="/misc/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <link href="/css/common.css" rel="stylesheet" type="text/css" />
+    <link href="/css/form.css?<?php echo $strSysdate; ?>" rel="stylesheet" type="text/css" />
+    <script src="/js/ga.js" type="text/javascript"></script>
+</head>
+<body>
+<?php
+    $gnavSettings = 'contact';
+    include_once filter_input(INPUT_SERVER, 'DOCUMENT_ROOT') . '/parts/header.php';
+?>
+    
+
+    <form name="form1" id="form1" action="/mlk/re_send_mail_exec" method="GET">
+    <input type="hidden" name="data1" id="data1" value=""/>
+    <input type="hidden" name="comiket_id" id="id" value="<?php echo $_REQUEST["comiket_id"]; ?>"/>
+    <input type="hidden" name="input2_dialog" id='input2_dialog' value="1"/>
+    <!--<input type="submit" value="送信">-->
+</form>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+<?php
+    $footerSettings = 'under';
+    include_once filter_input(INPUT_SERVER, 'DOCUMENT_ROOT') . '/parts/footer.php';
+?>
+    <script charset="UTF-8" type="text/javascript" src="/js/jquery-2.2.0.min.js"></script>
+
+<script>
+    $(function() {
+        if(!confirm("メールを再送信しますがよろしいですか？\nキャンセルを選択した場合は、Sgmovingのトップページに遷移します。")) {
+            location.href = "/";
+            return false;
+        }
+        else{
+            $('#form1').submit();
+        }
+    });
+</script>
+</body>
+</html>

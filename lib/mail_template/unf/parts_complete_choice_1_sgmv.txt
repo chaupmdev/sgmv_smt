@@ -1,0 +1,9 @@
+【集荷先郵便番号】<::comiket_zip::>
+【都道府県】<::comiket_pref_name::>
+【市町村区】<::comiket_address::>
+【建物番地名】<::comiket_building::>
+【集荷先電話番号】<::comiket_tel::>
+【宅配数量】
+　<::num_area::>
+【宿泊先】<::comiket_building_name::>
+【チェックアウト日】<::type2_collect_date::>

@@ -1,0 +1,661 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 2018/07/15, 14:37:40
+    Author     : smt-ct024
+*/
+
+.comiket_block dl {
+    height: 85px;
+}
+
+.w_30Per {
+    width: 30%;
+}
+
+.w_40Per {
+    width: 40%;
+}
+
+.boxWid {
+     width: 10%;
+}
+
+.dispSeigyoPC {
+    display: table-cell;
+}
+
+.dispSeigyoSP {
+    display: none;
+}
+
+@media only screen and (max-width: 980px) {
+    .comiket_block dl {
+        /*height: 115px;*/
+        height: auto;
+    }
+
+    .comiket_box_item_value_input {
+        width: 50% !important;
+    }
+
+    .boxWid {
+        width: 25% !important;
+    }
+
+    .wb {
+        display: block;
+    }
+
+    .w_40Per {
+        width: 60%;
+    }
+
+    .dispSeigyoPC {
+        display: none;
+    }
+
+    .dispSeigyoSP {
+        display: unset;
+    }
+}
+
+body div dl dd .comiket_event_eventsub_select {
+    white-space: nowrap;
+    float:left;
+    margin-right:20px;
+    /*margin-top:15px;*/
+    vertical-align: middle;
+}
+
+.comiket_diplay_none {
+    display: none;
+}
+
+.comiket_box_item_name,.comiket_charter_item_name {
+    width:10px;
+    white-space: nowrap;
+    padding-top:10px;
+}
+
+.comiket_box_item_value,.comiket_charter_item_value {
+    text-align: left;
+    padding-top:10px;
+}
+
+.eventsub_doc_block {
+    float:left;
+    /*margin-top: -20px;*/
+}
+
+.comiket_box_item_value_input {
+    width:50%;
+}
+
+.input-buppan-title {
+    margin-bottom: 5px;
+    font-size:20px;
+}
+
+h4.table_title {
+    margin-bottom: 5px;
+    font-size:20px;
+}
+
+
+.eventsub_dl_link {
+    /*margin-top:10px;*/
+}
+
+td.event_eventsub_td_name {
+    width:10px;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+td.event_eventsub_td_dl_item {
+    padding-left: 10px;
+    vertical-align: middle;
+}
+
+
+
+.pc_dl_area {
+    display:block;
+}
+
+.sp_dl_area {
+    display:none;
+}
+
+@media only screen and (max-width: 980px) {
+    .pc_dl_area {
+        display:none;
+    }
+
+    .sp_dl_area {
+        margin-top:10px;
+        display:block;
+    }
+}
+
+.eventsub_sel {
+    display:none;
+}
+
+.box_table_td {
+    width:60%;
+}
+
+.attention_customer_cd {
+    /*margin-left: 378px;*/
+    margin-left: 0px;
+}
+
+@media only screen and (max-width: 608px) {
+    .attention_customer_cd {
+        margin-left: 0px;
+    }
+}
+
+.message_flame {
+    padding: 20px 15px;
+    border: solid 3px #0099ff;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+.arrow-img{height: 8px !important;float: right;margin-top: 5px;}
+
+.dl_block_conf1{
+    box-sizing: border-box;
+    width: 100%;
+    border: solid 1px #ccc;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.conf_regis_move_panel1{
+    padding: 13px;
+    border: 1px solid #dedbd3;
+    background-color: #e6e6e2;
+}
+
+.buppanChilddiv{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 9px;
+    margin-bottom: inherit;
+    width: 98%;
+}
+
+.buppanForm {
+    margin-bottom: 30px;
+}
+/** 
+    ##############################################################################################
+    # 手荷物預
+    ##############################################################################################
+*/
+.tac{ text-align: center !important; }
+.tal{ text-align: left !important; }
+.tar{ text-align: right !important; }
+
+
+.vam{ vertical-align: middle; }
+.vat{ vertical-align: top !important; }
+
+.fwb{ font-weight: bold; }
+.dsp-inline{ display: inline-block; }
+
+.img-link{
+    color: #1774bc !important;
+    text-decoration: underline !important;
+}
+.period-div{
+    /*white-space: nowrap;*/
+    display: inline-block !important;
+}
+.suuryo-div{
+    display: inline-block;
+    vertical-align: top;
+    text-align: left !important;
+    margin:5px !important;
+}
+
+.product-btn{
+    /*margin-top: 3px;*/
+    padding: 10px;
+    color: white;
+    background: #0067aa;
+    border: 1px solid #0067aa;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 7px 30px;
+}   
+.product-name{
+    /*padding: 5px;*/
+    /*margin-left: -8px;*/
+    margin-left:5px;
+    margin-top:10px;
+}
+.amount-td{
+    text-align: left !important;
+}
+.img-td{
+    width: 20% !important;
+}
+
+.product-img{
+    height: 48% !important;
+}
+
+.image-div{
+    /*width: 120px;*/
+    /**padding: 5px;*/
+    margin: 6px;
+   /* min-width: 100px;*/
+}
+.content-div{
+    min-height: 120px;
+}
+.status-div{
+    width: fit-content;
+    border: 1px solid #00b300 ;
+    color: #00b300;
+    padding: 3px;
+    margin-top: 2px;
+    /*margin-left: -6px;*/
+    display: inline-block;
+    font-size: 0.8em;
+    margin-left:5px;
+    font-weight: bold;
+}
+.status-div-red{
+    width: fit-content;
+    border: 1px solid #ff0000 ;
+    color: #ff0000;
+    padding: 3px;
+    margin-top: -3px;
+    /*margin-left: -6px;*/
+    margin-right: 5px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin:5px;
+    font-weight: bold;
+}
+.size-span{
+    /*word-break:break-all;*/
+    font-size: 0.8em;
+    margin-left:5px;
+    margin-right:2px;
+}
+
+.suuryo-input {
+    text-align: center;
+}
+
+.suuryo-input {
+    width: 12% !important;
+    padding: 11px 5px;
+}
+
+.dflt{line-height: normal;margin-left: 5px;}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.item {
+    width: 120px;
+    min-height: 80px;
+    max-height: auto;
+}
+/**************商品部分*********************/
+    .cls-kikan-lbl{
+        font-weight: bold;
+        display: block;
+        margin: 10px;
+    }
+
+    .clr-rd{
+        color:red;
+    }
+
+    .cls-price-div{
+        margin-top: 10px;
+        margin-left:7px;
+        display: flex;
+        align-items: center;
+    }
+
+    .cls-img{
+        min-width: 100%;
+        min-height: 100%;
+        width: 100%;
+        height: 100%;
+    }
+
+    .mrg3px{margin:3px;}
+    .mrg5px{margin:5px;}
+
+
+    .cls-price-lbl{
+        font-weight: bold;
+        font-size: 17px;
+    }
+    .mt3px{margin-top: 3px;}
+/**************商品部分*********************/
+
+@media only screen and (max-width: 950px) {
+    .product-img{
+        margin-left: 0px !important;
+        width: 50% !important;
+        height: 36% !important;
+    }
+    .image-div{
+        /*width: 110px;*/
+    }
+    /** MOTO G4*/
+    .image-div{
+        min-width: 60px;
+    }
+    .item{
+        width: 70px;
+        min-height: 50px !important;
+    }
+    .amt-nl{
+        display: inherit !important;
+        white-space: nowrap;
+    }
+}
+
+@media only screen and (max-width: 970px) {
+    .product-img{
+        margin-left: 0px !important;
+        width: 80% !important;
+        height: 36% !important;
+    }
+}
+@media only screen and (max-width: 975px) {
+    .product-img{
+        margin-left: 0px !important;
+        width: 50% !important;
+        height: 36% !important;
+    }
+}
+@media only screen and (max-width: 980px) {
+    .suuryo-input {
+        width: 24% !important;
+    }
+    .product-img{
+        margin-left: 0px !important;
+        width: 80% !important;
+        height: 36% !important;
+    }
+   
+    .amount-td{
+        /*width: 5% !important;*/
+    }
+
+    .period-div{
+        display: block !important;
+    }
+    .img-td{
+        width: 3% !important;
+    }
+
+    /** iphone 5**/
+ 
+    /** iphone 5**/
+}
+
+@media only screen and (max-width: 480px) {
+    .amount-div{
+        display: block !important;
+    }
+    .img-td{
+        width: 15% !important;
+    }
+
+    /** iphone 5**/
+    .suuryo-div{
+        width: 62% !important;
+        margin: 5px;
+        /*margin-left: -37px;*/
+    }
+    .product-btn{
+        /*margin-top: 0px !important;*/
+        padding: 7px 8px !important;
+    }
+    .lbl{
+         font-size: 0.8em !important;
+    }
+    .image-div{
+        /*width: 80px;*/
+    }
+    .amount-td{
+        padding: 10px 7px !important;
+    }
+    .product-name{
+        padding: 0px !important; 
+        white-space: nowrap !important; 
+    }
+     /** iphone 5**/
+    .dflt {
+        font-size: 0.7em !important;
+        margin-left: 4px !important;
+    }
+}
+
+.incdec-btn{
+    background: lightgray;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    color: white;
+    display: -ms-grid;
+    display: grid;
+}
+@media screen and (device-aspect-ratio: 2/3) {
+       .image-div{
+        min-width: 50px !important;
+    }
+}
+
+/** iphone 5**/
+@media screen and (device-aspect-ratio: 40/71) {
+    .image-div{
+/*        min-width: 110px !important;
+        width: 100% !important;
+        height: 110px !important;
+        min-height: 110px !important;*/
+
+        min-width: 80px !important;
+        width: 85% !important;
+        height: 95px !important;
+        min-height: 95px !important;
+    }
+
+    .lbl-booth{
+        display: block;
+    }
+
+    .payment_method{
+        padding:15px 20px;
+    }
+    
+    .size-span{
+        word-break:break-all
+    }
+
+    .item {
+        width: 60px !important;
+        min-height: 30px !important;
+    }
+    
+    .amt-nl{
+        white-space: nowrap !important;
+    }
+
+    .dflt {
+        margin-left:4px !important;
+    }
+
+    .pl24px{
+        padding-left: 24px;
+    }
+
+}
+@media screen and (device-aspect-ratio: 2){
+    .image-div{
+        min-width: 85px !important;
+    }
+}
+.table_color_layout table td {
+    line-height:1 !important;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 700px) {
+    .dflt br {
+        display: none;
+    }
+}
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3){
+    .dflt {
+        font-size: 0.7em !important;
+        margin-left: 4px !important;
+    }
+
+     .pl24px{
+        padding-left: 24px;
+    }
+}
+
+/** iphone 6/7/8**/
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    .dflt {
+       font-size: 0.7em !important;
+    }
+
+    .pl24px{
+        padding-left: 24px;
+    }
+}
+
+.sentence > a {
+    color: #1774bc; 
+    text-decoration: underline;
+}
+
+.lhn { line-height: normal; }
+
+.soldout-span{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.soldoutBgcolor{
+    background: #AAA;    
+}
+
+.wbka{ word-break: keep-all; }
+
+.ws_nowrap{ white-space: nowrap; }
+
+.fl-r{ float: right; }
+
+/** display **/
+.dsp-flex { display: flex; }
+
+.dsp-inblck { display: inline-block; }
+
+.dsp-none { display: none; }
+
+/** display **/
+
+/** height **/
+
+.ht34px{ height: 34px; }
+
+/** height **/
+
+.ws-nowrap{ white-space: nowrap; }
+
+.wb-break-all{ word-break: break-all; }
+
+.ln-height40px{ line-height:40px; }
+
+/** margin **/
+
+.mt10px{ margin-top: 10px; }
+
+.mb5px{ margin-bottom: 5px; }
+
+.mb10px{ margin-bottom: 10px !important; }
+
+.ml46px{ margin-bottom: 46px !important; }
+
+/** margin **/
+
+/** font **/
+.fs1pt5em{ font-size: 1.5em; }
+
+.fs1pt2em{ font-size: 1.2em; }
+
+.fs13px{ font-size: 13px; }
+
+.fwb{ font-weight: bolder; }
+
+.fs15px{ font-size: 14px; }
+
+/** font **/
+
+/** text **/
+
+.tdu { text-decoration: underline !important; }
+
+/** text **/
+
+/** color **/
+.clr_blue{ color: blue !important; }
+
+.clr_red{ color:red; }
+/** color **/
+
+/** width **/
+
+.w_30per{ width: 30%; }
+
+.w_100per{ width: 100%; }
+
+/** width **/
+
+/** table **/
+
+.table_layout_fixed{ table-layout: fixed; }
+
+/** table **/
+
+/** padding **/
+.pd-btm10px{ padding-bottom: 10px !important; }
+/** padding **/
+strong {
+    font-weight: bold !important;
+}
+
+.suuryo-select{
+    background: url(/images/common/select_arrow_2.png) no-repeat right center !important;
+    background-size: 20px 40px !important;
+    border: 1px solid #a9a9a9 !important;
+    border-radius: 3px !important;
+    appearance: button !important;
+    vertical-align: middle !important;
+    padding: 5px 25px 5px 5px;
+}

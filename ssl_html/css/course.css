@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+@media only screen and (max-width: 980px) {
+    .pcH {
+        display: block;
+    }
+    .sp_table {
+        display: table;
+    }
+}

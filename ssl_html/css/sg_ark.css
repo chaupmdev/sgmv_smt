@@ -1,0 +1,1946 @@
+/*------------------------------------------------------------
+	404
+------------------------------------------------------------*/
+#main .mainVisual {
+  padding: 90px 0 70px;
+  background: url(/img/reverse-logistics/sg-ark/main_bg.png) no-repeat center center/cover;
+}
+@media all and (max-width: 896px) {
+  #main .mainVisual {
+    padding: 45px 0 35px;
+  }
+}
+#main .mainVisual .inner {
+  margin: 0 auto;
+  width: 940px;
+}
+@media all and (max-width: 896px) {
+  #main .mainVisual .inner {
+    margin: 0 30px;
+    width: auto;
+  }
+}
+#main .mainVisual .inner h1 {
+  margin-bottom: 49px;
+  text-align: center;
+}
+@media all and (max-width: 896px) {
+  #main .mainVisual .inner h1 {
+    margin-bottom: 30px;
+  }
+}
+#main .mainVisual .inner h1 img {
+  width: 640px;
+}
+@media all and (max-width: 896px) {
+  #main .mainVisual .inner h1 img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+#main .mainVisual .inner .textList {
+  margin-top: -20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media all and (max-width: 896px) {
+  #main .mainVisual .inner .textList {
+    margin-top: 0;
+    display: block;
+  }
+}
+#main .mainVisual .inner .textList::after {
+  width: 300px;
+  content: "";
+}
+@media all and (max-width: 896px) {
+  #main .mainVisual .inner .textList::after {
+    display: none;
+  }
+}
+#main .mainVisual .inner .textList li {
+  margin-top: 20px;
+  padding: 5px;
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #1B519F;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.1em;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #FFD801;
+}
+@media all and (max-width: 896px) {
+  #main .mainVisual .inner .textList li {
+    margin: 0 0 20px;
+    width: auto;
+    font-size: 1.5rem;
+  }
+  #main .mainVisual .inner .textList li:last-of-type {
+    margin-bottom: 0;
+  }
+}
+#main .mainVisual .inner .textList li.list01 {
+  padding: 8px 5px;
+  font-size: 1.7rem;
+  letter-spacing: 0;
+}
+@media all and (max-width: 896px) {
+  #main .mainVisual .inner .textList li.list01 {
+    font-size: 1.4rem;
+  }
+}
+#main .mainVisual .inner .textList li.list02 {
+  font-size: 1.8rem;
+}
+@media all and (max-width: 896px) {
+  #main .mainVisual .inner .textList li.list02 {
+    font-size: 1.4rem;
+  }
+}
+#main .sign {
+  margin-bottom: 120px;
+  overflow: hidden;
+}
+@media all and (max-width: 896px) {
+  #main .sign {
+    margin-bottom: 60px;
+  }
+}
+#main .sign .topBox {
+  padding: 48px 0;
+  background-color: #1B519F;
+  text-align: center;
+}
+@media all and (max-width: 896px) {
+  #main .sign .topBox {
+    padding: 30px 0;
+  }
+}
+#main .sign .topBox p {
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 2.12;
+  letter-spacing: 0.1em;
+  text-align: left;
+  display: inline-block;
+}
+@media all and (max-width: 896px) {
+  #main .sign .topBox p {
+    font-size: 1.3rem;
+  }
+}
+#main .sign h2 {
+  margin: -1px 0 60px;
+  padding: 17px 0 73px;
+  text-align: center;
+  background: url(/img/reverse-logistics/sg-ark/sign_bg01.png) no-repeat center center/auto 100%;
+}
+#main .sign h2 img {
+  width: 414px;
+}
+@media all and (max-width: 896px) {
+  #main .sign h2 {
+    margin: -5px -30px 30px;
+    padding: 10px 0 20px;
+  }
+  #main .sign h2 img {
+    width: 160px;
+  }
+}
+#main .sign h3 {
+  margin-bottom: 93px;
+}
+@media all and (max-width: 896px) {
+  #main .sign h3 {
+    margin: 0 -60px 40px;
+  }
+}
+#main .sign .textBox {
+  padding: 1px 88px 51px;
+  border-radius: 6px;
+  background-color: #F2F3F9;
+}
+@media all and (max-width: 896px) {
+  #main .sign .textBox {
+    padding: 30px 20px;
+  }
+}
+#main .sign .textBox h4 {
+  margin: -55px 0 29px;
+  font-size: 3.6rem;
+  overflow-inline: 700;
+  line-height: 1.39;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+#main .sign .textBox h4 span {
+  margin: 0 5px;
+}
+#main .sign .textBox h4 span img {
+  width: 45px;
+  vertical-align: -11px;
+}
+@media all and (max-width: 896px) {
+  #main .sign .textBox h4 {
+    margin-top: 0;
+    font-size: 2.4rem;
+  }
+  #main .sign .textBox h4 span img {
+    width: 25px;
+  }
+}
+#main .sign .textBox .textList {
+  margin: 0 -20px 21px 0;
+}
+@media all and (max-width: 896px) {
+  #main .sign .textBox .textList {
+    margin-right: 0;
+  }
+}
+#main .sign .textBox .textList li {
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.92;
+  letter-spacing: 0.1em;
+}
+@media all and (max-width: 896px) {
+  #main .sign .textBox .textList li {
+    font-size: 1.6rem;
+    letter-spacing: 0.05em;
+  }
+}
+#main .sign .textBox .textList li:last-of-type {
+  margin-bottom: 0;
+}
+#main .sign .textBox .textList li .num {
+  width: 40px;
+}
+@media all and (max-width: 896px) {
+  #main .sign .textBox .textList li .num {
+    width: 25px;
+  }
+}
+#main .sign .textBox .textList li .txt {
+  margin-top: 9px;
+  width: calc(100% - 55px);
+}
+#main .sign .textBox .textList li .txt sup {
+  font-size: 1.6rem;
+  vertical-align: 9px;
+}
+@media all and (max-width: 896px) {
+  #main .sign .textBox .textList li .txt {
+    width: calc(100% - 35px);
+  }
+  #main .sign .textBox .textList li .txt sup {
+    font-size: 1.2rem;
+    vertical-align: 5px;
+  }
+}
+#main .sign .textBox .txtList {
+  margin-bottom: 25px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.69;
+  letter-spacing: 0.05em;
+}
+#main .sign .textBox .txtList li {
+  padding-left: 1.1em;
+  text-indent: -1.1em;
+}
+@media all and (max-width: 896px) {
+  #main .sign .textBox .txtList {
+    font-size: 1.2rem;
+  }
+}
+#main .sign .textBox p {
+  font-size: 1.6rem;
+  line-height: 1.94;
+  letter-spacing: 0.08em;
+}
+@media all and (max-width: 896px) {
+  #main .sign .textBox p {
+    font-size: 1.4rem;
+  }
+}
+#main .condition {
+  margin-bottom: 120px;
+}
+@media all and (max-width: 896px) {
+  #main .condition {
+    margin-bottom: 60px;
+  }
+}
+#main .condition h2 {
+  margin-bottom: 56px;
+  padding: 56px 20px 50px;
+  font-size: 4.6rem;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+@media all and (max-width: 896px) {
+  #main .condition h2 {
+    margin-bottom: 30px;
+    padding: 30px 20px;
+    font-size: 2rem;
+  }
+}
+#main .condition h2 img {
+  margin-right: 6px;
+  width: 261px;
+  vertical-align: -7px;
+}
+@media all and (max-width: 896px) {
+  #main .condition h2 img {
+    width: 130px;
+  }
+}
+#main .condition h2 span {
+  margin-bottom: 5px;
+  display: block;
+  font-size: 2.4rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+@media all and (max-width: 896px) {
+  #main .condition h2 span {
+    display: inline;
+    font-size: 1.6rem;
+  }
+}
+#main .condition .text {
+  margin: 0 auto 34px;
+  width: 900px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.94;
+  letter-spacing: 0.05em;
+}
+#main .condition .text span {
+  font-weight: 700;
+  background-color: #FFD801;
+}
+@media all and (max-width: 896px) {
+  #main .condition .text {
+    width: auto;
+    font-size: 1.4rem;
+  }
+}
+#main .condition .photo {
+  margin-bottom: 81px;
+  text-align: center;
+}
+#main .condition .photo img {
+  width: 624px;
+}
+@media all and (max-width: 896px) {
+  #main .condition .photo {
+    margin-bottom: 40px;
+  }
+  #main .condition .photo img {
+    width: 100%;
+  }
+}
+#main .condition .textImg {
+  padding: 44px 0 10px;
+  text-align: center;
+  background: url(/img/reverse-logistics/sg-ark/condition_bg01.jpg) repeat-x left center/auto 100%;
+}
+#main .condition .textImg img {
+  width: calc(100% - 40px);
+  max-width: 1201px;
+}
+@media all and (max-width: 896px) {
+  #main .condition .textImg {
+    padding: 30px 0 10px;
+  }
+  #main .condition .textImg img {
+    width: 100%;
+    max-width: inherit;
+  }
+}
+#main .condition .btmBox h3 {
+  margin-bottom: 85px;
+  padding: 25px 0 22px;
+  font-size: 3.4rem;
+  text-align: center;
+  background: url(/img/reverse-logistics/sg-ark/condition_bg02.png) no-repeat center center/auto 100%;
+}
+#main .condition .btmBox h3 span {
+  margin-top: -6px;
+  display: block;
+  font-size: 5.2rem;
+}
+#main .condition .btmBox h3 span img {
+  margin-right: 20px;
+  width: 280px;
+  vertical-align: -10px;
+}
+@media all and (max-width: 896px) {
+  #main .condition .btmBox h3 {
+    margin: 0 -30px 40px;
+    padding: 20px 30px;
+    font-size: 2rem;
+  }
+  #main .condition .btmBox h3 span {
+    font-size: 2.6rem;
+  }
+  #main .condition .btmBox h3 span img {
+    margin-right: 10px;
+    vertical-align: -7px;
+    width: 140px;
+  }
+}
+#main .condition .btmBox .textList {
+  margin-top: -30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media all and (max-width: 896px) {
+  #main .condition .btmBox .textList {
+    margin-top: 0;
+    display: block;
+  }
+}
+#main .condition .btmBox .textList li {
+  margin: 30px 30px 0 0;
+  padding-bottom: 15px;
+  width: 277px;
+  position: relative;
+  border-radius: 8px;
+  border: 2px solid #1B519F;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+@media all and (max-width: 896px) {
+  #main .condition .btmBox .textList li {
+    margin: 0 0 60px;
+    width: auto;
+  }
+  #main .condition .btmBox .textList li:last-of-type {
+    margin-bottom: 0;
+  }
+}
+#main .condition .btmBox .textList li:nth-of-type(4n) {
+  margin-right: 0;
+}
+#main .condition .btmBox .textList li .pho {
+  width: 70px;
+  position: absolute;
+  left: 50%;
+  top: -37px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+@media all and (max-width: 896px) {
+  #main .condition .btmBox .textList li .pho {
+    width: 50px;
+    top: -25px;
+  }
+}
+#main .condition .btmBox .textList li .ttl {
+  padding: 40px 20px 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  text-align: center;
+  background-color: #1B519F;
+}
+@media all and (max-width: 896px) {
+  #main .condition .btmBox .textList li .ttl {
+    font-size: 1.4rem;
+  }
+}
+#main .condition .btmBox .textList li .txt {
+  margin: -15px 0 13px;
+  text-align: center;
+}
+#main .condition .btmBox .textList li .txt span {
+  padding: 2px 5px 4px;
+  width: 182px;
+  display: inline-block;
+  vertical-align: top;
+  color: #1B519F;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #F2F3F9;
+}
+@media all and (max-width: 896px) {
+  #main .condition .btmBox .textList li .txt {
+    margin: -12px 0 10px;
+  }
+  #main .condition .btmBox .textList li .txt span {
+    font-size: 1.4rem;
+  }
+}
+#main .condition .btmBox .textList li p {
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #113851;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+@media all and (max-width: 896px) {
+  #main .condition .btmBox .textList li p {
+    font-size: 1.4rem;
+  }
+}
+#main .change {
+  margin-bottom: 120px;
+}
+@media all and (max-width: 896px) {
+  #main .change {
+    margin-bottom: 60px;
+  }
+}
+#main .change h2 {
+  margin-bottom: 55px;
+  padding: 50px 20px;
+  font-size: 4.6rem;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+#main .change h2 img {
+  margin-right: 6px;
+  width: 261px;
+  vertical-align: -8px;
+}
+@media all and (max-width: 896px) {
+  #main .change h2 {
+    margin-bottom: 30px;
+    padding: 20px 20px;
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+  #main .change h2 img {
+    width: 130px;
+    vertical-align: -6px;
+  }
+}
+#main .change .textBox {
+  margin: 0 auto 56px;
+  width: 900px;
+}
+@media all and (max-width: 896px) {
+  #main .change .textBox {
+    margin-bottom: 30px;
+    width: auto;
+  }
+}
+#main .change .textBox .text01 {
+  margin-bottom: 25px;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+#main .change .textBox .text01 span {
+  background-color: #FFD801;
+}
+@media all and (max-width: 896px) {
+  #main .change .textBox .text01 {
+    font-size: 1.5rem;
+  }
+}
+#main .change .textBox .text02 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.94;
+  letter-spacing: 0.05em;
+}
+@media all and (max-width: 896px) {
+  #main .change .textBox .text02 {
+    font-size: 1.4rem;
+  }
+}
+#main .change .bgBox {
+  margin-bottom: 80px;
+  padding: 60px 60px 56px;
+  background-color: #F2F3F9;
+}
+@media all and (max-width: 896px) {
+  #main .change .bgBox {
+    margin-bottom: 40px;
+    padding: 30px 15px;
+  }
+}
+#main .change .bgBox .textList {
+  margin-top: -36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media all and (max-width: 896px) {
+  #main .change .bgBox .textList {
+    margin-top: 0;
+    display: block;
+  }
+}
+#main .change .bgBox .textList li {
+  margin-top: 36px;
+  width: 520px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media all and (max-width: 896px) {
+  #main .change .bgBox .textList li {
+    margin: 0 0 30px;
+    width: auto;
+  }
+  #main .change .bgBox .textList li:last-of-type {
+    margin-bottom: 0;
+  }
+}
+#main .change .bgBox .textList li .pho {
+  width: 100px;
+}
+@media all and (max-width: 896px) {
+  #main .change .bgBox .textList li .pho {
+    width: 55px;
+  }
+}
+#main .change .bgBox .textList li .txtBox {
+  margin-top: -5px;
+  width: calc(100% - 130px);
+}
+@media all and (max-width: 896px) {
+  #main .change .bgBox .textList li .txtBox {
+    width: calc(100% - 70px);
+  }
+}
+#main .change .bgBox .textList li .txtBox .ttl {
+  margin-bottom: 11px;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2;
+}
+@media all and (max-width: 896px) {
+  #main .change .bgBox .textList li .txtBox .ttl {
+    font-size: 1.5rem;
+  }
+}
+#main .change .bgBox .textList li .txtBox p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.94;
+  letter-spacing: 0.05em;
+}
+#main .change .bgBox .textList li .txtBox p.note {
+  margin-top: 3px;
+  font-size: 1.3rem;
+  letter-spacing: 0;
+}
+@media all and (max-width: 896px) {
+  #main .change .bgBox .textList li .txtBox p {
+    font-size: 1.4rem;
+  }
+  #main .change .bgBox .textList li .txtBox p.note {
+    font-size: 1.2rem;
+  }
+}
+#main .change .textDl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media all and (max-width: 896px) {
+  #main .change .textDl {
+    display: block;
+  }
+}
+#main .change .textDl > dt {
+  padding: 62px 10px;
+  width: 180px;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.33;
+  letter-spacing: 0.05em;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+#main .change .textDl > dt span {
+  margin-top: 2px;
+  display: block;
+  font-size: 6rem;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  font-family: "Roboto", sans-serif;
+}
+@media all and (max-width: 896px) {
+  #main .change .textDl > dt {
+    padding: 20px 10px;
+    width: auto;
+    font-size: 1.5rem;
+  }
+  #main .change .textDl > dt span {
+    font-size: 3rem;
+  }
+}
+#main .change .textDl > dd {
+  padding: 0 30px 40px;
+  width: calc(100% - 180px);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+#main .change .textDl > dd:last-of-type {
+  padding-bottom: 30px;
+}
+@media all and (max-width: 896px) {
+  #main .change .textDl > dd {
+    padding: 0 20px 20px;
+    width: auto;
+  }
+  #main .change .textDl > dd:last-of-type {
+    padding-bottom: 20px;
+  }
+}
+#main .change .textDl > dd .title {
+  margin: 0 -30px 30px;
+  padding: 15px 40px;
+  color: #113851;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.25;
+  background-color: #F2F3F9;
+}
+@media all and (max-width: 896px) {
+  #main .change .textDl > dd .title {
+    margin: 0 -20px 30px;
+    padding: 15px 20px;
+    font-size: 1.8rem;
+  }
+}
+#main .change .textDl .phoList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#main .change .textDl .phoList::after {
+  width: 303px;
+  content: "";
+}
+#main .change .textDl .phoList li {
+  width: 303px;
+}
+@media all and (max-width: 896px) {
+  #main .change .textDl .phoList {
+    display: block;
+  }
+  #main .change .textDl .phoList::after {
+    display: none;
+  }
+  #main .change .textDl .phoList li {
+    margin: 0 0 30px;
+    width: auto;
+    text-align: center;
+  }
+  #main .change .textDl .phoList li:last-of-type {
+    margin-bottom: 0;
+  }
+}
+#main .change .textDl .note {
+  margin: -11px 0 13px;
+  color: #113851;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.54;
+  letter-spacing: 0.05em;
+}
+@media all and (max-width: 896px) {
+  #main .change .textDl .note {
+    margin: -5px 0 10px;
+    font-size: 1.2rem;
+  }
+}
+#main .change .textDl .ul_notes {
+  margin-top: 20px;
+}
+#main .change .textDl .ul_notes li {
+  font-size: 1.3rem;
+}
+@media all and (max-width: 896px) {
+  #main .change .textDl .ul_notes li {
+    font-size: 1.2rem;
+  }
+}
+#main .change .textDl .ttl {
+  margin: 18px 0 11px;
+  color: #113851;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+@media all and (max-width: 896px) {
+  #main .change .textDl .ttl {
+    font-size: 1.5rem;
+  }
+}
+#main .change .textDl .ttl span {
+  margin-left: 24px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.54;
+  vertical-align: 2px;
+}
+@media all and (max-width: 896px) {
+  #main .change .textDl .ttl span {
+    margin-left: 12px;
+    font-size: 1.2rem;
+  }
+}
+#main .change .textDl .txtDl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #113851;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.94;
+  letter-spacing: 0.05em;
+}
+@media all and (max-width: 896px) {
+  #main .change .textDl .txtDl {
+    font-size: 1.4rem;
+  }
+}
+#main .change .textDl .txtDl dt:not(:last-of-type),
+#main .change .textDl .txtDl dd:not(:last-of-type) {
+  margin-bottom: 4px;
+}
+#main .change .textDl .txtDl dt {
+  width: 90px;
+  font-weight: 700;
+}
+@media all and (max-width: 896px) {
+  #main .change .textDl .txtDl dt {
+    width: 70px;
+  }
+}
+#main .change .textDl .txtDl dd {
+  padding-top: 2px;
+  width: calc(100% - 95px);
+  word-wrap: break-word;
+}
+@media all and (max-width: 896px) {
+  #main .change .textDl .txtDl dd {
+    width: calc(100% - 75px);
+  }
+}
+#main .change .textDl .txtDl dd small {
+  margin-top: 5px;
+  display: block;
+  font-size: 1.3rem;
+  line-height: 1.69;
+}
+@media all and (max-width: 896px) {
+  #main .change .textDl .txtDl dd small {
+    font-size: 1.2rem;
+  }
+}
+@media all and (min-width: 897px) {
+  #main .change .textDl .txtDl dd a:hover {
+    opacity: 0.7;
+  }
+}
+#main .change .textDl .imgBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media all and (max-width: 896px) {
+  #main .change .textDl .imgBox {
+    display: block;
+  }
+}
+#main .change .textDl .imgBox .txtBox {
+  margin-top: -5px;
+  width: 520px;
+}
+@media all and (max-width: 896px) {
+  #main .change .textDl .imgBox .txtBox {
+    margin: 0 0 30px;
+    width: auto;
+  }
+}
+#main .change .textDl .imgBox .txtBox p {
+  color: #113851;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.94;
+  letter-spacing: 0.05em;
+}
+@media all and (max-width: 896px) {
+  #main .change .textDl .imgBox .txtBox p {
+    font-size: 1.4rem;
+  }
+}
+#main .change .textDl .imgBox .pho {
+  width: 400px;
+}
+@media all and (max-width: 896px) {
+  #main .change .textDl .imgBox .pho {
+    width: auto;
+    text-align: center;
+  }
+}
+#main .change .imageBox {
+  text-align: center;
+  margin: 0 0 60px;
+}
+@media all and (max-width: 896px) {
+  #main .change .imageBox {
+    margin-bottom: 40px;
+  }
+}
+#main .future {
+  margin-bottom: 120px;
+  padding: 120px 0 117px;
+  background-color: #F2F3F9;
+}
+@media all and (max-width: 896px) {
+  #main .future {
+    margin-top: 60px;
+    padding: 60px 0;
+  }
+}
+#main .future .textBox {
+  padding: 31px 0 67px;
+  background: url(/img/reverse-logistics/sg-ark/future_bg01.png) no-repeat center top/383px auto;
+}
+@media all and (max-width: 896px) {
+  #main .future .textBox {
+    padding: 20px 0 30px;
+    background-size: 200px auto;
+  }
+}
+#main .future .textBox h2 {
+  margin-bottom: 36px;
+  font-size: 4rem;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+@media all and (max-width: 896px) {
+  #main .future .textBox h2 {
+    margin-bottom: 25px;
+    font-size: 2rem;
+  }
+}
+#main .future .textBox p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.94;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+@media all and (max-width: 896px) {
+  #main .future .textBox p {
+    font-size: 1.4rem;
+  }
+}
+#main .future .textList {
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media all and (max-width: 896px) {
+  #main .future .textList {
+    display: block;
+  }
+}
+#main .future .textList > li {
+  padding: 21px 30px 9px;
+  width: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #FFD801;
+}
+@media all and (max-width: 896px) {
+  #main .future .textList > li {
+    padding: 20px 15px;
+    width: auto;
+  }
+}
+#main .future .textList > li:nth-of-type(2n) {
+  background-color: #449D62;
+}
+#main .future .textList > li:nth-of-type(2n) p {
+  color: #fff;
+}
+#main .future .textList > li:nth-of-type(2n) p::before {
+  background-color: #ABD16D;
+}
+#main .future .textList > li:nth-of-type(2n) .imgBox .txtBox ul li {
+  color: #fff;
+}
+#main .future .textList > li:nth-of-type(2n) .imgBox .txtBox ul li::before {
+  background-color: #ABD16D;
+}
+#main .future .textList > li .title {
+  padding-left: 27px;
+  position: relative;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+#main .future .textList > li .title::before {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  top: 9px;
+  border-radius: 50%;
+  background-color: #B0AC18;
+  content: "";
+}
+@media all and (max-width: 896px) {
+  #main .future .textList > li .title {
+    font-size: 1.5rem;
+  }
+  #main .future .textList > li .title::before {
+    width: 15px;
+    height: 15px;
+    top: 7px;
+  }
+}
+#main .future .textList > li .imgBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#main .future .textList > li .imgBox .pho {
+  margin: 0 -5px 0 -25px;
+  width: 280px;
+}
+@media all and (max-width: 896px) {
+  #main .future .textList > li .imgBox {
+    display: block;
+  }
+  #main .future .textList > li .imgBox .pho {
+    margin: 0 0 20px;
+    width: auto;
+    text-align: center;
+  }
+}
+#main .future .textList > li .imgBox .txtBox {
+  margin-top: 15px;
+  width: 280px;
+}
+@media all and (max-width: 896px) {
+  #main .future .textList > li .imgBox .txtBox {
+    margin-top: 0;
+    width: auto;
+  }
+}
+#main .future .textList > li .imgBox .txtBox ul {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.57;
+  letter-spacing: 0.05em;
+}
+@media all and (max-width: 896px) {
+  #main .future .textList > li .imgBox .txtBox ul {
+    font-size: 1.3rem;
+  }
+}
+#main .future .textList > li .imgBox .txtBox ul li {
+  margin-bottom: 12px;
+  padding-left: 14px;
+  position: relative;
+}
+#main .future .textList > li .imgBox .txtBox ul li::before {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: 0;
+  top: 5px;
+  border-radius: 50%;
+  background-color: #B0AC18;
+  content: "";
+}
+@media all and (max-width: 896px) {
+  #main .future .textList > li .imgBox .txtBox ul li::before {
+    top: 6px;
+  }
+}
+#main .future .textList > li .imgBox .txtBox ul li:last-of-type {
+  margin-bottom: 0;
+}
+#main .future .textUl {
+  margin: -30px 0 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media all and (max-width: 896px) {
+  #main .future .textUl {
+    margin: 0 0 30px;
+    display: block;
+  }
+}
+#main .future .textUl li {
+  margin-top: 30px;
+  padding: 19px 20px 17px;
+  width: 580px;
+  position: relative;
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #C9CACA;
+  background-color: #fff;
+}
+@media all and (max-width: 896px) {
+  #main .future .textUl li {
+    margin: 0 0 30px;
+    padding: 15px;
+    width: auto;
+  }
+  #main .future .textUl li:last-of-type {
+    margin-bottom: 0;
+  }
+}
+#main .future .textUl li p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.94;
+  letter-spacing: 0.05em;
+}
+@media all and (max-width: 896px) {
+  #main .future .textUl li p {
+    font-size: 1.4rem;
+  }
+}
+#main .future .textUl li p span {
+  color: #E60044;
+}
+#main .future .textUl li .txt {
+  width: 96px;
+  position: absolute;
+  left: -1px;
+  top: -18px;
+}
+@media all and (max-width: 896px) {
+  #main .future .textUl li .txt {
+    width: 80px;
+    top: -14px;
+  }
+}
+#main .future .note {
+  padding-right: 25px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.85;
+  letter-spacing: 0.05em;
+  text-align: right;
+}
+@media all and (max-width: 896px) {
+  #main .future .note {
+    padding-right: 0;
+    font-size: 1.2rem;
+    text-align: left;
+  }
+}
+#main .flow {
+  margin-bottom: 120px;
+}
+@media all and (max-width: 896px) {
+  #main .flow {
+    margin-bottom: 60px;
+  }
+}
+#main .flow h2 {
+  margin-bottom: 30px;
+}
+#main .flow h3 {
+  margin-bottom: 30px;
+}
+#main .flow .area:not(:last-of-type) {
+  margin-bottom: 57px;
+}
+#main .introduction {
+  margin-bottom: 110px;
+  padding: 120px 0;
+  background-color: #F2F3F9;
+}
+@media all and (max-width: 896px) {
+  #main .introduction {
+    margin-bottom: 60px;
+    padding: 60px 0;
+  }
+}
+#main .introduction h2 {
+  margin-bottom: 87px;
+}
+@media all and (max-width: 896px) {
+  #main .introduction h2 {
+    margin-bottom: 40px;
+  }
+}
+#main .introduction .area {
+  margin-bottom: 86px;
+  padding: 35px 30px 38px 40px;
+  position: relative;
+  background-color: #fff;
+}
+@media all and (max-width: 896px) {
+  #main .introduction .area {
+    margin-bottom: 40px;
+    padding: 20px;
+  }
+}
+#main .introduction .area:last-of-type {
+  margin-bottom: 0;
+}
+#main .introduction .area .title {
+  padding: 6px 20px;
+  width: 270px;
+  position: absolute;
+  left: 0;
+  top: -26px;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: -webkit-gradient(linear, left top, right top, from(#E22463), color-stop(#6C3F87), to(#1B519F));
+  background: linear-gradient(to right, #E22463, #6C3F87, #1B519F);
+}
+@media all and (max-width: 896px) {
+  #main .introduction .area .title {
+    padding: 5px 10px;
+    width: 200px;
+    top: -20px;
+    font-size: 1.4rem;
+  }
+}
+#main .introduction .area .imgBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media all and (max-width: 896px) {
+  #main .introduction .area .imgBox {
+    display: block;
+  }
+}
+#main .introduction .area .imgBox .textBox {
+  margin-top: 22px;
+  width: 500px;
+}
+@media all and (max-width: 896px) {
+  #main .introduction .area .imgBox .textBox {
+    margin: 0 0 20px;
+    width: auto;
+  }
+}
+#main .introduction .area .imgBox .textBox p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.94;
+  letter-spacing: 0.05em;
+}
+@media all and (max-width: 896px) {
+  #main .introduction .area .imgBox .textBox p {
+    font-size: 1.4rem;
+  }
+}
+#main .introduction .area .imgBox .textBox .linkList {
+  margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media all and (max-width: 896px) {
+  #main .introduction .area .imgBox .textBox .linkList {
+    margin-top: 10px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+#main .introduction .area .imgBox .textBox .linkList li {
+  margin: 10px 10px 0 0;
+  width: 160px;
+}
+@media all and (max-width: 896px) {
+  #main .introduction .area .imgBox .textBox .linkList li {
+    margin-right: 0;
+    width: calc((100% - 10px) / 2);
+  }
+}
+#main .introduction .area .imgBox .textBox .linkList li a {
+  padding: 4px 5px;
+  display: block;
+  position: relative;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-align: center;
+  border-radius: 2px;
+  background-color: #5A92E3;
+  overflow: hidden;
+  outline: none;
+}
+@media all and (max-width: 896px) {
+  #main .introduction .area .imgBox .textBox .linkList li a {
+    font-size: 1rem;
+  }
+}
+#main .introduction .area .imgBox .textBox .linkList li a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.3)));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+  -webkit-transform: skewX(-25deg);
+          transform: skewX(-25deg);
+}
+@media all and (min-width: 897px) {
+  #main .introduction .area .imgBox .textBox .linkList li a:hover::before {
+    -webkit-animation: shine 0.7s;
+            animation: shine 0.7s;
+  }
+}
+#main .introduction .area .imgBox .textBox .linkList li.list01 a {
+  background-color: #03337B;
+}
+#main .introduction .area .imgBox .textBox .linkList li:last-of-type {
+  margin-right: 0;
+}
+#main .introduction .area .imgBox .photoBox {
+  width: 600px;
+}
+@media all and (max-width: 896px) {
+  #main .introduction .area .imgBox .photoBox {
+    width: auto;
+  }
+}
+#main .price {
+  margin-bottom: 120px;
+  width: 900px;
+}
+@media all and (max-width: 896px) {
+  #main .price {
+    margin-bottom: 60px;
+    width: auto;
+  }
+}
+#main .price h2 {
+  margin-bottom: 33px;
+  font-size: 4rem;
+  line-height: 1.75;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+@media all and (max-width: 896px) {
+  #main .price h2 {
+    margin-bottom: 25px;
+    font-size: 2rem;
+  }
+}
+#main .price h2 span {
+  position: relative;
+}
+#main .price h2 span::before {
+  width: calc(100% + 20px);
+  height: 100%;
+  position: absolute;
+  left: -50px;
+  top: 0;
+  background-color: #FFD801;
+  content: "";
+  z-index: -1;
+}
+@media all and (max-width: 896px) {
+  #main .price h2 span::before {
+    width: 100%;
+    left: 0;
+  }
+}
+#main .price .pho {
+  margin-bottom: 35px;
+  text-align: center;
+}
+#main .price .pho img {
+  width: 400px;
+}
+@media all and (max-width: 896px) {
+  #main .price .pho img {
+    width: auto;
+  }
+}
+#main .price .text {
+  margin-bottom: 36px;
+  font-weight: 500;
+  line-height: 2;
+  letter-spacing: 0.1em;
+}
+@media all and (max-width: 896px) {
+  #main .price .text {
+    margin-bottom: 25px;
+  }
+}
+#main .price .photo {
+  margin-bottom: 18px;
+  text-align: center;
+}
+#main .price .photo img {
+  width: 700px;
+}
+@media all and (max-width: 896px) {
+  #main .price .photo img {
+    width: 100%;
+  }
+}
+#main .price .txtList {
+  margin: 0 auto;
+  width: 700px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.69;
+  letter-spacing: 0.05em;
+}
+#main .price .txtList span {
+  margin-right: 14px;
+}
+@media all and (max-width: 896px) {
+  #main .price .txtList {
+    width: auto;
+    font-size: 1.2rem;
+  }
+}
+#main .faq {
+  padding: 120px 0 130px;
+  background-color: #F2F3F9;
+}
+@media all and (max-width: 896px) {
+  #main .faq {
+    padding: 60px 0;
+  }
+}
+#main .faq h2 {
+  margin-bottom: 40px;
+}
+@media all and (max-width: 896px) {
+  #main .faq h2 {
+    margin-bottom: 30px;
+  }
+}
+#main .faq .qaList li {
+  padding: 29px 30px 28px;
+  margin-bottom: 19px;
+  border-radius: 8px;
+  border: 1px solid #CACBCC;
+  background-color: #fff;
+}
+@media all and (max-width: 896px) {
+  #main .faq .qaList li {
+    padding: 20px;
+  }
+}
+#main .faq .qaList li:last-of-type {
+  margin-bottom: 0;
+}
+#main .faq .qaList li dl dt,
+#main .faq .qaList li dl dd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#main .faq .qaList li dl dt .en,
+#main .faq .qaList li dl dd .en {
+  width: 40px;
+}
+@media all and (max-width: 896px) {
+  #main .faq .qaList li dl dt .en,
+  #main .faq .qaList li dl dd .en {
+    width: 30px;
+  }
+}
+#main .faq .qaList li dl dt .txt,
+#main .faq .qaList li dl dd .txt {
+  margin-top: 6px;
+  width: calc(100% - 53px);
+  font-size: 1.6rem;
+  line-height: 1.94;
+  letter-spacing: 0.05em;
+}
+@media all and (max-width: 896px) {
+  #main .faq .qaList li dl dt .txt,
+  #main .faq .qaList li dl dd .txt {
+    margin-top: 0;
+    width: calc(100% - 40px);
+    font-size: 1.4rem;
+  }
+}
+#main .faq .qaList li dl dt .txt span,
+#main .faq .qaList li dl dd .txt span {
+  margin-top: 2px;
+  display: block;
+  color: #E60044;
+  font-size: 1.3rem;
+}
+#main .faq .qaList li dl dt {
+  margin-bottom: 18px;
+}
+@media all and (max-width: 896px) {
+  #main .faq .qaList li dl dt {
+    margin-bottom: 10px;
+  }
+}
+#main .faq .qaList li dl dt .txt {
+  margin-top: 4px;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.05em;
+}
+@media all and (max-width: 896px) {
+  #main .faq .qaList li dl dt .txt {
+    margin-top: 0;
+    font-size: 1.5rem;
+  }
+}
+#main .contact {
+  margin-bottom: 90px;
+  padding: 60px 0 58px;
+  background: -webkit-gradient(linear, left top, right top, from(#FF4A7B), color-stop(#B9619B), to(#4089D5));
+  background: linear-gradient(to right, #FF4A7B, #B9619B, #4089D5);
+}
+@media all and (max-width: 896px) {
+  #main .contact {
+    margin-bottom: 50px;
+    padding: 30px 0;
+  }
+}
+#main .contact .whiteBox {
+  padding: 40px 30px 50px;
+  position: relative;
+  background-color: #fff;
+}
+@media all and (max-width: 896px) {
+  #main .contact .whiteBox {
+    padding: 30px 20px;
+  }
+}
+#main .contact .whiteBox h2 {
+  margin-bottom: 10px;
+  color: #113851;
+  font-size: 3.4rem;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+#main .contact .whiteBox h2 img {
+  margin-right: 5px;
+  width: 205px;
+  vertical-align: -8px;
+}
+@media all and (max-width: 896px) {
+  #main .contact .whiteBox h2 {
+    font-size: 2rem;
+  }
+  #main .contact .whiteBox h2 img {
+    width: 110px;
+  }
+}
+#main .contact .whiteBox .tel {
+  margin: 0 auto 15px;
+  padding-bottom: 30px;
+  width: 740px;
+  text-align: center;
+  border-bottom: 1px solid #707070;
+}
+#main .contact .whiteBox .tel a {
+  width: 516px;
+  display: inline-block;
+  vertical-align: top;
+}
+@media all and (max-width: 896px) {
+  #main .contact .whiteBox .tel {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    width: auto;
+  }
+  #main .contact .whiteBox .tel a {
+    width: auto;
+    max-width: 450px;
+  }
+}
+#main .contact .whiteBox .linkBox {
+  margin: 0 auto;
+  width: 740px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media all and (max-width: 896px) {
+  #main .contact .whiteBox .linkBox {
+    margin-bottom: 40px;
+    width: auto;
+    display: block;
+  }
+}
+#main .contact .whiteBox .linkBox dl {
+  width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media all and (max-width: 896px) {
+  #main .contact .whiteBox .linkBox dl {
+    margin-bottom: 15px;
+    width: auto;
+    display: block;
+  }
+}
+#main .contact .whiteBox .linkBox dl dt:not(:last-of-type),
+#main .contact .whiteBox .linkBox dl dd:not(:last-of-type) {
+  margin-bottom: 7px;
+}
+#main .contact .whiteBox .linkBox dl dt {
+  margin-top: 10px;
+  width: 135px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  color: #113851;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+@media all and (max-width: 896px) {
+  #main .contact .whiteBox .linkBox dl dt {
+    width: auto;
+    font-size: 1.4rem;
+  }
+}
+#main .contact .whiteBox .linkBox dl dt img {
+  margin-right: 10px;
+  width: 38px;
+  margin-top: 4px;
+}
+@media all and (max-width: 896px) {
+  #main .contact .whiteBox .linkBox dl dt img {
+    margin: 7px 5px 0 0;
+    width: 20px;
+  }
+}
+#main .contact .whiteBox .linkBox dl dd {
+  word-wrap: break-word;
+}
+@media all and (max-width: 896px) {
+  #main .contact .whiteBox .linkBox dl dd {
+    width: auto;
+  }
+}
+#main .contact .whiteBox .linkBox dl dd a {
+  display: inline-block;
+  color: #113851;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  vertical-align: top;
+}
+@media all and (max-width: 896px) {
+  #main .contact .whiteBox .linkBox dl dd a {
+    font-size: 1.5rem;
+  }
+}
+#main .contact .whiteBox .linkBox dl dd a:hover {
+  opacity: 0.7;
+}
+#main .contact .whiteBox .linkBox .pho {
+  margin-top: -18px;
+  width: 130px;
+}
+@media all and (max-width: 896px) {
+  #main .contact .whiteBox .linkBox .pho {
+    margin: 0 auto;
+  }
+}
+#main .contact .whiteBox .textImg {
+  width: 279px;
+  position: absolute;
+  left: -67px;
+  bottom: -80px;
+}
+@media all and (max-width: 896px) {
+  #main .contact .whiteBox .textImg {
+    width: auto;
+    text-align: center;
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
+}
+#main .move {
+  margin-bottom: 90px;
+}
+@media all and (max-width: 896px) {
+  #main .move {
+    margin-bottom: 50px;
+  }
+}
+#main .move .imgBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media all and (max-width: 896px) {
+  #main .move .imgBox {
+    display: block;
+  }
+}
+#main .move .imgBox .textBox {
+  width: 620px;
+}
+@media all and (max-width: 896px) {
+  #main .move .imgBox .textBox {
+    width: auto;
+  }
+}
+#main .move .imgBox .textBox h2 {
+  margin-bottom: 25px;
+  text-align: center;
+}
+#main .move .imgBox .textBox h2 img {
+  width: 400px;
+}
+@media all and (max-width: 896px) {
+  #main .move .imgBox .textBox h2 img {
+    width: 200px;
+  }
+}
+#main .move .imgBox .textBox p {
+  color: #1D4763;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+@media all and (max-width: 896px) {
+  #main .move .imgBox .textBox p {
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+  }
+}
+#main .move .imgBox .linkList {
+  margin-top: -10px;
+  width: 530px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media all and (max-width: 896px) {
+  #main .move .imgBox .linkList {
+    margin-top: 0;
+    width: auto;
+    display: block;
+  }
+}
+#main .move .imgBox .linkList li {
+  width: 250px;
+}
+@media all and (max-width: 896px) {
+  #main .move .imgBox .linkList li {
+    margin-bottom: 30px;
+    width: auto;
+  }
+  #main .move .imgBox .linkList li:last-of-type {
+    margin-bottom: 0;
+  }
+}
+#main .move .imgBox .linkList li a {
+  display: block;
+  padding: 1px 10px 17px;
+  border-radius: 10px;
+  border: 2px solid #1B519F;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+@media all and (min-width: 897px) {
+  #main .move .imgBox .linkList li a:hover {
+    opacity: 0.7;
+  }
+}
+@media all and (max-width: 896px) {
+  #main .move .imgBox .linkList li a {
+    border-radius: 6px;
+  }
+}
+#main .move .imgBox .linkList li .mask {
+  margin: -24px auto 14px;
+  width: 47px;
+}
+#main .move .imgBox .linkList li .mask img {
+  width: 100%;
+}
+@media all and (max-width: 896px) {
+  #main .move .imgBox .linkList li .mask {
+    margin-top: -17px;
+    width: 35px;
+  }
+}
+#main .move .imgBox .linkList li p {
+  margin-bottom: 6px;
+  color: #113851;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.44;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+@media all and (max-width: 896px) {
+  #main .move .imgBox .linkList li p {
+    font-size: 1.5rem;
+  }
+}
+#main .move .imgBox .linkList li .pho {
+  text-align: center;
+}
+#main .move .imgBox .linkList li .pho img {
+  width: 126px;
+}
+@media all and (max-width: 896px) {
+  #main .move .imgBox .linkList li .pho img {
+    width: 100px;
+  }
+}

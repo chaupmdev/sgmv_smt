@@ -1,0 +1,12 @@
+＜搬入＞
+【集荷先名】<::type1_name::>
+【集荷先郵便番号】<::type1_zip::>
+【都道府県】<::type1_pref::>
+【市町村区】<::type1_address::>
+【建物番地名】<::type1_building::>
+【集荷先電話番号】<::type1_tel::>
+【お預かり日時】<::type1_collect_date::> <::type1_collect_st_time::><::type1_collect_ed_time::>
+【引渡し希望日】<::type1_delivery_date::> <::type1_delivery_st_time::><::type1_delivery_ed_time::>
+<::type1_num_area::>【備考】
+<::type1_note::>
+

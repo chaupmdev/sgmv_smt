@@ -1,0 +1,1596 @@
+@charset "utf-8";
+@import "mixin.scss";
+/*------------------------------------------------------------
+	404
+------------------------------------------------------------*/
+#main {
+	// padding-top: 108px;
+	@include sp {
+		// padding-top: 71px;
+	}
+	.mainVisual {
+		padding: 90px 0 70px;
+		background: url(/img/reverse-logistics/sg-ark/main_bg.png) no-repeat center center / cover;
+		@include sp {
+			padding: 45px 0 35px;
+		}
+		.inner {
+			margin: 0 auto;
+			width: 940px;
+			@include sp {
+				margin: 0 30px;
+				width: auto;
+			}
+			h1 {
+				margin-bottom: 49px;
+				text-align: center;
+				@include sp {
+					margin-bottom: 30px;
+				}
+				img {
+					width: 640px;
+					@include sp {
+						width: 100%;
+						max-width: 300px;
+					}
+				}
+			}
+			.textList {
+				margin-top: -20px;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				@include sp {
+					margin-top: 0;
+					display: block;
+				}
+				&::after {
+					width: 300px;
+					content: '';
+					@include sp {
+						display: none;
+					}
+				}
+				li {
+					margin-top: 20px;
+					padding: 5px;
+					width: 300px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					color: #1B519F;
+					font-size: 2rem;
+					font-weight: 700;
+					line-height: 2;
+					letter-spacing: 0.1em;
+					border-radius: 5px;
+					box-sizing: border-box;
+					background-color: #FFD801;
+					@include sp {
+						margin: 0 0 20px;
+						width: auto;
+						font-size: 1.5rem;
+						&:last-of-type {
+							margin-bottom: 0;
+						}
+					}
+					&.list01 {
+						padding: 8px 5px;
+						font-size: 1.7rem;
+						letter-spacing: 0;
+						@include sp {
+							font-size: 1.4rem;
+						}
+					}
+					&.list02 {
+						font-size: 1.8rem;
+						@include sp {
+							font-size: 1.4rem;
+						}
+					}
+				}
+			}
+		}
+	}
+	.sign {
+		margin-bottom: 120px;
+		overflow: hidden;
+		@include sp {
+			margin-bottom: 60px;
+		}
+		.topBox {
+			padding: 48px 0;
+			background-color: #1B519F;
+			text-align: center;
+			@include sp {
+				padding: 30px 0;
+			}
+			p {
+				color: #fff;
+				font-size: 1.7rem;
+				font-weight: 700;
+				line-height: 2.12;
+				letter-spacing: 0.1em;
+				text-align: left;
+				display: inline-block;
+				@include sp {
+					font-size: 1.3rem;
+				}
+			}
+		}
+		h2 {
+			margin: -1px 0 60px;
+			padding: 17px 0 73px;
+			text-align: center;
+			background: url(/img/reverse-logistics/sg-ark/sign_bg01.png) no-repeat center center / auto 100%;
+			img{
+				width: 414px;
+			}
+			@include sp {
+				margin: -5px -30px 30px;
+				padding: 10px 0 20px;
+				img {
+					width: 160px;
+				}
+			}
+		}
+		h3 {
+			margin-bottom: 93px;
+			@include sp {
+				margin: 0 -60px 40px;
+			}
+		}
+		.textBox {
+			padding: 1px 88px 51px;
+			border-radius: 6px;
+			background-color: #F2F3F9;
+			@include sp {
+				padding: 30px 20px;
+			}
+			h4 {
+				margin: -55px 0 29px;
+				font-size: 3.6rem;
+				overflow-inline: 700;
+				line-height: 1.39;
+				letter-spacing: 0.1em;
+				text-align: center;
+				span {
+					margin: 0 5px;
+					img {
+						width: 45px;
+						vertical-align: -11px;
+					}
+				}
+				@include sp {
+					margin-top: 0;
+					font-size: 2.4rem;
+					span {
+						img {
+							width: 25px;
+						}
+					}
+				}
+			}
+			.textList {
+				margin: 0 -20px 21px 0;
+				@include sp {
+					margin-right: 0;
+				}
+				li {
+					margin-bottom: 5px;
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					font-size: 2.6rem;
+					font-weight: 700;
+					line-height: 1.92;
+					letter-spacing: 0.1em;
+					@include sp {
+						font-size: 1.6rem;
+						letter-spacing: 0.05em;
+					}
+					&:last-of-type {
+						margin-bottom: 0;
+					}
+					.num {
+						width: 40px;
+						@include sp {
+							width: 25px;
+						}
+					}
+					.txt {
+						margin-top: 9px;
+						width: calc(100% - 55px);
+						sup {
+							// color: #E60044;
+							font-size: 1.6rem;
+							vertical-align: 9px;
+						}
+						@include sp {
+							width: calc(100% - 35px);
+							sup {
+								font-size: 1.2rem;
+								vertical-align: 5px;
+							}
+						}
+					}
+				}
+			}
+			.txtList {
+				margin-bottom: 25px;
+				font-size: 1.3rem;
+				font-weight: 500;
+				line-height: 1.69;
+				letter-spacing: 0.05em;
+				li {
+					padding-left: 1.1em;
+					text-indent: -1.1em;
+				}
+				@include sp {
+					font-size: 1.2rem;
+				}
+			}
+			p {
+				font-size: 1.6rem;
+				line-height: 1.94;
+				letter-spacing: 0.08em;
+				@include sp {
+					font-size: 1.4rem;
+				}
+			}
+		}
+	}
+	.condition {
+		margin-bottom: 120px;
+		@include sp {
+			margin-bottom: 60px;
+		}
+		h2 {
+			margin-bottom: 56px;
+			padding: 56px 20px 50px;
+			font-size: 4.6rem;
+			font-weight: 700;
+			letter-spacing: 0;
+			@include sp {
+				margin-bottom: 30px;
+				padding: 30px 20px;
+				font-size: 2rem;
+			}
+			img {
+				margin-right: 6px;
+				width: 261px;
+				vertical-align: -7px;
+				@include sp {
+					width: 130px;
+				}
+			}
+			span {
+				margin-bottom: 5px;
+				display: block;
+				font-size: 2.4rem;
+				font-weight: 400;
+				letter-spacing: 0.05em;
+				@include sp {
+					display: inline;
+					font-size: 1.6rem;
+				}
+			}
+		}
+		.text {
+			margin: 0 auto 34px;
+			width: 900px;
+			font-size: 1.6rem;
+			font-weight: 500;
+			line-height: 1.94;
+			letter-spacing: 0.05em;
+			span {
+				font-weight: 700;
+				background-color: #FFD801;
+			}
+			@include sp {
+				width: auto;
+				font-size: 1.4rem;
+			}
+		}
+		.photo {
+			margin-bottom: 81px;
+			text-align: center;
+			img {
+				width: 624px;
+			}
+			@include sp {
+				margin-bottom: 40px;
+				img {
+					width: 100%;
+				}
+			}
+		}
+		.textImg {
+			padding: 44px 0 10px;
+			text-align: center;
+			background: url(/img/reverse-logistics/sg-ark/condition_bg01.jpg) repeat-x left center / auto 100%;
+			img {
+				width: calc(100% - 40px);
+				max-width: 1201px;
+			}
+			@include sp {
+				padding: 30px 0 10px;
+				img {
+					width: 100%;
+					max-width: inherit;
+				}
+			}
+		}
+		.btmBox {
+			h3 {
+				margin-bottom: 85px;
+				padding: 25px 0 22px;
+				font-size: 3.4rem;
+				text-align: center;
+				background: url(/img/reverse-logistics/sg-ark/condition_bg02.png) no-repeat center center / auto 100%;
+				span {
+					margin-top: -6px;
+					display: block;
+					font-size: 5.2rem;
+					img {
+						margin-right: 20px;
+						width: 280px;
+						vertical-align: -10px;
+					}
+				}
+				@include sp {
+					margin: 0 -30px 40px;
+					padding: 20px 30px;
+					font-size: 2rem;
+					span {
+						font-size: 2.6rem;
+						img {
+							margin-right: 10px;
+							vertical-align: -7px;
+							width: 140px;
+						}
+					}
+				}
+			}
+			.textList {
+				margin-top: -30px;
+				display: flex;
+				flex-wrap: wrap;
+				@include sp {
+					margin-top: 0;
+					display: block;
+				}
+				li {
+					margin: 30px 30px 0 0;
+					padding-bottom: 15px;
+					width: 277px;
+					position: relative;
+					border-radius: 8px;
+					border: 2px solid #1B519F;
+					box-sizing: border-box;
+					@include sp {
+						margin: 0 0 60px;
+						width: auto;
+						&:last-of-type {
+							margin-bottom: 0;
+						}
+					}
+					&:nth-of-type(4n) {
+						margin-right: 0;
+					}
+					.pho {
+						width: 70px;
+						position: absolute;
+						left: 50%;
+						top: -37px;
+						transform: translateX(-50%);
+						@include sp {
+							width: 50px;
+							top: -25px;
+						}
+					}
+					.ttl {
+						padding: 40px 20px 28px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						color: #fff;
+						font-size: 1.6rem;
+						font-weight: 700;
+						line-height: 1.5;
+						letter-spacing: 0.05em;
+						text-align: center;
+						background-color: #1B519F;
+						@include sp {
+							font-size: 1.4rem;
+						}
+					}
+					.txt {
+						margin: -15px 0 13px;
+						text-align: center;
+						span {
+							padding: 2px 5px 4px;
+							width: 182px;
+							display: inline-block;
+							vertical-align: top;
+							color: #1B519F;
+							font-size: 1.6rem;
+							font-weight: 700;
+							letter-spacing: 0.05em;
+							text-align: center;
+							box-sizing: border-box;
+							border-radius: 4px;
+							background-color: #F2F3F9;
+						}
+						@include sp {
+							margin: -12px 0 10px;
+							span {
+								font-size: 1.4rem;
+							}
+						}
+					}
+					p {
+						padding: 0 20px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						color: #113851;
+						font-size: 1.6rem;
+						font-weight: 700;
+						line-height: 1.5;
+						letter-spacing: 0.05em;
+						text-align: center;
+						@include sp {
+							font-size: 1.4rem;
+						}
+					}
+				}
+			}
+		}
+	}
+	.change {
+		margin-bottom: 120px;
+		@include sp {
+			margin-bottom: 60px;
+		}
+		h2 {
+			margin-bottom: 55px;
+			padding: 50px 20px;
+			font-size: 4.6rem;
+			font-weight: 700;
+			letter-spacing: 0;
+			img {
+				margin-right: 6px;
+				width: 261px;
+				vertical-align: -8px;
+			}
+			@include sp {
+				margin-bottom: 30px;
+				padding: 20px 20px;
+				margin-bottom: 30px;
+				font-size: 2rem;
+				img {
+					width: 130px;
+					vertical-align: -6px;
+				}
+			}
+		}
+		.textBox {
+			margin: 0 auto 56px;
+			width: 900px;
+			@include sp {
+				margin-bottom: 30px;
+				width: auto;
+			}
+			.text01 {
+				margin-bottom: 25px;
+				font-size: 2rem;
+				font-weight: 700;
+				line-height: 2;
+				letter-spacing: 0.05em;
+				text-align: center;
+				span {
+					background-color: #FFD801;
+				}
+				@include sp {
+					font-size: 1.5rem;
+				}
+			}
+			.text02 {
+				font-size: 1.6rem;
+				font-weight: 500;
+				line-height: 1.94;
+				letter-spacing: 0.05em;
+				@include sp {
+					font-size: 1.4rem;
+				}
+			}
+		}
+		.bgBox {
+			margin-bottom: 80px;
+			padding: 60px 60px 56px;
+			background-color: #F2F3F9;
+			@include sp {
+				margin-bottom: 40px;
+				padding: 30px 15px;
+			}
+			.textList {
+				margin-top: -36px;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				@include sp {
+					margin-top: 0;
+					display: block;
+				}
+				li {
+					margin-top: 36px;
+					width: 520px;
+					display: flex;
+					align-items: flex-start;
+					justify-content: space-between;
+					@include sp {
+						margin: 0 0 30px;
+						width: auto;
+						&:last-of-type {
+							margin-bottom: 0;
+						}
+					}
+					.pho {
+						width: 100px;
+						@include sp {
+							width: 55px;
+						}
+					}
+					.txtBox {
+						margin-top: -5px;
+						width: calc(100% - 130px);
+						@include sp {
+							width: calc(100% - 70px);
+						}
+						.ttl {
+							margin-bottom: 11px;
+							font-size: 2rem;
+							font-weight: 700;
+							line-height: 2;
+							@include sp {
+								font-size: 1.5rem;
+							}
+						}
+						p {
+							font-size: 1.6rem;
+							font-weight: 500;
+							line-height: 1.94;
+							letter-spacing: 0.05em;
+							&.note {
+								margin-top: 3px;
+								font-size: 1.3rem;
+								letter-spacing: 0;
+							}
+							@include sp {
+								font-size: 1.4rem;
+								&.note {
+									font-size: 1.2rem;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.textDl {
+			display: flex;
+			flex-wrap: wrap;
+			@include sp {
+				display: block;
+			}
+			> dt {
+				padding: 62px 10px;
+				width: 180px;
+				color: #fff;
+				font-size: 1.8rem;
+				font-weight: 700;
+				line-height: 1.33;
+				letter-spacing: 0.05em;
+				text-align: center;
+				box-sizing: border-box;
+				span {
+					margin-top: 2px;
+					display: block;
+					font-size: 6rem;
+					line-height: 1;
+					letter-spacing: 0.05em;
+					font-family: 'Roboto', sans-serif;
+				}
+				@include sp {
+					padding: 20px 10px;
+					width: auto;
+					font-size: 1.5rem;
+					span {
+						font-size: 3rem;
+					}
+				}
+			}
+			> dd {
+				padding: 0 30px 40px;
+				width: calc(100% - 180px);
+				box-sizing: border-box;
+				&:last-of-type {
+					padding-bottom: 30px;
+				}
+				@include sp {
+					padding: 0 20px 20px;
+					width: auto;
+					&:last-of-type {
+						padding-bottom: 20px;
+					}
+				}
+				.title {
+					margin: 0 -30px 30px;
+					padding: 15px 40px;
+					color: #113851;
+					font-size: 2.4rem;
+					font-weight: 700;
+					line-height: 1.25;
+					background-color: #F2F3F9;
+					@include sp {
+						margin: 0 -20px 30px;
+						padding: 15px 20px;
+						font-size: 1.8rem;
+					}
+				}
+			}
+			.phoList {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				&::after {
+					width: 303px;
+					content: '';
+				}
+				li {
+					width: 303px;
+				}
+				@include sp {
+					display: block;
+					&::after {
+						display: none;
+					}
+					li {
+						margin: 0 0 30px;
+						width: auto;
+						text-align: center;
+						&:last-of-type {
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+			.note {
+				margin: -11px 0 13px;
+				color: #113851;
+				font-size: 1.3rem;
+				font-weight: 500;
+				line-height: 1.54;
+				letter-spacing: 0.05em;
+				@include sp {
+					margin: -5px 0 10px;
+					font-size: 1.2rem;
+				}
+			}
+			.ul_notes{
+				margin-top: 20px;
+				li{
+					font-size: 1.3rem;
+					@include sp{
+						font-size: 1.2rem;
+					}
+				}
+			}
+			.ttl {
+				margin: 18px 0 11px;
+				color: #113851;
+				font-size: 2rem;
+				font-weight: 700;
+				line-height: 1.2;
+				letter-spacing: 0.02em;
+				@include sp {
+					font-size: 1.5rem;
+				}
+				span {
+					margin-left: 24px;
+					font-size: 1.3rem;
+					font-weight: 500;
+					line-height: 1.54;
+					vertical-align: 2px;
+					@include sp {
+						margin-left: 12px;
+						font-size: 1.2rem;
+					}
+				}
+			}
+			.txtDl {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				color: #113851;
+				font-size: 1.6rem;
+				font-weight: 500;
+				line-height: 1.94;
+				letter-spacing: 0.05em;
+				@include sp {
+					font-size: 1.4rem;
+				}
+				dt,
+				dd {
+					&:not(:last-of-type) {
+						margin-bottom: 4px;
+					}
+				}
+				dt {
+					width: 90px;
+					font-weight: 700;
+					@include sp {
+						width: 70px;
+					}
+				}
+				dd {
+					padding-top: 2px;
+					width: calc(100% - 95px);
+					word-wrap: break-word;
+					@include sp {
+						width: calc(100% - 75px);
+					}
+					small {
+						margin-top: 5px;
+						display: block;
+						font-size: 1.3rem;
+						line-height: 1.69;
+						@include sp {
+							font-size: 1.2rem;
+						}
+					}
+					@include pc {
+						a:hover {
+							opacity: 0.7;
+						}
+					}
+				}
+			}
+			.imgBox {
+				display: flex;
+				justify-content: space-between;
+				@include sp {
+					display: block;
+				}
+				.txtBox {
+					margin-top: -5px;
+					width: 520px;
+					@include sp {
+						margin: 0 0 30px;
+						width: auto;
+					}
+					p {
+						color: #113851;
+						font-size: 1.6rem;
+						font-weight: 500;
+						line-height: 1.94;
+						letter-spacing: 0.05em;
+						@include sp {
+							font-size: 1.4rem;
+						}
+					}
+				}
+				.pho {
+					width: 400px;
+					@include sp {
+						width: auto;
+						text-align: center;
+					}
+				}
+			}
+		}
+		.imageBox{
+			text-align: center;
+    		margin: 0 0 60px;
+			@include sp{
+				margin-bottom: 40px;
+			}
+		}
+	}
+	.future {
+		margin-bottom: 120px;
+		padding: 120px 0 117px;
+		background-color: #F2F3F9;
+		@include sp {
+			margin-top: 60px;
+			padding: 60px 0;
+		}
+		.textBox {
+			padding: 31px 0 67px;
+			background: url(/img/reverse-logistics/sg-ark/future_bg01.png) no-repeat center top / 383px auto;
+			@include sp {
+				padding: 20px 0 30px;
+				background-size: 200px auto;
+			}
+			h2 {
+				margin-bottom: 36px;
+				font-size: 4rem;
+				line-height: 1.5;
+				letter-spacing: 0.05em;
+				text-align: center;
+				@include sp {
+					margin-bottom: 25px;
+					font-size: 2rem;
+				}
+			}
+			p {
+				font-size: 1.6rem;
+				font-weight: 500;
+				line-height: 1.94;
+				letter-spacing: 0.05em;
+				text-align: center;
+				@include sp {
+					font-size: 1.4rem;
+				}
+			}
+		}
+		.textList {
+			margin-bottom: 40px;
+			display: flex;
+			flex-wrap: wrap;
+			@include sp {
+				display: block;
+			}
+			> li {
+				padding: 21px 30px 9px;
+				width: 50%;
+				box-sizing: border-box;
+				background-color: #FFD801;
+				@include sp {
+					padding: 20px 15px;
+					width: auto;
+				}
+				&:nth-of-type(2n) {
+					background-color: #449D62;
+					p {
+						color: #fff;
+						&::before {
+							background-color: #ABD16D;
+						}
+					}
+					.imgBox {
+						.txtBox {
+							ul {
+								li {
+									color: #fff;
+									&::before {
+										background-color: #ABD16D;
+									}
+								}
+							}
+						}
+					}
+				}
+				.title {
+					padding-left: 27px;
+					position: relative;
+					font-size: 2rem;
+					font-weight: 700;
+					letter-spacing: 0.1em;
+					&::before {
+						width: 20px;
+						height: 20px;
+						position: absolute;
+						left: 0;
+						top: 9px;
+						border-radius: 50%;
+						background-color: #B0AC18;
+						content: '';
+					}
+					@include sp {
+						font-size: 1.5rem;
+						&::before {
+							width: 15px;
+							height: 15px;
+							top: 7px;
+						}
+					}
+				}
+				.imgBox {
+					display: flex;
+					justify-content: space-between;
+					.pho {
+						margin: 0 -5px 0 -25px;
+						width: 280px;
+					}
+					@include sp {
+						display: block;
+						.pho {
+							margin: 0 0 20px;
+							width: auto;
+							text-align: center;
+						}
+					}
+					.txtBox {
+						margin-top: 15px;
+						width: 280px;
+						@include sp {
+							margin-top: 0;
+							width: auto;
+						}
+						ul {
+							font-size: 1.4rem;
+							font-weight: 500;
+							line-height: 1.57;
+							letter-spacing: 0.05em;
+							@include sp {
+								font-size: 1.3rem;
+							}
+							li {
+								margin-bottom: 12px;
+								padding-left: 14px;
+								position: relative;
+								&::before {
+									width: 10px;
+									height: 10px;
+									position: absolute;
+									left: 0;
+									top: 5px;
+									border-radius: 50%;
+									background-color: #B0AC18;
+									content: '';
+									@include sp {
+										top: 6px;
+									}
+								}
+								&:last-of-type {
+									margin-bottom: 0;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.textUl {
+			margin: -30px 0 12px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			@include sp {
+				margin: 0 0 30px;
+				display: block;
+			}
+			li {
+				margin-top: 30px;
+				padding: 19px 20px 17px;
+				width: 580px;
+				position: relative;
+				border-radius: 10px;
+				box-sizing: border-box;
+				border: 1px solid #C9CACA;
+				background-color: #fff;
+				@include sp {
+					margin: 0 0 30px;
+					padding: 15px;
+					width: auto;
+					&:last-of-type {
+						margin-bottom: 0;
+					}
+				}
+				p {
+					font-size: 1.6rem;
+					font-weight: 700;
+					line-height: 1.94;
+					letter-spacing: 0.05em;
+					@include sp {
+						font-size: 1.4rem;
+					}
+					span {
+						color: #E60044;
+					}
+				}
+				.txt {
+					width: 96px;
+					position: absolute;
+					left: -1px;
+					top: -18px;
+					@include sp {
+						width: 80px;
+						top: -14px;
+					}
+				}
+			}
+		}
+		.note {
+			padding-right: 25px;
+			font-size: 1.3rem;
+			font-weight: 500;
+			line-height: 1.85;
+			letter-spacing: 0.05em;
+			text-align: right;
+			@include sp {
+				padding-right: 0;
+				font-size: 1.2rem;
+				text-align: left;
+			}
+		}
+	}
+	.flow {
+		margin-bottom: 120px;
+		@include sp {
+			margin-bottom: 60px;
+		}
+		h2 {
+			margin-bottom: 30px;
+		}
+		h3 {
+			margin-bottom: 30px;
+		}
+		.area {
+			&:not(:last-of-type) {
+				margin-bottom: 57px;
+			}
+		}
+	}
+	.introduction {
+		margin-bottom: 110px;
+		padding: 120px 0;
+		background-color: #F2F3F9;
+		@include sp {
+			margin-bottom: 60px;
+			padding: 60px 0;
+		}
+		h2 {
+			margin-bottom: 87px;
+			@include sp {
+				margin-bottom: 40px;
+			}
+		}
+		.area {
+			margin-bottom: 86px;
+			padding: 35px 30px 38px 40px;
+			position: relative;
+			background-color: #fff;
+			@include sp {
+				margin-bottom: 40px;
+				padding: 20px;
+			}
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+			.title {
+				padding: 6px 20px;
+				width: 270px;
+				position: absolute;
+				left: 0;
+				top: -26px;
+				color: #fff;
+				font-size: 2rem;
+				font-weight: 700;
+				letter-spacing: 0.1em;
+				box-sizing: border-box;
+				background: -webkit-linear-gradient(to right,#E22463,#6C3F87,#1B519F);
+				background: -ms-linear-gradient(to right, #E22463,#6C3F87,#1B519F);
+				background: -o-linear-gradient(to right,#E22463,#6C3F87,#1B519F);
+				background: -moz-linear-gradient(to right,#E22463,#6C3F87,#1B519F);
+				background: linear-gradient(to right,#E22463,#6C3F87,#1B519F);
+				@include sp {
+					padding: 5px 10px;
+					width: 200px;
+					top: -20px;
+					font-size: 1.4rem;
+				}
+			}
+			.imgBox {
+				display: flex;
+				justify-content: space-between;
+				@include sp {
+					display: block;
+				}
+				.textBox {
+					margin-top: 22px;
+					width: 500px;
+					@include sp {
+						margin: 0 0 20px;
+						width: auto;
+					}
+					p {
+						font-size: 1.6rem;
+						font-weight: 700;
+						line-height: 1.94;
+						letter-spacing: 0.05em;
+						@include sp {
+							font-size: 1.4rem;
+						}
+					}
+					.linkList {
+						margin-top: 24px;
+						display: flex;
+						flex-wrap: wrap;
+						@include sp {
+							margin-top: 10px;
+							justify-content: space-between;
+						}
+						li {
+							margin: 10px 10px 0 0;
+							width: 160px;
+							@include sp {
+								margin-right: 0;
+								width: calc((100% - 10px) / 2);
+							}
+							a {
+								padding: 4px 5px;
+								display: block;
+								position: relative;
+								color: #fff;
+								font-size: 1.2rem;
+								font-weight: 700;
+								letter-spacing: 0.1em;
+								text-align: center;
+								border-radius: 2px;
+								background-color: #5A92E3;
+								overflow: hidden;
+								outline: none;
+								@include sp {
+									font-size: 1rem;
+								}
+								&::before {
+									content: '';
+									position: absolute;
+									top: 0;
+									left: -75%;
+									width: 50%;
+									height: 100%;
+									background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+									transform: skewX(-25deg);
+								}
+								@include pc {
+									&:hover::before {
+										animation: shine 0.7s;
+									}
+								}
+							}
+							&.list01 {
+								a {
+									background-color: #03337B;
+								}
+							}
+							&:last-of-type {
+								margin-right: 0;
+							}
+						}
+					}
+				}
+				.photoBox {
+					width: 600px;
+					@include sp {
+						width: auto;
+					}
+				}
+			}
+		}
+	}
+	.price {
+		margin-bottom: 120px;
+		width: 900px;
+		@include sp {
+			margin-bottom: 60px;
+			width: auto;
+		}
+		h2 {
+			margin-bottom: 33px;
+			font-size: 4rem;
+			line-height: 1.75;
+			letter-spacing: 0.1em;
+			text-align: center;
+			@include sp {
+				margin-bottom: 25px;
+				font-size: 2rem;
+			}
+			span {
+				position: relative;
+				&::before {
+					width: calc(100% + 20px);
+					height: 100%;
+					position: absolute;
+					left: -50px;
+					top: 0;
+					background-color: #FFD801;
+					content: '';
+					z-index: -1;
+					@include sp {
+						width: 100%;
+						left: 0;
+					}
+				}
+			}
+		}
+		.pho {
+			margin-bottom: 35px;
+			text-align: center;
+			img {
+				width: 400px;
+				@include sp {
+					width: auto;
+				}
+			}
+		}
+		.text {
+			margin-bottom: 36px;
+			font-weight: 500;
+			line-height: 2;
+			letter-spacing: 0.1em;
+			@include sp {
+				margin-bottom: 25px;
+			}
+		}
+		.photo {
+			margin-bottom: 18px;
+			text-align: center;
+			img {
+				width: 700px;
+				@include sp {
+					width: 100%;
+				}
+			}
+		}
+		.txtList {
+			margin: 0 auto;
+			width: 700px;
+			font-size: 1.3rem;
+			font-weight: 500;
+			line-height: 1.69;
+			letter-spacing: 0.05em;
+			span {
+				margin-right: 14px;
+			}
+			@include sp {
+				width: auto;
+				font-size: 1.2rem;
+			}
+		}
+	}
+	.faq {
+		padding: 120px 0 130px;
+		background-color: #F2F3F9;
+		@include sp {
+			padding: 60px 0;
+		}
+		h2 {
+			margin-bottom: 40px;
+			@include sp {
+				margin-bottom: 30px;
+			}
+		}
+		.qaList {
+			li {
+				padding: 29px 30px 28px;
+				margin-bottom: 19px;
+				border-radius: 8px;
+				border: 1px solid #CACBCC;
+				background-color: #fff;
+				@include sp {
+					padding: 20px;
+				}
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+				dl {
+					dt,
+					dd {
+						display: flex;
+						align-items: flex-start;
+						justify-content: space-between;
+						.en {
+							width: 40px;
+							@include sp {
+								width: 30px;
+							}
+						}
+						.txt {
+							margin-top: 6px;
+							width: calc(100% - 53px);
+							font-size: 1.6rem;
+							line-height: 1.94;
+							letter-spacing: 0.05em;
+							@include sp {
+								margin-top: 0;
+								width: calc(100% - 40px);
+								font-size: 1.4rem;
+							}
+							span {
+								margin-top: 2px;
+								display: block;
+								color: #E60044;
+								font-size: 1.3rem;
+							}
+						}
+					}
+					dt {
+						margin-bottom: 18px;
+						@include sp {
+							margin-bottom: 10px;
+						}
+						.txt {
+							margin-top: 4px;
+							font-size: 2rem;
+							font-weight: 700;
+							line-height: 2;
+							letter-spacing: 0.05em;
+							@include sp {
+								margin-top: 0;
+								font-size: 1.5rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.contact {
+		margin-bottom: 90px;
+		padding: 60px 0 58px;
+		background: -webkit-linear-gradient(to right,#FF4A7B,#B9619B,#4089D5);
+		background: -ms-linear-gradient(to right, #FF4A7B,#B9619B,#4089D5);
+		background: -o-linear-gradient(to right,#FF4A7B,#B9619B,#4089D5);
+		background: -moz-linear-gradient(to right,#FF4A7B,#B9619B,#4089D5);
+		background: linear-gradient(to right,#FF4A7B,#B9619B,#4089D5);
+		@include sp {
+			margin-bottom: 50px;
+			padding: 30px 0;
+		}
+		.whiteBox {
+			padding: 40px 30px 50px;
+			position: relative;
+			background-color: #fff;
+			@include sp {
+				padding: 30px 20px;
+			}
+			h2 {
+				margin-bottom: 10px;
+				color: #113851;
+				font-size: 3.4rem;
+				letter-spacing: 0.05em;
+				text-align: center;
+				img {
+					margin-right: 5px;
+					width: 205px;
+					vertical-align: -8px;
+				}
+				@include sp {
+					font-size: 2rem;
+					img {
+						width: 110px;
+					}
+				}
+			}
+			.tel {
+				margin: 0 auto 15px;
+				padding-bottom: 30px;
+				width: 740px;
+				text-align: center;
+				border-bottom: 1px solid #707070;
+				a {
+					width: 516px;
+					display: inline-block;
+					vertical-align: top;
+				}
+				@include sp {
+					margin-bottom: 25px;
+					padding-bottom: 15px;
+					width: auto;
+					a {
+						width: auto;
+						max-width: 450px;
+					}
+				}
+			}
+			.linkBox {
+				margin: 0 auto;
+				width: 740px;
+				display: flex;
+				align-items: flex-start;
+				justify-content: center;
+				@include sp {
+					margin-bottom: 40px;
+					width: auto;
+					display: block;
+				}
+				dl {
+					width: 600px;
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: center;
+					@include sp {
+						margin-bottom: 15px;
+						width: auto;
+						display: block;
+					}
+					dt,
+					dd {
+						&:not(:last-of-type) {
+							margin-bottom: 7px;
+						}
+					}
+					dt {
+						margin-top: 10px;
+						width: 135px;
+						display: flex;
+						align-items: flex-start;
+						color: #113851;
+						font-size: 1.8rem;
+						font-weight: 700;
+						letter-spacing: 0.1em;
+						@include sp {
+							width: auto;
+							font-size: 1.4rem;
+						}
+						img {
+							margin-right: 10px;
+							width: 38px;
+							margin-top: 4px;
+							@include sp {
+								margin: 7px 5px 0 0;
+								width: 20px;
+							}
+						}
+					}
+					dd {
+						// width: calc(100% - 140px);
+						word-wrap: break-word;
+						@include sp {
+							width: auto;
+						}
+						a {
+							display: inline-block;
+							color: #113851;
+							font-size: 2.5rem;
+							font-weight: 700;
+							letter-spacing: 0.05em;
+							vertical-align: top;
+							@include sp {
+								font-size: 1.5rem;
+							}
+							&:hover {
+								opacity: 0.7;
+							}
+						}
+					}
+				}
+				.pho {
+					margin-top: -18px;
+					width: 130px;
+					@include sp {
+						margin: 0 auto;
+					}
+				}
+			}
+			.textImg {
+				width: 279px;
+				position: absolute;
+				left: -67px;
+				bottom: -80px;
+				@include sp {
+					width: auto;
+					text-align: center;
+					position: relative;
+					left: 0;
+					bottom: 0;
+				}
+			}
+		}
+	}
+	.move {
+		margin-bottom: 90px;
+		@include sp {
+			margin-bottom: 50px;
+		}
+		.imgBox {
+			display: flex;
+			justify-content: space-between;
+			@include sp {
+				display: block;
+			}
+			.textBox {
+				width: 620px;
+				@include sp {
+					width: auto;
+				}
+				h2 {
+					margin-bottom: 25px;
+					text-align: center;
+					img {
+						width: 400px;
+					}
+					@include sp {
+						img {
+							width: 200px;
+						}
+					}
+				}
+				p {
+					color: #1D4763;
+					font-size: 2rem;
+					font-weight: 700;
+					line-height: 2;
+					letter-spacing: 0.1em;
+					text-align: center;
+					@include sp {
+						margin-bottom: 40px;
+						font-size: 1.5rem;
+					}
+				}
+			}
+			.linkList {
+				margin-top: -10px;
+				width: 530px;
+				display: flex;
+				justify-content: space-between;
+				@include sp {
+					margin-top: 0;
+					width: auto;
+					display: block;
+				}
+				li {
+					width: 250px;
+					@include sp {
+						margin-bottom: 30px;
+						width: auto;
+						&:last-of-type {
+							margin-bottom: 0;
+						}
+					}
+					a {
+						display: block;
+						padding: 1px 10px 17px;
+						border-radius: 10px;
+						border: 2px solid #1B519F;
+						box-sizing: border-box;
+						@include pc {
+							&:hover {
+								opacity: 0.7;
+							}
+						}
+						@include sp {
+							border-radius: 6px;
+						}
+					}
+					.mask {
+						margin: -24px auto 14px;
+						width: 47px;
+						img {
+							width: 100%;
+						}
+						@include sp {
+							margin-top: -17px;
+							width: 35px;
+						}
+					}
+					p {
+						margin-bottom: 6px;
+						color: #113851;
+						font-size: 1.8rem;
+						font-weight: 700;
+						line-height: 1.44;
+						letter-spacing: 0.1em;
+						text-align: center;
+						@include sp {
+							font-size: 1.5rem;
+						}
+					}
+					.pho {
+						text-align: center;
+						img {
+							width: 126px;
+							@include sp {
+								width: 100px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

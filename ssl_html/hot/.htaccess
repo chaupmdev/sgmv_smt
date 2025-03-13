@@ -1,0 +1,7 @@
+#2020.07.22 Sawada
+#AuthUserFile /contents/www.sagawa-mov.co.jp/ssl_html/dsn/.htpasswd
+#AuthGroupFile /dev/null
+#AuthName "Please enter your ID and password"
+#AuthType Basic
+#require valid-user
+#order deny,allow

@@ -1,0 +1,300 @@
+<?php
+/**
+ * @package    ClassDefFile
+ * @author     K.Sawada(SCS)
+ * @copyright  2018-2018 SAGAWA COMPUTERSYSTEM CO,.LTD. All rights reserved.
+ */
+/**#@+
+ * include files
+ */
+require_once dirname(__FILE__) . '/../../Lib.php';
+// イベント識別子(URLのpath)はマジックナンバーで記述せずこの変数で記述してください
+$dirDiv=Sgmov_Lib::setDirDiv(dirname(__FILE__));
+Sgmov_Lib::useServices(array('Comiket',));
+Sgmov_Lib::useView($dirDiv.'/Common');
+Sgmov_Lib::useForms(array('Error', 'EveSession', 'Eve001Out', 'Eve002In'));
+/**#@-*/
+
+/**
+ * コミケサービスのお申し込み入力画面を表示します。
+ * @package    View
+ * @subpackage EVE
+ * @author     K.Sawada(SCS)
+ * @copyright  2018-2018 SAGAWA COMPUTERSYSTEM CO,.LTD. All rights reserved.
+ */
+class Sgmov_View_Eve_Input extends Sgmov_View_Eve_Common {
+
+    /**
+     * 共通サービス
+     * @var Sgmov_Service_AppCommon
+     */
+    protected $_appCommon;
+
+    /**
+     * コミケ申込データサービス
+     * @var type
+     */
+    protected $_Comiket;
+
+    /**
+     * 都道府県サービス
+     * @var Sgmov_Service_Prefecture
+     */
+    protected $_PrefectureService;
+
+    /**
+     * イベントサービス
+     * @var Sgmov_Service_Event
+     */
+    protected $_EventService;
+
+    /**
+     * イベントサブサービス
+     * @var Sgmov_Service_Eventsub
+     */
+    protected $_EventsubService;
+
+    /**
+     * 宅配サービス
+     * @var type
+     */
+    protected $_BoxService;
+
+    /**
+     * カーゴサービス
+     * @var type
+     */
+    protected $_CargoService;
+
+    /**
+     * 館マスタサービス(ブース番号)
+     * @var type
+     */
+    protected $_BuildingService;
+
+
+    // 識別子
+    protected $_DirDiv;
+
+    /**
+     * コンストラクタでサービスを初期化します。
+     */
+    public function __construct() {
+        $this->_appCommon             = new Sgmov_Service_AppCommon();
+        $this->_Comiket = new Sgmov_Service_Comiket();
+        $this->_PrefectureService     = new Sgmov_Service_Prefecture();
+        $this->_EventService          = new Sgmov_Service_Event();
+        $this->_EventsubService       = new Sgmov_Service_Eventsub();
+        $this->_BoxService       = new Sgmov_Service_Box();
+        $this->_CargoService       = new Sgmov_Service_Cargo();
+        $this->_BuildingService       = new Sgmov_Service_Building();
+        $this->_CharterService       = new Sgmov_Service_Charter();
+
+        // 識別子のセット
+        $this->_DirDiv = Sgmov_Lib::setDirDiv(dirname(__FILE__));
+
+        parent::__construct();
+    }
+
+    /**
+     * 処理を実行します。
+     * <ol><li>
+     * セッションに情報があるかどうかを確認
+     * </li><li>
+     * 情報有り
+     *   <ol><li>
+     *   セッション情報を元に出力情報を作成
+     *   </li></ol>
+     * </li><li>
+     * 情報無し
+     *   <ol><li>
+     *   出力情報を設定
+     *   </li></ol>
+     * </li><li>
+     * テンプレート用の値をセット
+     * </li><li>
+     * チケット発行
+     * </li></ol>
+     * @return array 生成されたフォーム情報。
+     * <ul><li>
+     * ['ticket']:チケット文字列
+     * </li><li>
+     * ['outForm']:出力フォーム
+     * </li><li>
+     * ['errorForm']:エラーフォーム
+     * </li></ul>
+     */
+    public function executeInner() {
+        
+        // セッションに情報があるかどうかを確認
+        $session = Sgmov_Component_Session::get();
+Sgmov_Component_Log::info("############## Input.executeInner #############");
+Sgmov_Component_Log::info($_SERVER);
+        // 情報
+        $sessionForm = $session->loadForm(self::FEATURE_ID);
+Sgmov_Component_Log::debug("########################### 649-2");
+        $inForm = new Sgmov_Form_Eve002In();
+//        $inForm->comiket_customer_cd_sel = "1";
+        $errorForm = NULL;
+Sgmov_Component_Log::debug("########################### 649-3");
+        $param = filter_input(INPUT_GET, 'param');
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//// ▼ チェックデジット判定 Start
+///////////////////////////////////////////////////////////////////////////////////////////////////
+Sgmov_Component_Log::debug("########################### 651-0");
+        if(strlen($param) == 10) {
+            Sgmov_Component_Redirect::redirectPublicSsl("/".$this->_DirDiv."/input2_dialog/{$param}");
+        }
+        
+        $input2DialogFlg = filter_input(INPUT_POST, 'input2_dialog');
+//Sgmov_Component_Log::debug("########################### 651-1");
+//Sgmov_Component_Log::debug($input2DialogFlg);
+        if($input2DialogFlg == "1") {
+            $input2DialogComiketId = filter_input(INPUT_POST, 'id');
+//Sgmov_Component_Log::debug("########################### 651-2");
+//Sgmov_Component_Log::debug($input2DialogComiketId);
+            if(!is_numeric($input2DialogComiketId)){
+                Sgmov_Component_Redirect::redirectPublicSsl("/".$this->_DirDiv."/temp_error");
+                exit;
+            }
+            
+            $db = Sgmov_Component_DB::getPublic();
+            $comiketData = $this->_Comiket->fetchComiketById($db, intval($input2DialogComiketId));
+//Sgmov_Component_Log::debug("########################### 651-4");
+//Sgmov_Component_Log::debug($comiketData);
+            if(empty($comiketData)) {
+                Sgmov_Component_Redirect::redirectPublicSsl("/".$this->_DirDiv."/temp_error");
+            }
+            $input2DialogData1 = filter_input(INPUT_POST, 'data1');
+//Sgmov_Component_Log::debug("########################### 651-5");
+//Sgmov_Component_Log::debug($input2DialogData1);
+            
+            $input2DialogData1Tel = mb_convert_kana(str_replace(array('-', 'ー', '−', '―', '‐'), '', $input2DialogData1), 'rnask', 'UTF-8');
+//Sgmov_Component_Log::debug("########################### 651-6");
+//Sgmov_Component_Log::debug($input2DialogData1Tel);
+            $input2DialogData1Mail = mb_convert_kana($input2DialogData1, 'rnask', 'UTF-8');
+            
+            if($comiketData['tel'] == $input2DialogData1Tel
+                    || $comiketData['staff_tel'] == $input2DialogData1Tel
+                    || $comiketData['mail'] == $input2DialogData1Mail) {
+                // セッション情報を破棄
+                $session->deleteForm(self::FEATURE_ID);
+                
+                $param = $input2DialogComiketId . self::getChkD($input2DialogComiketId);
+                Sgmov_Component_Redirect::redirectPublicSsl("/".$this->_DirDiv."/input/{$param}");
+            } else {
+                Sgmov_Component_Redirect::redirectPublicSsl("/".$this->_DirDiv."/temp_error/{$comiketData['event_id']}");
+            }
+        }
+        
+        if(!empty($param)) {
+//            // チェックデジットチェック
+            if(strlen($param) <= 10){
+Sgmov_Component_Log::debug ( '11桁以上ではない' );
+                Sgmov_Component_ErrorExit::errorExit(Sgmov_Component_ErrorCode::ERROR_VIEW_INVALID_PAGE_ACCESS);
+            }
+
+            if(!is_numeric($param)){
+Sgmov_Component_Log::debug ( '数値ではない' );
+                Sgmov_Component_ErrorExit::errorExit(Sgmov_Component_ErrorCode::ERROR_VIEW_INVALID_PAGE_ACCESS);
+            }
+            $id = substr($param, 0, 10);
+            $cd = substr($param, 10);
+            
+Sgmov_Component_Log::debug ( 'id:'.$id );
+Sgmov_Component_Log::debug ( 'cd:'.$cd );
+            
+            $sp = self::getChkD($id);
+            
+Sgmov_Component_Log::debug ( 'sp:'.$sp );
+
+            if($sp !== intval($cd)){
+Sgmov_Component_Log::debug ( 'CD不一致' );
+                Sgmov_Component_ErrorExit::errorExit(Sgmov_Component_ErrorCode::ERROR_VIEW_INVALID_PAGE_ACCESS);
+            }
+            $param = intval(substr($param, 0, 10));
+        } 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Sgmov_Component_Log::debug("########################### 649-4");
+        if(@!empty($_SERVER["REQUEST_URI"]) && strpos($_SERVER["REQUEST_URI"], "/".$this->_DirDiv."/input2") !== false && empty($param)) {
+            // input2 初期表示時にGETパラメータがない場合
+
+            $checkForm = $sessionForm->in;
+            $checkForm = (array)$checkForm;
+
+            if(empty($checkForm['comiket_id'])) {
+                // 申込みIDがセッションにない場合
+                Sgmov_Component_ErrorExit::errorExit(Sgmov_Component_ErrorCode::ERROR_VIEW_INVALID_PAGE_ACCESS);
+            }
+        }
+Sgmov_Component_Log::debug("########################### 649-5");
+        if(@!empty($_SERVER["HTTP_REFERER"]) && strpos($_SERVER["HTTP_REFERER"], "/".$this->_DirDiv."/") !== false ){
+            // 初期表示時以外(入力エラーなどで戻ってきた場合など)
+            if (isset($sessionForm)) {
+                $clearFlg = filter_input(INPUT_GET, 'clr');
+                $inForm    = $sessionForm->in;
+                if (empty($clearFlg)) {
+                    $errorForm = $sessionForm->error;
+                } else {
+                    $errorForm = NULL;
+                }
+
+                // セッション破棄
+                $sessionForm->error = NULL;
+            }
+        } else {
+            // 初期表示時
+            if(!empty($sessionForm)) {
+                $sessionForm->in = NULL;
+                $sessionForm->error = NULL;
+            }
+        }
+
+Sgmov_Component_Log::debug("########################### 649-6-1");
+
+//        $ev = filter_input(INPUT_GET, 'ev');
+//        if ($ev == '001') {
+//            $ev = '003';
+//        }
+//        
+//        if (@empty($ev)) {
+//            $ev = '005';
+//        }
+//
+        // イベントIDとイベントサブIDをセット
+        $ev = self::EVENT_ID;
+        if(!empty($ev) && is_numeric($ev)) {
+            $inForm->event_sel = intval($ev);
+            $inForm->input_mode = $ev;
+
+//            $inForm->eventsub_sel = self::EVENT_SUB_ID;
+        }
+
+Sgmov_Component_Log::debug("########################### 649-6");
+        $resultData = $this->_createOutFormByInForm($inForm, $param);
+        $outForm = $resultData["outForm"];
+        $dispItemInfo = $resultData["dispItemInfo"];
+Sgmov_Component_Log::debug("########################### 649-7");
+
+        // チケット発行
+        $ticket = $session->publishTicket(self::FEATURE_ID, self::GAMEN_ID_EVE001);
+        return array(
+            'ticket'    => $ticket,
+            'outForm'   => $outForm,
+            'dispItemInfo' => $dispItemInfo,
+            'errorForm' => $errorForm,
+        );
+    }
+
+    /**
+     * 入力フォームの値を出力フォームを生成します。
+     * @param Sgmov_Form_Pve001In $inForm 入力フォーム
+     * @return Sgmov_Form_Pve001Out 出力フォーム
+     */
+    protected function _createOutFormByInForm($inForm, $param=NULL) {
+        $inForm = (array)$inForm;
+        return $this->createOutFormByInForm($inForm, new Sgmov_Form_Eve001Out());
+    }
+}

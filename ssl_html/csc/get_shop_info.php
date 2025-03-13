@@ -1,0 +1,42 @@
+<?php
+session_start();
+/**
+ * コストコ配送サービスのお申し込み完了画面を表示します。
+ * @package    ssl_html
+ * @subpackage CSC
+ * @author     K.Sawada
+ * @copyright  2021-2021 SAGAWA COMPUTERSYSTEM CO,.LTD. All rights reserved.
+ */
+
+/**#@+
+ * include files
+ */
+require_once dirname(__FILE__) . '/../../lib/Lib.php';
+Sgmov_Lib::useView('csc/GetShopInfo');
+Sgmov_Lib::useForms(array('Error', 'EveSession'));
+/**#@-*/
+
+// // 処理を実行
+$view = new Sgmov_View_Csc_GetShopInfo();
+
+$_SESSION['session_test_key'] = 'session_test_val';
+
+$result = array();
+try {
+    $result = $view->execute();
+} catch(Exception $e) {
+    $exInfo = $e->getMessage();
+    $result = array(
+        'status' => 'error',
+        'message' => 'エラーが発生しました。',
+        'res_data' => array(
+            'error_info' => $exInfo,
+        ),
+    );
+}
+
+header("Content-Type: application/json; charset=utf-8");
+header("Access-Control-Allow-Origin: *");
+
+echo json_encode($result);
+

@@ -1,0 +1,13 @@
+RewriteEngine on
+# Get param
+RewriteCond %{REQUEST_FILENAME} -d [OR]
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^(.*)$ - [L]
+RewriteRule ^(.*)\.php$ - [L]
+RewriteRule ^([^/]*)/([^/]*)/?$ /$1/$2.php [L]
+RewriteRule ^([^/]*)/([^/]*)/(.*)/$ /$1/$2.php?param=$3 [L]
+RewriteRule ^([^/]*)/([^/]*)/(.*)$ /$1/$2.php?param=$3 [L]
+
+#php
+php_value session.gc_maxlifetime 3600
+php_value session.save_path '/tmp/www.sagawa-mov.co.jp'

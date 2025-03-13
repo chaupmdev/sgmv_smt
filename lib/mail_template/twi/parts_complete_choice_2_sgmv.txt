@@ -1,0 +1,12 @@
+＜お届け先＞
+【お届け先名】<::type2_name::>
+【お届け先郵便番号】<::type2_zip::>
+【お届け先都道府県】<::type2_pref::>
+【お届け先市町村区】<::type2_address::>
+【お届け先建物番地名】<::type2_building::>
+【お届け先電話番号】<::type2_tel::>
+【お預かり日】<::type2_collect_date::> <::type2_collect_st_time::><::type2_collect_ed_time::>
+【サービス選択】<::type2_service::>
+【お届け指定日時】<::type2_delivery_date::> <::type2_delivery_st_time::><::type2_delivery_ed_time::>
+<::type2_num_area::>
+

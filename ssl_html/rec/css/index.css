@@ -1,0 +1,47 @@
+div.btn_area input.disable_button {
+    padding: 15px 0px;
+    font-size: 17px;
+    background-color: #AAA;
+    color: #fff;
+    border-style: none;
+    cursor: pointer;
+    text-align: center;
+    background-image: url(/images/common/img_allow_5.png);
+    background-repeat: no-repeat;
+    background-position: 95% center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-weight: bold;
+    width: 400px;
+	outline:none;
+}
+
+.btn_area input[type="button"] {
+    margin: 0 0px;
+}
+
+input.disable_button[type="button"]::-moz-focus-inner{
+    border :0px;
+}
+/*input.disable_button:focus{
+	outline:none;
+}*/
+/*input.disable_button:hover {
+    opacity: 0.8;
+}*/
+
+@media only screen and (max-width: 768px) {
+    div.btn_area input.disable_button {
+        width: 100%;
+		font-size:14px;
+    }
+    
+    div input[type="checkbox"] {
+        -webkit-appearance: button;
+    }
+}
+

@@ -1,0 +1,4 @@
+【宅配数量】
+　<::num_area::>
+【宿泊先】<::comiket_building_name::>
+【チェックアウト日】<::type2_collect_date::>

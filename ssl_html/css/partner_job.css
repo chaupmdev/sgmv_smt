@@ -1,0 +1,39 @@
+/*------------------------------------------------------------
+	partner job
+------------------------------------------------------------*/
+#main .area .headLine02 {
+  margin-bottom: 15px;
+}
+#main .area .textBox {
+  padding: 26px 30px;
+  background-color: #F2F3F9;
+}
+#main .area .textBox p {
+  font-size: 1.6rem;
+  line-height: 1.93;
+}
+#main .textList {
+  margin-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px;
+}
+#main .textList li {
+  width: 50%;
+}
+#main .textList li:nth-child(3n) {
+  margin-right: 0;
+}
+#main .textList li .ttl {
+  margin-bottom: 17px;
+  padding-bottom: 9px;
+  font-size: 1.9rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  border-bottom: 1px solid #D8D6E0;
+}
+#main .textList li p {
+  margin: 0 8px;
+  line-height: 1.73;
+}

@@ -1,0 +1,54 @@
+@charset "UTF-8";
+/**
+ :タイトル "TOPページ 印刷用 スタイル設定";
+ :一行説明 "TOPページ 印刷用 スタイル設定のスタイルシートです";
+ :作成日 "2009-01-29";
+ :改訂版 [:版 "1.0.0"; :作成日 "2009-06-22"];
+*/
+
+body{
+	width: 100%;
+	margin: 0;
+	border: none;
+	color: #000;
+}
+#wrapper,
+#footer,
+#sghHeader{
+	width: 100%;
+	margin: 0;
+}
+#wrapper{
+	width: 100%;
+	padding: 0;
+	background: none;
+}
+#header{
+	min-height: 56px;
+	margin-bottom: 16px;
+	border: none;
+	border-bottom: 4px solid #3a489d;
+}
+* html #header{
+	height: 56px;
+}/* IE6 */
+#header #sghHeader h1{
+	left: 0px;
+}
+
+#footer{
+	clear: none;
+	margin-top: 3em;
+}
+#footer address{
+	width: 100%;
+}
+
+p.toPageTop,
+#header #globalNav,
+#header #subNav,
+#header p.siteLead,
+#footer #assistNav,
+#footer p.toPageTop{
+	display: none;
+}

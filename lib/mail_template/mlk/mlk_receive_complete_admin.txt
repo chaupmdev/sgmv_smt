@@ -1,0 +1,48 @@
+【佐川急便株式会社】手荷物当日配送　申込完了連絡
+sgmoving_system@sagawa-mov.co.jp
+								
+<::personal_name_seimei::>様								
+								
+いつも佐川急便をご利用いただき、誠にありがとうございます。
+当日配送の申込が完了いたしました。
+Thank you for using the SAGAWA EXPRESS website.
+								
+==========================================================
+お申込内容/Application content
+==========================================================
+【申込番号/Tag ID】<::tag_id::>												
+【申込者氏名/Applicant】<::personal_name_seimei::>									
+【メールアドレス/Email】<::mail::>								
+【お預かり/お届け日・Deposit/Delivery date】<::collect_date::>								
+【お届け先/To】<::address::><::delivery_date::>
+【サイズ/Size】
+    <::num_area::>
+【備考/Note】<::note::>
+【お支払方法/Payment method】<::payment_method::>							
+【金額（税込）/Amount (tax included)】<::amount_tax::>
+								
+キャンセルしたい場合は下記のＵＲＬから登録して下さい。
+If you wish to cancel, please register from the URL below.
+<::cancel_url::>		
+															
+								
+								
+==========================================================								
+								
+※個人情報保護のため、お問い合わせの際にご記入いただいた								
+　住所、電話番号はこのメールに記載していません。
+*To protect your personal information, the address and phone number 
+　you provided when making your inquiry are not included in this email.
+						
+※このメールは、入力されたメールアドレス宛に自動的に送信されています。
+*This email is automatically sent to the email address you entered.
+
+※本メールは送信専用のため、直接ご返信いただいても								
+　お問い合わせにはお答えできませんので、あらかじめご了承ください。
+*Please note that this email is for sending only, 
+　so we will not be able to respond to your inquiry even if you reply directly.								
+								
+								
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━								
+佐川急便株式会社						
+https://www.sagawa-exp.co.jp/ttk/					

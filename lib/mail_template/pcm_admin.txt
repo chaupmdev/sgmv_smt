@@ -1,0 +1,33 @@
+法人引越輸送：<::inquiry_type::> <::inquiry_category::>
+sgmoving_system@sagawa-exp.co.jp
+
+ＳＧムービングウェブサイトより
+お問い合わせが届きました。
+
+お問い合わせの内容
+==========================================================
+【 お問い合わせ種類 】<::inquiry_type::>
+【 お問い合わせカテゴリー 】<::inquiry_category::>
+【 お問い合わせ件名 】<::inquiry_title::>
+【 お問い合わせ内容 】
+<::inquiry_content::>
+
+【 会社名 】<::company_name::>
+【 部署名 】<::post_name::>
+【 担当者 】<::charge_name::>
+【 担当者フリガナ 】<::charge_furigana::>
+【 電話番号 】<::tel::>
+【 電話種類 】<::tel_type::> <::tel_other::>
+【 FAX番号 】<::fax::>
+【 メールアドレス 】<::mail::>
+【 連絡方法 】<::contact_method::>
+【 電話連絡可能 】<::contact_available::> <::contact_start::>～<::contact_end::>
+【 住所 】<::zip::> <::address_all::>
+
+
+==========================================================
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ＳＧムービング株式会社
+URL：http://www.sagawa-mov.co.jp/

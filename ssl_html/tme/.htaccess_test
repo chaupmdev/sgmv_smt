@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteRule ^input http://sagawa-mov-test04.media-tec.jp/nen/err301.php [L,R=301]
+RewriteRule ^input1 http://sagawa-mov-test04.media-tec.jp/nen/err301.php [L,R=301]
+RewriteRule ^input2 http://sagawa-mov-test04.media-tec.jp/nen/err301.php [L,R=301]
+RewriteRule ^cancel http://sagawa-mov-test04.media-tec.jp/nen/err301.php [L,R=301]
+RewriteRule https://sagawa-mov-test04.media-tec.jp/nen/input http://sagawa-mov-test04.media-tec.jp/nen/err301.php [L,R=301]

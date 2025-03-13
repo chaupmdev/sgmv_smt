@@ -1,0 +1,39 @@
+
+＜お支払について＞
+【お支払方法】<::comiket_payment_method::>
+<::convenience_store_late::><::digital_money_attention_note::>
+<::attention_message::>
+
+＜合計金額＞
+【金額（税抜）】<::comiket_amount::>
+【金額（税込）】<::comiket_amount_tax::>
+
+【適格請求書発行事業者登録番号】 T4010601022966
+
+【貼付票URL】
+https://sagawa-mov-test04.media-tec.jp/skt/pdf/paste_tag/paste_tag_1112.pdf
+
+キャンセルしたい場合は
+下記のＵＲＬから登録して下さい
+<::cancel_url::>
+
+サイズ変更、個数変更したい場合は
+下記のＵＲＬから登録して下さい(個数変更は、前回より小さい場合のみ可能です)
+<::size_change_url::>
+
+<::manual_url::>
+
+<::explanation_url_convenience_payment_method::>
+
+==========================================================
+
+※個人情報保護のため、お問い合わせの際にご記入いただいた
+　住所、電話番号はこのメールに記載していません。
+※このメールは、入力されたメールアドレス宛に自動的に送信されています。
+※本メールは送信専用のため、直接ご返信いただいても
+　お問い合わせにはお答えできませんので、あらかじめご了承ください。
+　
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ＳＧムービング株式会社
+URL：http://www.sagawa-mov.co.jp/
